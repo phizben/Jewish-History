@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jewish-history-five.vercel.app/sitemap.xml

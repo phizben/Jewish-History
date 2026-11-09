@@ -10,10 +10,22 @@ const head=`<!doctype html>
 <meta name="description" content="אטלס אינטראקטיבי של ההיסטוריה היהודית — ידידים וצוררים, דמויות, אירועים ומרכזי החיים לאורך הדורות, על מפה וציר זמן. An interactive atlas of Jewish history.">
 <meta name="theme-color" content="#0A0F1A">
 <link rel="icon" href="${fav}">
+<link rel="canonical" href="https://jewish-history-five.vercel.app/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="אטלס העם היהודי">
-<meta property="og:description" content="מסע אינטראקטיבי בהיסטוריה היהודית — על מפה וציר זמן.">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="אטלס העם היהודי">
+<meta property="og:locale" content="he_IL">
+<meta property="og:url" content="https://jewish-history-five.vercel.app/">
+<meta property="og:title" content="אטלס העם היהודי · Atlas of the Jewish People">
+<meta property="og:description" content="מסע אינטראקטיבי בהיסטוריה היהודית — ידידים וצוררים, דמויות, אירועים ומרכזי החיים לאורך הדורות, על מפה וציר זמן. עם משחקים ללמידה.">
+<meta property="og:image" content="https://jewish-history-five.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="אטלס העם היהודי — מפה וציר זמן אינטראקטיביים">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="אטלס העם היהודי · Atlas of the Jewish People">
+<meta name="twitter:description" content="מסע אינטראקטיבי בהיסטוריה היהודית — על מפה וציר זמן, עם משחקים ללמידה.">
+<meta name="twitter:image" content="https://jewish-history-five.vercel.app/og.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"אטלס העם היהודי","alternateName":"Atlas of the Jewish People","url":"https://jewish-history-five.vercel.app/","inLanguage":["he","en"],"description":"אטלס אינטראקטיבי של ההיסטוריה היהודית — מפה, ציר זמן ומשחקים."}</script>
 <style>[hidden]{display:none!important}*{box-sizing:border-box}html,body{margin:0;height:100%}body{background:#0A0F1A}img{max-width:100%}</style>
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
 <script defer src="/_vercel/insights/script.js"></script>

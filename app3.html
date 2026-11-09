@@ -2,7 +2,7 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Frank+Ruhl+Libre:wght@500;700&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Share+Tech+Mono&display=swap">
 <style>
 /* Layout: three fixed zones, no floating cards. Top bar (where am I in time), a side panel (what is happening now, and details), the map (where), and the timeline at the bottom (how to move). */
 :root{
@@ -13,8 +13,8 @@
   --ally:#3FD19B; --enemy:#F26B6B; --mixed:#B38BF0; --neutral:#AEB8C6;
   --sea:#070C16; --land:#17223A; --border:#33507A; --label:#5E7CA6; --grid:#13203A;
   --e-ancient:#E7C887; --e-classical:#9DB8E8; --e-exile:#C3A7E6; --e-medieval:#9ED3B0; --e-early-modern:#F1B67E; --e-modern:#8CCFE0; --e-holocaust:#A3A0A9; --e-israel:#9EBCF3;
-  --f-display:"Frank Ruhl Libre",Georgia,serif;
-  --f-ui:"Heebo","Segoe UI",Arial,sans-serif;
+  --f-display:"Rubik","Segoe UI",system-ui,sans-serif;
+  --f-ui:"Rubik","Segoe UI",Arial,sans-serif;
   --f-mono:"Share Tech Mono",ui-monospace,monospace;
   --shadow:0 10px 30px rgba(0,0,0,.55);
   --r:14px;
@@ -204,7 +204,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .legend i{width:9px;height:9px;border-radius:50%;display:inline-block}
 .legend i.ring{background:transparent;border:2.4px solid var(--neutral);width:10px;height:10px;box-sizing:border-box}
 .tlwrap{position:relative;height:184px}
-.tlscroll{position:absolute;inset:0;overflow-x:auto;overflow-y:hidden;cursor:grab;scrollbar-width:none;outline:none}
+.tlscroll{position:absolute;inset:0;overflow-x:auto;overflow-y:hidden;cursor:grab;scrollbar-width:none;outline:none;overscroll-behavior:contain}
 .tlscroll::-webkit-scrollbar{display:none}
 .tlscroll.drag{cursor:grabbing;user-select:none}
 .tlscroll.fit{touch-action:none}
@@ -511,6 +511,39 @@ kbd{background:var(--panel-2,#121C30)}
 .g-ocard.shake{animation:gshake .42s cubic-bezier(.36,.07,.19,.97)}
 @keyframes gshake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-4px)}40%,60%{transform:translateX(4px)}}
 @media (max-width:640px){.g-modegrid{grid-template-columns:1fr}.g-card.c-j{grid-column:auto}.g-tick span{font-size:9px}}
+/* ===== motion & modernization pass ===== */
+/* modern display weight (Rubik) */
+.brand h1,.chap h2,.detail h2,.sheet h2,.g-headtxt h2{font-weight:600}
+/* overlay + sheet entrance (restarted on open via JS) */
+@keyframes ovl-in{from{opacity:0}to{opacity:1}}
+@keyframes sheet-in{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+.overlay:not([hidden]){animation:ovl-in .2s ease both}
+.overlay .sheet{animation:sheet-in .3s cubic-bezier(.2,.8,.3,1) both}
+/* tactile buttons */
+.ibtn,.gamebtn,.c-prev,.c-next,.c-all,.zoomctl button,.tz button{transition:transform .12s ease,filter .12s ease,background .15s ease,border-color .15s ease}
+.ibtn:active,.gamebtn:active,.zoomctl button:active,.tz button:active{transform:scale(.92)}
+.btn,.g-btn,.g-opt,.g-card,.g-ocard,.g-mode,.g-next,.intro-go,.ch{transition:transform .12s ease,filter .14s ease,border-color .15s ease,background .15s ease,box-shadow .15s ease}
+.btn:active,.g-btn:active,.g-next:active,.intro-go:active{transform:scale(.98)}
+/* map marker selection pulse + smooth hover */
+.mk .m,.bead{transition:transform .18s cubic-bezier(.2,.8,.3,1)}
+.mk.sel .m{animation:mk-pulse 1.8s ease-in-out infinite}
+@keyframes mk-pulse{0%,100%{filter:drop-shadow(0 0 2px rgba(231,178,76,.5))}50%{filter:drop-shadow(0 0 7px rgba(231,178,76,.9))}}
+/* detail panel content fade on change */
+.detail{transition:opacity .2s ease}
+/* ===== onboarding modal ===== */
+.introbox{width:min(560px,100%);align-self:start;margin-top:7vh;max-height:88vh;overflow:auto;padding:30px 26px 26px;text-align:center}
+.intro-hero{display:flex;flex-direction:column;align-items:center;gap:10px}
+.intro-logo{width:60px;height:60px;filter:drop-shadow(0 0 18px rgba(76,127,224,.55))}
+.introbox h2{font-family:var(--f-display);font-weight:700;font-size:28px;color:var(--ink);margin:6px 0 0;line-height:1.15;text-align:center;flex:none}
+.intro-hero p{margin:0;color:var(--muted);font-size:15px;max-width:40ch}
+.intro-steps{display:flex;flex-direction:column;gap:12px;margin:24px 0}
+.intro-step{display:flex;align-items:center;gap:14px;text-align:start;padding:14px 16px;border-radius:16px;background:var(--paper-2);border:1px solid var(--hair)}
+.intro-ic{font-size:26px;flex:none;width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:color-mix(in srgb,var(--brand) 14%,transparent)}
+.intro-tx b{display:block;font-size:16px;color:var(--ink)}
+.intro-tx span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px;line-height:1.4}
+.intro-go{width:100%;padding:15px;border-radius:14px;background:var(--gold);color:#2B1C02;border:0;font:inherit;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 0 20px rgba(231,178,76,.3)}
+.intro-go:hover{filter:brightness(1.06)}
+@media (prefers-reduced-motion:reduce){.overlay:not([hidden]),.overlay .sheet,.mk.sel .m{animation:none}}
 </style>
 
 <div id="app">
@@ -574,6 +607,15 @@ kbd{background:var(--panel-2,#121C30)}
 <div class="overlay" id="chapters" hidden><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="ch-h"><div class="sh"><h2 id="ch-h"></h2><button class="ibtn" data-close aria-label="close">✕</button></div><div class="chgrid" id="chgrid"></div></div></div>
 <div class="overlay" id="search" hidden><div class="sheet palette" role="dialog" aria-modal="true"><div class="qbar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" autocomplete="off" role="combobox" aria-controls="qres" aria-expanded="true"><kbd>Esc</kbd></div><ul id="qres" role="listbox"></ul></div></div>
 <div class="overlay" id="help" hidden><div class="sheet help" role="dialog" aria-modal="true" id="helpbox"></div></div>
+<div class="overlay" id="intro" hidden><div class="sheet introbox" role="dialog" aria-modal="true" aria-labelledby="intro-h">
+  <div class="intro-hero">
+    <svg class="intro-logo" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" fill="var(--brand)"/><path d="M17 6l9.5 16.5H7.5z M17 28L7.5 11.5h19z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"/></svg>
+    <h2 id="intro-h"></h2>
+    <p id="intro-sub"></p>
+  </div>
+  <div class="intro-steps" id="intro-steps"></div>
+  <button class="intro-go" id="intro-go"></button>
+</div></div>
 <div class="overlay" id="game" hidden><div class="sheet gamebox" id="gamebox" role="dialog" aria-modal="true"></div></div>
 
 <script type="application/json" id="d-data">/*DATA*/</script>

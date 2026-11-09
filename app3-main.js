@@ -390,7 +390,7 @@ function openChapters(){const g=$('chgrid');g.innerHTML='';$('ch-h').textContent
   b.append(el('span','no',L().chap+' '+(i+1)),el('b',null,tx(e.name)),el('small',null,fmtRange(e.start,segs[i].b)),st);b.onclick=()=>{closeOverlay('chapters');goEra(i)};g.appendChild(b)});
  openOverlay('chapters')}
 let lastFocus=null;
-function openOverlay(id){document.querySelectorAll('.overlay').forEach(o=>{if(o.id!==id)o.hidden=true});if(!$(id).hidden)return;lastFocus=document.activeElement;$(id).hidden=false;const f=$(id).querySelector('input,button');if(f)f.focus()}
+function openOverlay(id){document.querySelectorAll('.overlay').forEach(o=>{if(o.id!==id)o.hidden=true});if(!$(id).hidden)return;lastFocus=document.activeElement;const o=$(id);o.hidden=false;const sh=o.querySelector('.sheet');if(sh&&!matchMedia('(prefers-reduced-motion:reduce)').matches){sh.style.animation='none';void sh.offsetWidth;sh.style.animation='';}const f=o.querySelector('input,button');if(f)f.focus()}
 function closeOverlay(id){$(id).hidden=true;if(lastFocus&&lastFocus.focus)lastFocus.focus()}
 document.querySelectorAll('.overlay').forEach(o=>o.addEventListener('click',e=>{if(e.target===o||e.target.closest('[data-close]'))closeOverlay(o.id)}));
 
@@ -429,6 +429,7 @@ function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';
  link('עודידע · Odyeda','https://www.odyeda.com/he/',he?'ציר זמן, דמוגרפיה, ריבונות':'timeline, demography, sovereignty');
  (D.demography.sources||[]).forEach(s=>{if(s.url&&!/odyeda/.test(s.url))link(tx(s),s.url)});b.appendChild(src);
  b.appendChild(el('p',null,he?'מספרי האוכלוסייה, בעיקר לפני 1800, הם הערכות גסות. תאריכי התקופה המקראית משוערים או מסורתיים. הגבולות מקורבים.':'Population figures, especially before 1800, are rough estimates. Biblical dates are approximate or traditional. Borders are approximate.'));
+ const re=el('button','btn',he?'הצג מדריך פתיחה':'Show the intro guide');re.style.marginTop='6px';re.onclick=()=>{closeOverlay('help');showIntro(true)};b.appendChild(re);
  openOverlay('help')}
 $('helpbtn').onclick=openHelp;
 $('fullbtn').onclick=()=>setFull(!full);
@@ -461,6 +462,29 @@ function showHint(){if(store.get('hinted3',false))return;$('hint-t').textContent
 function dismissHint(){if($('hint').hidden)return;$('hint').hidden=true;store.set('hinted3',true)}
 $('hint-b').onclick=dismissHint;
 
+/* ---------- onboarding intro ---------- */
+function introData(){const he=lang==='he';return{
+ title:he?'ברוכים הבאים לאטלס':'Welcome to the Atlas',
+ sub:he?'מסע אינטראקטיבי של כ־3,800 שנה בהיסטוריה היהודית — על מפה וציר זמן.':'An interactive ~3,800-year journey through Jewish history — on a map and a timeline.',
+ steps:[
+  {ic:'🕰️',t:he?'גללו בזמן':'Travel through time',s:he?'הזיזו את ציר הזמן למטה (או הקישו ▶) וראו איך העולם היהודי משתנה — קהילות, דמויות ואירועים.':'Move the timeline below (or tap ▶) and watch the Jewish world change — communities, figures and events.'},
+  {ic:'📍',t:he?'חקרו את המפה':'Explore the map',s:he?'הקישו על נקודה כדי ללמוד על דמות, אירוע או מרכז חיים יהודי.':'Tap a dot to learn about a figure, an event, or a center of Jewish life.'},
+  {ic:'🎮',t:he?'שחקו ולמדו':'Play & learn',s:he?'פתחו את "משחקים": מסע בזמן, קו הזמן, סדר אותם ועוד.':'Open “Games”: Time Journey, Timeline, Put-in-Order and more.'}
+ ],
+ go:he?'יוצאים לדרך':'Let’s go'
+};}
+function showIntro(force){
+ if(!force&&store.get('introSeen',false))return;
+ if(!force){store.set('introSeen',true);store.set('hinted3',true)}
+ const d=introData();
+ $('intro').dir=rtl()?'rtl':'ltr';
+ $('intro-h').textContent=d.title;$('intro-sub').textContent=d.sub;
+ const box=$('intro-steps');box.innerHTML='';
+ d.steps.forEach(s=>{const row=el('div','intro-step');const tx2=el('div','intro-tx');tx2.append(el('b',null,s.t),el('span',null,s.s));row.append(el('div','intro-ic',s.ic),tx2);box.appendChild(row)});
+ const go=$('intro-go');go.textContent=d.go;go.onclick=()=>closeOverlay('intro');
+ openOverlay('intro');
+}
+
 /* ---------- language ---------- */
 function applyLang(){const u=L();document.documentElement.lang=lang;document.documentElement.dir=rtl()?'rtl':'ltr';document.title=u.title;
  $('t-title').textContent=u.title;$('langbtn').textContent=lang==='he'?'EN':'עב';$('langbtn').setAttribute('aria-label',u.lang);
@@ -480,7 +504,7 @@ $('langbtn').onclick=()=>{lang=lang==='he'?'en':'he';store.set('lang',lang);appl
  year=ei>=0?eras[ei].start+Math.min(3,(segs[ei].b-eras[ei].start)*0.05):1492;
  $('app').classList.toggle('full',full);sizeMap();applyLang();
  const p=proj([24,38]);const k0=phone()?2.2:3;svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(k0).translate(-p[0],-p[1]));
- showHint();
+ showIntro();
  addEventListener('hashchange',()=>{const i=eras.findIndex(e=>e.id===location.hash.slice(1));if(i>=0&&i!==curEra)goEra(i)});
  let lastWH='';try{new ResizeObserver(()=>{const r=$('mapwrap').getBoundingClientRect();const wh=Math.round(r.width)+'x'+Math.round(r.height);if(wh===lastWH||r.width<50)return;lastWH=wh;
   const t=d3.zoomTransform(svg.node());const c=proj.invert(t.invert([mw/2,mh/2]));sizeMap();if(c){const pp=proj(c);svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(t.k).translate(-pp[0],-pp[1]))}}).observe($('mapwrap'))}catch(_){}

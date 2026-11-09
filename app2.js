@@ -335,7 +335,7 @@ $('tz-in').onclick=()=>setTlZoom(tlZoom*1.6);$('tz-out').onclick=()=>setTlZoom(t
 
 /* play */
 let playing=false,lastT=0;
-function tick(t){if(!playing)return;if(lastT){const dt=Math.min(60,t-lastT);nudge((rtl()?-1:1)*dt*(fit?0.02:0.085));if(year>=MAXY-0.5)togglePlay(false)}lastT=t;requestAnimationFrame(tick)}
+function tick(t){if(!playing)return;if(lastT){const dt=Math.min(60,t-lastT);nudge((rtl()?-1:1)*dt*(fit?0.011:0.045));if(year>=MAXY-0.5)togglePlay(false)}lastT=t;requestAnimationFrame(tick)}
 function togglePlay(on){playing=on==null?!playing:on;lastT=0;$('playicon').setAttribute('d',playing?'M7 5h3.5v14H7zM13.5 5H17v14h-3.5z':'M8 5v14l11-7z');$('play').setAttribute('aria-label',playing?L().pause:L().play);if(playing){dismissCoach();if(year>=MAXY-1)scrollToYear(MINY,false);requestAnimationFrame(tick)}}
 $('play').onclick=()=>togglePlay();
 

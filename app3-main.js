@@ -420,6 +420,11 @@ const KEYS=()=>{const he=lang==='he';return [[['←','→'],he?'לנוע בזמ�
 function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';const he=lang==='he';
  const sh=el('div','sh');sh.append(el('h2',null,L().title));const x=el('button','ibtn','✕');x.setAttribute('data-close','');x.setAttribute('aria-label',L().close);sh.appendChild(x);b.appendChild(sh);
  b.appendChild(el('p',null,he?'שלושה חלקים: ציר הזמן למטה קובע את השנה, הרשימה בצד אומרת מה קורה בה, והמפה מראה איפה. ציר הזמן לא אחיד: תקופות סוערות מקבלות יותר מקום.':'Three parts: the timeline at the bottom sets the year, the side list says what is happening, and the map shows where. Time is uneven on purpose: turbulent eras get more room.'));
+ b.appendChild(el('h3',null,he?'צבעי התקופות':'Era colors'));
+ b.appendChild(el('p',null,he?'הפסים הצבעוניים בציר הזמן מסמנים את תקופות־העל של ההיסטוריה היהודית:':'The colored bands on the timeline mark the grand eras of Jewish history:'));
+ const eg=el('div','erakey');
+ [['ancient',he?'תקופת המקרא':'Biblical era'],['classical',he?'בית שני וחז״ל':'Second Temple & Sages'],['exile',he?'גלות בבל והתלמוד':'Babylonian exile & Talmud'],['medieval',he?'ימי הביניים':'Middle Ages'],['early-modern',he?'ראשית העת החדשה':'Early modern'],['modern',he?'העת החדשה':'Modern era'],['holocaust',he?'השואה':'The Holocaust'],['israel',he?'מדינת ישראל':'State of Israel']].forEach(([c,name])=>{const row=el('div','erakey-i');const sw=el('i');sw.style.background='var(--e-'+c+')';row.append(sw,el('span',null,name));eg.appendChild(row)});
+ b.appendChild(eg);
  b.appendChild(el('h3',null,he?'קיצורי מקלדת':'Keyboard'));const dl=el('dl','keys');KEYS().forEach(([ks,d])=>{const dt=el('dt');ks.forEach(k=>dt.appendChild(el('kbd',null,k)));dl.append(dt,el('dd',null,d))});b.appendChild(dl);
  b.appendChild(el('h3',null,he?'מקורות':'Sources'));const src=el('ul');
  const link=(t,u,rest)=>{const li=el('li');const a=el('a',null,t);a.href=u;a.target='_blank';a.rel='noopener';li.appendChild(a);if(rest)li.appendChild(document.createTextNode(' · '+rest));src.appendChild(li)};

@@ -15,6 +15,8 @@ const head=`<!doctype html>
 <meta property="og:description" content="מסע אינטראקטיבי בהיסטוריה היהודית — על מפה וציר זמן.">
 <meta name="twitter:card" content="summary">
 <style>[hidden]{display:none!important}*{box-sizing:border-box}html,body{margin:0;height:100%}body{background:#0A0F1A}img{max-width:100%}</style>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 `;

@@ -18,7 +18,7 @@ const T={
   weighted:'לפי חשיבות',linear:'זמן אחיד',expand:'ציר מלא',collapse:'ציר מקוצר',play:'נגן',pause:'עצור',
   lRabbi:'תקופות בהלכה',lRulers:'השליטה בארץ ישראל',lEvents:'אירועים',lPeople:'דמויות יהודיות',lGent:'ידידים וצוררים',lDemo:'יהודים בעולם',
   goTime:'קפוץ לזמן הזה',showMap:'הראה במפה',close:'סגור',active:'שנות פעילות',role:'תפקיד',calendar:'בלוח השנה היהודי',honor:'הוקרה',works:'חיבורים',
-  peak:'תור הזהב',endR:'סוף הקהילה',existing:'עד היום',popHist:'אוכלוסייה יהודית משוערת',traditional:'תיארוך מסורתי או משוער',sheet:'מהגיליון שלך',
+  peak:'תור הזהב',endR:'סוף הקהילה',existing:'עד היום',popHist:'אוכלוסייה יהודית משוערת',traditional:'תיארוך מסורתי או משוער',
   prev:'הפרק הקודם',next:'הפרק הבא',noRes:'לא מצאנו. נסו שם אחר.',search:'חפשו דמות, אירוע או קהילה',about:'אודות',lang:'English',
   coach:'גררו את ציר הזמן למטה וצאו למסע',zin:'התקרב בציר',zout:'התרחק בציר',zall:'כל ההיסטוריה',coachOk:'יאללה',more:'פתח',less:'סגור',map:'מפת גבולות',
   types:{catastrophe:'אסון',expulsion:'גירוש',migration:'הגירה ועלייה',political:'מדיני',religious:'דת והגות',cultural:'תרבות',founding:'ייסוד',war:'מלחמה',rescue:'הצלה'}},
@@ -29,7 +29,7 @@ const T={
   weighted:'By significance',linear:'Even time',expand:'Full timeline',collapse:'Compact',play:'Play',pause:'Pause',
   lRabbi:'Rabbinic periods',lRulers:'Rule over the Land of Israel',lEvents:'Events',lPeople:'Jewish figures',lGent:'Allies & persecutors',lDemo:'Jews worldwide',
   goTime:'Jump to this time',showMap:'Show on map',close:'Close',active:'Active',role:'Role',calendar:'In the Jewish calendar',honor:'Honor',works:'Works',
-  peak:'Golden age',endR:'End of the community',existing:'today',popHist:'Estimated Jewish population',traditional:'Traditional or approximate dating',sheet:'From your spreadsheet',
+  peak:'Golden age',endR:'End of the community',existing:'today',popHist:'Estimated Jewish population',traditional:'Traditional or approximate dating',
   prev:'Previous chapter',next:'Next chapter',noRes:'Nothing found. Try another name.',search:'Find a person, event or community',about:'About',lang:'עברית',
   coach:'Drag the timeline below to start the journey',zin:'Zoom in on time',zout:'Zoom out on time',zall:'All of history',coachOk:'Let’s go',more:'Open',less:'Close',map:'border map',
   types:{catastrophe:'Catastrophe',expulsion:'Expulsion',migration:'Migration & aliyah',political:'Politics',religious:'Religion & thought',cultural:'Culture',founding:'Founding',war:'War',rescue:'Rescue'}}

@@ -7,7 +7,7 @@ const ids=new Set(g.map(x=>x.id));sheet.filter(s=>!ids.has(s)).forEach(s=>consol
 g.forEach(x=>{if(sheet.includes(x.id))x.sheet=1;if(over[x.id])x.stance=over[x.id];});
 let eras=R('eras.json').filter(e=>e.start<1881);
 eras.push(
-{id:'zionism',start:1881,end:1932,weight:4,color:'modern',view:{lon:25,lat:42,zoom:3},
+{id:'zionism',start:1881,end:1932,weight:4,color:'modern',view:{lon:-10,lat:46,zoom:2},
  name:{he:'התעוררות ציונית ובניין הארץ',en:'Zionism & Building the Land'},
  subtitle:{he:'פוגרומים, הגירה המונית וחלום הבית הלאומי',en:'Pogroms, mass migration and the dream of a national home'},
  summary:{he:'גל הפוגרומים ברוסיה (1881) מוציא מיליוני יהודים לדרכים: רובם לאמריקה, ומיעוט עולה לארץ ישראל ומקים מושבות. הרצל הופך את הרעיון הציוני לתנועה מדינית, הצהרת בלפור (1917) מבטיחה בית לאומי, ותחת המנדט הבריטי קמים תל אביב, הקיבוצים והעברית המדוברת.',en:'The 1881 pogroms in Russia set millions of Jews moving, most to America and a minority to the Land of Israel, where they found new villages. Herzl turns Zionism into a political movement, the Balfour Declaration (1917) promises a national home, and under the British Mandate Tel Aviv, the kibbutzim and spoken Hebrew take shape.'}},

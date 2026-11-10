@@ -1,1 +1,698 @@
-[{"id":"patriarchs","start":-1800,"end":-1301,"name":{"he":"תקופת האבות","en":"The Patriarchs"},"subtitle":{"he":"מאברהם ועד השעבוד במצרים","en":"From Abraham to slavery in Egypt"},"summary":{"he":"סיפורו של העם מתחיל, לפי המקרא, באדם אחד – אברהם – שעוזב את ארצו בעקבות ציווי אלוהי. דרך יצחק, יעקב ושנים-עשר בניו מתגבשת משפחה שהופכת לשבטים, ורעב מוביל אותה למצרים. זו תקופה של מסורת ואמונה יותר מאשר של תיעוד היסטורי, אך היא מעצבת את הזהות היהודית עד היום.","en":"According to the Bible, the story of the people begins with one man – Abraham – who leaves his homeland at God's call. Through Isaac, Jacob and his twelve sons a family grows into tribes, and famine leads it to Egypt. This era belongs more to tradition and faith than to documented history, yet it shapes Jewish identity to this day."},"weight":1,"view":{"lon":38,"lat":32,"zoom":3},"color":"ancient"},{"id":"exodus-judges","start":-1300,"end":-1031,"name":{"he":"יציאת מצרים, הכיבוש והשופטים","en":"Exodus, Conquest & Judges"},"subtitle":{"he":"מעבדות לחירות ולהתנחלות בארץ","en":"From slavery to freedom and settlement"},"summary":{"he":"יציאת מצרים ומתן תורה בסיני הם סיפורי היסוד שהעם היהודי מספר לעצמו בכל שנה. אחריהם באים כיבוש כנען בהנהגת יהושע ותקופת השופטים, שבה השבטים מתמודדים לבד עם אויבים מבחוץ. כאן מופיע לראשונה השם ״ישראל״ גם במקור חיצוני – מצבת מרנפתח.","en":"The Exodus and the giving of the Torah at Sinai are the founding stories the Jewish people retell every year. Then come Joshua's conquest of Canaan and the era of the Judges, when the tribes face outside enemies on their own. Here the name 'Israel' first appears in an outside source – the Merneptah Stele."},"weight":3,"view":{"lon":33.5,"lat":30.5,"zoom":5},"color":"ancient"},{"id":"united-monarchy","start":-1030,"end":-931,"name":{"he":"הממלכה המאוחדת","en":"The United Monarchy"},"subtitle":{"he":"שאול, דוד, שלמה ובית המקדש הראשון","en":"Saul, David, Solomon and the First Temple"},"summary":{"he":"השבטים מתאחדים תחת מלך: שאול, אחריו דוד שהופך את ירושלים לבירה, ושלמה שבונה בה את בית המקדש. זו התקופה שתיזכר לדורות כתור הזהב של עם ישראל בארצו. היקף הממלכה עדיין שנוי במחלוקת בין ארכאולוגים, אך מקומה בזיכרון הלאומי אינו מוטל בספק.","en":"The tribes unite under a king: Saul, then David, who makes Jerusalem his capital, and Solomon, who builds the Temple there. This era will be remembered as Israel's golden age in its land. Archaeologists still debate the kingdom's extent, but its place in national memory is beyond doubt."},"weight":3,"view":{"lon":35.2,"lat":31.8,"zoom":6},"color":"ancient"},{"id":"two-kingdoms","start":-930,"end":-598,"name":{"he":"ממלכות ישראל ויהודה","en":"Kingdoms of Israel & Judah"},"subtitle":{"he":"פילוג, נביאים וגלות עשרת השבטים","en":"Division, prophets and the Assyrian exile"},"summary":{"he":"לאחר מות שלמה הממלכה מתפצלת לשתיים, ושתיהן נאלצות לתמרן בין מעצמות ענק – מצרים, אשור ובבל. בתקופה זו פועלים נביאים כישעיהו, עמוס וירמיהו, שקוראים לצדק חברתי. ב-722 לפנה״ס אשור מחריבה את ממלכת ישראל, ויהודה ממשיכה לבדה.","en":"After Solomon's death the kingdom splits in two, and both must maneuver between giant powers – Egypt, Assyria and Babylon. Prophets like Isaiah, Amos and Jeremiah call for social justice. In 722 BCE Assyria destroys the Kingdom of Israel, and Judah carries on alone."},"weight":2,"view":{"lon":37.5,"lat":33,"zoom":4},"color":"ancient"},{"id":"babylonian-exile","start":-597,"end":-515,"name":{"he":"גלות בבל ושיבת ציון","en":"Babylonian Exile & Return"},"subtitle":{"he":"חורבן, גלות ובניין הבית השני","en":"Destruction, exile and the Second Temple"},"summary":{"he":"בתוך שני דורות נחרב בית המקדש, ירושלים נשרפת והעם מוגלה לבבל. דווקא שם, בלי מקדש ובלי מדינה, היהודים לומדים לשמור על זהותם – שיעור שילווה אותם אלפי שנים. הצהרת כורש מאפשרת את השיבה, ובשנת 515 לפנה״ס נחנך המקדש השני.","en":"Within two generations the Temple is destroyed, Jerusalem burned and the people exiled to Babylon. There, without Temple or state, Jews learn to preserve their identity – a lesson that will serve them for millennia. The Cyrus Declaration allows the return, and in 515 BCE the Second Temple is dedicated."},"weight":4,"view":{"lon":40,"lat":32.5,"zoom":4},"color":"exile"},{"id":"persian-greek","start":-514,"end":-168,"name":{"he":"שלטון פרס ויוון","en":"Persian & Greek Rule"},"subtitle":{"he":"עזרא ונחמיה, פורים, אלכסנדר ותרגום השבעים","en":"Ezra & Nehemiah, Purim, Alexander, the Septuagint"},"summary":{"he":"יהודה היא פרובינקיה קטנה באימפריה הפרסית, ואחר כך תחת היורשים של אלכסנדר מוקדון. עזרא ונחמיה מחדשים את חיי התורה בירושלים, וקהילות גדולות צומחות בבבל ובמצרים. המפגש עם התרבות היוונית מרתק ומאתגר כאחד – ובאלכסנדריה התורה מתורגמת ליוונית.","en":"Judea is a small province of the Persian Empire and later of Alexander's successors. Ezra and Nehemiah renew Torah life in Jerusalem while large communities grow in Babylonia and Egypt. The encounter with Greek culture is both fascinating and challenging – and in Alexandria the Torah is translated into Greek."},"weight":1,"view":{"lon":38,"lat":32,"zoom":3},"color":"classical"},{"id":"hasmoneans","start":-167,"end":-64,"name":{"he":"המכבים וממלכת החשמונאים","en":"Maccabees & Hasmonean Kingdom"},"subtitle":{"he":"מרד, חנוכה ועצמאות","en":"Revolt, Hanukkah and independence"},"summary":{"he":"כשאנטיוכוס אוסר על קיום מצוות, משפחת כוהנים מכפר קטן יוצאת למרד – ומנצחת. טיהור המקדש נחגג מאז כחנוכה, ויהודה זוכה לעצמאות לראשונה מזה מאות שנים. אבל מלחמות אחים ופילוג בין פרושים לצדוקים מחלישים את הממלכה מבפנים.","en":"When Antiochus bans Jewish practice, a priestly family from a small village rises in revolt – and wins. The Temple's rededication is celebrated ever since as Hanukkah, and Judea gains independence for the first time in centuries. But civil wars and the rift between Pharisees and Sadducees weaken the kingdom from within."},"weight":4,"view":{"lon":35.2,"lat":31.8,"zoom":5},"color":"classical"},{"id":"second-temple-destruction","start":-63,"end":73,"name":{"he":"רומא וחורבן הבית השני","en":"Rome & the Destruction of the Second Temple"},"subtitle":{"he":"מפומפיוס והורדוס ועד מצדה","en":"From Pompey and Herod to Masada"},"summary":{"he":"רומא נכנסת ליהודה ולא יוצאת: הורדוס בונה מקדש מפואר, אך המתיחות בין העם לשלטון הולכת וגוברת. בשנת 66 פורץ המרד הגדול, ובתשעה באב שנת 70 נשרף בית המקדש. בזמן שמצדה נופלת, ביבנה כבר נבנית היהדות שתדע לחיות בלי מקדש.","en":"Rome enters Judea and never leaves: Herod builds a magnificent Temple, but tension between the people and their rulers keeps rising. In 66 the Great Revolt breaks out, and on Tisha B'Av in 70 the Temple burns. As Masada falls, a Judaism able to live without a Temple is already taking shape at Yavneh."},"weight":5,"view":{"lon":35.2,"lat":31.7,"zoom":5},"color":"classical"},{"id":"yavneh-diaspora-revolt","start":74,"end":131,"name":{"he":"יבנה ומרד התפוצות","en":"Yavneh & the Diaspora Revolt"},"subtitle":{"he":"בונים יהדות בלי מקדש","en":"Building Judaism without a Temple"},"summary":{"he":"לאחר החורבן החכמים ביבנה מעצבים מחדש את היהדות: תפילה במקום קורבנות, ולימוד תורה במרכז. בתפוצות הכעס על רומא מתפרץ במרד של יהודי מצרים, קירנה וקפריסין, שמדוכא באכזריות. ביהודה מתבשלת בינתיים ההתקוממות הבאה.","en":"After the destruction, the sages at Yavneh rebuild Judaism: prayer replaces sacrifice and Torah study moves to the center. In the diaspora, anger at Rome explodes in a revolt of Jews in Egypt, Cyrene and Cyprus, brutally suppressed. Meanwhile in Judea, the next uprising is brewing."},"weight":2,"view":{"lon":30,"lat":32,"zoom":3},"color":"classical"},{"id":"bar-kokhba-mishnah","start":132,"end":220,"name":{"he":"בר כוכבא והמשנה","en":"Bar Kokhba & the Mishnah"},"subtitle":{"he":"המרד האחרון ותורה שבעל פה שנכתבת","en":"The last revolt and the Oral Law written down"},"summary":{"he":"מרד בר כוכבא מעורר תקוות משיחיות ומסתיים באסון: ביתר נופלת, ירושלים נעשית עיר אלילית ויהודה מתרוקנת. החכמים, ובהם רבי עקיבא, משלמים בחייהם על לימוד תורה. מן ההריסות עובר המרכז לגליל, ושם רבי יהודה הנשיא חותם את המשנה – ספר שיחזיק את העם לאורך הגלות.","en":"The Bar Kokhba revolt raises messianic hopes and ends in catastrophe: Betar falls, Jerusalem becomes a pagan city and Judea is emptied. Sages like Rabbi Akiva pay with their lives for teaching Torah. From the ruins the center moves to Galilee, where Rabbi Judah the Prince completes the Mishnah – the book that will sustain the people through exile."},"weight":4,"view":{"lon":35.3,"lat":32.2,"zoom":6},"color":"classical"},{"id":"talmud-era","start":221,"end":621,"name":{"he":"תקופת התלמוד","en":"The Talmudic Era"},"subtitle":{"he":"בין ארץ ישראל לבבל","en":"Between the Land of Israel and Babylonia"},"summary":{"he":"במשך ארבע מאות שנה פועלים שני מרכזים: טבריה בארץ ישראל וישיבות סורא ופומבדיתא בבבל. בזמן שהאימפריה הרומית מתנצרת ומגבילה את היהודים, בבל הפרסית מאפשרת להם לשגשג. התוצאה היא שני תלמודים – והבבלי הופך לספר הלימוד של העם כולו.","en":"For four centuries two centers thrive: Tiberias in the Land of Israel and the academies of Sura and Pumbedita in Babylonia. As the Roman Empire turns Christian and restricts the Jews, Persian Babylonia lets them flourish. The result is two Talmuds – and the Babylonian becomes the textbook of the whole people."},"weight":2,"view":{"lon":40,"lat":33,"zoom":4},"color":"classical"},{"id":"islam-geonim","start":622,"end":949,"name":{"he":"האסלאם והגאונים","en":"Islam & the Geonim"},"subtitle":{"he":"עולם חדש מבגדאד ועד ספרד","en":"A new world from Baghdad to Spain"},"summary":{"he":"תוך מאה שנה האסלאם כובש שטח עצום, ורוב יהודי העולם חיים תחת שלטונו כבני חסות – מוגנים אך משניים. הגאונים בבגדאד משיבים על שאלות מכל העולם היהודי, ורב סעדיה גאון כותב פילוסופיה יהודית בערבית. רחוק בצפון, ממלכת הכוזרים מאמצת את היהדות.","en":"Within a century Islam conquers a vast territory, and most of the world's Jews live under its rule as protected but second-class subjects. The Geonim in Baghdad answer questions from across the Jewish world, and Saadia Gaon writes Jewish philosophy in Arabic. Far to the north, the Khazar kingdom adopts Judaism."},"weight":2,"view":{"lon":30,"lat":33,"zoom":2},"color":"medieval"},{"id":"golden-age","start":950,"end":1095,"name":{"he":"תור הזהב בספרד ועליית אשכנז","en":"Golden Age of Spain & Rise of Ashkenaz"},"subtitle":{"he":"שירה, פילוסופיה ורש״י","en":"Poetry, philosophy and Rashi"},"summary":{"he":"בספרד המוסלמית יהודים הם וזירים, רופאים, משוררים ופילוסופים – תקופה שתיזכר כתור הזהב. במקביל, בערי הריין ובצפון צרפת צומחת יהדות אשכנז, ורש״י כותב את פירושיו שילמדו עד היום. שני העולמות – ספרד ואשכנז – יעצבו את פני העם לאלף השנים הבאות.","en":"In Muslim Spain, Jews serve as viziers, physicians, poets and philosophers – an era remembered as the Golden Age. At the same time Ashkenazi Jewry grows in the Rhineland and northern France, where Rashi writes commentaries still studied today. These two worlds, Sepharad and Ashkenaz, will shape the people for the next thousand years."},"weight":3,"view":{"lon":2,"lat":44,"zoom":4},"color":"medieval"},{"id":"crusades","start":1096,"end":1150,"name":{"he":"מסעי הצלב וגזירות תתנ״ו","en":"Crusades & the Rhineland Massacres"},"subtitle":{"he":"קידוש השם, עלילת הדם הראשונה וקץ תור הזהב","en":"Martyrdom, the first blood libel and the end of the Golden Age"},"summary":{"he":"ב-1096 צבאות הצלב בדרכם לירושלים טובחים בקהילות הריין, ורבים בוחרים למות ולא להמיר את דתם. שלוש שנים אחר כך נטבחים יהודי ירושלים. בנוריץ׳ שבאנגליה נולדת עלילת הדם, ובספרד המווחידון מסיימים את תור הזהב. ביובל אחד משתנה מעמדם של היהודים בעולם הנוצרי והמוסלמי כאחד.","en":"In 1096 crusader armies headed for Jerusalem massacre the Rhineland communities, and many choose death over conversion. Three years later Jerusalem's Jews are slaughtered. In Norwich the blood libel is born, and in Spain the Almohads end the Golden Age. In half a century, the Jews' position changes in both the Christian and Muslim worlds."},"weight":4,"view":{"lon":6,"lat":47,"zoom":4},"color":"medieval"},{"id":"burnings-expulsions","start":1151,"end":1347,"name":{"he":"הרמב״ם, שריפות וגירושים","en":"Maimonides, Burnings & Expulsions"},"subtitle":{"he":"מטלאי היהודי ועד גירוש אנגליה וצרפת","en":"From the Jewish badge to expulsions from England and France"},"summary":{"he":"זו תקופה של יצירה גדולה לצד רדיפה קשה. הרמב״ם כותב את ״משנה תורה״, והזוהר מופיע בקסטיליה. אך באירופה הנוצרית היהודים נדרשים לשאת טלאי, התלמוד נשרף בפריז, ואנגליה וצרפת מגרשות את יהודיהן. בפולין, לעומת זאת, נפתחת דלת חדשה.","en":"An age of great creativity alongside harsh persecution. Maimonides writes the Mishneh Torah, and the Zohar appears in Castile. But in Christian Europe Jews must wear a badge, the Talmud is burned in Paris, and England and France expel their Jews. In Poland, meanwhile, a new door opens."},"weight":3,"view":{"lon":4,"lat":46,"zoom":3},"color":"medieval"},{"id":"black-death-1391","start":1348,"end":1477,"name":{"he":"המוות השחור ופרעות קנ״א","en":"Black Death & the 1391 Massacres"},"subtitle":{"he":"מגפה, עלילות והמרות בכפייה","en":"Plague, libels and forced conversions"},"summary":{"he":"כשהמגפה השחורה קוטלת שליש מאירופה, היהודים מואשמים בהרעלת בארות, ומאות קהילות נשרפות. ההגירה מזרחה לפולין מתעצמת. בספרד פורצות ב-1391 פרעות שמובילות להמרה המונית, ובעקבותיהן נוצר מעמד חדש ובעייתי – האנוסים.","en":"When the Black Death kills a third of Europe, Jews are accused of poisoning wells and hundreds of communities are burned. Migration east to Poland intensifies. In Spain the riots of 1391 bring mass conversion, creating a new and troubled class – the conversos."},"weight":3,"view":{"lon":3,"lat":45,"zoom":3},"color":"medieval"},{"id":"expulsion-spain-portugal","start":1478,"end":1500,"name":{"he":"גירוש ספרד ופורטוגל","en":"Expulsion of Spain & Portugal"},"subtitle":{"he":"אינקוויזיציה, גירוש ושמד – בתוך עשרים שנה","en":"Inquisition, expulsion and forced baptism in twenty years"},"summary":{"he":"בתוך שני עשורים בלבד קורסת הקהילה היהודית הגדולה והמפוארת באירופה. האינקוויזיציה רודפת את האנוסים, ב-1492 מגורשים יהודי ספרד, וב-1497 מוטבלים בכוח יהודי פורטוגל, כולל רבים מהמגורשים. המגורשים מתפזרים לצפון אפריקה, איטליה והאימפריה העות׳מאנית, ומביאים איתם את התרבות הספרדית.","en":"In just two decades Europe's largest and most brilliant Jewish community collapses. The Inquisition hunts the conversos, in 1492 Spain's Jews are expelled, and in 1497 Portugal's Jews – including many exiles – are forcibly baptized. The exiles scatter to North Africa, Italy and the Ottoman Empire, carrying Sephardic culture with them."},"weight":5,"view":{"lon":-4,"lat":39.5,"zoom":5},"color":"medieval"},{"id":"ghetto-safed","start":1501,"end":1647,"name":{"he":"הגטו, צפת ויהדות פולין","en":"Ghetto, Safed & Polish Jewry"},"subtitle":{"he":"גטאות באיטליה, קבלה בגליל ואוטונומיה בפולין","en":"Ghettos in Italy, Kabbalah in Galilee, autonomy in Poland"},"summary":{"he":"לאחר הגירוש העולם היהודי נבנה מחדש בשלושה מוקדים. באיטליה נסגרים היהודים בגטאות, ובצפת יוצרים מגורשי ספרד מרכז של קבלה והלכה – שם נכתב השולחן ערוך. בפולין-ליטא צומחת הקהילה הגדולה בעולם, שמנהלת את עצמה בוועד ארבע ארצות. הדפוס מפיץ את הספרים בכל מקום.","en":"After the expulsion the Jewish world rebuilds around three hubs. In Italy Jews are locked into ghettos, while in Safed Spanish exiles create a center of Kabbalah and law where the Shulchan Aruch is written. In Poland-Lithuania the world's largest community grows, governing itself through the Council of Four Lands. Printing spreads books everywhere."},"weight":3,"view":{"lon":22,"lat":42,"zoom":3},"color":"early-modern"},{"id":"chmielnicki-shabbetai","start":1648,"end":1676,"name":{"he":"ת״ח ות״ט ושבתי צבי","en":"Chmielnicki & Shabbetai Zvi"},"subtitle":{"he":"מטבח לציפייה משיחית – ומשם לאכזבה","en":"From massacre to messianic fervor – and disillusionment"},"summary":{"he":"ב-1648 הקוזקים של חמלניצקי טובחים ביהודי אוקראינה, ויהדות פולין נשברת. כעבור פחות מעשרים שנה העולם היהודי כולו נסחף אחרי שבתי צבי, שהוכרז כמשיח – עד שהוא מתאסלם. באותן שנים בדיוק נפתחים לפני היהודים אנגליה ואמריקה.","en":"In 1648 Chmielnicki's Cossacks massacre the Jews of Ukraine, and Polish Jewry is shattered. Less than twenty years later the entire Jewish world is swept up by Shabbetai Zvi, proclaimed Messiah – until he converts to Islam. In these same years, England and America open to the Jews."},"weight":4,"view":{"lon":20,"lat":45,"zoom":3},"color":"early-modern"},{"id":"hasidism-haskalah","start":1677,"end":1788,"name":{"he":"חסידות והשכלה","en":"Hasidism & Haskalah"},"subtitle":{"he":"שתי תשובות לעולם משתנה","en":"Two answers to a changing world"},"summary":{"he":"לאחר המשבר צומחות במאה ה-18 שתי תנועות הפוכות. במזרח אירופה הבעל שם טוב מלמד לעבוד את ה׳ בשמחה, והחסידות כובשת לבבות – ומעוררת את התנגדות הגאון מווילנה. במערב משה מנדלסון מוביל את ההשכלה, הקוראת ליהודים להשתלב בתרבות אירופה.","en":"After the crisis, two opposite movements emerge in the 18th century. In Eastern Europe the Baal Shem Tov teaches serving God with joy, and Hasidism wins hearts – provoking the Vilna Gaon's opposition. In the West, Moses Mendelssohn leads the Haskalah, urging Jews to join European culture."},"weight":2,"view":{"lon":20,"lat":51,"zoom":4},"color":"early-modern"},{"id":"emancipation","start":1789,"end":1880,"name":{"he":"אמנציפציה ותחום המושב","en":"Emancipation & the Pale"},"subtitle":{"he":"שוויון במערב, הגבלות במזרח","en":"Equality in the West, restrictions in the East"},"summary":{"he":"המהפכה הצרפתית מעניקה ליהודים שוויון זכויות, ובמהלך המאה ה-19 האמנציפציה מתפשטת במערב אירופה. במזרח, לעומת זאת, רוסיה כולאת מיליוני יהודים ב״תחום המושב״. עלילות כמו דמשק ומורטרה מראות שהשנאה הישנה לא נעלמה – והיהודים לומדים לפעול יחד מעבר לגבולות.","en":"The French Revolution grants Jews equal rights, and through the 19th century emancipation spreads across Western Europe. In the East, however, Russia confines millions of Jews to the Pale of Settlement. Affairs like Damascus and Mortara show the old hatred has not vanished – and Jews learn to act together across borders."},"weight":3,"view":{"lon":15,"lat":50,"zoom":3},"color":"modern"},{"id":"rise-of-zionism","start":1881,"end":1917,"name":{"he":"עליית הציונות","en":"Rise of Zionism"},"subtitle":{"he":"מהפוגרומים ועד הצהרת בלפור","en":"From the pogroms to the Balfour Declaration"},"summary":{"he":"גל הפוגרומים ב-1881 מוביל להגירה של מיליונים לאמריקה – ולמיעוט נועז שבוחר בארץ ישראל. פרשת דרייפוס מביאה את הרצל לכנס את הקונגרס הציוני, והעליות הראשונה והשנייה מקימות מושבות, את תל אביב ואת דגניה. העברית שבה להיות שפה מדוברת, והמלחמה הגדולה מסתיימת בהצהרת בלפור.","en":"The 1881 pogroms send millions to America – and a daring minority to the Land of Israel. The Dreyfus affair moves Herzl to convene the Zionist Congress, and the First and Second Aliyahs build colonies, Tel Aviv and Degania. Hebrew becomes a spoken language again, and the Great War ends with the Balfour Declaration."},"weight":4,"view":{"lon":25,"lat":42,"zoom":3},"color":"modern"},{"id":"mandate","start":1918,"end":1932,"name":{"he":"המנדט ובניית היישוב","en":"The Mandate & Building the Yishuv"},"subtitle":{"he":"מוסדות, אוניברסיטה ופרעות","en":"Institutions, a university and riots"},"summary":{"he":"בריטניה מקבלת את המנדט על ארץ ישראל, והיישוב בונה מוסדות של מדינה בדרך: ״ההגנה״, ההסתדרות, האוניברסיטה העברית והטכניון. באוקראינה נרצחים עשרות אלפי יהודים, וארצות הברית סוגרת את שעריה. בארץ, פרעות תרפ״ט בחברון ובצפת מבהירות שהמאבק על הארץ רק מתחיל.","en":"Britain receives the Mandate for Palestine, and the Yishuv builds the institutions of a state-in-the-making: the Haganah, the Histadrut, the Hebrew University and the Technion. In Ukraine tens of thousands of Jews are murdered, and the United States closes its gates. At home, the 1929 riots in Hebron and Safed make clear the struggle for the land has only begun."},"weight":3,"view":{"lon":35,"lat":32,"zoom":5},"color":"modern"},{"id":"holocaust","start":1933,"end":1945,"name":{"he":"השואה","en":"The Holocaust"},"subtitle":{"he":"מעליית הנאצים ועד השמדת שליש מהעם","en":"From the Nazi rise to the murder of a third of the people"},"summary":{"he":"בתוך שתים-עשרה שנה עובר העם היהודי את האסון הגדול בתולדותיו. הנאצים שוללים מהיהודים את זכויותיהם, כולאים אותם בגטאות, ומ-1941 רוצחים אותם בשיטתיות – בירי המוני ובמחנות השמדה. כשישה מיליון יהודים נרצחים, ובהם כמיליון וחצי ילדים. לצד הרצח היו גם מרד, הצלה ועמידה רוחנית.","en":"In just twelve years the Jewish people suffer the greatest catastrophe in their history. The Nazis strip Jews of their rights, imprison them in ghettos, and from 1941 murder them systematically – in mass shootings and death camps. About six million Jews are murdered, among them some 1.5 million children. Alongside the murder there was also revolt, rescue and spiritual resistance."},"weight":5,"view":{"lon":18,"lat":51,"zoom":4},"color":"holocaust"},{"id":"birth-of-israel","start":1947,"end":1949,"name":{"he":"תקומת ישראל","en":"Birth of Israel"},"subtitle":{"he":"מהחלטת החלוקה ועד הסכמי שביתת הנשק","en":"From the Partition vote to the armistice"},"summary":{"he":"שלוש שנים בלבד אחרי השואה, ספינות מעפילים מנסות לפרוץ את ההסגר הבריטי, והאו״ם מחליט על חלוקת הארץ. ב-14 במאי 1948 מכריז בן-גוריון על הקמת מדינת ישראל, וצבאות ערב פולשים למחרת. במחיר כבד של כ-6,000 הרוגים המדינה עומדת על רגליה.","en":"Barely three years after the Holocaust, refugee ships try to break the British blockade, and the UN votes to partition the land. On 14 May 1948 Ben-Gurion proclaims the State of Israel, and Arab armies invade the next day. At the heavy cost of some 6,000 dead, the state survives."},"weight":5,"view":{"lon":35,"lat":31.6,"zoom":6},"color":"israel"},{"id":"ingathering","start":1950,"end":1966,"name":{"he":"קיבוץ גלויות","en":"Ingathering of the Exiles"},"subtitle":{"he":"מעברות, עלייה מארצות האסלאם ומשפט אייכמן","en":"Transit camps, aliyah from Muslim lands, the Eichmann trial"},"summary":{"he":"המדינה הצעירה מכפילה את אוכלוסייתה תוך שנים ספורות: ניצולי שואה ומאות אלפי יהודים מתימן, עיראק, מרוקו ומדינות נוספות. הקליטה קשה – מעברות, צנע ומתחים חברתיים – אך נבנית חברה חדשה. משפט אייכמן מביא את סיפור השואה לראשונה אל מרכז השיח.","en":"The young state doubles its population in a few years: Holocaust survivors and hundreds of thousands of Jews from Yemen, Iraq, Morocco and beyond. Absorption is hard – transit camps, austerity and social tensions – but a new society is built. The Eichmann trial brings the Holocaust to the center of public consciousness for the first time."},"weight":3,"view":{"lon":30,"lat":30,"zoom":3},"color":"israel"},{"id":"wars-and-peace","start":1967,"end":1979,"name":{"he":"מששת הימים ועד השלום","en":"From Six Days to Peace"},"subtitle":{"he":"ניצחון, טראומה ושלום ראשון","en":"Victory, trauma and a first peace"},"summary":{"he":"בשישה ימים ב-1967 ישראל משנה את מפת המזרח התיכון ושבה אל הכותל. שש שנים אחר כך מלחמת יום הכיפורים מטלטלת את החברה כולה. בתוך המשבר צומחים מבצע אנטבה הנועז והשלום עם מצרים, ובברית המועצות יהודים נאבקים על הזכות לעלות.","en":"In six days in 1967 Israel redraws the map of the Middle East and returns to the Western Wall. Six years later the Yom Kippur War shakes the whole society. Out of the crisis come the daring Entebbe rescue and peace with Egypt, while in the Soviet Union Jews fight for the right to emigrate."},"weight":4,"view":{"lon":34.5,"lat":31,"zoom":5},"color":"israel"},{"id":"great-aliyot-oslo","start":1980,"end":1999,"name":{"he":"עליות גדולות ואוסלו","en":"Great Aliyot & Oslo"},"subtitle":{"he":"מאתיופיה ומברית המועצות, ותקוות שלום שנקטעה","en":"From Ethiopia and the USSR, and a peace hope cut short"},"summary":{"he":"יהודי אתיופיה מוטסים לישראל במבצעים חשאיים, ויותר ממיליון עולים מגיעים מברית המועצות לשעבר ומשנים את פני המדינה. האינתיפאדה הראשונה מובילה להסכמי אוסלו ולשלום עם ירדן. ב-1995 רצח רבין מזעזע את המדינה.","en":"Ethiopian Jews are airlifted to Israel in secret operations, and over a million immigrants from the former USSR transform the country. The First Intifada leads to the Oslo Accords and peace with Jordan. In 1995 Rabin's assassination shakes the nation."},"weight":3,"view":{"lon":36,"lat":25,"zoom":2},"color":"israel"},{"id":"twenty-first-century","start":2000,"end":2026,"name":{"he":"המאה ה-21","en":"The 21st Century"},"subtitle":{"he":"מהאינתיפאדה השנייה ועד שבעה באוקטובר","en":"From the Second Intifada to October 7"},"summary":{"he":"ישראל הופכת למעצמה טכנולוגית ולמרכז היהודי הגדול בעולם, ונחתמים הסכמי אברהם עם מדינות ערביות. אך האינתיפאדה השנייה, ההתנתקות והטרור – בישראל ובתפוצות – ממשיכים לעצב את המציאות. ב-7 באוקטובר 2023 נרצחים כ-1,200 בני אדם ביום הקטלני ביותר ליהודים מאז השואה, ומלחמה ממושכת מתחילה.","en":"Israel becomes a tech powerhouse and the largest Jewish community in the world, and the Abraham Accords are signed with Arab states. But the Second Intifada, the disengagement and terror – in Israel and the diaspora – continue to shape reality. On 7 October 2023 about 1,200 people are murdered on the deadliest day for Jews since the Holocaust, and a long war begins."},"weight":3,"view":{"lon":35,"lat":31.5,"zoom":5},"color":"israel"}]
+[
+ {
+  "id": "patriarchs",
+  "start": -1800,
+  "end": -1301,
+  "name": {
+   "he": "תקופת האבות",
+   "en": "The Patriarchs"
+  },
+  "subtitle": {
+   "he": "מאברהם ועד השעבוד במצרים",
+   "en": "From Abraham to slavery in Egypt"
+  },
+  "summary": {
+   "he": "סיפורו של העם מתחיל, לפי המקרא, באדם אחד – אברהם – שעוזב את ארצו בעקבות ציווי אלוהי. דרך יצחק, יעקב ושנים-עשר בניו מתגבשת משפחה שהופכת לשבטים, ורעב מוביל אותה למצרים. זו תקופה של מסורת ואמונה יותר מאשר של תיעוד היסטורי, אך היא מעצבת את הזהות היהודית עד היום.",
+   "en": "According to the Bible, the story of the people begins with one man – Abraham – who leaves his homeland at God's call. Through Isaac, Jacob and his twelve sons a family grows into tribes, and famine leads it to Egypt. This era belongs more to tradition and faith than to documented history, yet it shapes Jewish identity to this day."
+  },
+  "weight": 1,
+  "view": {
+   "lon": 38,
+   "lat": 32,
+   "zoom": 3
+  },
+  "color": "ancient"
+ },
+ {
+  "id": "exodus-judges",
+  "start": -1300,
+  "end": -1031,
+  "name": {
+   "he": "יציאת מצרים, הכיבוש והשופטים",
+   "en": "Exodus, Conquest & Judges"
+  },
+  "subtitle": {
+   "he": "מעבדות לחירות ולהתנחלות בארץ",
+   "en": "From slavery to freedom and settlement"
+  },
+  "summary": {
+   "he": "יציאת מצרים ומתן תורה בסיני הם סיפורי היסוד שהעם היהודי מספר לעצמו בכל שנה. אחריהם באים כיבוש כנען בהנהגת יהושע ותקופת השופטים, שבה השבטים מתמודדים לבד עם אויבים מבחוץ. כאן מופיע לראשונה השם ״ישראל״ גם במקור חיצוני – מצבת מרנפתח.",
+   "en": "The Exodus and the giving of the Torah at Sinai are the founding stories the Jewish people retell every year. Then come Joshua's conquest of Canaan and the era of the Judges, when the tribes face outside enemies on their own. Here the name 'Israel' first appears in an outside source – the Merneptah Stele."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 33.5,
+   "lat": 30.5,
+   "zoom": 5
+  },
+  "color": "ancient"
+ },
+ {
+  "id": "united-monarchy",
+  "start": -1030,
+  "end": -931,
+  "name": {
+   "he": "הממלכה המאוחדת",
+   "en": "The United Monarchy"
+  },
+  "subtitle": {
+   "he": "שאול, דוד, שלמה ובית המקדש הראשון",
+   "en": "Saul, David, Solomon and the First Temple"
+  },
+  "summary": {
+   "he": "השבטים מתאחדים תחת מלך: שאול, אחריו דוד שהופך את ירושלים לבירה, ושלמה שבונה בה את בית המקדש. זו התקופה שתיזכר לדורות כתור הזהב של עם ישראל בארצו. היקף הממלכה עדיין שנוי במחלוקת בין ארכאולוגים, אך מקומה בזיכרון הלאומי אינו מוטל בספק.",
+   "en": "The tribes unite under a king: Saul, then David, who makes Jerusalem his capital, and Solomon, who builds the Temple there. This era will be remembered as Israel's golden age in its land. Archaeologists still debate the kingdom's extent, but its place in national memory is beyond doubt."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 35.2,
+   "lat": 31.8,
+   "zoom": 6
+  },
+  "color": "ancient"
+ },
+ {
+  "id": "two-kingdoms",
+  "start": -930,
+  "end": -598,
+  "name": {
+   "he": "ממלכות ישראל ויהודה",
+   "en": "Kingdoms of Israel & Judah"
+  },
+  "subtitle": {
+   "he": "פילוג, נביאים וגלות עשרת השבטים",
+   "en": "Division, prophets and the Assyrian exile"
+  },
+  "summary": {
+   "he": "לאחר מות שלמה הממלכה מתפצלת לשתיים, ושתיהן נאלצות לתמרן בין מעצמות ענק – מצרים, אשור ובבל. בתקופה זו פועלים נביאים כישעיהו, עמוס וירמיהו, שקוראים לצדק חברתי. ב-722 לפנה״ס אשור מחריבה את ממלכת ישראל, ויהודה ממשיכה לבדה.",
+   "en": "After Solomon's death the kingdom splits in two, and both must maneuver between giant powers – Egypt, Assyria and Babylon. Prophets like Isaiah, Amos and Jeremiah call for social justice. In 722 BCE Assyria destroys the Kingdom of Israel, and Judah carries on alone."
+  },
+  "weight": 2,
+  "view": {
+   "lon": 37.5,
+   "lat": 33,
+   "zoom": 4
+  },
+  "color": "ancient"
+ },
+ {
+  "id": "babylonian-exile",
+  "start": -597,
+  "end": -515,
+  "name": {
+   "he": "גלות בבל ושיבת ציון",
+   "en": "Babylonian Exile & Return"
+  },
+  "subtitle": {
+   "he": "חורבן, גלות ובניין הבית השני",
+   "en": "Destruction, exile and the Second Temple"
+  },
+  "summary": {
+   "he": "בתוך שני דורות נחרב בית המקדש, ירושלים נשרפת והעם מוגלה לבבל. דווקא שם, בלי מקדש ובלי מדינה, היהודים לומדים לשמור על זהותם – שיעור שילווה אותם אלפי שנים. הצהרת כורש מאפשרת את השיבה, ובשנת 515 לפנה״ס נחנך המקדש השני.",
+   "en": "Within two generations the Temple is destroyed, Jerusalem burned and the people exiled to Babylon. There, without Temple or state, Jews learn to preserve their identity – a lesson that will serve them for millennia. The Cyrus Declaration allows the return, and in 515 BCE the Second Temple is dedicated."
+  },
+  "weight": 4,
+  "view": {
+   "lon": 40,
+   "lat": 32.5,
+   "zoom": 4
+  },
+  "color": "exile"
+ },
+ {
+  "id": "persian-greek",
+  "start": -514,
+  "end": -168,
+  "name": {
+   "he": "שלטון פרס ויוון",
+   "en": "Persian & Greek Rule"
+  },
+  "subtitle": {
+   "he": "עזרא ונחמיה, פורים, אלכסנדר ותרגום השבעים",
+   "en": "Ezra & Nehemiah, Purim, Alexander, the Septuagint"
+  },
+  "summary": {
+   "he": "יהודה היא פרובינקיה קטנה באימפריה הפרסית, ואחר כך תחת היורשים של אלכסנדר מוקדון. עזרא ונחמיה מחדשים את חיי התורה בירושלים, וקהילות גדולות צומחות בבבל ובמצרים. המפגש עם התרבות היוונית מרתק ומאתגר כאחד – ובאלכסנדריה התורה מתורגמת ליוונית.",
+   "en": "Judea is a small province of the Persian Empire and later of Alexander's successors. Ezra and Nehemiah renew Torah life in Jerusalem while large communities grow in Babylonia and Egypt. The encounter with Greek culture is both fascinating and challenging – and in Alexandria the Torah is translated into Greek."
+  },
+  "weight": 1,
+  "view": {
+   "lon": 38,
+   "lat": 32,
+   "zoom": 3
+  },
+  "color": "classical"
+ },
+ {
+  "id": "hasmoneans",
+  "start": -167,
+  "end": -64,
+  "name": {
+   "he": "המכבים וממלכת החשמונאים",
+   "en": "Maccabees & Hasmonean Kingdom"
+  },
+  "subtitle": {
+   "he": "מרד, חנוכה ועצמאות",
+   "en": "Revolt, Hanukkah and independence"
+  },
+  "summary": {
+   "he": "כשאנטיוכוס אוסר על קיום מצוות, משפחת כוהנים מכפר קטן יוצאת למרד – ומנצחת. טיהור המקדש נחגג מאז כחנוכה, ויהודה זוכה לעצמאות לראשונה מזה מאות שנים. אבל מלחמות אחים ופילוג בין פרושים לצדוקים מחלישים את הממלכה מבפנים.",
+   "en": "When Antiochus bans Jewish practice, a priestly family from a small village rises in revolt – and wins. The Temple's rededication is celebrated ever since as Hanukkah, and Judea gains independence for the first time in centuries. But civil wars and the rift between Pharisees and Sadducees weaken the kingdom from within."
+  },
+  "weight": 4,
+  "view": {
+   "lon": 35.2,
+   "lat": 31.8,
+   "zoom": 5
+  },
+  "color": "classical"
+ },
+ {
+  "id": "second-temple-destruction",
+  "start": -63,
+  "end": 73,
+  "name": {
+   "he": "רומא וחורבן הבית השני",
+   "en": "Rome & the Destruction of the Second Temple"
+  },
+  "subtitle": {
+   "he": "מפומפיוס והורדוס ועד מצדה",
+   "en": "From Pompey and Herod to Masada"
+  },
+  "summary": {
+   "he": "רומא נכנסת ליהודה ולא יוצאת: הורדוס בונה מקדש מפואר, אך המתיחות בין העם לשלטון הולכת וגוברת. בשנת 66 פורץ המרד הגדול, ובתשעה באב שנת 70 נשרף בית המקדש. בזמן שמצדה נופלת, ביבנה כבר נבנית היהדות שתדע לחיות בלי מקדש.",
+   "en": "Rome enters Judea and never leaves: Herod builds a magnificent Temple, but tension between the people and their rulers keeps rising. In 66 the Great Revolt breaks out, and on Tisha B'Av in 70 the Temple burns. As Masada falls, a Judaism able to live without a Temple is already taking shape at Yavneh."
+  },
+  "weight": 5,
+  "view": {
+   "lon": 35.2,
+   "lat": 31.7,
+   "zoom": 5
+  },
+  "color": "classical"
+ },
+ {
+  "id": "yavneh-diaspora-revolt",
+  "start": 74,
+  "end": 131,
+  "name": {
+   "he": "יבנה ומרד התפוצות",
+   "en": "Yavneh & the Diaspora Revolt"
+  },
+  "subtitle": {
+   "he": "בונים יהדות בלי מקדש",
+   "en": "Building Judaism without a Temple"
+  },
+  "summary": {
+   "he": "לאחר החורבן החכמים ביבנה מעצבים מחדש את היהדות: תפילה במקום קורבנות, ולימוד תורה במרכז. בתפוצות הכעס על רומא מתפרץ במרד של יהודי מצרים, קירנה וקפריסין, שמדוכא באכזריות. ביהודה מתבשלת בינתיים ההתקוממות הבאה.",
+   "en": "After the destruction, the sages at Yavneh rebuild Judaism: prayer replaces sacrifice and Torah study moves to the center. In the diaspora, anger at Rome explodes in a revolt of Jews in Egypt, Cyrene and Cyprus, brutally suppressed. Meanwhile in Judea, the next uprising is brewing."
+  },
+  "weight": 2,
+  "view": {
+   "lon": 30,
+   "lat": 32,
+   "zoom": 3
+  },
+  "color": "classical"
+ },
+ {
+  "id": "bar-kokhba-mishnah",
+  "start": 132,
+  "end": 220,
+  "name": {
+   "he": "בר כוכבא והמשנה",
+   "en": "Bar Kokhba & the Mishnah"
+  },
+  "subtitle": {
+   "he": "המרד האחרון ותורה שבעל פה שנכתבת",
+   "en": "The last revolt and the Oral Law written down"
+  },
+  "summary": {
+   "he": "מרד בר כוכבא מעורר תקוות משיחיות ומסתיים באסון: ביתר נופלת, ירושלים נעשית עיר אלילית ויהודה מתרוקנת. החכמים, ובהם רבי עקיבא, משלמים בחייהם על לימוד תורה. מן ההריסות עובר המרכז לגליל, ושם רבי יהודה הנשיא חותם את המשנה – ספר שיחזיק את העם לאורך הגלות.",
+   "en": "The Bar Kokhba revolt raises messianic hopes and ends in catastrophe: Betar falls, Jerusalem becomes a pagan city and Judea is emptied. Sages like Rabbi Akiva pay with their lives for teaching Torah. From the ruins the center moves to Galilee, where Rabbi Judah the Prince completes the Mishnah – the book that will sustain the people through exile."
+  },
+  "weight": 4,
+  "view": {
+   "lon": 35.3,
+   "lat": 32.2,
+   "zoom": 6
+  },
+  "color": "classical"
+ },
+ {
+  "id": "talmud-era",
+  "start": 221,
+  "end": 621,
+  "name": {
+   "he": "תקופת התלמוד",
+   "en": "The Talmudic Era"
+  },
+  "subtitle": {
+   "he": "בין ארץ ישראל לבבל",
+   "en": "Between the Land of Israel and Babylonia"
+  },
+  "summary": {
+   "he": "במשך ארבע מאות שנה פועלים שני מרכזים: טבריה בארץ ישראל וישיבות סורא ופומבדיתא בבבל. בזמן שהאימפריה הרומית מתנצרת ומגבילה את היהודים, בבל הפרסית מאפשרת להם לשגשג. התוצאה היא שני תלמודים – והבבלי הופך לספר הלימוד של העם כולו.",
+   "en": "For four centuries two centers thrive: Tiberias in the Land of Israel and the academies of Sura and Pumbedita in Babylonia. As the Roman Empire turns Christian and restricts the Jews, Persian Babylonia lets them flourish. The result is two Talmuds – and the Babylonian becomes the textbook of the whole people."
+  },
+  "weight": 2,
+  "view": {
+   "lon": 40,
+   "lat": 33,
+   "zoom": 4
+  },
+  "color": "classical"
+ },
+ {
+  "id": "islam-geonim",
+  "start": 622,
+  "end": 949,
+  "name": {
+   "he": "האסלאם והגאונים",
+   "en": "Islam & the Geonim"
+  },
+  "subtitle": {
+   "he": "עולם חדש מבגדאד ועד ספרד",
+   "en": "A new world from Baghdad to Spain"
+  },
+  "summary": {
+   "he": "תוך מאה שנה האסלאם כובש שטח עצום, ורוב יהודי העולם חיים תחת שלטונו כבני חסות – מוגנים אך משניים. הגאונים בבגדאד משיבים על שאלות מכל העולם היהודי, ורב סעדיה גאון כותב פילוסופיה יהודית בערבית. רחוק בצפון, ממלכת הכוזרים מאמצת את היהדות.",
+   "en": "Within a century Islam conquers a vast territory, and most of the world's Jews live under its rule as protected but second-class subjects. The Geonim in Baghdad answer questions from across the Jewish world, and Saadia Gaon writes Jewish philosophy in Arabic. Far to the north, the Khazar kingdom adopts Judaism."
+  },
+  "weight": 2,
+  "view": {
+   "lon": 30,
+   "lat": 33,
+   "zoom": 2
+  },
+  "color": "medieval"
+ },
+ {
+  "id": "golden-age",
+  "start": 950,
+  "end": 1095,
+  "name": {
+   "he": "תור הזהב בספרד ועליית אשכנז",
+   "en": "Golden Age of Spain & Rise of Ashkenaz"
+  },
+  "subtitle": {
+   "he": "שירה, פילוסופיה ורש״י",
+   "en": "Poetry, philosophy and Rashi"
+  },
+  "summary": {
+   "he": "בספרד המוסלמית יהודים הם וזירים, רופאים, משוררים ופילוסופים – תקופה שתיזכר כתור הזהב. במקביל, בערי הריין ובצפון צרפת צומחת יהדות אשכנז, ורש״י כותב את פירושיו שילמדו עד היום. שני העולמות – ספרד ואשכנז – יעצבו את פני העם לאלף השנים הבאות.",
+   "en": "In Muslim Spain, Jews serve as viziers, physicians, poets and philosophers – an era remembered as the Golden Age. At the same time Ashkenazi Jewry grows in the Rhineland and northern France, where Rashi writes commentaries still studied today. These two worlds, Sepharad and Ashkenaz, will shape the people for the next thousand years."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 2,
+   "lat": 44,
+   "zoom": 4
+  },
+  "color": "medieval"
+ },
+ {
+  "id": "crusades",
+  "start": 1096,
+  "end": 1150,
+  "name": {
+   "he": "מסעי הצלב וגזירות תתנ״ו",
+   "en": "Crusades & the Rhineland Massacres"
+  },
+  "subtitle": {
+   "he": "קידוש השם, עלילת הדם הראשונה וקץ תור הזהב",
+   "en": "Martyrdom, the first blood libel and the end of the Golden Age"
+  },
+  "summary": {
+   "he": "ב-1096 צבאות הצלב בדרכם לירושלים טובחים בקהילות הריין, ורבים בוחרים למות ולא להמיר את דתם. שלוש שנים אחר כך נטבחים יהודי ירושלים. בנוריץ׳ שבאנגליה נולדת עלילת הדם, ובספרד המווחידון מסיימים את תור הזהב. ביובל אחד משתנה מעמדם של היהודים בעולם הנוצרי והמוסלמי כאחד.",
+   "en": "In 1096 crusader armies headed for Jerusalem massacre the Rhineland communities, and many choose death over conversion. Three years later Jerusalem's Jews are slaughtered. In Norwich the blood libel is born, and in Spain the Almohads end the Golden Age. In half a century, the Jews' position changes in both the Christian and Muslim worlds."
+  },
+  "weight": 4,
+  "view": {
+   "lon": 6,
+   "lat": 47,
+   "zoom": 4
+  },
+  "color": "medieval"
+ },
+ {
+  "id": "burnings-expulsions",
+  "start": 1151,
+  "end": 1347,
+  "name": {
+   "he": "הרמב״ם, שריפות וגירושים",
+   "en": "Maimonides, Burnings & Expulsions"
+  },
+  "subtitle": {
+   "he": "מטלאי היהודי ועד גירוש אנגליה וצרפת",
+   "en": "From the Jewish badge to expulsions from England and France"
+  },
+  "summary": {
+   "he": "זו תקופה של יצירה גדולה לצד רדיפה קשה. הרמב״ם כותב את ״משנה תורה״, והזוהר מופיע בקסטיליה. אך באירופה הנוצרית היהודים נדרשים לשאת טלאי, התלמוד נשרף בפריז, ואנגליה וצרפת מגרשות את יהודיהן. בפולין, לעומת זאת, נפתחת דלת חדשה.",
+   "en": "An age of great creativity alongside harsh persecution. Maimonides writes the Mishneh Torah, and the Zohar appears in Castile. But in Christian Europe Jews must wear a badge, the Talmud is burned in Paris, and England and France expel their Jews. In Poland, meanwhile, a new door opens."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 4,
+   "lat": 46,
+   "zoom": 3
+  },
+  "color": "medieval"
+ },
+ {
+  "id": "black-death-1391",
+  "start": 1348,
+  "end": 1477,
+  "name": {
+   "he": "המוות השחור ופרעות קנ״א",
+   "en": "Black Death & the 1391 Massacres"
+  },
+  "subtitle": {
+   "he": "מגפה, עלילות והמרות בכפייה",
+   "en": "Plague, libels and forced conversions"
+  },
+  "summary": {
+   "he": "כשהמגפה השחורה קוטלת שליש מאירופה, היהודים מואשמים בהרעלת בארות, ומאות קהילות נשרפות. ההגירה מזרחה לפולין מתעצמת. בספרד פורצות ב-1391 פרעות שמובילות להמרה המונית, ובעקבותיהן נוצר מעמד חדש ובעייתי – האנוסים.",
+   "en": "When the Black Death kills a third of Europe, Jews are accused of poisoning wells and hundreds of communities are burned. Migration east to Poland intensifies. In Spain the riots of 1391 bring mass conversion, creating a new and troubled class – the conversos."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 3,
+   "lat": 45,
+   "zoom": 3
+  },
+  "color": "medieval"
+ },
+ {
+  "id": "expulsion-spain-portugal",
+  "start": 1478,
+  "end": 1500,
+  "name": {
+   "he": "גירוש ספרד ופורטוגל",
+   "en": "Expulsion of Spain & Portugal"
+  },
+  "subtitle": {
+   "he": "אינקוויזיציה, גירוש ושמד – בתוך עשרים שנה",
+   "en": "Inquisition, expulsion and forced baptism in twenty years"
+  },
+  "summary": {
+   "he": "בתוך שני עשורים בלבד קורסת הקהילה היהודית הגדולה והמפוארת באירופה. האינקוויזיציה רודפת את האנוסים, ב-1492 מגורשים יהודי ספרד, וב-1497 מוטבלים בכוח יהודי פורטוגל, כולל רבים מהמגורשים. המגורשים מתפזרים לצפון אפריקה, איטליה והאימפריה העות׳מאנית, ומביאים איתם את התרבות הספרדית.",
+   "en": "In just two decades Europe's largest and most brilliant Jewish community collapses. The Inquisition hunts the conversos, in 1492 Spain's Jews are expelled, and in 1497 Portugal's Jews – including many exiles – are forcibly baptized. The exiles scatter to North Africa, Italy and the Ottoman Empire, carrying Sephardic culture with them."
+  },
+  "weight": 5,
+  "view": {
+   "lon": -4,
+   "lat": 39.5,
+   "zoom": 5
+  },
+  "color": "medieval"
+ },
+ {
+  "id": "ghetto-safed",
+  "start": 1501,
+  "end": 1647,
+  "name": {
+   "he": "הגטו, צפת ויהדות פולין",
+   "en": "Ghetto, Safed & Polish Jewry"
+  },
+  "subtitle": {
+   "he": "גטאות באיטליה, קבלה בגליל ואוטונומיה בפולין",
+   "en": "Ghettos in Italy, Kabbalah in Galilee, autonomy in Poland"
+  },
+  "summary": {
+   "he": "לאחר הגירוש העולם היהודי נבנה מחדש בשלושה מוקדים. באיטליה נסגרים היהודים בגטאות, ובצפת יוצרים מגורשי ספרד מרכז של קבלה והלכה – שם נכתב השולחן ערוך. בפולין-ליטא צומחת הקהילה הגדולה בעולם, שמנהלת את עצמה בוועד ארבע ארצות. הדפוס מפיץ את הספרים בכל מקום.",
+   "en": "After the expulsion the Jewish world rebuilds around three hubs. In Italy Jews are locked into ghettos, while in Safed Spanish exiles create a center of Kabbalah and law where the Shulchan Aruch is written. In Poland-Lithuania the world's largest community grows, governing itself through the Council of Four Lands. Printing spreads books everywhere."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 22,
+   "lat": 42,
+   "zoom": 3
+  },
+  "color": "early-modern"
+ },
+ {
+  "id": "chmielnicki-shabbetai",
+  "start": 1648,
+  "end": 1676,
+  "name": {
+   "he": "ת״ח ות״ט ושבתי צבי",
+   "en": "Chmielnicki & Shabbetai Zvi"
+  },
+  "subtitle": {
+   "he": "מטבח לציפייה משיחית – ומשם לאכזבה",
+   "en": "From massacre to messianic fervor – and disillusionment"
+  },
+  "summary": {
+   "he": "ב-1648 הקוזקים של חמלניצקי טובחים ביהודי אוקראינה, ויהדות פולין נשברת. כעבור פחות מעשרים שנה העולם היהודי כולו נסחף אחרי שבתי צבי, שהוכרז כמשיח – עד שהוא מתאסלם. באותן שנים בדיוק נפתחים לפני היהודים אנגליה ואמריקה.",
+   "en": "In 1648 Chmielnicki's Cossacks massacre the Jews of Ukraine, and Polish Jewry is shattered. Less than twenty years later the entire Jewish world is swept up by Shabbetai Zvi, proclaimed Messiah – until he converts to Islam. In these same years, England and America open to the Jews."
+  },
+  "weight": 4,
+  "view": {
+   "lon": 20,
+   "lat": 45,
+   "zoom": 3
+  },
+  "color": "early-modern"
+ },
+ {
+  "id": "hasidism-haskalah",
+  "start": 1677,
+  "end": 1788,
+  "name": {
+   "he": "חסידות והשכלה",
+   "en": "Hasidism & Haskalah"
+  },
+  "subtitle": {
+   "he": "שתי תשובות לעולם משתנה",
+   "en": "Two answers to a changing world"
+  },
+  "summary": {
+   "he": "לאחר המשבר צומחות במאה ה-18 שתי תנועות הפוכות. במזרח אירופה הבעל שם טוב מלמד לעבוד את ה׳ בשמחה, והחסידות כובשת לבבות – ומעוררת את התנגדות הגאון מווילנה. במערב משה מנדלסון מוביל את ההשכלה, הקוראת ליהודים להשתלב בתרבות אירופה.",
+   "en": "After the crisis, two opposite movements emerge in the 18th century. In Eastern Europe the Baal Shem Tov teaches serving God with joy, and Hasidism wins hearts – provoking the Vilna Gaon's opposition. In the West, Moses Mendelssohn leads the Haskalah, urging Jews to join European culture."
+  },
+  "weight": 2,
+  "view": {
+   "lon": 20,
+   "lat": 51,
+   "zoom": 4
+  },
+  "color": "early-modern"
+ },
+ {
+  "id": "emancipation",
+  "start": 1789,
+  "end": 1880,
+  "name": {
+   "he": "אמנציפציה ותחום המושב",
+   "en": "Emancipation & the Pale"
+  },
+  "subtitle": {
+   "he": "שוויון במערב, הגבלות במזרח",
+   "en": "Equality in the West, restrictions in the East"
+  },
+  "summary": {
+   "he": "המהפכה הצרפתית מעניקה ליהודים שוויון זכויות, ובמהלך המאה ה-19 האמנציפציה מתפשטת במערב אירופה. במזרח, לעומת זאת, רוסיה כולאת מיליוני יהודים ב״תחום המושב״. עלילות כמו דמשק ומורטרה מראות שהשנאה הישנה לא נעלמה – והיהודים לומדים לפעול יחד מעבר לגבולות.",
+   "en": "The French Revolution grants Jews equal rights, and through the 19th century emancipation spreads across Western Europe. In the East, however, Russia confines millions of Jews to the Pale of Settlement. Affairs like Damascus and Mortara show the old hatred has not vanished – and Jews learn to act together across borders."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 15,
+   "lat": 50,
+   "zoom": 3
+  },
+  "color": "modern"
+ },
+ {
+  "id": "rise-of-zionism",
+  "start": 1881,
+  "end": 1917,
+  "name": {
+   "he": "עליית הציונות",
+   "en": "Rise of Zionism"
+  },
+  "subtitle": {
+   "he": "מהפוגרומים ועד הצהרת בלפור",
+   "en": "From the pogroms to the Balfour Declaration"
+  },
+  "summary": {
+   "he": "גל הפוגרומים ב-1881 מוביל להגירה של מיליונים לאמריקה – ולמיעוט נועז שבוחר בארץ ישראל. פרשת דרייפוס מביאה את הרצל לכנס את הקונגרס הציוני, והעליות הראשונה והשנייה מקימות מושבות, את תל אביב ואת דגניה. העברית שבה להיות שפה מדוברת, והמלחמה הגדולה מסתיימת בהצהרת בלפור.",
+   "en": "The 1881 pogroms send millions to America – and a daring minority to the Land of Israel. The Dreyfus affair moves Herzl to convene the Zionist Congress, and the First and Second Aliyahs build colonies, Tel Aviv and Degania. Hebrew becomes a spoken language again, and the Great War ends with the Balfour Declaration."
+  },
+  "weight": 4,
+  "view": {
+   "lon": 25,
+   "lat": 42,
+   "zoom": 3
+  },
+  "color": "modern"
+ },
+ {
+  "id": "mandate",
+  "start": 1918,
+  "end": 1932,
+  "name": {
+   "he": "המנדט ובניית היישוב",
+   "en": "The Mandate & Building the Yishuv"
+  },
+  "subtitle": {
+   "he": "מוסדות, אוניברסיטה ופרעות",
+   "en": "Institutions, a university and riots"
+  },
+  "summary": {
+   "he": "בריטניה מקבלת את המנדט על ארץ ישראל, והיישוב בונה מוסדות של מדינה בדרך: ״ההגנה״, ההסתדרות, האוניברסיטה העברית והטכניון. באוקראינה נרצחים עשרות אלפי יהודים, וארצות הברית סוגרת את שעריה. בארץ, פרעות תרפ״ט בחברון ובצפת מבהירות שהמאבק על הארץ רק מתחיל.",
+   "en": "Britain receives the Mandate for Palestine, and the Yishuv builds the institutions of a state-in-the-making: the Haganah, the Histadrut, the Hebrew University and the Technion. In Ukraine tens of thousands of Jews are murdered, and the United States closes its gates. At home, the 1929 riots in Hebron and Safed make clear the struggle for the land has only begun."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 35,
+   "lat": 32,
+   "zoom": 5
+  },
+  "color": "modern"
+ },
+ {
+  "id": "holocaust",
+  "start": 1933,
+  "end": 1945,
+  "name": {
+   "he": "השואה",
+   "en": "The Holocaust"
+  },
+  "subtitle": {
+   "he": "מעליית הנאצים ועד השמדת שליש מהעם",
+   "en": "From the Nazi rise to the murder of a third of the people"
+  },
+  "summary": {
+   "he": "בתוך שתים-עשרה שנה עובר העם היהודי את האסון הגדול בתולדותיו. הנאצים שוללים מהיהודים את זכויותיהם, כולאים אותם בגטאות, ומ-1941 רוצחים אותם בשיטתיות – בירי המוני ובמחנות השמדה. כשישה מיליון יהודים נרצחים, ובהם כמיליון וחצי ילדים. לצד הרצח היו גם מרד, הצלה ועמידה רוחנית.",
+   "en": "In just twelve years the Jewish people suffer the greatest catastrophe in their history. The Nazis strip Jews of their rights, imprison them in ghettos, and from 1941 murder them systematically – in mass shootings and death camps. About six million Jews are murdered, among them some 1.5 million children. Alongside the murder there was also revolt, rescue and spiritual resistance."
+  },
+  "weight": 5,
+  "view": {
+   "lon": 18,
+   "lat": 51,
+   "zoom": 4
+  },
+  "color": "holocaust"
+ },
+ {
+  "id": "birth-of-israel",
+  "start": 1947,
+  "end": 1949,
+  "name": {
+   "he": "תקומת ישראל",
+   "en": "Birth of Israel"
+  },
+  "subtitle": {
+   "he": "מהחלטת החלוקה ועד הסכמי שביתת הנשק",
+   "en": "From the Partition vote to the armistice"
+  },
+  "summary": {
+   "he": "שלוש שנים בלבד אחרי השואה, ספינות מעפילים מנסות לפרוץ את ההסגר הבריטי, והאו״ם מחליט על חלוקת הארץ. ב-14 במאי 1948 מכריז בן-גוריון על הקמת מדינת ישראל, וצבאות ערב פולשים למחרת. במחיר כבד של כ-6,000 הרוגים המדינה עומדת על רגליה.",
+   "en": "Barely three years after the Holocaust, refugee ships try to break the British blockade, and the UN votes to partition the land. On 14 May 1948 Ben-Gurion proclaims the State of Israel, and Arab armies invade the next day. At the heavy cost of some 6,000 dead, the state survives."
+  },
+  "weight": 5,
+  "view": {
+   "lon": 35,
+   "lat": 31.6,
+   "zoom": 6
+  },
+  "color": "israel"
+ },
+ {
+  "id": "ingathering",
+  "start": 1950,
+  "end": 1966,
+  "name": {
+   "he": "קיבוץ גלויות",
+   "en": "Ingathering of the Exiles"
+  },
+  "subtitle": {
+   "he": "מעברות, עלייה מארצות האסלאם ומשפט אייכמן",
+   "en": "Transit camps, aliyah from Muslim lands, the Eichmann trial"
+  },
+  "summary": {
+   "he": "המדינה הצעירה מכפילה את אוכלוסייתה תוך שנים ספורות: ניצולי שואה ומאות אלפי יהודים מתימן, עיראק, מרוקו ומדינות נוספות. הקליטה קשה – מעברות, צנע ומתחים חברתיים – אך נבנית חברה חדשה. משפט אייכמן מביא את סיפור השואה לראשונה אל מרכז השיח.",
+   "en": "The young state doubles its population in a few years: Holocaust survivors and hundreds of thousands of Jews from Yemen, Iraq, Morocco and beyond. Absorption is hard – transit camps, austerity and social tensions – but a new society is built. The Eichmann trial brings the Holocaust to the center of public consciousness for the first time."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 30,
+   "lat": 30,
+   "zoom": 3
+  },
+  "color": "israel"
+ },
+ {
+  "id": "wars-and-peace",
+  "start": 1967,
+  "end": 1979,
+  "name": {
+   "he": "מששת הימים ועד השלום",
+   "en": "From Six Days to Peace"
+  },
+  "subtitle": {
+   "he": "ניצחון, טראומה ושלום ראשון",
+   "en": "Victory, trauma and a first peace"
+  },
+  "summary": {
+   "he": "בשישה ימים ב-1967 ישראל משנה את מפת המזרח התיכון ושבה אל הכותל. שש שנים אחר כך מלחמת יום הכיפורים מטלטלת את החברה כולה. בתוך המשבר צומחים מבצע אנטבה הנועז והשלום עם מצרים, ובברית המועצות יהודים נאבקים על הזכות לעלות.",
+   "en": "In six days in 1967 Israel redraws the map of the Middle East and returns to the Western Wall. Six years later the Yom Kippur War shakes the whole society. Out of the crisis come the daring Entebbe rescue and peace with Egypt, while in the Soviet Union Jews fight for the right to emigrate."
+  },
+  "weight": 4,
+  "view": {
+   "lon": 34.5,
+   "lat": 31,
+   "zoom": 5
+  },
+  "color": "israel"
+ },
+ {
+  "id": "great-aliyot-oslo",
+  "start": 1980,
+  "end": 1999,
+  "name": {
+   "he": "עליות גדולות ואוסלו",
+   "en": "Great Aliyot & Oslo"
+  },
+  "subtitle": {
+   "he": "מאתיופיה ומברית המועצות, ותקוות שלום שנקטעה",
+   "en": "From Ethiopia and the USSR, and a peace hope cut short"
+  },
+  "summary": {
+   "he": "יהודי אתיופיה מוטסים לישראל במבצעים חשאיים, ויותר ממיליון עולים מגיעים מברית המועצות לשעבר ומשנים את פני המדינה. האינתיפאדה הראשונה מובילה להסכמי אוסלו ולשלום עם ירדן. ב-1995 רצח רבין מזעזע את המדינה.",
+   "en": "Ethiopian Jews are airlifted to Israel in secret operations, and over a million immigrants from the former USSR transform the country. The First Intifada leads to the Oslo Accords and peace with Jordan. In 1995 Rabin's assassination shakes the nation."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 36,
+   "lat": 25,
+   "zoom": 2
+  },
+  "color": "israel"
+ },
+ {
+  "id": "twenty-first-century",
+  "start": 2000,
+  "end": 2026,
+  "name": {
+   "he": "המאה ה-21",
+   "en": "The 21st Century"
+  },
+  "subtitle": {
+   "he": "מהאינתיפאדה השנייה ועד שבעה באוקטובר",
+   "en": "From the Second Intifada to October 7"
+  },
+  "summary": {
+   "he": "ישראל הופכת למעצמה טכנולוגית ולמרכז היהודי הגדול בעולם, ונחתמים הסכמי אברהם עם מדינות ערביות. אך האינתיפאדה השנייה, ההתנתקות והטרור – בישראל ובתפוצות – ממשיכים לעצב את המציאות. ב-7 באוקטובר 2023 נרצחים כ-1,200 בני אדם ביום הקטלני ביותר ליהודים מאז השואה, ומלחמה ממושכת מתחילה.",
+   "en": "Israel becomes a tech powerhouse and the largest Jewish community in the world, and the Abraham Accords are signed with Arab states. But the Second Intifada, the disengagement and terror – in Israel and the diaspora – continue to shape reality. On 7 October 2023 about 1,200 people are murdered on the deadliest day for Jews since the Holocaust, and a long war begins."
+  },
+  "weight": 3,
+  "view": {
+   "lon": 35,
+   "lat": 31.5,
+   "zoom": 5
+  },
+  "color": "israel"
+ }
+]

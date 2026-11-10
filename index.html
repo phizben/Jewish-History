@@ -182,6 +182,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .zoomctl button{width:40px;height:40px;display:grid;place-items:center;color:var(--ink-2)}
 .zoomctl button+button{border-top:1px solid var(--hair)}
 .zoomctl button:hover{background:var(--paper-2);color:var(--ink)}
+.zoomctl button#mfollow[aria-pressed="true"]{color:var(--brand)}
+.zoomctl button#mfollow[aria-pressed="true"]:hover{color:var(--brand)}
 .zoomctl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 
 /* ---------- timeline ---------- */
@@ -617,7 +619,7 @@ kbd{background:var(--panel-2,#121C30)}
     </aside>
     <section class="mapwrap" id="mapwrap">
       <svg id="map" role="img"></svg>
-      <div class="zoomctl"><button id="zin"><svg viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg></button><button id="zout"><svg viewBox="0 0 24 24"><path d="M6 12h12"/></svg></button></div>
+      <div class="zoomctl"><button id="mfollow" aria-pressed="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/><circle cx="12" cy="12" r="2.3" fill="currentColor" stroke="none"/></svg></button><button id="zin"><svg viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg></button><button id="zout"><svg viewBox="0 0 24 24"><path d="M6 12h12"/></svg></button></div>
       <div class="hint" id="hint" hidden><span id="hint-t"></span><button id="hint-b"></button></div>
     </section>
   </div>
@@ -802,8 +804,8 @@ const gLand=root.append('g'),gHeat=root.append('g').attr('class','heatlayer'),gH
 let heatOn=store.get('heat3',true);
 const gEdge=svg.append('g').attr('class','edgelayer');
 const land=topojson.feature(LAND,LAND.objects.land);
-let k=1,mw=800,mh=500;
-const zoom=d3.zoom().scaleExtent([1,60]).on('zoom',ev=>{root.attr('transform',ev.transform);if(Math.abs(ev.transform.k-k)>1e-3){k=ev.transform.k;rescale()}drawEdgeT()}).on('end',()=>{placeLabels();drawPoints();drawEdge()});
+let k=1,mw=800,mh=500;let follow=true,camAnim=false;
+const zoom=d3.zoom().scaleExtent([1,60]).on('zoom',ev=>{if(ev.sourceEvent&&!camAnim&&follow)setFollow(false);root.attr('transform',ev.transform);if(Math.abs(ev.transform.k-k)>1e-3){k=ev.transform.k;rescale()}drawEdgeT()}).on('end',()=>{placeLabels();drawPoints();drawEdge()});
 svg.call(zoom).on('dblclick.zoom',null);
 const SNAPS=Object.keys(MAPS).map(Number).sort((a,b)=>a-b);
 const polyCache=new Map();let lastSnap=null;
@@ -891,9 +893,14 @@ let rsq=0;function rescale(){if(rsq)return;rsq=requestAnimationFrame(()=>{rsq=0;
 function setHover(d){if(hovered===d)return;hovered=d;gPts.selectAll('g.mk').classed('hl',x=>x===d);gPts.selectAll('g.mk').filter(x=>x===d).raise();
  document.querySelectorAll('#list .item').forEach(b=>b.classList.toggle('hl',!!d&&b.dataset.k===d.key));tl.selectAll('.bead').classed('hl',function(){return !!d&&this.dataset.k===d.key})}
 function centerOn(lon,lat){const p=proj([lon,lat]);if(!p)return;const t=d3.zoomTransform(svg.node());const kk=Math.max(t.k,3);
- svg.transition().duration(reduceMotion()?0:700).call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(kk).translate(-p[0],-p[1]))}
-$('zin').onclick=()=>svg.transition().duration(250).call(zoom.scaleBy,1.6);
-$('zout').onclick=()=>svg.transition().duration(250).call(zoom.scaleBy,1/1.6);
+ camAnim=true;svg.transition('cam').duration(reduceMotion()?0:700).call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
+function camZoom(z){return Math.max(1,Math.min(60,(z||3)*(phone()?0.85:1)))}
+function flyToView(v,dur){if(!v)return;const p=proj([v.lon,v.lat]);if(!p)return;const kk=camZoom(v.zoom);
+ camAnim=true;svg.transition('cam').duration(reduceMotion()?0:(dur==null?900:dur)).call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
+function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on)flyToView((eras[curEra]||{}).view)}
+$('mfollow').onclick=()=>setFollow(!follow);
+$('zin').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1.6)};
+$('zout').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1/1.6)};
 svg.on('click',()=>{if(selected)closeDetail()});
 
 /* tooltip */
@@ -1156,7 +1163,7 @@ function setYear(y){year=Math.max(MINY,Math.min(MAXY,y));const ry=Math.round(yea
  $('pop').innerHTML='';const b=el('b',null,fmtPop(interp(D.demography.world,year)));$('pop').append(document.createTextNode(' · '),b,document.createTextNode(' '+L().pop));
  $('knob').textContent=ry<0?Math.abs(ry)+(lang==='he'?' לפנה״ס':' BCE'):ry+(lang==='he'?' לספירה':' CE');
  if(fit)placeHead();sc.setAttribute('aria-valuenow',ry);sc.setAttribute('aria-valuetext',fmtYfull(ry));
- const ei=eraAt(year);if(ei!==curEra){curEra=ei;renderChapter()}
+ const ei=eraAt(year);if(ei!==curEra){curEra=ei;renderChapter();if(follow)flyToView(eras[ei].view)}
  NOW=nowItems();drawBorders();drawCenters();drawPoints();drawEdge();
  if(!listQ)listQ=setTimeout(()=>{listQ=0;renderList();renderCtx()},playing?250:60)}
 function goEra(i){const e=eras[i];scrollToYear(e.start+Math.min(3,(segs[i].b-e.start)*0.05),true)}
@@ -1275,6 +1282,7 @@ function applyLang(){const u=L();document.documentElement.lang=lang;document.doc
  $('c-prev').innerHTML=rtl()?ICON.next:ICON.prev;$('c-next').innerHTML=rtl()?ICON.prev:ICON.next;$('c-prev').setAttribute('aria-label',u.prev);$('c-prev').title=u.prev;$('c-next').setAttribute('aria-label',u.next);$('c-next').title=u.next;$('c-all').setAttribute('aria-label',u.all);$('c-all').title=u.all;
  $('tz-in').setAttribute('aria-label',u.zin);$('tz-in').title=u.zin;$('tz-out').setAttribute('aria-label',u.zout);$('tz-out').title=u.zout;$('tz-all').textContent=u.zall;
  $('zin').setAttribute('aria-label',lang==='he'?'הגדל מפה':'Zoom in map');$('zout').setAttribute('aria-label',lang==='he'?'הקטן מפה':'Zoom out map');
+ if($('mfollow')){$('mfollow').setAttribute('aria-label',lang==='he'?'עקוב אחרי מרכז העם':'Follow the center');$('mfollow').title=lang==='he'?(follow?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(follow?'Following the center — tap to detach':'Free camera — tap to follow')}
  $('play').setAttribute('aria-label',playing?u.pause:u.play);$('map').setAttribute('aria-label',lang==='he'?'מפת העולם בשנה הנבחרת':'World map for the selected year');
  setSheet($('panel').dataset.open==='true');buildLegend();if(!$('hint').hidden){$('hint-t').textContent=u.hintT;$('hint-b').textContent=u.hintB}
  curEra=-1;lastSnap=null;gPts.selectAll('*').remove();syncLayers();drawCenters();drawEdge();renderTimeline();renderList();renderCtx();if(selected)select(selected)}
@@ -1285,7 +1293,8 @@ $('langbtn').onclick=()=>{lang=lang==='he'?'en':'he';store.set('lang',lang);appl
  const h=location.hash.slice(1);const ei=eras.findIndex(e=>e.id===h);
  year=ei>=0?eras[ei].start+Math.min(3,(segs[ei].b-eras[ei].start)*0.05):1492;
  $('app').classList.toggle('full',full);sizeMap();applyLang();
- const p=proj([24,38]);const k0=phone()?2.2:3;svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(k0).translate(-p[0],-p[1]));
+ const bv=(eras[eraAt(year)]||{}).view;const bp=proj(bv?[bv.lon,bv.lat]:[24,38]);const bk=bv?camZoom(bv.zoom):(phone()?2.2:3);svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(bk).translate(-bp[0],-bp[1]));
+ setFollow(follow);
  showIntro();
  addEventListener('hashchange',()=>{const i=eras.findIndex(e=>e.id===location.hash.slice(1));if(i>=0&&i!==curEra)goEra(i)});
  let lastWH='';try{new ResizeObserver(()=>{const r=$('mapwrap').getBoundingClientRect();const wh=Math.round(r.width)+'x'+Math.round(r.height);if(wh===lastWH||r.width<50)return;lastWH=wh;

@@ -152,6 +152,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .zoomctl button{width:40px;height:40px;display:grid;place-items:center;color:var(--ink-2)}
 .zoomctl button+button{border-top:1px solid var(--hair)}
 .zoomctl button:hover{background:var(--paper-2);color:var(--ink)}
+.zoomctl button#mfollow[aria-pressed="true"]{color:var(--brand)}
+.zoomctl button#mfollow[aria-pressed="true"]:hover{color:var(--brand)}
 .zoomctl svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 
 /* ---------- timeline ---------- */
@@ -587,7 +589,7 @@ kbd{background:var(--panel-2,#121C30)}
     </aside>
     <section class="mapwrap" id="mapwrap">
       <svg id="map" role="img"></svg>
-      <div class="zoomctl"><button id="zin"><svg viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg></button><button id="zout"><svg viewBox="0 0 24 24"><path d="M6 12h12"/></svg></button></div>
+      <div class="zoomctl"><button id="mfollow" aria-pressed="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/><circle cx="12" cy="12" r="2.3" fill="currentColor" stroke="none"/></svg></button><button id="zin"><svg viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></svg></button><button id="zout"><svg viewBox="0 0 24 24"><path d="M6 12h12"/></svg></button></div>
       <div class="hint" id="hint" hidden><span id="hint-t"></span><button id="hint-b"></button></div>
     </section>
   </div>

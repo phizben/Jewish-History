@@ -21,10 +21,10 @@ eras.push(
 
 // --- FOCUS: gentiles (friends & foes) are the spine; Jewish figures are context; a few landmark events as anchors. ---
 const keepEv=new Set(['sinai','first-temple','kingdom-split','assyrian-exile','first-temple-destruction','cyrus-declaration','second-temple','hanukkah','second-temple-destruction','bar-kokhba','tanakh-canon','mishnah','rhineland-massacres','expulsion-england','black-death','inquisition','expulsion-spain','portugal-conversion','chmielnicki','zionist-congress','dreyfus-affair','balfour-declaration','nuremberg-laws','death-camps','independence','six-day-war','yom-kippur-war','october-7','exodus','babylonian-talmud']);
-const gentiles=g.filter(x=>x.sheet||x.importance>=3||keepGentiles.has(x.id));
+const gentiles=g.filter(x=>x.sheet||x.importance>=2||keepGentiles.has(x.id));
 const keepPeople=new Set(['abravanel','gracia-nasi','maharal','moses-montefiore','ovadia-yosef','menachem-mendel-schneerson','rav-ashi','shabbetai-zvi','ezekiel','zerubbabel','joseph','herod']);
 const dropPeople=new Set(['elie-wiesel','golda-meir','hannah-senesh']);
-const people=R('people.json').filter(p=>p.id!=='ruth'&&!dropPeople.has(p.id)&&(p.importance>=3||keepPeople.has(p.id)));
+const people=R('people.json').filter(p=>p.id!=='ruth'&&!dropPeople.has(p.id)&&(p.importance>=2||keepPeople.has(p.id)));
 const events=R('events.json').filter(e=>keepEv.has(e.id)).map(e=>Object.assign({},e,{importance:3}));
 const D={communities:[],centers:R('centers.json'),quiz:R('quiz.json'),demography:R('demography.json'),people,gentiles,events,eras,extras:R('extras.json')};
 fs.writeFileSync('bundle-data.json',JSON.stringify(D));

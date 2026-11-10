@@ -290,7 +290,7 @@ sc.addEventListener('wheel',e=>{if(e.ctrlKey||e.metaKey){e.preventDefault();zoom
  sc.addEventListener('pointerdown',e=>{if(e.button!==0)return;if(!fit&&e.pointerType!=='mouse')return;down={x:e.clientX,l:sc.scrollLeft,moved:false}});
  addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-down.x;if(!down.moved&&Math.abs(dx)<4)return;down.moved=true;sc.classList.add('drag');dismissHint();if(fit)setYear(yAt(e.clientX));else sc.scrollLeft=down.l-dx});
  addEventListener('pointerup',()=>{if(down&&down.moved){const stop=e=>{e.stopPropagation();e.preventDefault()};sc.addEventListener('click',stop,{capture:true,once:true});setTimeout(()=>sc.removeEventListener('click',stop,{capture:true}),50)}down=null;sc.classList.remove('drag')});
- sc.addEventListener('click',e=>{if(fit&&!e.target.closest('.bead,.tl-era'))setYear(yAt(e.clientX))})})();
+ sc.addEventListener('click',e=>{if(e.target.closest('.bead,.tl-era'))return;if(selected)closeDetail();if(fit)setYear(yAt(e.clientX))})})();
 /* timeline zoom */
 let zq=0,zPending=1;
 function zoomBy(f){zPending*=f;if(zq)return;zq=requestAnimationFrame(()=>{zq=0;setTlZoom(tlZoom*zPending);zPending=1})}

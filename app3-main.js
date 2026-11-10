@@ -296,7 +296,9 @@ function renderTimeline(){
 function setFull(o){full=o;$('app').classList.toggle('full',o);const b=$('fullbtn');if(b){b.setAttribute('aria-pressed',o);b.querySelector('span').textContent=o?L().fullOff:L().full}
  requestAnimationFrame(()=>{if(!o)sizeMap();renderTimeline()})}
 function placeHead(){$('playhead').style.left=(X(year)-sc.scrollLeft)+'px'}
-function nudge(px){if(fit)setYear(Yof(X(year)+px));else sc.scrollLeft+=px}
+function keepHeadVisible(){if(fit)return;const vw=sc.clientWidth,m=Math.min(80,vw*0.18),hx=X(year)-sc.scrollLeft,max=sc.scrollWidth-vw;let x=sc.scrollLeft;if(hx<m)x=X(year)-m;else if(hx>vw-m)x=X(year)-(vw-m);x=Math.max(0,Math.min(max,x));if(Math.abs(x-sc.scrollLeft)>0.5){ignoreScroll=true;sc.scrollLeft=x;placeHead()}}
+// wheel/arrows scrub the needle (consistent with dragging it); the view caret-scrolls only at the edges, never snapping to center
+function nudge(px){setYear(Yof(X(year)+px));keepHeadVisible()}
 let ignoreScroll=false,isClrT=0;
 function scrollToYear(y,smooth){if(fit){sc.scrollLeft=0;setYear(y);return}
  const x=Math.max(0,Math.min(sc.scrollWidth-sc.clientWidth,X(y)-sc.clientWidth/2));

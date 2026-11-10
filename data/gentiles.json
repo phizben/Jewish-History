@@ -1436,7 +1436,7 @@
  {
   "id": "casimir-iii",
   "name": {
-   "he": "קז'ימייז' השלישי הגדול",
+   "he": "קזימיר השלישי הגדול",
    "en": "Casimir III the Great"
   },
   "born": 1310,
@@ -1840,7 +1840,7 @@
    "he": "חסיד אומות העולם (יד ושם, 1966)",
    "en": "Righteous Among the Nations (Yad Vashem, 1966)"
   },
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "christian-x",
@@ -1873,7 +1873,7 @@
    "he": "המחתרת הדנית ביקשה להיות מוכרת ביד ושם כקבוצה ולא כיחידים",
    "en": "The Danish resistance asked Yad Vashem to honor it collectively rather than individually"
   },
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "paul-gruninger",
@@ -1939,7 +1939,7 @@
    "he": "חסיד אומות העולם (יד ושם, 1982); אזרח כבוד של ישראל (1994)",
    "en": "Righteous Among the Nations (Yad Vashem, 1982); honorary citizen of Israel (1994)"
   },
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "dimitar-peshev",
@@ -1972,7 +1972,7 @@
    "he": "חסיד אומות העולם (יד ושם, 1973)",
    "en": "Righteous Among the Nations (Yad Vashem, 1973)"
   },
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "mohammed-v",
@@ -2034,7 +2034,7 @@
    "he": "חסיד אומות העולם (יד ושם); הכפר הוכר כקהילה (1990)",
    "en": "Righteous Among the Nations (Yad Vashem); the village was honored collectively (1990)"
   },
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "jezebel",

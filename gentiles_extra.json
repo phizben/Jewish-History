@@ -1,0 +1,834 @@
+[
+ {
+  "id": "amalek",
+  "name": {
+   "he": "עמלק",
+   "en": "Amalek"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   -1250,
+   -1244
+  ],
+  "lon": 34.6,
+  "lat": 29.9,
+  "place": {
+   "he": "מדבר סיני",
+   "en": "Sinai desert"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "אויבו הקדום של ישראל",
+   "en": "Ancient enemy of Israel"
+  },
+  "impact": {
+   "he": "זמן קצר אחרי יציאת מצרים תקף עמלק את בני ישראל העייפים בדרך, ברפידים. בתודעה היהודית הפך עמלק לסמל של שנאה טהורה ובלתי-מנומקת לעם ישראל, והציווי \"זכור את אשר עשה לך עמלק\" נשמר לדורות.",
+   "en": "Soon after the Exodus, Amalek attacked the weary Israelites on the march, at Rephidim. In Jewish memory Amalek became the symbol of pure, unprovoked hatred of Israel, and the command to 'remember what Amalek did to you' endured for generations."
+  },
+  "calendar": {
+   "he": "פרשת זכור, בשבת שלפני פורים",
+   "en": "Parashat Zachor, the Shabbat before Purim"
+  },
+  "importance": 2,
+  "traditional": true
+ },
+ {
+  "id": "ruth",
+  "name": {
+   "he": "רות המואבייה",
+   "en": "Ruth the Moabite"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   -1150,
+   -1100
+  ],
+  "lon": 35.1628,
+  "lat": 31.729,
+  "place": {
+   "he": "בית לחם",
+   "en": "Bethlehem"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מואבייה שהצטרפה לעם ישראל",
+   "en": "Moabite who joined Israel"
+  },
+  "impact": {
+   "he": "רות דבקה בנעמי חמותה ובעם ישראל: \"עמך עמי ואלוהייך אלוהיי\". לפי המסורת היא סבתו של ישי ואם שושלת בית דוד.",
+   "en": "Ruth clung to her mother-in-law Naomi and to Israel: \"your people shall be my people\". By tradition she is the great-grandmother of King David."
+  },
+  "calendar": {
+   "he": "מגילת רות נקראת בחג השבועות",
+   "en": "The Book of Ruth is read on Shavuot"
+  },
+  "importance": 2,
+  "traditional": true
+ },
+ {
+  "id": "laban",
+  "name": {
+   "he": "לבן הארמי",
+   "en": "Laban the Aramean"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   -1680,
+   -1660
+  ],
+  "lon": 39.03,
+  "lat": 36.86,
+  "place": {
+   "he": "חרן, ארם",
+   "en": "Haran, Aram"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "חותנו של יעקב",
+   "en": "Jacob's father-in-law"
+  },
+  "impact": {
+   "he": "יעקב ברח אל לבן אחי אמו ועבד אצלו עשרים שנה, ולבן רימה אותו שוב ושוב והחליף את משכורתו. לפי ההגדה של פסח ביקש לבן \"לעקור את הכול\", ולכן נחשב במסורת לאויב קדום שרצה לכלות את ישראל עוד בראשיתו.",
+   "en": "Jacob fled to his uncle Laban and served him twenty years, and Laban deceived him repeatedly and changed his wages. The Passover Haggadah casts Laban as one who 'sought to uproot everything,' making him, in tradition, an early enemy who wished to destroy Israel at its very beginning."
+  },
+  "calendar": {
+   "he": "נזכר בהגדה של פסח (\"ארמי אובד אבי\")",
+   "en": "Recalled in the Passover Haggadah"
+  },
+  "importance": 2,
+  "traditional": true
+ },
+ {
+  "id": "shishak",
+  "name": {
+   "he": "שישק מלך מצרים",
+   "en": "Shishak (Shoshenq I)"
+  },
+  "born": null,
+  "died": -922,
+  "active": [
+   -926,
+   -924
+  ],
+  "lon": 35.0843,
+  "lat": 31.7843,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "פרעה, מייסד השושלת ה-22",
+   "en": "Pharaoh, 22nd dynasty"
+  },
+  "impact": {
+   "he": "זמן קצר אחרי פילוג הממלכה פלש שישק לארץ ולקח את אוצרות המקדש ובית המלך. המסע מתועד גם בכתובת מצרית בכרנך.",
+   "en": "Soon after the kingdom split, Shishak invaded and carried off the treasures of the Temple and the palace. The campaign is also recorded in an Egyptian inscription at Karnak."
+  },
+  "importance": 1
+ },
+ {
+  "id": "hazael",
+  "name": {
+   "he": "חזאל מלך ארם",
+   "en": "Hazael of Aram"
+  },
+  "born": null,
+  "died": -796,
+  "active": [
+   -842,
+   -800
+  ],
+  "lon": 36.29,
+  "lat": 33.51,
+  "place": {
+   "he": "דמשק",
+   "en": "Damascus"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך ארם שדיכא את ממלכת ישראל",
+   "en": "King of Aram who oppressed the Kingdom of Israel"
+  },
+  "impact": {
+   "he": "חזאל הכה שוב ושוב בממלכת ישראל וכבש חלקים נרחבים ממנה, עד שזו כמעט הושמדה. כתובת תל דן מיוחסת כנראה לו.",
+   "en": "Hazael repeatedly defeated the Kingdom of Israel and seized large parts of it, nearly destroying it. The Tel Dan inscription is probably his."
+  },
+  "importance": 1
+ },
+ {
+  "id": "taharqa",
+  "name": {
+   "he": "תרהקה מלך כוש",
+   "en": "Taharqa of Kush"
+  },
+  "born": null,
+  "died": -664,
+  "active": [
+   -701,
+   -664
+  ],
+  "lon": 31.8,
+  "lat": 18.5,
+  "place": {
+   "he": "כוש (נובה)",
+   "en": "Kush (Nubia)"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "פרעה כושי שיצא נגד אשור",
+   "en": "Kushite pharaoh who marched against Assyria"
+  },
+  "impact": {
+   "he": "במסע סנחריב (701 לפנה\"ס) יצא תרהקה בראש צבא כושי-מצרי נגד אשור. יש חוקרים הסבורים שההתערבות תרמה להצלת ירושלים.",
+   "en": "During Sennacherib's campaign (701 BCE) Taharqa led a Kushite-Egyptian army against Assyria. Some scholars argue this helped save Jerusalem."
+  },
+  "importance": 1
+ },
+ {
+  "id": "theodosius-i",
+  "name": {
+   "he": "תאודוסיוס הראשון",
+   "en": "Theodosius I"
+  },
+  "born": 347,
+  "died": 395,
+  "active": [
+   380,
+   395
+  ],
+  "lon": 29.0718,
+  "lat": 40.9659,
+  "place": {
+   "he": "קונסטנטינופול",
+   "en": "Constantinople"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "קיסר שהגביל את היהודים בחוק",
+   "en": "Emperor who restricted the Jews by law"
+  },
+  "impact": {
+   "he": "הפך את הנצרות לדת הרשמית היחידה של האימפריה (380). מאז החמיר בהדרגה מעמדם המשפטי של היהודים.",
+   "en": "Made Christianity the sole official religion of the Empire (380). From then on the legal status of Jews gradually worsened."
+  },
+  "importance": 2
+ },
+ {
+  "id": "theodosius-ii",
+  "name": {
+   "he": "תאודוסיוס השני",
+   "en": "Theodosius II"
+  },
+  "born": 401,
+  "died": 450,
+  "active": [
+   408,
+   450
+  ],
+  "lon": 28.9493,
+  "lat": 41.0962,
+  "place": {
+   "he": "קונסטנטינופול",
+   "en": "Constantinople"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "קיסר שחוקיו צמצמו את זכויות היהודים",
+   "en": "Emperor whose legal code curtailed Jewish rights"
+  },
+  "impact": {
+   "he": "אסר על יהודים לכהן בתפקידים ציבוריים ולבנות בתי כנסת חדשים. בימיו בוטלה הנשיאות בארץ ישראל (כ-425).",
+   "en": "Barred Jews from public office and from building new synagogues. Under him the Jewish Patriarchate in the Land of Israel ended (c. 425)."
+  },
+  "importance": 2
+ },
+ {
+  "id": "shapur-i",
+  "name": {
+   "he": "שאפור הראשון",
+   "en": "Shapur I"
+  },
+  "born": 215,
+  "died": 270,
+  "active": [
+   240,
+   270
+  ],
+  "lon": 44.58,
+  "lat": 33.1,
+  "place": {
+   "he": "בבל (האימפריה הסאסאנית)",
+   "en": "Babylonia (Sasanian Empire)"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מלך פרס שבימיו פרחה יהדות בבל",
+   "en": "Sasanian king under whom Babylonian Jewry flourished"
+  },
+  "impact": {
+   "he": "העניק ליהודי בבל אוטונומיה רחבה תחת ריש גלותא. לפי התלמוד קיים קשרי ידידות עם האמורא שמואל, שקבע \"דינא דמלכותא דינא\". האוטונומיה אפשרה את צמיחת התלמוד הבבלי.",
+   "en": "Granted Babylonian Jewry broad autonomy under the Exilarch. The Talmud describes friendly ties with the sage Shmuel, author of the principle 'the law of the land is the law'. This autonomy allowed the Babylonian Talmud to flourish."
+  },
+  "importance": 2
+ },
+ {
+  "id": "muhammad",
+  "name": {
+   "he": "מוחמד",
+   "en": "Muhammad"
+  },
+  "born": 570,
+  "died": 632,
+  "active": [
+   622,
+   632
+  ],
+  "lon": 39.61,
+  "lat": 24.47,
+  "place": {
+   "he": "מדינה (יתר'ב)",
+   "en": "Medina (Yathrib)"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "מייסד האסלאם",
+   "en": "Founder of Islam"
+  },
+  "impact": {
+   "he": "בשנותיו במדינה רדף את שלושת השבטים היהודיים של העיר: באנו קינוקאע ובאנו נדיר גורשו, ואנשי באנו קורייט׳ה הוצאו להורג. סיווגנו אותו כ׳מורכב׳ ולא כצורר מובהק משום שהאסלאם שייסד — על אף הרדיפה כלפי יהודי ערב — היה לאורך הדורות לעיתים סובלני כלפי היהודים, ולרוב פחות אכזר מהנצרות האירופית (תור הזהב בספרד, מרכז התורה בבבל). יהדות תימן, למשל, שרדה תחת שלטון האסלאם יותר מ-1,300 שנה.",
+   "en": "In Medina he persecuted the city’s three Jewish tribes: Banu Qaynuqa and Banu Nadir were expelled and the men of Banu Qurayza were executed. We classify him as ‘mixed’ rather than a clear persecutor because the Islam he founded — despite that persecution of Arabia’s Jews — was over the centuries at times tolerant toward Jews, and generally less cruel than European Christianity (the Golden Age in Spain, the Torah center in Babylonia). Yemenite Jewry, for instance, survived under Muslim rule for more than 1,300 years."
+  },
+  "importance": 2
+ },
+ {
+  "id": "charlemagne",
+  "name": {
+   "he": "קרל הגדול",
+   "en": "Charlemagne"
+  },
+  "born": 742,
+  "died": 814,
+  "active": [
+   768,
+   814
+  ],
+  "lon": 6.1191,
+  "lat": 50.78,
+  "place": {
+   "he": "אאכן, ממלכת הפרנקים",
+   "en": "Aachen, Frankish realm"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "קיסר שעודד התיישבות סוחרים יהודים",
+   "en": "Emperor who encouraged Jewish merchant settlement"
+  },
+  "impact": {
+   "he": "עודד סוחרים יהודים להתיישב בממלכתו והעסיק יהודים כשליחים, ובהם יצחק היהודי ששלח לחצר הח'ליף הארון א-רשיד. לפי המסורת הביא את משפחת קלונימוס מלוקה לגרמניה, ומכאן ראשית יהדות אשכנז.",
+   "en": "Encouraged Jewish merchants to settle in his realm and used Jews as envoys, including Isaac the Jew, whom he sent to Harun al-Rashid. Tradition credits him with bringing the Kalonymus family from Lucca, the beginning of Ashkenazi Jewry."
+  },
+  "importance": 2
+ },
+ {
+  "id": "bulan",
+  "name": {
+   "he": "בולאן מלך הכוזרים",
+   "en": "Bulan, Khazar king"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   740,
+   760
+  ],
+  "lon": 47.5,
+  "lat": 46.3,
+  "place": {
+   "he": "ממלכת כוזריה",
+   "en": "Khazar Khaganate"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מלך כוזרי שהתגייר",
+   "en": "Khazar king who converted"
+  },
+  "impact": {
+   "he": "לפי \"התכתובת הכוזרית\" בחר בולאן ביהדות, ואחריו התגיירה האליטה הכוזרית. הסיפור הזה עומד ברקע \"ספר הכוזרי\" של רבי יהודה הלוי.",
+   "en": "According to the 'Khazar Correspondence', Bulan chose Judaism and the Khazar elite followed. The story frames Judah Halevi's Kuzari."
+  },
+  "importance": 2,
+  "traditional": true
+ },
+ {
+  "id": "al-hakim",
+  "name": {
+   "he": "אל-חאכם ביאמר אללה",
+   "en": "Al-Hakim bi-Amr Allah"
+  },
+  "born": 985,
+  "died": 1021,
+  "active": [
+   1004,
+   1021
+  ],
+  "lon": 31.2686,
+  "lat": 30.04,
+  "place": {
+   "he": "קהיר, הח'ליפות הפאטמית",
+   "en": "Cairo, Fatimid Caliphate"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "ח׳ליף פאטמי שרדף יהודים ונוצרים",
+   "en": "Fatimid caliph who persecuted Jews and Christians"
+  },
+  "impact": {
+   "he": "הורה להרוס בתי כנסת וכנסיות, ובהן כנסיית הקבר בירושלים (1009), וכפה על יהודים ונוצרים סימני היכר משפילים. סמוך למותו ביטל חלק מהגזירות.",
+   "en": "Ordered synagogues and churches destroyed, including the Church of the Holy Sepulchre (1009), and imposed humiliating distinguishing marks on Jews and Christians. He reversed some decrees near the end of his life."
+  },
+  "importance": 1
+ },
+ {
+  "id": "joao-iii",
+  "name": {
+   "he": "ז'ואאו השלישי",
+   "en": "João III of Portugal"
+  },
+  "born": 1502,
+  "died": 1557,
+  "active": [
+   1536,
+   1557
+  ],
+  "lon": -9.1083,
+  "lat": 38.72,
+  "place": {
+   "he": "ליסבון",
+   "en": "Lisbon"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך פורטוגל שייסד בה את האינקוויזיציה",
+   "en": "King of Portugal who founded its Inquisition"
+  },
+  "impact": {
+   "he": "הקים את האינקוויזיציה הפורטוגלית (1536), שרדפה את \"הנוצרים החדשים\" צאצאי היהודים שהומרו בכפייה. רבים נמלטו לאמסטרדם, לאימפריה העות'מאנית ולעולם החדש.",
+   "en": "Established the Portuguese Inquisition (1536), which hunted the 'New Christians' descended from forcibly converted Jews. Many fled to Amsterdam, the Ottoman Empire and the New World."
+  },
+  "importance": 2
+ },
+ {
+  "id": "suleiman",
+  "name": {
+   "he": "סולימאן המפואר",
+   "en": "Suleiman the Magnificent"
+  },
+  "born": 1494,
+  "died": 1566,
+  "active": [
+   1520,
+   1566
+  ],
+  "lon": 28.8831,
+  "lat": 40.9971,
+  "place": {
+   "he": "קושטא",
+   "en": "Istanbul"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "סולטאן שבנה מחדש את חומות ירושלים",
+   "en": "Sultan who rebuilt the walls of Jerusalem"
+  },
+  "impact": {
+   "he": "בנה את חומות ירושלים של היום, דחה עלילות דם באימפריה ותמך בדונה גרציה ובדון יוסף נשיא, שקיבל ממנו את טבריה. בימיו פרחה צפת.",
+   "en": "Built Jerusalem's present walls, rejected blood libels in his empire, and backed Doña Gracia and Don Joseph Nasi, to whom he granted Tiberias. Safed flourished in his day."
+  },
+  "importance": 2
+ },
+ {
+  "id": "william-the-silent",
+  "name": {
+   "he": "וילם השתקן מאורנז'",
+   "en": "William the Silent"
+  },
+  "born": 1533,
+  "died": 1584,
+  "active": [
+   1572,
+   1584
+  ],
+  "lon": 4.8482,
+  "lat": 52.399,
+  "place": {
+   "he": "הולנד",
+   "en": "Dutch Republic"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מנהיג המרד ההולנדי",
+   "en": "Leader of the Dutch Revolt"
+  },
+  "impact": {
+   "he": "אבי הרפובליקה ההולנדית, שקבעה בעקבות מאבקו עיקרון של חופש מצפון (אוטרכט, 1579). חופש זה הפך את אמסטרדם למקלט ליהודי ספרד ופורטוגל, ל\"ירושלים של הולנד\".",
+   "en": "Father of the Dutch Republic, which enshrined freedom of conscience (Utrecht, 1579). That freedom made Amsterdam a haven for Sephardic Jews, the 'Dutch Jerusalem'."
+  },
+  "importance": 1
+ },
+ {
+  "id": "al-mahdi-ahmad",
+  "name": {
+   "he": "האימאם אל-מהדי אחמד",
+   "en": "Imam al-Mahdi Ahmad"
+  },
+  "born": 1619,
+  "died": 1681,
+  "active": [
+   1676,
+   1681
+  ],
+  "lon": 44.21,
+  "lat": 15.35,
+  "place": {
+   "he": "צנעא, תימן",
+   "en": "Sana'a, Yemen"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "האימאם שהגלה את יהודי תימן (גלות מוזע)",
+   "en": "The imam who exiled Yemen’s Jews (the Mawza exile)"
+  },
+  "impact": {
+   "he": "החריב את בתי הכנסת וגירש את כל יהודי תימן למוזע שבמדבר (1679). רבים מתו בדרך; השורדים הורשו לשוב כעבור כשנה, אך לא לבתיהם הקודמים.",
+   "en": "Destroyed synagogues and exiled all of Yemen's Jews to the desert of Mawza (1679). Many died; survivors were allowed back about a year later, but not to their old homes."
+  },
+  "calendar": {
+   "he": "\"גלות מוזע\" נזכרת בשירת רבי שלום שבזי",
+   "en": "The 'Mawza Exile' lives on in Rabbi Shalom Shabazi's poetry"
+  },
+  "importance": 2
+ },
+ {
+  "id": "catherine-the-great",
+  "name": {
+   "he": "יקטרינה הגדולה",
+   "en": "Catherine the Great"
+  },
+  "born": 1729,
+  "died": 1796,
+  "active": [
+   1772,
+   1796
+  ],
+  "lon": 30.31,
+  "lat": 59.94,
+  "place": {
+   "he": "סנקט פטרבורג",
+   "en": "St Petersburg"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "קיסרית רוסיה שיצרה את תחום המושב",
+   "en": "Russian empress who created the Pale of Settlement"
+  },
+  "impact": {
+   "he": "בחלוקות פולין קיבלה רוסיה מאות אלפי יהודים. יקטרינה הגבילה את מגוריהם ל\"תחום המושב\" (1791), גבול שעיצב את חיי יהודי רוסיה עד 1917.",
+   "en": "The partitions of Poland brought hundreds of thousands of Jews under Russia. Catherine restricted their residence to the 'Pale of Settlement' (1791), a boundary that shaped Russian Jewish life until 1917."
+  },
+  "importance": 2
+ },
+ {
+  "id": "franz-joseph",
+  "name": {
+   "he": "פרנץ יוזף",
+   "en": "Franz Joseph I"
+  },
+  "born": 1830,
+  "died": 1916,
+  "active": [
+   1867,
+   1916
+  ],
+  "lon": 16.4071,
+  "lat": 48.21,
+  "place": {
+   "he": "וינה",
+   "en": "Vienna"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "קיסר שבימיו זכו יהודי האימפריה לאמנציפציה",
+   "en": "Emperor under whom the empire’s Jews won emancipation"
+  },
+  "impact": {
+   "he": "החוקה של 1867 העניקה ליהודי האימפריה שוויון זכויות מלא. הוא התנגד בגלוי לאנטישמיות, והיהודים כינו אותו בחיבה \"פרויים יוסל\". בימיו פרחה יהדות וינה, בודפשט וגליציה.",
+   "en": "The 1867 constitution gave the empire's Jews full equality. He openly opposed antisemitism, and Jews fondly called him 'Froyim Yossel'. Viennese, Hungarian and Galician Jewry flourished in his reign."
+  },
+  "importance": 2
+ },
+ {
+  "id": "symon-petliura",
+  "name": {
+   "he": "סימון פטליורה",
+   "en": "Symon Petliura"
+  },
+  "born": 1879,
+  "died": 1926,
+  "active": [
+   1918,
+   1920
+  ],
+  "lon": 30.4704,
+  "lat": 50.479,
+  "place": {
+   "he": "אוקראינה",
+   "en": "Ukraine"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מנהיג אוקראיני שבימיו נטבחו יהודים בפוגרומים",
+   "en": "Ukrainian leader during whose rule Jews were massacred in pogroms"
+  },
+  "impact": {
+   "he": "במלחמת האזרחים (1918–1920) ביצעו כוחות תחת פיקודו פוגרומים רבים, שבהם נרצחו עשרות אלפי יהודים. אחריותו האישית שנויה במחלוקת; ב-1926 התנקש בו שלום שוורצברד, שזוכה במשפטו בפריז.",
+   "en": "During the civil war (1918–1920) forces under his command carried out many pogroms that killed tens of thousands of Jews. His personal responsibility is debated; in 1926 he was assassinated by Sholem Schwartzbard, who was acquitted in Paris."
+  },
+  "importance": 2
+ },
+ {
+  "id": "winston-churchill",
+  "name": {
+   "he": "וינסטון צ'רצ'יל",
+   "en": "Winston Churchill"
+  },
+  "born": 1874,
+  "died": 1965,
+  "active": [
+   1921,
+   1945
+  ],
+  "lon": -0.1222,
+  "lat": 51.4449,
+  "place": {
+   "he": "לונדון",
+   "en": "London"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "ראש ממשלת בריטניה ותומך הציונות",
+   "en": "British prime minister and supporter of Zionism"
+  },
+  "impact": {
+   "he": "כשר המושבות הגדיר את מדיניות הבית הלאומי (1922), והתנגד לספר הלבן של 1939. בשנות המלחמה הוביל את בריטניה נגד גרמניה הנאצית ותמך בהקמת הבריגדה היהודית (1944).",
+   "en": "As Colonial Secretary he framed Britain's Jewish National Home policy (1922) and opposed the 1939 White Paper. In wartime he led Britain against Nazi Germany and backed the Jewish Brigade (1944)."
+  },
+  "importance": 2
+ },
+ {
+  "id": "malcolm-macdonald",
+  "name": {
+   "he": "מלקולם מקדונלד",
+   "en": "Malcolm MacDonald"
+  },
+  "born": 1901,
+  "died": 1981,
+  "active": [
+   1938,
+   1940
+  ],
+  "lon": -0.1808,
+  "lat": 51.529,
+  "place": {
+   "he": "לונדון",
+   "en": "London"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "שר בריטי; ״הספר הלבן״ שהגביל את העלייה",
+   "en": "British minister; the White Paper that curbed immigration"
+  },
+  "impact": {
+   "he": "פרסם את \"הספר הלבן\" (1939), שהגביל את העלייה ל-75,000 איש בחמש שנים בדיוק ערב השואה. ההגבלות חסמו את דרכם של פליטים רבים לארץ ישראל.",
+   "en": "Issued the 1939 White Paper, capping Jewish immigration at 75,000 over five years on the eve of the Holocaust. The restrictions shut many refugees out of the Land of Israel."
+  },
+  "importance": 2
+ },
+ {
+  "id": "bourges-maunoury",
+  "name": {
+   "he": "מוריס בורז'ס-מונורי",
+   "en": "Maurice Bourgès-Maunoury"
+  },
+  "born": 1914,
+  "died": 1993,
+  "active": [
+   1956,
+   1957
+  ],
+  "lon": 2.3876,
+  "lat": 48.86,
+  "place": {
+   "he": "פריז",
+   "en": "Paris"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "ראש ממשלת צרפת שחתר לברית עם ישראל",
+   "en": "French PM who forged an alliance with Israel"
+  },
+  "impact": {
+   "he": "כשר ההגנה וכראש ממשלה היה ממובילי הברית הצרפתית-ישראלית. הוא חתם על ההסכם לבניית הכור הגרעיני בדימונה (1957).",
+   "en": "As defence minister and prime minister he led the French-Israeli alliance. He signed the agreement to build the Dimona nuclear reactor (1957)."
+  },
+  "importance": 1
+ },
+ {
+  "id": "richard-nixon",
+  "name": {
+   "he": "ריצ'רד ניקסון",
+   "en": "Richard Nixon"
+  },
+  "born": 1913,
+  "died": 1994,
+  "active": [
+   1969,
+   1974
+  ],
+  "lon": -77.1339,
+  "lat": 38.8871,
+  "place": {
+   "he": "וושינגטון",
+   "en": "Washington"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "נשיא ארה״ב; הרכבת האווירית במלחמת יום הכיפורים",
+   "en": "U.S. president; the airlift in the Yom Kippur War"
+  },
+  "impact": {
+   "he": "במלחמת יום הכיפורים (1973) הורה על הרכבת האווירית \"ניקל גראס\", שסיפקה לישראל נשק ותחמושת. בהקלטות פרטיות שלו נשמעו התבטאויות אנטישמיות.",
+   "en": "In the 1973 Yom Kippur War he ordered the 'Nickel Grass' airlift of arms and ammunition to Israel. His private tapes also contain antisemitic remarks."
+  },
+  "importance": 2
+ },
+ {
+  "id": "anwar-sadat",
+  "name": {
+   "he": "אנואר סאדאת",
+   "en": "Anwar Sadat"
+  },
+  "born": 1918,
+  "died": 1981,
+  "active": [
+   1970,
+   1981
+  ],
+  "lon": 31.2035,
+  "lat": 30.069,
+  "place": {
+   "he": "קהיר",
+   "en": "Cairo"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "נשיא מצרים: מלחמה ואז שלום עם ישראל",
+   "en": "Egyptian president: war, then peace with Israel"
+  },
+  "impact": {
+   "he": "פתח במלחמת יום הכיפורים (1973), ובהמשך היה למנהיג הערבי הראשון שביקר בירושלים (1977) וחתם על שלום עם ישראל (1979). על כך נרצח ב-1981.",
+   "en": "Launched the 1973 Yom Kippur War, then became the first Arab leader to visit Jerusalem (1977) and to sign peace with Israel (1979). He was assassinated for it in 1981."
+  },
+  "importance": 3
+ },
+ {
+  "id": "ruhollah-khomeini",
+  "name": {
+   "he": "רוחאללה חומייני",
+   "en": "Ruhollah Khomeini"
+  },
+  "born": 1902,
+  "died": 1989,
+  "active": [
+   1979,
+   1989
+  ],
+  "lon": 51.39,
+  "lat": 35.69,
+  "place": {
+   "he": "טהרן",
+   "en": "Tehran"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מייסד איראן האסלאמית, אויב מושבע של ישראל",
+   "en": "Founder of Islamic Iran, sworn enemy of Israel"
+  },
+  "impact": {
+   "he": "הפך את איראן לאויבת מוצהרת של ישראל וקרא להשמדתה. מרבית יהודי איראן, כ-80,000 ערב המהפכה, היגרו ממנה.",
+   "en": "Turned Iran into a sworn enemy of Israel and called for its destruction. Most of Iran's roughly 80,000 Jews left after the revolution."
+  },
+  "importance": 2
+ },
+ {
+  "id": "mikhail-gorbachev",
+  "name": {
+   "he": "מיכאיל גורבצ'וב",
+   "en": "Mikhail Gorbachev"
+  },
+  "born": 1931,
+  "died": 2022,
+  "active": [
+   1987,
+   1991
+  ],
+  "lon": 37.5638,
+  "lat": 55.779,
+  "place": {
+   "he": "מוסקבה",
+   "en": "Moscow"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מנהיג ברית המועצות",
+   "en": "Soviet leader"
+  },
+  "impact": {
+   "he": "פתח את שערי ברית המועצות ליציאת יהודים. בעקבות זאת עלו לישראל כמיליון יהודים בשנות ה-90.",
+   "en": "Opened the Soviet Union's gates to Jewish emigration. About a million Jews then immigrated to Israel in the 1990s."
+  },
+  "importance": 2
+ },
+ {
+  "id": "donald-trump",
+  "name": {
+   "he": "דונלד טראמפ",
+   "en": "Donald Trump"
+  },
+  "born": 1946,
+  "died": null,
+  "active": [
+   2017,
+   2026
+  ],
+  "lon": -77.0082,
+  "lat": 38.9,
+  "place": {
+   "he": "וושינגטון",
+   "en": "Washington"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "נשיא ארצות הברית",
+   "en": "U.S. President"
+  },
+  "impact": {
+   "he": "בכהונתו הראשונה הכיר בירושלים כבירת ישראל והעביר אליה את השגרירות (2018), הכיר בריבונות ישראל ברמת הגולן ותיווך את \"הסכמי אברהם\" (2020). בכהונתו השנייה תמך בישראל במלחמה עם איראן והוביל את הסכם שחרור החטופים (2025).",
+   "en": "In his first term he recognized Jerusalem as Israel's capital and moved the embassy there (2018), recognized Israeli sovereignty over the Golan, and brokered the Abraham Accords (2020). In his second term he backed Israel in the war with Iran and led the 2025 hostage-release deal."
+  },
+  "importance": 2
+ }
+]

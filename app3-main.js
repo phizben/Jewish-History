@@ -2,11 +2,11 @@
 /* ---------- extra strings ---------- */
 Object.assign(T.he,{inYear:'בשנת',now:'מה קורה עכשיו',events:'אירועים',people:'דמויות יהודיות',ally:'ידידים',enemy:'צוררים',mixed:'דמויות מורכבות',comm:'קהילות גדולות',
  showAll:n=>`הצג את כולם (${n})`,showLess:'הצג פחות',nothing:'אין כאן פריטים בשנה הזו',back:'חזרה ל',hide:'הסתר מהמפה',show:'הצג במפה',
- rabbi:'בהלכה',rulers:'בארץ ישראל',help:'עזרה ומקלדת',full:'כל הדמויות',suggest:'דמויות בולטות',fullOff:'חזרה למפה',hintT:'גררו את ציר הזמן (או ▶) כדי לשנות את העולם · הקישו על נקודה ללמוד עוד · ונסו את "מה הסיפור?"',hintB:'הבנתי',
+ rabbi:'תקופה',rulers:'בארץ ישראל',help:'עזרה ומקלדת',full:'כל הדמויות',suggest:'דמויות בולטות',fullOff:'חזרה למפה',hintT:'גררו את ציר הזמן (או ▶) כדי לשנות את העולם · הקישו על נקודה ללמוד עוד · ונסו את "מה הסיפור?"',hintB:'הבנתי',
  lgEv:'אירוע',lgJ:'דמות יהודית',lgA:'ידיד',lgE:'צורר',open:'פתח',close2:'סגור',lgCen:'מרכזי חיים',heatT:'מרכזי החיים היהודיים (משוער, יחסי)',edgeTip:'מרכז מחוץ לתצוגה · לחצו למעבר',lgLayers:'שכבות',lgMarkers:'דמויות ואירועים'});
 Object.assign(T.en,{inYear:'In',now:'What is happening now',events:'Events',people:'Jewish figures',ally:'Allies',enemy:'Persecutors',mixed:'Mixed legacy',comm:'Major communities',
  showAll:n=>`Show all (${n})`,showLess:'Show less',nothing:'Nothing here this year',back:'Back to ',hide:'Hide from map',show:'Show on map',
- rabbi:'Rabbinic era',rulers:'Land of Israel',help:'Help & keys',full:'All figures',suggest:'Notable figures',fullOff:'Back to map',hintT:'Drag the timeline (or ▶) to change the world · tap a dot to learn more · and try "What’s the Story?"',hintB:'Got it',
+ rabbi:'Era',rulers:'Land of Israel',help:'Help & keys',full:'All figures',suggest:'Notable figures',fullOff:'Back to map',hintT:'Drag the timeline (or ▶) to change the world · tap a dot to learn more · and try "What’s the Story?"',hintB:'Got it',
  lgEv:'Event',lgJ:'Jewish figure',lgA:'Ally',lgE:'Persecutor',open:'Open',close2:'Close',lgCen:'Centers of life',heatT:'Centers of Jewish life (approximate, relative)',edgeTip:'Off-screen center · click to go there',lgLayers:'Layers',lgMarkers:'Figures & events'});
 linear=false;
 
@@ -431,7 +431,7 @@ function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';
  const sh=el('div','sh');sh.append(el('h2',null,L().title));const x=el('button','ibtn','✕');x.setAttribute('data-close','');x.setAttribute('aria-label',L().close);sh.appendChild(x);b.appendChild(sh);
  b.appendChild(el('p',null,he?'שלושה חלקים: ציר הזמן למטה קובע את השנה, הרשימה בצד אומרת מה קורה בה, והמפה מראה איפה. ציר הזמן לא אחיד: תקופות סוערות מקבלות יותר מקום.':'Three parts: the timeline at the bottom sets the year, the side list says what is happening, and the map shows where. Time is uneven on purpose: turbulent eras get more room.'));
  b.appendChild(el('h3',null,he?'צבעי התקופות':'Era colors'));
- b.appendChild(el('p',null,he?'הפסים הצבעוניים בציר הזמן מסמנים את תקופות ישראל לפי החלוקה המסורתית:':'The colored bands on the timeline mark the eras of Jewish history by the traditional periodization:'));
+ b.appendChild(el('p',null,he?'הפסים הצבעוניים בציר הזמן מסמנים את תקופות ההיסטוריה היהודית (חלוקה היסטורית — חלקה לפי דורות ההלכה, והעידן המודרני לפי אבני-דרך לאומיות):':'The colored bands on the timeline mark the eras of Jewish history (a historical division — partly by the generations of halakhic authorities, and the modern era by national milestones):'));
  const eg=el('div','erakey');
  PERIODS.forEach((p,i)=>{const row=el('div','erakey-i');const sw=el('i');sw.style.background='var(--p-'+i+')';row.append(sw,el('span',null,tx(p)));eg.appendChild(row)});
  b.appendChild(eg);

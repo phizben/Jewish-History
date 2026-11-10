@@ -62,7 +62,7 @@ function drawBorders(force){const s=snapFor(year);
  // overlay region labels (context) yield to event/selected labels (content) sitting in the same spot
  const strong=[];if(selected&&selected.lon!=null){const sp=proj([selected.lon,selected.lat]);if(sp)strong.push(sp)}
  NOW.events.forEach(e=>{if(majorNow(e)){const sp=proj([e.lon,e.lat]);if(sp)strong.push(sp)}});
- gOvl.selectAll('g').data(ov,o=>o.en).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
+ gOvl.selectAll('g').data(ov,o=>o.en+'|'+o.start).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
   .each(function(o){const g=d3.select(this);let poly;if(o.geo){poly=o.geo}else{poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};}
    g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')).attr('d',gpath(poly));
    const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);const hide=c&&strong.some(mp=>Math.abs(c[0]-mp[0])*k<92&&Math.abs(c[1]-mp[1])*k<26);

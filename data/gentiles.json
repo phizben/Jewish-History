@@ -2064,5 +2064,34 @@
    "en": "A Phoenician princess married to King Ahab of Israel, who promoted Baal worship and persecuted the prophets of God, until Elijah stood against her. Her name became a byword for wickedness."
   },
   "importance": 2
+ },
+ {
+  "id": "clement-vi",
+  "name": {
+   "he": "האפיפיור קלמנס השישי",
+   "en": "Pope Clement VI"
+  },
+  "born": 1291,
+  "died": 1352,
+  "active": [
+   1348,
+   1352
+  ],
+  "lon": 4.81,
+  "lat": 43.95,
+  "place": {
+   "he": "אביניון",
+   "en": "Avignon"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "אפיפיור שהגן על היהודים במגפה השחורה",
+   "en": "Pope who defended the Jews during the Black Death"
+  },
+  "impact": {
+   "he": "ב-1348, כשיהודים נטבחו באשמת הרעלת בארות בזמן המגפה השחורה, הוציא שתי בולות שגינו את הטבח — הצביע שגם יהודים מתים מהמגפה ושהיא פגעה גם במקומות ללא יהודים — אסר רצח והמרה בכפייה, ולקח את היהודים תחת חסות האפיפיור.",
+   "en": "In 1348, as Jews were massacred on charges of poisoning wells during the Black Death, he issued two papal bulls condemning the killings — noting that Jews were dying of the plague too and that it struck places with no Jews — forbidding murder and forced conversion and placing the Jews under papal protection."
+  },
+  "importance": 2
  }
 ]

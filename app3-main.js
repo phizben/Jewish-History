@@ -261,7 +261,8 @@ function renderTimeline(){
   else if(w>48){let t=nm;while(t.length>2&&tw(t+'…',12.5,600)+12>w)t=t.slice(0,-1);g.append('text').attr('x',x+w/2).attr('y',yE+eh/2+4.5).attr('text-anchor','middle').text(t+'…')}});
  // two rows: events, figures. Thin overlapping marks by importance; label only majors that have room.
  // one lane: draw EVERY point (never drop a dot); only labels are de-cluttered.
- const row=(items,cy,cls,labelOf)=>{const pts=items.map(it=>({it,x:X(it._y)}));
+ const row=(items,cy,cls,labelOf)=>{const pts=items.map(it=>({it,x:X(it._y)})).sort((a,b)=>a.x-b.x);
+  const gap=11;for(let i=1;i<pts.length;i++){if(pts[i].x-pts[i-1].x<gap)pts[i].x=pts[i-1].x+gap;}
   const g0=tl.append('g');pts.forEach(({it,x})=>{const g=g0.append('g').attr('class','bead '+cls(it)+(it===selected?' sel':''));onBead(g,it);g.append('circle').attr('class','m').attr('cx',x).attr('cy',cy).attr('r',it.kind==='event'?5.5:5)})};
  const Eh=lang==='he'?'צוררים':'Persecutors',Ah=lang==='he'?'ידידים':'Allies',Jh=lang==='he'?'יהודים':'Jews';
  const setY=p=>{const s=span(p);p._y=s[0]==null?null:(s[0]+(s[1]??s[0]))/2};

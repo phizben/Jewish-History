@@ -14,7 +14,7 @@ linear=false;
 let year=1492,curEra=-1,selected=null,hovered=null,full=false;
 const layers=Object.assign({comm:true,people:true,ally:true,enemy:true,mixed:true,events:true},store.get('layers3',{}));
 const expanded={};
-const GROUPS=['events','people','ally','enemy','mixed'];
+const GROUPS=['comm','events','people','ally','enemy','mixed'];
 const groupColor={events:'var(--neutral)',people:'var(--brand)',ally:'var(--ally)',enemy:'var(--enemy)',mixed:'var(--mixed)',comm:'var(--gold)'};
 
 /* ---------- map ---------- */
@@ -84,7 +84,8 @@ function placeLabels(){if(lastSnap==null)return;const fs=polyCache.get(lastSnap)
 
 /* what is "now": items active within a window around the year */
 function windowYears(){return Math.max(2,Math.min(120,yearsPerPx(year)*60))}
-function nowItems(){const w=windowYears();const ov=(a,b)=>a<=year+w&&b>=year-w;const out={events:[],people:[],ally:[],enemy:[],mixed:[]};
+function nowItems(){const w=windowYears();const ov=(a,b)=>a<=year+w&&b>=year-w;const out={comm:[],events:[],people:[],ally:[],enemy:[],mixed:[]};
+ (D.communities||[]).forEach(c=>{const e=c.end==null?MAXY:c.end;if(year>=c.start&&year<=e)out.comm.push(c)});
  D.events.forEach(e=>{if(ov(e.year,e.endYear))out.events.push(e)});
  D.people.forEach(p=>{const s=span(p);if(s[0]!=null&&ov(s[0],s[1]??s[0]))out.people.push(p)});
  D.gentiles.forEach(g=>{const s=span(g);if(s[0]!=null&&ov(s[0],s[1]??s[0]))out[g.stance].push(g)});
@@ -96,6 +97,8 @@ const commR=c=>2.2+Math.min(8,Math.sqrt(Math.max(0,interp(c.pop,year)))/45);
 const measure=document.createElement('canvas').getContext('2d');
 function tw(s,size,weight){measure.font=`${weight||500} ${size||12}px Rubik,Arial`;return measure.measureText(s).width}
 const majorNow=d=>d.kind==='event'?d.importance>=3&&Math.abs(d.year-year)<=Math.max(1,yearsPerPx(year)*25):d.kind!=='comm'&&d.importance>=3;
+function labelText(d){if(d.kind==='comm'){const p=interp(d.pop,year);return tx(d.name)+(p>0?' · '+fmtPop(p).replace(L().popU,''):'')}return tx(d.name||d.title)}
+const labelComm=d=>d.kind==='comm'&&(k>=4.5||interp(d.pop,year)>=200000);
 function drawPoints(){
  const items=[];GROUPS.forEach(g=>{if(layers[g])NOW[g].forEach(it=>items.push(it))});
  const order={comm:0,person:1,gent:1,event:2};items.sort((a,b)=>order[a.kind]-order[b.kind]);
@@ -108,11 +111,11 @@ function drawPoints(){
  m.each(function(d){d._xy=proj([d.lon,d.lat])||[0,0];const r=d.kind==='comm'?commR(d):d.kind==='event'?6:5;d._r=r;const g=d3.select(this);g.select('.m').attr('r',r);g.select('.ring').attr('r',r+5)});
  // labels: only a few majors, without collisions
  const boxes=[];const lab=new Set();
- items.filter(d=>d===selected||majorNow(d)).sort((a,b)=>(b===selected)-(a===selected)||(b.importance||0)-(a.importance||0)||(b.kind==='event')-(a.kind==='event')).forEach(d=>{const t=tx(d.name||d.title);const w=tw(t,12,600)+16;const sx=d._xy[0]*k,sy=d._xy[1]*k;const x0=rtl()?sx-d._r-6-w:sx+d._r+6;const bb=[x0,sy-10,x0+w,sy+10];
+ items.filter(d=>d===selected||majorNow(d)||labelComm(d)).sort((a,b)=>(b===selected)-(a===selected)||(a.kind==='comm')-(b.kind==='comm')||(b.importance||0)-(a.importance||0)||(b.kind==='event')-(a.kind==='event')).forEach(d=>{const t=labelText(d);const w=tw(t,12,600)+16;const sx=d._xy[0]*k,sy=d._xy[1]*k;const x0=rtl()?sx-d._r-6-w:sx+d._r+6;const bb=[x0,sy-10,x0+w,sy+10];
   if(d!==selected&&boxes.some(b=>!(bb[2]<b[0]||bb[0]>b[2]||bb[3]<b[1]||bb[1]>b[3])))return;boxes.push(bb);lab.add(d)});
  m.classed('lab',d=>lab.has(d)).classed('sel',d=>d===selected).classed('hl',d=>d===hovered).classed('minor',d=>!(lab.has(d)||d===selected));
  m.each(function(d){if(lab.has(d)||d===selected)return;const base=d.kind==='comm'?commR(d):d.kind==='event'?6:5;d._r=base*0.6;const g=d3.select(this);g.select('.m').attr('r',d._r);g.select('.ring').attr('r',d._r+5)});
- m.each(function(d){const p=d3.select(this).select('.pill');const t=tx(d.name||d.title);const w=tw(t,12,600)+16;const x=rtl()?-d._r-6-w:d._r+6;
+ m.each(function(d){const p=d3.select(this).select('.pill');const t=labelText(d);const w=tw(t,12,600)+16;const x=rtl()?-d._r-6-w:d._r+6;
   p.select('rect').attr('x',x).attr('y',-10).attr('width',w).attr('height',20).attr('rx',10);p.select('text').attr('x',rtl()?x+w-8:x+8).attr('y',0).attr('text-anchor',rtl()?'end':'start').text(t)});
  m.filter(d=>d===selected||d===hovered).raise();
  rescale()}
@@ -450,6 +453,9 @@ function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';
  (D.demography.sources||[]).forEach(s=>{if(s.url&&!/odyeda/.test(s.url))link(tx(s),s.url)});b.appendChild(src);
  b.appendChild(el('p',null,he?'מספרי האוכלוסייה, בעיקר לפני 1800, הם הערכות גסות. תאריכי התקופה המקראית משוערים או מסורתיים. הגבולות מקורבים.':'Population figures, especially before 1800, are rough estimates. Biblical dates are approximate or traditional. Borders are approximate.'));
  const re=el('button','btn',he?'הצג מדריך פתיחה':'Show the intro guide');re.style.marginTop='6px';re.onclick=()=>{closeOverlay('help');showIntro(true)};b.appendChild(re);
+ b.appendChild(el('h3',null,he?'פידבק':'Feedback'));
+ b.appendChild(el('p',null,he?'מצאתם טעות? רוצים להציע דמות או שיפור? נשמח לשמוע.':'Found an error? Want to suggest a figure or improvement? We would love to hear.'));
+ const fb=el('a','btn pri',he?'שלחו הערה או דווחו על טעות':'Send feedback or report an error');fb.href='https://docs.google.com/forms/d/e/1FAIpQLSdW5lwurUx2n-7PvcGBlj7ADTMzTyOBHJBKAFscri87aR3PrA/viewform';fb.target='_blank';fb.rel='noopener noreferrer';fb.style.marginTop='6px';fb.style.display='inline-block';b.appendChild(fb);
  openOverlay('help')}
 $('helpbtn').onclick=openHelp;
 $('fullbtn').onclick=()=>setFull(!full);

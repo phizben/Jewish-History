@@ -288,11 +288,10 @@ kbd{font-family:var(--f-ui);font-size:12.5px;font-weight:600;min-width:26px;text
   .now .y{font-size:26px}
   .now .meta .pop{display:none}
   .ibtn{width:36px;height:36px}
-  .main{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;position:relative}
+  .main{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr);position:relative}
   .mapwrap{grid-row:1}
-  .panel{grid-row:2;overflow:hidden;border-inline-end:0;border-top:1px solid var(--hair);max-height:62px;transition:max-height .25s ease}
-  .main.sheet-open{grid-template-rows:32% minmax(0,1fr)}
-  .panel[data-open="true"]{max-height:none;overflow:auto;display:block}
+  .panel{position:absolute;inset-inline:0;bottom:0;z-index:6;overflow:hidden;border-inline-end:0;border-top:1px solid var(--hair);border-radius:18px 18px 0 0;background:var(--paper);box-shadow:0 -10px 28px rgba(0,0,0,.32);max-height:64px;transition:max-height .28s ease}
+  .panel[data-open="true"]{max-height:76%;overflow:auto}
   .panel[data-open="true"] .list{overflow:visible}
   .sheetbtn{display:grid}
   .chap{padding:10px 14px}
@@ -305,9 +304,9 @@ kbd{font-family:var(--f-ui);font-size:12.5px;font-weight:600;min-width:26px;text
   .fullbtn span{display:none}
   .fullbtn{padding:0 10px}
   .tlwrap{height:178px}
-  .zoomctl{bottom:10px;inset-inline-end:10px}
+  .zoomctl{bottom:76px;inset-inline-end:10px}
   .zoomctl button{width:36px;height:36px}
-  .hint{white-space:normal;width:calc(100% - 28px);border-radius:16px;bottom:10px}
+  .hint{white-space:normal;width:calc(100% - 28px);border-radius:16px;bottom:76px}
 }
 @media (prefers-reduced-motion:reduce){.panel{transition:none}}
 

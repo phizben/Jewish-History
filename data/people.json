@@ -4609,5 +4609,257 @@
    "leader"
   ],
   "importance": 2
+ },
+ {
+  "id": "mattathias",
+  "name": {
+   "he": "מתתיהו החשמונאי",
+   "en": "Mattathias"
+  },
+  "born": null,
+  "died": -166,
+  "active": [
+   -167,
+   -166
+  ],
+  "lon": 34.95,
+  "lat": 31.9,
+  "place": {
+   "he": "מודיעין",
+   "en": "Modiin"
+  },
+  "role": {
+   "he": "הכהן שהצית את מרד החשמונאים",
+   "en": "The priest who sparked the Maccabean revolt"
+  },
+  "bio": {
+   "he": "כהן ממודיעין שסירב להקריב לאלילים ויזם את המרד בשלטון הסלבקי ובגזרות אנטיוכוס (167 לפנה״ס). חמשת בניו, ובראשם יהודה המכבי, הובילו את המרד שהביא לעצמאות יהודית.",
+   "en": "A priest of Modiin who refused to sacrifice to idols and launched the revolt against Seleucid rule and the decrees of Antiochus (167 BCE). His five sons, led by Judah Maccabee, carried the revolt that won Jewish independence."
+  },
+  "importance": 2
+ },
+ {
+  "id": "simon-maccabee",
+  "name": {
+   "he": "שמעון החשמונאי",
+   "en": "Simon Maccabee"
+  },
+  "born": null,
+  "died": -135,
+  "active": [
+   -142,
+   -135
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "role": {
+   "he": "מייסד שושלת החשמונאים",
+   "en": "Founder of the Hasmonean dynasty"
+  },
+  "bio": {
+   "he": "האחרון מבני מתתיהו. בימיו הושגה עצמאות יהודית מלאה (142 לפנה״ס), והוא כיהן כנשיא וכהן גדול — מייסד שלטון בית חשמונאי שנמשך כמאה שנה.",
+   "en": "The last of Mattathias’s sons. Under him full Jewish independence was achieved (142 BCE); he served as ethnarch and high priest, founding the Hasmonean rule that lasted about a century."
+  },
+  "importance": 2
+ },
+ {
+  "id": "john-hyrcanus",
+  "name": {
+   "he": "יוחנן הורקנוס",
+   "en": "John Hyrcanus"
+  },
+  "born": null,
+  "died": -104,
+  "active": [
+   -134,
+   -104
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "role": {
+   "he": "נשיא שהרחיב את ממלכת החשמונאים",
+   "en": "Ruler who expanded the Hasmonean kingdom"
+  },
+  "bio": {
+   "he": "בנו של שמעון. הרחיב מאוד את גבולות הממלכה — כבש את אדום, השומרון וחלקים מעבר הירדן — והפך את יהודה למעצמה אזורית.",
+   "en": "Son of Simon. He greatly expanded the kingdom’s borders — conquering Idumea, Samaria and parts of Transjordan — turning Judea into a regional power."
+  },
+  "importance": 2
+ },
+ {
+  "id": "alexander-jannaeus",
+  "name": {
+   "he": "אלכסנדר ינאי",
+   "en": "Alexander Jannaeus"
+  },
+  "born": -126,
+  "died": -76,
+  "active": [
+   -103,
+   -76
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "role": {
+   "he": "מלך ומצביא חשמונאי",
+   "en": "Hasmonean warrior-king"
+  },
+  "bio": {
+   "he": "מלך לוחם שהרחיב את הממלכה לשיא גודלה, אך הסתכסך קשות עם הפרושים ושפך דם רב במלחמות אזרחים. בעלה של שלומציון, שמלכה אחריו.",
+   "en": "A warrior-king who expanded the kingdom to its greatest extent but clashed bitterly with the Pharisees and spilled much blood in civil wars. Husband of Salome Alexandra, who reigned after him."
+  },
+  "importance": 2
+ },
+ {
+  "id": "shimon-ben-shatach",
+  "name": {
+   "he": "שמעון בן שטח",
+   "en": "Shimon ben Shatach"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   -90,
+   -70
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "role": {
+   "he": "ראש הפרושים ומחדש החינוך",
+   "en": "Pharisee leader and educational reformer"
+  },
+  "bio": {
+   "he": "מנהיג הפרושים ואב בית הדין בימי אחותו שלומציון. לפי המסורת תיקן שחובה ללמד ילדים בבית ספר, והניח יסוד לחינוך היהודי הממוסד.",
+   "en": "Leader of the Pharisees and head of the court in the days of his sister Salome Alexandra. Tradition credits him with requiring that children be taught in schools, laying a foundation for organized Jewish education."
+  },
+  "importance": 2
+ },
+ {
+  "id": "asher-ben-yehiel",
+  "name": {
+   "he": "הרא״ש – רבנו אשר",
+   "en": "Rabbeinu Asher (the Rosh)"
+  },
+  "born": 1250,
+  "died": 1327,
+  "active": [
+   1280,
+   1327
+  ],
+  "lon": -4.02,
+  "lat": 39.86,
+  "place": {
+   "he": "גרמניה וטולדו",
+   "en": "Germany and Toledo"
+  },
+  "role": {
+   "he": "גדול הפוסקים, גשר בין אשכנז לספרד",
+   "en": "Leading halakhist, bridge between Ashkenaz and Spain"
+  },
+  "bio": {
+   "he": "תלמיד המהר״ם מרוטנבורג שנמלט מגרמניה לטולדו (1303). פסקיו (״פסקי הרא״ש״) הפכו לאחד משלושה עמודי ההוראה שעליהם נשען השולחן ערוך, וחיברו בין מסורת אשכנז לספרד.",
+   "en": "A disciple of the Maharam of Rothenburg who fled Germany to Toledo (1303). His rulings became one of the three pillars on which the Shulchan Aruch rests, joining the Ashkenazi and Sephardic traditions."
+  },
+  "importance": 2
+ },
+ {
+  "id": "jacob-ben-asher",
+  "name": {
+   "he": "בעל הטורים – רבי יעקב בן אשר",
+   "en": "Jacob ben Asher (Baal ha-Turim)"
+  },
+  "born": 1269,
+  "died": 1340,
+  "active": [
+   1300,
+   1340
+  ],
+  "lon": -4.02,
+  "lat": 39.86,
+  "place": {
+   "he": "טולדו, ספרד",
+   "en": "Toledo, Spain"
+  },
+  "role": {
+   "he": "מחבר ״ארבעה טורים״",
+   "en": "Author of the Arba’ah Turim"
+  },
+  "bio": {
+   "he": "בנו של הרא״ש. חיבר את ״ארבעה טורים״, קודקס הלכתי שארגן את כל ההלכה בארבעה חלקים — המבנה והבסיס הישיר ל״שולחן ערוך״ שבא אחריו.",
+   "en": "Son of the Rosh. He wrote the Arba’ah Turim, a halakhic code organizing all of Jewish law into four parts — the structure and direct basis for the later Shulchan Aruch."
+  },
+  "importance": 2
+ },
+ {
+  "id": "gersonides",
+  "name": {
+   "he": "רלב״ג – רבי לוי בן גרשון",
+   "en": "Gersonides (Ralbag)"
+  },
+  "born": 1288,
+  "died": 1344,
+  "active": [
+   1312,
+   1344
+  ],
+  "lon": 4.81,
+  "lat": 44.14,
+  "place": {
+   "he": "פרובנס",
+   "en": "Provence"
+  },
+  "role": {
+   "he": "פילוסוף, אסטרונום ופרשן",
+   "en": "Philosopher, astronomer and commentator"
+  },
+  "bio": {
+   "he": "מגדולי ההוגים של ימי הביניים: פילוסוף, מתמטיקאי ואסטרונום שהמציא מכשיר מדידה ששימש ימאים, לצד פירוש נרחב למקרא. דמות נדירה המשלבת תורה ומדע.",
+   "en": "One of the great medieval thinkers: a philosopher, mathematician and astronomer who invented a measuring instrument used by navigators, alongside an extensive biblical commentary. A rare figure uniting Torah and science."
+  },
+  "importance": 2
+ },
+ {
+  "id": "hasdai-crescas",
+  "name": {
+   "he": "רבי חסדאי קרשקש",
+   "en": "Hasdai Crescas"
+  },
+  "born": 1340,
+  "died": 1411,
+  "active": [
+   1370,
+   1411
+  ],
+  "lon": -0.88,
+  "lat": 41.65,
+  "place": {
+   "he": "ברצלונה וסרגוסה",
+   "en": "Barcelona and Saragossa"
+  },
+  "role": {
+   "he": "פילוסוף ומנהיג יהדות ספרד",
+   "en": "Philosopher and leader of Spanish Jewry"
+  },
+  "bio": {
+   "he": "מנהיג יהדות אראגון ופילוסוף שחיבר את ״אור ה׳״, בו חלק על הרמב״ם ועל אריסטו. הוביל את שיקום הקהילות אחרי פרעות קנ״א (1391) — אסון שבו נרצח גם בנו.",
+   "en": "Leader of Aragonese Jewry and a philosopher whose work “Or Hashem” challenged both Maimonides and Aristotle. He led the rebuilding of the communities after the 1391 massacres — a catastrophe in which his own son was killed."
+  },
+  "importance": 2
  }
 ]

@@ -3289,7 +3289,7 @@
    "scientist",
    "writer"
   ],
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "chaim-weizmann",
@@ -3558,7 +3558,7 @@
    "woman",
    "zionist"
   ],
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "sy-agnon",
@@ -3718,7 +3718,7 @@
    "historian",
    "holocaust"
   ],
-  "importance": 2
+  "importance": 1
  },
  {
   "id": "mordechai-anielewicz",
@@ -3868,7 +3868,7 @@
   "born": 1889,
   "died": 1984,
   "active": [
-   1920,
+   1950,
    1984
   ],
   "lon": 34.59,

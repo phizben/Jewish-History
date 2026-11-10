@@ -1063,8 +1063,8 @@
    -30,
    10
   ],
-  "lon": 35.233,
-  "lat": 31.78,
+  "lon": 35.34,
+  "lat": 31.7,
   "place": {
    "he": "ירושלים",
    "en": "Jerusalem"
@@ -1080,7 +1080,7 @@
   "tags": [
    "sage"
   ],
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "herod",

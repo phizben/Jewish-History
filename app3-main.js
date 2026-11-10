@@ -59,10 +59,14 @@ function drawBorders(force){const s=snapFor(year);
  if(s!==lastSnap||force){lastSnap=s;const fs=snapFeatures(s);
   gPoly.selectAll('path').data(fs,f=>f.n).join('path').attr('class',f=>'poly '+f.cls).attr('d',f=>f.d);placeLabels()}
  const ov=D.extras.overlays.filter(o=>year>=o.start&&year<=o.end);
+ // overlay region labels (context) yield to event/selected labels (content) sitting in the same spot
+ const strong=[];if(selected&&selected.lon!=null){const sp=proj([selected.lon,selected.lat]);if(sp)strong.push(sp)}
+ NOW.events.forEach(e=>{if(majorNow(e)){const sp=proj([e.lon,e.lat]);if(sp)strong.push(sp)}});
  gOvl.selectAll('g').data(ov,o=>o.en).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
   .each(function(o){const g=d3.select(this);let poly;if(o.geo){poly=o.geo}else{poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};}
    g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')).attr('d',gpath(poly));
-   const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);g.select('text').classed('inf',o.kind==='influence').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(tx(o))});
+   const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);const hide=c&&strong.some(mp=>Math.abs(c[0]-mp[0])*k<92&&Math.abs(c[1]-mp[1])*k<26);
+   g.select('text').classed('inf',o.kind==='influence').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(hide?'':tx(o))});
  rescale()}
 function placeLabels(){if(lastSnap==null)return;const fs=polyCache.get(lastSnap)||[];const fsz=11.5/k;
  const named=fs.filter(f=>f.cls!=='pn'&&polyName(f.n));
@@ -75,8 +79,11 @@ function placeLabels(){if(lastSnap==null)return;const fs=polyCache.get(lastSnap)
   if(hit){let a=rel.get(hit);if(!a){a=[];rel.set(hit,a)}a.push([lon,lat])}});
  // label each relevant polity next to the figures that sit in it (not at the country centroid)
  const cand=[...rel.keys()].sort((a,b)=>rel.get(b).length-rel.get(a).length||b.area-a.area).slice(0,16);
+ // region labels (context) yield to event/selected labels (content) sitting in the same spot
+ const strong=marks.filter(d=>d===selected||(d.kind==='event'&&majorNow(d))).map(d=>proj([d.lon,d.lat])).filter(Boolean);
  const placed=[],out=[];
  for(const f of cand){const ps=rel.get(f);const mlon=d3.mean(ps,q=>q[0]),mlat=d3.mean(ps,q=>q[1]);const sp=proj([mlon,mlat]);if(!sp)continue;
+  if(strong.some(mp=>Math.abs(sp[0]-mp[0])*k<78&&Math.abs(sp[1]-mp[1])*k<24))continue;
   const c=[sp[0],sp[1]+16/k];if(!(c[0]>4&&c[0]<mw-4&&c[1]>4&&c[1]<mh-4))continue;
   const nm=polyName(f.n);const w=nm.length*fsz*0.62,h=fsz*1.5;const bb=[c[0]-w/2,c[1]-h/2,c[0]+w/2,c[1]+h/2];
   if(placed.some(p=>!(bb[2]<p[0]||bb[0]>p[2]||bb[3]<p[1]||bb[1]>p[3])))continue;placed.push(bb);f._lc=c;out.push(f)}
@@ -118,7 +125,7 @@ function drawPoints(){
  m.each(function(d){const p=d3.select(this).select('.pill');const t=labelText(d);const w=tw(t,12,600)+16;const x=rtl()?-d._r-6-w:d._r+6;
   p.select('rect').attr('x',x).attr('y',-10).attr('width',w).attr('height',20).attr('rx',10);p.select('text').attr('x',rtl()?x+w-8:x+8).attr('y',0).attr('text-anchor',rtl()?'end':'start').text(t)});
  m.filter(d=>d===selected||d===hovered).raise();
- rescale()}
+ placeLabels();rescale()}
 function tipSub(d){if(d.kind==='event')return fmtYfull(d.year)+' · '+tx(d.place);if(d.kind==='comm')return fmtPop(interp(d.pop,year));const s=span(d);return tx(d.role)+' · '+fmtRange(d.born??s[0],d.died??s[1])}
 let rsq=0;function rescale(){if(rsq)return;rsq=requestAnimationFrame(()=>{rsq=0;const ik=1/k;
  gPts.selectAll('g.mk').attr('transform',d=>`translate(${d._xy[0]},${d._xy[1]}) scale(${ik})`);
@@ -218,9 +225,9 @@ function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.h
  const ac=el('div','acts2');const g1=el('button','btn pri',L().goTime);g1.onclick=()=>scrollToYear(anchorYear(it),true);
  const g2=el('button','btn',L().showMap);g2.onclick=()=>{centerOn(it.lon,it.lat);if(phone())setSheet(false)};ac.append(g1,g2);s.appendChild(ac);
  p.appendChild(s);bk.focus({preventScroll:true});
- drawPoints();markSel()}
+ drawBorders();drawPoints();markSel()}
 function markSel(){tl.selectAll('.bead').classed('sel',function(){return !!selected&&this.dataset.k===selected.key})}
-function closeDetail(){selected=null;$('detail').hidden=true;drawPoints();markSel()}
+function closeDetail(){selected=null;$('detail').hidden=true;drawBorders();drawPoints();markSel()}
 function spark(c){const w=320,h=76;const ns='http://www.w3.org/2000/svg';const s=document.createElementNS(ns,'svg');s.setAttribute('viewBox',`0 0 ${w} ${h}`);s.setAttribute('class','spark');s.style.width='100%';
  const pts=c.pop;const x=d3.scaleLinear().domain(d3.extent(pts,d=>d[0])).range(rtl()?[w-30,30]:[30,w-30]);const y=d3.scaleLinear().domain([0,d3.max(pts,d=>d[1])]).range([h-18,10]);
  const p=document.createElementNS(ns,'path');p.setAttribute('d',d3.area().x(d=>x(d[0])).y0(h-18).y1(d=>y(d[1])).curve(d3.curveMonotoneX)(pts));s.appendChild(p);
@@ -290,14 +297,17 @@ function setFull(o){full=o;$('app').classList.toggle('full',o);const b=$('fullbt
  requestAnimationFrame(()=>{if(!o)sizeMap();renderTimeline()})}
 function placeHead(){$('playhead').style.left=(X(year)-sc.scrollLeft)+'px'}
 function nudge(px){if(fit)setYear(Yof(X(year)+px));else sc.scrollLeft+=px}
-let ignoreScroll=false;
-function scrollToYear(y,smooth){if(fit){sc.scrollLeft=0;setYear(y);return}const x=X(y)-sc.clientWidth/2;ignoreScroll=true;const sm=smooth&&!reduceMotion();sc.scrollTo({left:x,behavior:sm?'smooth':'auto'});
- if(sm)setTimeout(()=>{ignoreScroll=false},750);else requestAnimationFrame(()=>{ignoreScroll=false});setYear(y)}
-sc.addEventListener('scroll',()=>{placeHead();if(ignoreScroll||fit)return;setYear(Yof(sc.scrollLeft+sc.clientWidth/2));updSpan();dismissHint()},{passive:true});
+let ignoreScroll=false,isClrT=0;
+function scrollToYear(y,smooth){if(fit){sc.scrollLeft=0;setYear(y);return}
+ const x=Math.max(0,Math.min(sc.scrollWidth-sc.clientWidth,X(y)-sc.clientWidth/2));
+ ignoreScroll=true;clearTimeout(isClrT);const sm=smooth&&!reduceMotion();sc.scrollTo({left:x,behavior:sm?'smooth':'auto'});setYear(y);
+ // hold the guard until the (possibly long) animation actually stops, so the settle doesn't reset year to center
+ isClrT=setTimeout(()=>{ignoreScroll=false},sm?1800:80)}
+sc.addEventListener('scroll',()=>{placeHead();if(fit)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}setYear(Yof(sc.scrollLeft+sc.clientWidth/2));updSpan();dismissHint()},{passive:true});
 sc.addEventListener('wheel',e=>{if(full)return;if(e.ctrlKey||e.metaKey){e.preventDefault();zoomBy(Math.exp(-e.deltaY*0.01));return}const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;if(!d)return;e.preventDefault();nudge((rtl()?-1:1)*d*(fit?.4:1))},{passive:false});
 (()=>{let down=null,dragX=0,edgeRAF=0;const yAt=cx=>Yof(cx-sc.getBoundingClientRect().left+sc.scrollLeft);
  // auto-scroll the view when the dragged needle reaches an edge, so you can scrub the cursor across all of time
- function edgeScroll(){if(edgeRAF)return;const step=()=>{edgeRAF=0;if(!down||!down.moved||fit)return;const vw=sc.clientWidth,hx=X(year)-sc.scrollLeft,m=44,max=sc.scrollWidth-vw;let d=0;if(hx>vw-m&&sc.scrollLeft<max)d=Math.min(max-sc.scrollLeft,12);else if(hx<m&&sc.scrollLeft>0)d=-Math.min(sc.scrollLeft,12);if(d){ignoreScroll=true;sc.scrollLeft+=d;requestAnimationFrame(()=>ignoreScroll=false);setYear(yAt(dragX));edgeRAF=requestAnimationFrame(step)}};edgeRAF=requestAnimationFrame(step)}
+ function edgeScroll(){if(edgeRAF)return;const step=()=>{edgeRAF=0;if(!down||!down.moved||fit)return;const vw=sc.clientWidth,hx=X(year)-sc.scrollLeft,m=44,max=sc.scrollWidth-vw;let d=0;if(hx>vw-m&&sc.scrollLeft<max)d=Math.min(max-sc.scrollLeft,12);else if(hx<m&&sc.scrollLeft>0)d=-Math.min(sc.scrollLeft,12);if(d){ignoreScroll=true;sc.scrollLeft+=d;setYear(yAt(dragX));edgeRAF=requestAnimationFrame(step)}};edgeRAF=requestAnimationFrame(step)}
  sc.addEventListener('pointerdown',e=>{if(e.button!==0)return;if(full)return;if(!fit&&e.pointerType!=='mouse')return;down={x:e.clientX,l:sc.scrollLeft,moved:false}});
  addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-down.x;if(!down.moved&&Math.abs(dx)<4)return;down.moved=true;sc.classList.add('drag');dismissHint();dragX=e.clientX;setYear(yAt(e.clientX));if(!fit)edgeScroll()});
  addEventListener('pointerup',()=>{if(edgeRAF){cancelAnimationFrame(edgeRAF);edgeRAF=0}if(down&&down.moved){const stop=e=>{e.stopPropagation();e.preventDefault()};sc.addEventListener('click',stop,{capture:true,once:true});setTimeout(()=>sc.removeEventListener('click',stop,{capture:true}),50)}down=null;sc.classList.remove('drag')});

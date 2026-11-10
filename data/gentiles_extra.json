@@ -98,7 +98,7 @@
    "he": "נזכר בהגדה של פסח (\"ארמי אובד אבי\")",
    "en": "Recalled in the Passover Haggadah"
   },
-  "importance": 3,
+  "importance": 2,
   "traditional": true
  },
  {
@@ -293,14 +293,14 @@
    "he": "מדינה (יתר'ב)",
    "en": "Medina (Yathrib)"
   },
-  "stance": "enemy",
+  "stance": "mixed",
   "role": {
    "he": "מייסד האסלאם",
    "en": "Founder of Islam"
   },
   "impact": {
-   "he": "בשנותיו במדינה נקלע לעימות עם שלושת השבטים היהודיים של העיר: באנו קינוקאע ובאנו נדיר גורשו, ואנשי באנו קורייט'ה הוצאו להורג. האסלאם שייסד עיצב את חייהם של רוב יהודי העולם במשך מאות שנים.",
-   "en": "In Medina he came into conflict with the city's three Jewish tribes: Banu Qaynuqa and Banu Nadir were expelled, and the men of Banu Qurayza were executed. The religion he founded shaped the lives of most of the world's Jews for centuries."
+   "he": "בשנותיו במדינה רדף את שלושת השבטים היהודיים של העיר: באנו קינוקאע ובאנו נדיר גורשו, ואנשי באנו קורייט׳ה הוצאו להורג. סיווגנו אותו כ׳מורכב׳ ולא כצורר מובהק משום שהאסלאם שייסד — על אף הרדיפה כלפי יהודי ערב — היה לאורך הדורות לעיתים סובלני כלפי היהודים, ולרוב פחות אכזר מהנצרות האירופית (תור הזהב בספרד, מרכז התורה בבבל). יהדות תימן, למשל, שרדה תחת שלטון האסלאם יותר מ-1,300 שנה.",
+   "en": "In Medina he persecuted the city’s three Jewish tribes: Banu Qaynuqa and Banu Nadir were expelled and the men of Banu Qurayza were executed. We classify him as ‘mixed’ rather than a clear persecutor because the Islam he founded — despite that persecution of Arabia’s Jews — was over the centuries at times tolerant toward Jews, and generally less cruel than European Christianity (the Golden Age in Spain, the Torah center in Babylonia). Yemenite Jewry, for instance, survived under Muslim rule for more than 1,300 years."
   },
   "importance": 2
  },

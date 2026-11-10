@@ -11,7 +11,7 @@ Object.assign(T.en,{inYear:'In',now:'What is happening now',events:'Events',peop
 linear=false;
 
 /* ---------- state ---------- */
-let year=1492,curEra=-1,selected=null,hovered=null,full=store.get('full3',false);
+let year=1492,curEra=-1,selected=null,hovered=null,full=false;
 const layers=Object.assign({comm:true,people:true,ally:true,enemy:true,mixed:true,events:true},store.get('layers3',{}));
 const expanded={};
 const GROUPS=['events','people','ally','enemy','mixed'];
@@ -282,7 +282,7 @@ function renderTimeline(){
   positionRowTags([[L().lgEv,yE+eh+18],[Eh,yE+eh+44],[Ah,yE+eh+70],[Jh,yE+eh+96]]);
  }
  placeHead();updZoomUI();scrollToYear(year,false)}
-function setFull(o){full=o;store.set('full3',o);$('app').classList.toggle('full',o);const b=$('fullbtn');if(b){b.setAttribute('aria-pressed',o);b.querySelector('span').textContent=o?L().fullOff:L().full}
+function setFull(o){full=o;$('app').classList.toggle('full',o);const b=$('fullbtn');if(b){b.setAttribute('aria-pressed',o);b.querySelector('span').textContent=o?L().fullOff:L().full}
  requestAnimationFrame(()=>{if(!o)sizeMap();renderTimeline()})}
 function placeHead(){$('playhead').style.left=(fit?X(year)-sc.scrollLeft:sc.clientWidth/2)+'px'}
 function nudge(px){if(fit)setYear(Yof(X(year)+px));else sc.scrollLeft+=px}
@@ -457,7 +457,7 @@ $('fullbtn').onclick=()=>setFull(!full);
 /* ---------- keyboard ---------- */
 addEventListener('keydown',e=>{const tag=e.target.tagName||'';const typing=tag==='INPUT'||tag==='TEXTAREA';
  const ov=[...document.querySelectorAll('.overlay')].find(o=>!o.hidden);
- if(e.key==='Escape'){if(ov)closeOverlay(ov.id);else if(selected)closeDetail();return}
+ if(e.key==='Escape'){if(ov)closeOverlay(ov.id);else if(full)setFull(false);else if(selected)closeDetail();return}
  if(typing||ov||e.metaKey||e.ctrlKey||e.altKey)return;
  const c=e.code,k=e.key,step=e.shiftKey?240:40;let done=true;
  if(k==='ArrowRight')nudge(step);else if(k==='ArrowLeft')nudge(-step);

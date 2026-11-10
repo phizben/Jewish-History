@@ -138,8 +138,11 @@ function hideTip(){tip.hidden=true}
 /* ---------- panel ---------- */
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
 const ICON={prev:'<svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>',next:'<svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>',eye:'<svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg>',eyeOff:'<svg viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.6A9.9 9.9 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3 3.8M6.2 7.4A16.6 16.6 0 0 0 2.5 12s3.5 6.5 9.5 6.5c1.6 0 3-.4 4.3-1"/></svg>'};
+const PERIODS=(D.extras.rabbinic||[]);
+function periodIdx(y){for(let i=0;i<PERIODS.length;i++){if(y>=PERIODS[i].start&&y<PERIODS[i].end)return i}return Math.max(0,PERIODS.length-1)}
+function periodColor(y){return 'var(--p-'+periodIdx(y)+')'}
 function renderChapter(){const e=eras[curEra],s=segs[curEra];
- $('c-ribbon').style.background=`var(--e-${e.color})`;
+ $('c-ribbon').style.background=periodColor((e.start+s.b)/2);
  $('c-no').innerHTML='';const b=el('b',null,L().chap+' '+(curEra+1));$('c-no').append(b,document.createTextNode(' '+L().of+' '+eras.length));
  $('c-name').textContent=tx(e.name);$('c-yrs').textContent=fmtRange(e.start,s.b);$('c-sum').textContent=tx(e.summary);
  $('chap').dataset.more='false';$('c-more').textContent=lang==='he'?'קרא עוד':'Read more';
@@ -244,7 +247,7 @@ function renderTimeline(){
  // eras
  segs.forEach((s,i)=>{const xa=X(s.a),xb=X(s.b);const x=Math.min(xa,xb)+1,w=Math.abs(xb-xa)-2;
   const g=tl.append('g').attr('class','tl-era'+(i===curEra?' cur':'')).attr('data-i',i).on('click',e=>{e.stopPropagation();goEra(i)});
-  g.append('rect').attr('x',x).attr('y',yE).attr('width',Math.max(1,w)).attr('height',eh).style('fill',`var(--e-${s.e.color})`);
+  g.append('rect').attr('x',x).attr('y',yE).attr('width',Math.max(1,w)).attr('height',eh).style('fill',periodColor((s.a+s.b)/2));
   const nm=tx(s.e.name);const lw=tw(nm,12.5,600)+16;
   if(lw<w){const n=Math.max(1,Math.floor(w/760));for(let j=0;j<n;j++)g.append('text').attr('x',x+w*(j+.5)/n).attr('y',yE+eh/2+4.5).attr('text-anchor','middle').text(nm)}
   else if(w>48){let t=nm;while(t.length>2&&tw(t+'…',12.5,600)+12>w)t=t.slice(0,-1);g.append('text').attr('x',x+w/2).attr('y',yE+eh/2+4.5).attr('text-anchor','middle').text(t+'…')}});
@@ -393,7 +396,7 @@ function goEra(i){const e=eras[i];scrollToYear(e.start+Math.min(3,(segs[i].b-e.s
 
 /* chapters overlay */
 function openChapters(){const g=$('chgrid');g.innerHTML='';$('ch-h').textContent=L().chapters;$('chapters').dir=rtl()?'rtl':'ltr';
- eras.forEach((e,i)=>{const b=el('button','ch');b.setAttribute('aria-current',i===curEra);const st=el('span','strip');st.style.background=`var(--e-${e.color})`;
+ eras.forEach((e,i)=>{const b=el('button','ch');b.setAttribute('aria-current',i===curEra);const st=el('span','strip');st.style.background=periodColor((e.start+segs[i].b)/2);
   b.append(el('span','no',L().chap+' '+(i+1)),el('b',null,tx(e.name)),el('small',null,fmtRange(e.start,segs[i].b)),st);b.onclick=()=>{closeOverlay('chapters');goEra(i)};g.appendChild(b)});
  openOverlay('chapters')}
 let lastFocus=null;
@@ -428,9 +431,9 @@ function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';
  const sh=el('div','sh');sh.append(el('h2',null,L().title));const x=el('button','ibtn','✕');x.setAttribute('data-close','');x.setAttribute('aria-label',L().close);sh.appendChild(x);b.appendChild(sh);
  b.appendChild(el('p',null,he?'שלושה חלקים: ציר הזמן למטה קובע את השנה, הרשימה בצד אומרת מה קורה בה, והמפה מראה איפה. ציר הזמן לא אחיד: תקופות סוערות מקבלות יותר מקום.':'Three parts: the timeline at the bottom sets the year, the side list says what is happening, and the map shows where. Time is uneven on purpose: turbulent eras get more room.'));
  b.appendChild(el('h3',null,he?'צבעי התקופות':'Era colors'));
- b.appendChild(el('p',null,he?'הפסים הצבעוניים בציר הזמן מסמנים את תקופות־העל של ההיסטוריה היהודית:':'The colored bands on the timeline mark the grand eras of Jewish history:'));
+ b.appendChild(el('p',null,he?'הפסים הצבעוניים בציר הזמן מסמנים את תקופות ישראל לפי החלוקה המסורתית:':'The colored bands on the timeline mark the eras of Jewish history by the traditional periodization:'));
  const eg=el('div','erakey');
- [['ancient',he?'תקופת המקרא':'Biblical era'],['exile',he?'גלות בבל':'Babylonian Exile'],['classical',he?'בית שני, חז״ל והתלמוד':'Second Temple, Sages & Talmud'],['medieval',he?'ימי הביניים':'Middle Ages'],['early-modern',he?'ראשית העת החדשה':'Early modern'],['modern',he?'העת החדשה':'Modern era'],['holocaust',he?'השואה':'The Holocaust'],['israel',he?'מדינת ישראל':'State of Israel']].forEach(([c,name])=>{const row=el('div','erakey-i');const sw=el('i');sw.style.background='var(--e-'+c+')';row.append(sw,el('span',null,name));eg.appendChild(row)});
+ PERIODS.forEach((p,i)=>{const row=el('div','erakey-i');const sw=el('i');sw.style.background='var(--p-'+i+')';row.append(sw,el('span',null,tx(p)));eg.appendChild(row)});
  b.appendChild(eg);
  b.appendChild(el('h3',null,he?'קיצורי מקלדת':'Keyboard'));const dl=el('dl','keys');KEYS().forEach(([ks,d])=>{const dt=el('dt');ks.forEach(k=>dt.appendChild(el('kbd',null,k)));dl.append(dt,el('dd',null,d))});b.appendChild(dl);
  b.appendChild(el('h3',null,he?'מקורות':'Sources'));const src=el('ul');

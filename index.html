@@ -979,7 +979,7 @@ function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.h
  if(it.role)add(L().role,tx(it.role));
  if((it.kind==='person'||it.kind==='gent')&&it.active&&(it.active[0]!==it.born||it.active[1]!==it.died))add(L().active,fmtRange(it.active[0],it.active[1]));
  if(it.honor)add(L().honor,tx(it.honor));if(it.peak)add(L().peak,tx(it.peak));if(it.endReason)add(L().endR,tx(it.endReason));
- if(it.traditional)add('ⓘ',L().traditional);if(it.sheet)add('✓',L().sheet);
+ if(it.traditional)add('ⓘ',L().traditional);
  if(dl.children.length)s.appendChild(dl);
  if(it.works&&it.works.length){s.appendChild(el('h3',null,L().works));const ul=el('ul','works');it.works.forEach(w=>ul.appendChild(el('li',null,tx(w))));s.appendChild(ul)}
  if(it.kind==='comm'&&it.pop&&it.pop.length>1){s.appendChild(el('h3',null,L().popHist));s.appendChild(spark(it))}

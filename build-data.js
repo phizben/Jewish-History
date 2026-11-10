@@ -25,12 +25,12 @@ const gentiles=g.filter(x=>x.sheet||x.importance>=2||keepGentiles.has(x.id));
 const keepPeople=new Set(['abravanel','gracia-nasi','maharal','moses-montefiore','ovadia-yosef','menachem-mendel-schneerson','rav-ashi','shabbetai-zvi','ezekiel','zerubbabel','joseph','herod']);
 const dropPeople=new Set(['elie-wiesel','golda-meir','hannah-senesh']);
 const people=R('people.json').filter(p=>p.id!=='ruth'&&!dropPeople.has(p.id)&&(p.importance>=2||keepPeople.has(p.id)));
-const events=R('events.json').filter(e=>keepEv.has(e.id)).map(e=>Object.assign({},e,{importance:3}));
+const events=R('events.json').filter(e=>e.importance>=3||keepEv.has(e.id)).map(e=>Object.assign({},e,{importance:3}));
 const D={communities:[],centers:R('centers.json'),quiz:R('quiz.json'),demography:R('demography.json'),people,gentiles,events,eras,extras:R('extras.json')};
 fs.writeFileSync('bundle-data.json',JSON.stringify(D));
 const M={};for(const f of fs.readdirSync('maps/out')){const y=f.replace('.json','');const yr=y.startsWith('bc')?-parseInt(y.slice(2)):parseInt(y);M[yr]=JSON.parse(fs.readFileSync('maps/out/'+f));}
 // State of Israel borders should show from 1948, not from the 1960 snapshot (the 1945 snapshot renames Israel->Mandatory Palestine). Reuse the pre-1967 (1960) topology for 1948.
 if(M[1960]&&!M[1948])M[1948]=M[1960];
 fs.writeFileSync('bundle-maps.json',JSON.stringify(M));
-fs.writeFileSync('bundle-land.json',fs.readFileSync('maps/land-110m.json'));
+fs.writeFileSync('bundle-land.json',fs.readFileSync('maps/land-50m.json'));
 console.log('ok events',events.length,'people',people.length,'gentiles',gentiles.length);

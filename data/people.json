@@ -4861,5 +4861,89 @@
    "en": "Leader of Aragonese Jewry and a philosopher whose work “Or Hashem” challenged both Maimonides and Aristotle. He led the rebuilding of the communities after the 1391 massacres — a catastrophe in which his own son was killed."
   },
   "importance": 2
+ },
+ {
+  "id": "jesus",
+  "name": {
+   "he": "ישו",
+   "en": "Jesus"
+  },
+  "born": -4,
+  "died": 30,
+  "active": [
+   25,
+   30
+  ],
+  "lon": 35.5,
+  "lat": 32.8,
+  "place": {
+   "he": "הגליל וירושלים",
+   "en": "Galilee and Jerusalem"
+  },
+  "role": {
+   "he": "יהודי מהגליל שסביבו צמחה הנצרות",
+   "en": "A Jew from the Galilee around whom Christianity grew"
+  },
+  "bio": {
+   "he": "מורה ומטיף יהודי מהגליל בימי השלטון הרומי, שנצלב בירושלים בפקודת המושל הרומי. אחרי מותו צמחה סביב דמותו הנצרות, שהפכה לדת הגדולה בעולם — והיחסים בין היהדות לנצרות עיצבו כאלפיים שנה של היסטוריה יהודית.",
+   "en": "A Jewish teacher and preacher from the Galilee under Roman rule, crucified in Jerusalem by order of the Roman governor. After his death Christianity grew around him and became the world’s largest religion — and the relationship between Judaism and Christianity shaped some two thousand years of Jewish history."
+  },
+  "importance": 2
+ },
+ {
+  "id": "paul-of-tarsus",
+  "name": {
+   "he": "שאול התרסי (פאולוס)",
+   "en": "Paul of Tarsus"
+  },
+  "born": 5,
+  "died": 65,
+  "active": [
+   40,
+   65
+  ],
+  "lon": 34.9,
+  "lat": 36.92,
+  "place": {
+   "he": "טרסוס, אסיה הקטנה ורומא",
+   "en": "Tarsus, Asia Minor and Rome"
+  },
+  "role": {
+   "he": "פרוש שהפך את הנצרות לדת עולמית",
+   "en": "A Pharisee who turned Christianity into a world religion"
+  },
+  "bio": {
+   "he": "יהודי פרוש מטרסוס שרדף בתחילה את הנוצרים, ואז הפך לשליח המרכזי שהפיץ את הנצרות בקרב הגויים וניתק אותה מחובת המצוות היהודיות. המהלך הזה הפך את הנצרות לדת נפרדת ועולמית — ומכאן את ההיפרדות בין שתי הדתות.",
+   "en": "A Pharisee Jew from Tarsus who at first persecuted the early Christians and then became the central apostle who spread Christianity among the gentiles and detached it from Jewish observance. That turn made Christianity a separate, worldwide religion — and set the two faiths apart."
+  },
+  "importance": 2
+ },
+ {
+  "id": "jacob-frank",
+  "name": {
+   "he": "יעקב פרנק",
+   "en": "Jacob Frank"
+  },
+  "born": 1726,
+  "died": 1791,
+  "active": [
+   1755,
+   1791
+  ],
+  "lon": 26,
+  "lat": 48.9,
+  "place": {
+   "he": "פודוליה ואופנבך",
+   "en": "Podolia and Offenbach"
+  },
+  "role": {
+   "he": "משיח שקר ומייסד הפרנקיזם",
+   "en": "False messiah and founder of Frankism"
+  },
+  "bio": {
+   "he": "טען שהוא יורשו של שבתי צבי והנהיג תנועה משיחית רדיקלית במזרח אירופה, שפרשה מהיהדות, התכחשה לתלמוד, ובסופה המירה את דתה לנצרות בהמוניה — אחת הטראומות הגדולות של יהדות מזרח אירופה במאה ה-18.",
+   "en": "He claimed to be the successor of Shabbetai Zvi and led a radical messianic movement in Eastern Europe that broke from Judaism, rejected the Talmud, and ultimately converted en masse to Catholicism — one of the great traumas of 18th-century Eastern European Jewry."
+  },
+  "importance": 2
  }
 ]

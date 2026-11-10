@@ -1319,7 +1319,7 @@
    "en": "Granada"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "rhineland-massacres",
@@ -1407,7 +1407,7 @@
    "en": "Norwich, England"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "almohads",
@@ -1427,7 +1427,7 @@
    "en": "Córdoba"
   },
   "type": "expulsion",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "maimonides",
@@ -1467,7 +1467,7 @@
    "en": "York, England"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "lateran-iv",
@@ -1507,7 +1507,7 @@
    "en": "Paris"
   },
   "type": "catastrophe",
-  "importance": 2,
+  "importance": 3,
   "calendar": {
    "he": "קינות תשעה באב",
    "en": "Tisha B'Av kinot"
@@ -1777,7 +1777,7 @@
    "en": "Lisbon"
   },
   "type": "catastrophe",
-  "importance": 1
+  "importance": 3
  },
  {
   "id": "venice-ghetto",
@@ -2226,7 +2226,7 @@
    "en": "St. Petersburg"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "damascus-affair",
@@ -2246,7 +2246,7 @@
    "en": "Damascus"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "mortara-case",
@@ -2266,7 +2266,7 @@
    "en": "Bologna"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "mishkenot-shaananim",
@@ -2590,7 +2590,7 @@
    "en": "Kyiv"
   },
   "type": "catastrophe",
-  "importance": 1
+  "importance": 3
  },
  {
   "id": "balfour-declaration",
@@ -2631,7 +2631,7 @@
    "en": "Proskurov, Ukraine"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "british-mandate",
@@ -2712,7 +2712,7 @@
    "en": "Hebron"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "fifth-aliyah",
@@ -2914,7 +2914,7 @@
    "en": "Baghdad"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "babi-yar",
@@ -3039,7 +3039,7 @@
    "en": "Budapest"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "auschwitz-liberation",
@@ -3384,7 +3384,7 @@
    "en": "Munich"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "yom-kippur-war",
@@ -3571,7 +3571,7 @@
    "en": "Buenos Aires"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "rabin-assassination",
@@ -3656,7 +3656,7 @@
    "en": "Pittsburgh, USA"
   },
   "type": "catastrophe",
-  "importance": 2
+  "importance": 3
  },
  {
   "id": "abraham-accords",

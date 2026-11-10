@@ -128,7 +128,7 @@ function centerOn(lon,lat){const p=proj([lon,lat]);if(!p)return;const t=d3.zoomT
 function camZoom(z){return Math.max(1,Math.min(60,(z||3)*(phone()?0.85:1)))}
 function flyToView(v,dur){if(!v)return;const p=proj([v.lon,v.lat]);if(!p)return;const kk=camZoom(v.zoom);
  camAnim=true;svg.transition('cam').duration(reduceMotion()?0:(dur==null?900:dur)).call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
-function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on)flyToView((eras[curEra]||{}).view)}
+function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.innerHTML=on?ICON.follow:ICON.followOff;b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on)flyToView((eras[curEra]||{}).view)}
 $('mfollow').onclick=()=>setFollow(!follow);
 $('zin').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1.6)};
 $('zout').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1/1.6)};
@@ -142,7 +142,7 @@ function hideTip(){tip.hidden=true}
 
 /* ---------- panel ---------- */
 function el(tag,cls,text){const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e}
-const ICON={prev:'<svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>',next:'<svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>',eye:'<svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg>',eyeOff:'<svg viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.6A9.9 9.9 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3 3.8M6.2 7.4A16.6 16.6 0 0 0 2.5 12s3.5 6.5 9.5 6.5c1.6 0 3-.4 4.3-1"/></svg>'};
+const ICON={prev:'<svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>',next:'<svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg>',follow:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/><circle cx="12" cy="12" r="2.3" fill="currentColor" stroke="none"/></svg>',followOff:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 2.5v3M18.5 12h3M12 18.5v3M2.5 12h3"/><path d="M5 19L19 5"/></svg>',eye:'<svg viewBox="0 0 24 24"><path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></svg>',eyeOff:'<svg viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.6A9.9 9.9 0 0 1 12 5.5c6 0 9.5 6.5 9.5 6.5a17 17 0 0 1-3 3.8M6.2 7.4A16.6 16.6 0 0 0 2.5 12s3.5 6.5 9.5 6.5c1.6 0 3-.4 4.3-1"/></svg>'};
 const PERIODS=(D.extras.rabbinic||[]);
 function periodIdx(y){for(let i=0;i<PERIODS.length;i++){if(y>=PERIODS[i].start&&y<PERIODS[i].end)return i}return Math.max(0,PERIODS.length-1)}
 function periodColor(y){return 'var(--p-'+periodIdx(y)+')'}

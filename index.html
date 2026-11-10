@@ -95,6 +95,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .ctx{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
 .ctx span{font-size:12px;color:var(--ink-2);background:var(--paper-2);border-radius:999px;padding:3px 10px}
 .ctx span b{font-weight:600;color:var(--ink)}
+.ctx .sdot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-inline-end:6px;vertical-align:middle}
 
 .list{flex:1;overflow:auto;min-height:0;padding:6px 0 16px}
 .list h3{margin:12px 18px 4px;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.3px}
@@ -910,7 +911,14 @@ function renderChapter(){const e=eras[curEra],s=segs[curEra];
  $('c-prev').disabled=curEra===0;$('c-next').disabled=curEra===eras.length-1;
  tl.selectAll('.tl-era').classed('cur',function(){return +this.dataset.i===curEra});
  if(location.hash.slice(1)!==e.id){try{history.replaceState(null,'','#'+e.id)}catch(_){}}}
-function renderCtx(){}
+function renderCtx(){
+ const box=$('c-ctx');if(!box)return;box.innerHTML='';
+ const y=Math.round(year),he=lang==='he';
+ const ru=(D.extras.rulers||[]).find(r=>y>=r.start&&y<=r.end);
+ const rb=(D.extras.rabbinic||[]).find(r=>y>=r.start&&y<=r.end);
+ if(ru){const s=el('span');const d=el('i','sdot');d.style.background=ru.kind==='jewish'?'var(--brand)':'var(--muted)';s.append(d,document.createTextNode(L().rulers+' '),el('b',null,tx(ru)));s.title=ru.kind==='jewish'?(he?'ריבונות יהודית':'Jewish sovereignty'):(he?'שלטון זר':'Foreign rule');box.appendChild(s)}
+ if(rb){const s=el('span');s.append(document.createTextNode(L().rabbi+' '),el('b',null,tx(rb)));box.appendChild(s)}
+}
 function itemRow(it){const b=el('button','item'+(majorNow(it)?' major':''));b.dataset.k=it.key;
  const sub=it.kind==='event'?fmtY(it.year):it.kind==='comm'?fmtPop(interp(it.pop,year)).replace(L().popU,''):fmtRange(span(it)[0],span(it)[1]);
  b.append(el('span',null,tx(it.name||it.title)),el('small',null,sub));

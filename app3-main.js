@@ -146,7 +146,14 @@ function renderChapter(){const e=eras[curEra],s=segs[curEra];
  $('c-prev').disabled=curEra===0;$('c-next').disabled=curEra===eras.length-1;
  tl.selectAll('.tl-era').classed('cur',function(){return +this.dataset.i===curEra});
  if(location.hash.slice(1)!==e.id){try{history.replaceState(null,'','#'+e.id)}catch(_){}}}
-function renderCtx(){}
+function renderCtx(){
+ const box=$('c-ctx');if(!box)return;box.innerHTML='';
+ const y=Math.round(year),he=lang==='he';
+ const ru=(D.extras.rulers||[]).find(r=>y>=r.start&&y<=r.end);
+ const rb=(D.extras.rabbinic||[]).find(r=>y>=r.start&&y<=r.end);
+ if(ru){const s=el('span');const d=el('i','sdot');d.style.background=ru.kind==='jewish'?'var(--brand)':'var(--muted)';s.append(d,document.createTextNode(L().rulers+' '),el('b',null,tx(ru)));s.title=ru.kind==='jewish'?(he?'ריבונות יהודית':'Jewish sovereignty'):(he?'שלטון זר':'Foreign rule');box.appendChild(s)}
+ if(rb){const s=el('span');s.append(document.createTextNode(L().rabbi+' '),el('b',null,tx(rb)));box.appendChild(s)}
+}
 function itemRow(it){const b=el('button','item'+(majorNow(it)?' major':''));b.dataset.k=it.key;
  const sub=it.kind==='event'?fmtY(it.year):it.kind==='comm'?fmtPop(interp(it.pop,year)).replace(L().popU,''):fmtRange(span(it)[0],span(it)[1]);
  b.append(el('span',null,tx(it.name||it.title)),el('small',null,sub));

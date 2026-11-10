@@ -60,7 +60,7 @@ function drawBorders(force){const s=snapFor(year);
   gPoly.selectAll('path').data(fs,f=>f.n).join('path').attr('class',f=>'poly '+f.cls).attr('d',f=>f.d);placeLabels()}
  const ov=D.extras.overlays.filter(o=>year>=o.start&&year<=o.end);
  gOvl.selectAll('g').data(ov,o=>o.en).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
-  .each(function(o){const g=d3.select(this);let poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};
+  .each(function(o){const g=d3.select(this);let poly;if(o.geo){poly=o.geo}else{poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};}
    g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')).attr('d',gpath(poly));
    const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);g.select('text').classed('inf',o.kind==='influence').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(tx(o))});
  rescale()}

@@ -32,5 +32,5 @@ const M={};for(const f of fs.readdirSync('maps/out')){const y=f.replace('.json',
 // State of Israel borders should show from 1948, not from the 1960 snapshot (the 1945 snapshot renames Israel->Mandatory Palestine). Reuse the pre-1967 (1960) topology for 1948.
 if(M[1960]&&!M[1948])M[1948]=M[1960];
 fs.writeFileSync('bundle-maps.json',JSON.stringify(M));
-fs.writeFileSync('bundle-land.json',fs.readFileSync('maps/land-110m.json'));
+fs.writeFileSync('bundle-land.json',fs.readFileSync('maps/land-50m.json'));
 console.log('ok events',events.length,'people',people.length,'gentiles',gentiles.length);

@@ -1875,7 +1875,7 @@
    "en": "Codifier, philosopher, physician"
   },
   "bio": {
-   "he": "הרמב״ם, יליד קורדובה, ברח עם משפחתו מרדיפות המֻוַחִּדוּן והשתקע בפוסטאט שבמצרים, שם היה מנהיג הקהילה ורופא החצר. ״משנה תורה״ שלו הוא הקודקס ההלכתי המקיף הראשון, ו״מורה נבוכים״ הוא פסגת הפילוסופיה היהודית בימי הביניים.",
+   "he": "הרמב״ם, יליד קורדובה, ברח עם משפחתו מרדיפות המווחידון והשתקע בפוסטאט שבמצרים, שם היה מנהיג הקהילה ורופא החצר. ״משנה תורה״ שלו הוא הקודקס ההלכתי המקיף הראשון, ו״מורה נבוכים״ הוא פסגת הפילוסופיה היהודית בימי הביניים.",
    "en": "Born in Córdoba, Maimonides fled Almohad persecution and settled in Fustat, Egypt, where he led the community and served as court physician. His Mishneh Torah is the first comprehensive code of Jewish law, and his Guide for the Perplexed is the summit of medieval Jewish philosophy."
   },
   "works": [
@@ -3449,8 +3449,8 @@
    1903,
    1940
   ],
-  "lon": 2.34,
-  "lat": 48.87,
+  "lon": 30.74,
+  "lat": 46.48,
   "place": {
    "he": "אודסה, פריז ולונדון",
    "en": "Odessa, Paris and London"

@@ -1,34 +1,362 @@
 [
-{"id":"exodus","cat":"event","name":{"he":"יציאת מצרים","en":"The Exodus"},"imp":{"he":"השחרור מעבדות ומתן תורה בסיני — סיפור היסוד שהעם מספר לעצמו מדי שנה בפסח","en":"Liberation from slavery and the giving of the Torah at Sinai — the people's founding story, retold every Passover"}},
-{"id":"hanukkah","cat":"event","name":{"he":"חנוכה ומרד המכבים","en":"Hanukkah & the Maccabees"},"imp":{"he":"ניצחון המרד על היוונים וטיהור המקדש — עצמאות יהודית ראשונה מזה מאות שנים","en":"The revolt's victory over the Greeks and the Temple's rededication — the first Jewish independence in centuries"}},
-{"id":"cyrus-declaration","cat":"event","name":{"he":"הצהרת כורש","en":"The Cyrus Declaration"},"imp":{"he":"ההיתר לשוב מגלות בבל לארץ ישראל ולבנות את בית המקדש השני","en":"Permission to return from the Babylonian exile and rebuild the Second Temple"}},
-{"id":"second-temple-destruction","cat":"event","name":{"he":"חורבן בית שני","en":"Destruction of the Second Temple"},"imp":{"he":"חורבן ירושלים וראשית הגלות הארוכה; היהדות לומדת לחיות בלי מקדש","en":"The destruction of Jerusalem and the start of the long exile; Judaism learns to live without a Temple"}},
-{"id":"tanakh-canon","cat":"event","name":{"he":"חתימת התנ״ך","en":"Canonization of the Hebrew Bible"},"imp":{"he":"קביעת ספרי הקודש לכלל אחד — הופך לליבה המשותפת של העם בכל תפוצותיו","en":"Fixing the sacred books into one corpus — it becomes the people's shared core across every diaspora"}},
-{"id":"mishnah","cat":"event","name":{"he":"חתימת המשנה","en":"The Mishnah compiled"},"imp":{"he":"העלאת התורה שבעל פה על הכתב — מבטיחה את המשך הלימוד גם בגלות","en":"Writing down the Oral Law — ensuring that study could continue even in exile"}},
-{"id":"babylonian-talmud","cat":"event","name":{"he":"חתימת התלמוד הבבלי","en":"The Babylonian Talmud completed"},"imp":{"he":"חתימת ספר הלימוד המרכזי של היהדות, שיעצב את חיי ההלכה אלף שנה","en":"The completion of Judaism's central textbook, which would shape religious life for a thousand years"}},
-{"id":"expulsion-spain","cat":"event","name":{"he":"גירוש ספרד","en":"Expulsion from Spain"},"imp":{"he":"סוף הקהילה הגדולה באירופה; המגורשים מתפזרים לצפון אפריקה ולאימפריה העות׳מאנית","en":"The end of Europe's great community; the exiles scatter to North Africa and the Ottoman Empire"}},
-{"id":"chmielnicki","cat":"event","name":{"he":"גזירות ת״ח ות״ט","en":"The Chmielnicki Massacres"},"imp":{"he":"טבח המוני ביהודי אוקראינה ששובר את מרכז יהדות פולין","en":"Mass slaughter of Ukraine's Jews that shatters the heart of Polish Jewry"}},
-{"id":"balfour-declaration","cat":"event","name":{"he":"הצהרת בלפור","en":"The Balfour Declaration"},"imp":{"he":"ההכרה הראשונה של מעצמה בשאיפה הציונית לבית לאומי בארץ ישראל","en":"The first great-power recognition of the Zionist aspiration for a national home"}},
-{"id":"independence","cat":"event","name":{"he":"הקמת מדינת ישראל","en":"The Founding of Israel"},"imp":{"he":"ריבונות יהודית מחודשת בארץ ישראל לראשונה מזה אלפיים שנה","en":"Renewed Jewish sovereignty in the Land of Israel for the first time in two thousand years"}},
-{"id":"six-day-war","cat":"event","name":{"he":"מלחמת ששת הימים","en":"The Six-Day War"},"imp":{"he":"ניצחון מהיר שמאחד את ירושלים ומשנה את מפת המזרח התיכון","en":"A swift victory that reunites Jerusalem and redraws the map of the Middle East"}},
-
-{"id":"cyrus-the-great","cat":"ally","name":{"he":"כורש הגדול","en":"Cyrus the Great"},"imp":{"he":"התיר ליהודי בבל לשוב לציון ולבנות מחדש את בית המקדש","en":"Allowed the Jews of Babylon to return to Zion and rebuild the Temple"}},
-{"id":"napoleon","cat":"ally","name":{"he":"נפוליאון","en":"Napoleon"},"imp":{"he":"פתח את שערי הגטאות והעניק ליהודים שוויון זכויות אזרחי","en":"Opened the ghetto gates and granted Jews civil equality"}},
-{"id":"abd-al-rahman-iii","cat":"ally","name":{"he":"עבד א-רחמן השלישי","en":"Abd al-Rahman III"},"imp":{"he":"קירב יהודים לחצרו כווזירים ורופאים — ופתח את תור הזהב בספרד","en":"Brought Jews into his court as viziers and physicians — opening Spain's Golden Age"}},
-{"id":"casimir-iii","cat":"ally","name":{"he":"קזימיר הגדול","en":"Casimir the Great"},"imp":{"he":"הזמין יהודים לפולין והעניק להם חסות — יסוד הקהילה הגדולה בעולם","en":"Invited Jews to Poland and granted them protection — the foundation of the world's largest community"}},
-{"id":"bayezid-ii","cat":"ally","name":{"he":"באיזיד השני","en":"Bayezid II"},"imp":{"he":"קיבל בברכה את מגורשי ספרד אל האימפריה העות׳מאנית","en":"Welcomed the exiles of Spain into the Ottoman Empire"}},
-{"id":"arthur-balfour","cat":"ally","name":{"he":"ארתור בלפור","en":"Arthur Balfour"},"imp":{"he":"הוביל את ההצהרה הבריטית לתמיכה בבית לאומי יהודי בארץ ישראל","en":"Led the British declaration supporting a Jewish national home in Palestine"}},
-{"id":"harry-truman","cat":"ally","name":{"he":"הארי טרומן","en":"Harry Truman"},"imp":{"he":"הכיר ראשון במדינת ישראל, דקות ספורות אחרי הכרזת העצמאות","en":"Was the first to recognize the State of Israel, minutes after it declared independence"}},
-{"id":"charlemagne","cat":"ally","name":{"he":"קרל הגדול","en":"Charlemagne"},"imp":{"he":"עודד יהודים להתיישב באימפריה שלו והגן על מסחרם","en":"Encouraged Jews to settle in his empire and protected their trade"}},
-
-{"id":"pharaoh-exodus","cat":"enemy","name":{"he":"פרעה של יציאת מצרים","en":"Pharaoh of the Exodus"},"imp":{"he":"שיעבד את בני ישראל במצרים וגזר להשליך את בניהם ליאור","en":"Enslaved the Israelites in Egypt and ordered their sons drowned in the Nile"}},
-{"id":"haman","cat":"enemy","name":{"he":"המן","en":"Haman"},"imp":{"he":"זמם להשמיד את כל יהודי האימפריה הפרסית — ונכשל בנס פורים","en":"Plotted to annihilate all the Jews of Persia — and failed in the miracle of Purim"}},
-{"id":"antiochus-iv","cat":"enemy","name":{"he":"אנטיוכוס הרביעי","en":"Antiochus IV"},"imp":{"he":"אסר על קיום המצוות וחילל את המקדש — עד שפרץ מרד המכבים","en":"Banned Jewish practice and defiled the Temple — until the Maccabean revolt erupted"}},
-{"id":"nebuchadnezzar-ii","cat":"enemy","name":{"he":"נבוכדנצר השני","en":"Nebuchadnezzar II"},"imp":{"he":"החריב את בית המקדש הראשון והגלה את יהודה לבבל","en":"Destroyed the First Temple and exiled Judah to Babylon"}},
-{"id":"titus","cat":"enemy","name":{"he":"טיטוס","en":"Titus"},"imp":{"he":"החריב את ירושלים ואת בית המקדש השני בשנת 70","en":"Destroyed Jerusalem and the Second Temple in the year 70"}},
-{"id":"hadrian","cat":"enemy","name":{"he":"אדריאנוס","en":"Hadrian"},"imp":{"he":"דיכא את מרד בר כוכבא והפך את ירושלים לעיר אלילית","en":"Crushed the Bar Kokhba revolt and turned Jerusalem into a pagan city"}},
-{"id":"emicho-of-leiningen","cat":"enemy","name":{"he":"אמיכו מליינינגן","en":"Emicho of Leiningen"},"imp":{"he":"הוביל טבח בקהילות הריין במסע הצלב הראשון","en":"Led the massacre of the Rhineland communities during the First Crusade"}},
-{"id":"khmelnytsky","cat":"enemy","name":{"he":"בוגדאן חמלניצקי","en":"Bohdan Khmelnytsky"},"imp":{"he":"הנהיג טבח המוני בקהילות יהודי אוקראינה ב-ת״ח ות״ט","en":"Led the mass slaughter of Ukraine's Jewish communities in 1648-49"}},
-{"id":"adolf-hitler","cat":"enemy","name":{"he":"אדולף היטלר","en":"Adolf Hitler"},"imp":{"he":"הוביל את רצח שישה מיליון יהודים בשואה","en":"Led the murder of six million Jews in the Holocaust"}},
-{"id":"haj-amin-al-husseini","cat":"enemy","name":{"he":"חאג׳ אמין אל-חוסייני","en":"Haj Amin al-Husseini"},"imp":{"he":"הסית לפרעות בארץ ישראל ושיתף פעולה עם הנאצים","en":"Incited riots in Palestine and collaborated with the Nazis"}}
+ {
+  "id": "exodus",
+  "cat": "event",
+  "name": {
+   "he": "יציאת מצרים",
+   "en": "The Exodus"
+  },
+  "imp": {
+   "he": "השחרור מעבדות ומתן תורה בסיני — סיפור היסוד שהעם מספר לעצמו מדי שנה בפסח",
+   "en": "Liberation from slavery and the giving of the Torah at Sinai — the people's founding story, retold every Passover"
+  }
+ },
+ {
+  "id": "hanukkah",
+  "cat": "event",
+  "name": {
+   "he": "חנוכה ומרד המכבים",
+   "en": "Hanukkah & the Maccabees"
+  },
+  "imp": {
+   "he": "ניצחון המרד על היוונים וטיהור המקדש — עצמאות יהודית ראשונה מזה מאות שנים",
+   "en": "The revolt's victory over the Greeks and the Temple's rededication — the first Jewish independence in centuries"
+  }
+ },
+ {
+  "id": "cyrus-declaration",
+  "cat": "event",
+  "name": {
+   "he": "הצהרת כורש",
+   "en": "The Cyrus Declaration"
+  },
+  "imp": {
+   "he": "ההיתר לשוב מגלות בבל לארץ ישראל ולבנות את בית המקדש השני",
+   "en": "Permission to return from the Babylonian exile and rebuild the Second Temple"
+  }
+ },
+ {
+  "id": "second-temple-destruction",
+  "cat": "event",
+  "name": {
+   "he": "חורבן בית שני",
+   "en": "Destruction of the Second Temple"
+  },
+  "imp": {
+   "he": "חורבן ירושלים וראשית הגלות הארוכה; היהדות לומדת לחיות בלי מקדש",
+   "en": "The destruction of Jerusalem and the start of the long exile; Judaism learns to live without a Temple"
+  }
+ },
+ {
+  "id": "tanakh-canon",
+  "cat": "event",
+  "name": {
+   "he": "חתימת התנ״ך",
+   "en": "Canonization of the Hebrew Bible"
+  },
+  "imp": {
+   "he": "קביעת ספרי הקודש לכלל אחד — הופך לליבה המשותפת של העם בכל תפוצותיו",
+   "en": "Fixing the sacred books into one corpus — it becomes the people's shared core across every diaspora"
+  }
+ },
+ {
+  "id": "mishnah",
+  "cat": "event",
+  "name": {
+   "he": "חתימת המשנה",
+   "en": "The Mishnah compiled"
+  },
+  "imp": {
+   "he": "העלאת התורה שבעל פה על הכתב — מבטיחה את המשך הלימוד גם בגלות",
+   "en": "Writing down the Oral Law — ensuring that study could continue even in exile"
+  }
+ },
+ {
+  "id": "babylonian-talmud",
+  "cat": "event",
+  "name": {
+   "he": "חתימת התלמוד הבבלי",
+   "en": "The Babylonian Talmud completed"
+  },
+  "imp": {
+   "he": "חתימת ספר הלימוד המרכזי של היהדות, שיעצב את חיי ההלכה עד ימינו",
+   "en": "The completion of Judaism's central textbook, which would shape religious life to this day"
+  }
+ },
+ {
+  "id": "expulsion-spain",
+  "cat": "event",
+  "name": {
+   "he": "גירוש ספרד",
+   "en": "Expulsion from Spain"
+  },
+  "imp": {
+   "he": "סוף הקהילה הגדולה באירופה; המגורשים מתפזרים לצפון אפריקה ולאימפריה העות׳מאנית",
+   "en": "The end of Europe's great community; the exiles scatter to North Africa and the Ottoman Empire"
+  }
+ },
+ {
+  "id": "chmielnicki",
+  "cat": "event",
+  "name": {
+   "he": "גזירות ת״ח ות״ט",
+   "en": "The Chmielnicki Massacres"
+  },
+  "imp": {
+   "he": "טבח המוני ביהודי אוקראינה ששובר את מרכז יהדות פולין",
+   "en": "Mass slaughter of Ukraine's Jews that shatters the heart of Polish Jewry"
+  }
+ },
+ {
+  "id": "balfour-declaration",
+  "cat": "event",
+  "name": {
+   "he": "הצהרת בלפור",
+   "en": "The Balfour Declaration"
+  },
+  "imp": {
+   "he": "ההכרה הראשונה של מעצמה בשאיפה הציונית לבית לאומי בארץ ישראל",
+   "en": "The first great-power recognition of the Zionist aspiration for a national home"
+  }
+ },
+ {
+  "id": "independence",
+  "cat": "event",
+  "name": {
+   "he": "הקמת מדינת ישראל",
+   "en": "The Founding of Israel"
+  },
+  "imp": {
+   "he": "ריבונות יהודית מחודשת בארץ ישראל לראשונה מזה אלפיים שנה",
+   "en": "Renewed Jewish sovereignty in the Land of Israel for the first time in two thousand years"
+  }
+ },
+ {
+  "id": "six-day-war",
+  "cat": "event",
+  "name": {
+   "he": "מלחמת ששת הימים",
+   "en": "The Six-Day War"
+  },
+  "imp": {
+   "he": "ניצחון מהיר שמאחד את ירושלים ומשנה את מפת המזרח התיכון",
+   "en": "A swift victory that reunites Jerusalem and redraws the map of the Middle East"
+  }
+ },
+ {
+  "id": "cyrus-the-great",
+  "cat": "ally",
+  "name": {
+   "he": "כורש הגדול",
+   "en": "Cyrus the Great"
+  },
+  "imp": {
+   "he": "התיר ליהודי בבל לשוב לציון ולבנות מחדש את בית המקדש",
+   "en": "Allowed the Jews of Babylon to return to Zion and rebuild the Temple"
+  }
+ },
+ {
+  "id": "napoleon",
+  "cat": "ally",
+  "name": {
+   "he": "נפוליאון",
+   "en": "Napoleon"
+  },
+  "imp": {
+   "he": "פתח את שערי הגטאות והעניק ליהודים שוויון זכויות אזרחי",
+   "en": "Opened the ghetto gates and granted Jews civil equality"
+  }
+ },
+ {
+  "id": "abd-al-rahman-iii",
+  "cat": "ally",
+  "name": {
+   "he": "עבד א-רחמן השלישי",
+   "en": "Abd al-Rahman III"
+  },
+  "imp": {
+   "he": "קירב יהודים לחצרו — ובראשם חסדאי אבן שפרוט, רופא ודיפלומט — ופתח את תור הזהב בספרד",
+   "en": "Brought Jews into his court — above all Hasdai ibn Shaprut, physician and diplomat — opening Spain's Golden Age"
+  }
+ },
+ {
+  "id": "casimir-iii",
+  "cat": "ally",
+  "name": {
+   "he": "קזימיר השלישי הגדול",
+   "en": "Casimir the Great"
+  },
+  "imp": {
+   "he": "הרחיב את חסות היהודים בפולין ומשך הגירה שהפכה אותה למרכז היהודי הגדול בעולם",
+   "en": "Expanded protection for Jews in Poland and drew the migration that made it the world's largest Jewish community"
+  }
+ },
+ {
+  "id": "bayezid-ii",
+  "cat": "ally",
+  "name": {
+   "he": "באיזיד השני",
+   "en": "Bayezid II"
+  },
+  "imp": {
+   "he": "קיבל בברכה את מגורשי ספרד אל האימפריה העות׳מאנית",
+   "en": "Welcomed the exiles of Spain into the Ottoman Empire"
+  }
+ },
+ {
+  "id": "arthur-balfour",
+  "cat": "ally",
+  "name": {
+   "he": "ארתור בלפור",
+   "en": "Arthur Balfour"
+  },
+  "imp": {
+   "he": "הוביל את ההצהרה הבריטית לתמיכה בבית לאומי יהודי בארץ ישראל",
+   "en": "Led the British declaration supporting a Jewish national home in Palestine"
+  }
+ },
+ {
+  "id": "harry-truman",
+  "cat": "ally",
+  "name": {
+   "he": "הארי טרומן",
+   "en": "Harry Truman"
+  },
+  "imp": {
+   "he": "הכיר ראשון במדינת ישראל, דקות ספורות אחרי הכרזת העצמאות",
+   "en": "Was the first to recognize the State of Israel, minutes after it declared independence"
+  }
+ },
+ {
+  "id": "charlemagne",
+  "cat": "ally",
+  "name": {
+   "he": "קרל הגדול",
+   "en": "Charlemagne"
+  },
+  "imp": {
+   "he": "עודד יהודים להתיישב באימפריה שלו והגן על מסחרם",
+   "en": "Encouraged Jews to settle in his empire and protected their trade"
+  }
+ },
+ {
+  "id": "pharaoh-exodus",
+  "cat": "enemy",
+  "name": {
+   "he": "פרעה של יציאת מצרים",
+   "en": "Pharaoh of the Exodus"
+  },
+  "imp": {
+   "he": "שיעבד את בני ישראל במצרים וגזר להשליך את בניהם ליאור",
+   "en": "Enslaved the Israelites in Egypt and ordered their sons drowned in the Nile"
+  }
+ },
+ {
+  "id": "haman",
+  "cat": "enemy",
+  "name": {
+   "he": "המן",
+   "en": "Haman"
+  },
+  "imp": {
+   "he": "זמם להשמיד את כל יהודי האימפריה הפרסית — ונכשל בנס פורים",
+   "en": "Plotted to annihilate all the Jews of Persia — and failed in the miracle of Purim"
+  }
+ },
+ {
+  "id": "antiochus-iv",
+  "cat": "enemy",
+  "name": {
+   "he": "אנטיוכוס הרביעי",
+   "en": "Antiochus IV"
+  },
+  "imp": {
+   "he": "אסר על קיום המצוות וחילל את המקדש — עד שפרץ מרד המכבים",
+   "en": "Banned Jewish practice and defiled the Temple — until the Maccabean revolt erupted"
+  }
+ },
+ {
+  "id": "nebuchadnezzar-ii",
+  "cat": "enemy",
+  "name": {
+   "he": "נבוכדנצר השני",
+   "en": "Nebuchadnezzar II"
+  },
+  "imp": {
+   "he": "החריב את בית המקדש הראשון והגלה את יהודה לבבל",
+   "en": "Destroyed the First Temple and exiled Judah to Babylon"
+  }
+ },
+ {
+  "id": "titus",
+  "cat": "enemy",
+  "name": {
+   "he": "טיטוס",
+   "en": "Titus"
+  },
+  "imp": {
+   "he": "החריב את ירושלים ואת בית המקדש השני בשנת 70",
+   "en": "Destroyed Jerusalem and the Second Temple in the year 70"
+  }
+ },
+ {
+  "id": "hadrian",
+  "cat": "enemy",
+  "name": {
+   "he": "הדריאנוס",
+   "en": "Hadrian"
+  },
+  "imp": {
+   "he": "דיכא את מרד בר כוכבא והפך את ירושלים לעיר אלילית",
+   "en": "Crushed the Bar Kokhba revolt and turned Jerusalem into a pagan city"
+  }
+ },
+ {
+  "id": "emicho-of-leiningen",
+  "cat": "enemy",
+  "name": {
+   "he": "אמיכו מליינינגן",
+   "en": "Emicho of Leiningen"
+  },
+  "imp": {
+   "he": "הוביל טבח בקהילות הריין במסע הצלב הראשון",
+   "en": "Led the massacre of the Rhineland communities during the First Crusade"
+  }
+ },
+ {
+  "id": "khmelnytsky",
+  "cat": "enemy",
+  "name": {
+   "he": "בוגדאן חמלניצקי",
+   "en": "Bohdan Khmelnytsky"
+  },
+  "imp": {
+   "he": "הנהיג טבח המוני בקהילות יהודי אוקראינה ב-ת״ח ות״ט",
+   "en": "Led the mass slaughter of Ukraine's Jewish communities in 1648-49"
+  }
+ },
+ {
+  "id": "adolf-hitler",
+  "cat": "enemy",
+  "name": {
+   "he": "אדולף היטלר",
+   "en": "Adolf Hitler"
+  },
+  "imp": {
+   "he": "הוביל את רצח שישה מיליון יהודים בשואה",
+   "en": "Led the murder of six million Jews in the Holocaust"
+  }
+ },
+ {
+  "id": "haj-amin-al-husseini",
+  "cat": "enemy",
+  "name": {
+   "he": "חאג׳ אמין אל-חוסייני",
+   "en": "Haj Amin al-Husseini"
+  },
+  "imp": {
+   "he": "הסית לפרעות בארץ ישראל ושיתף פעולה עם הנאצים",
+   "en": "Incited riots in Palestine and collaborated with the Nazis"
+  }
+ }
 ]

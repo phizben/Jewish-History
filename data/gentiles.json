@@ -1,1 +1,2068 @@
-[{"id":"pharaoh-exodus","name":{"he":"פרעה של יציאת מצרים","en":"Pharaoh of the Exodus"},"born":null,"died":null,"active":[-1280,-1250],"lon":31.5,"lat":30.8,"place":{"he":"מצרים (ארץ גושן)","en":"Egypt (Land of Goshen)"},"stance":"enemy","role":{"he":"מלך מצרים המשעבד","en":"Oppressor king of Egypt"},"impact":{"he":"לפי ספר שמות שיעבד את בני ישראל וגזר להשליך את בניהם ליאור, עד שיצאו ממצרים בהנהגת משה. זהותו ההיסטורית אינה ידועה (יש המזהים אותו עם רעמסס השני), אך סיפור השעבוד והגאולה הפך ליסוד בזהות היהודית.","en":"According to Exodus he enslaved the Israelites and ordered their newborn sons drowned in the Nile, until they left Egypt under Moses. His historical identity is unknown (some link him to Ramesses II), but the story of bondage and redemption became a cornerstone of Jewish identity."},"calendar":{"he":"נזכר בפסח ובהגדה של פסח","en":"Recalled at Passover and in the Haggadah"},"importance":3,"traditional":true},{"id":"sargon-ii","name":{"he":"סרגון השני","en":"Sargon II"},"born":null,"died":-705,"active":[-722,-720],"lon":35.19,"lat":32.28,"place":{"he":"שומרון","en":"Samaria"},"stance":"enemy","role":{"he":"מלך אשור, כובש שומרון","en":"Assyrian king, conqueror of Samaria"},"impact":{"he":"השלים את כיבוש שומרון, בירת ממלכת ישראל, שבו פתח קודמו שלמנאסר החמישי, והגלה עשרות אלפים מתושביה. חורבן ממלכת ישראל הוליד את מסורת \"עשרת השבטים האבודים\" והותיר את יהודה כמרכז העם.","en":"He completed the conquest of Samaria, capital of the Kingdom of Israel, begun by his predecessor Shalmaneser V, and deported tens of thousands of its inhabitants. The fall of Israel gave rise to the tradition of the 'Ten Lost Tribes' and left Judah as the people's center."},"importance":2},{"id":"sennacherib","name":{"he":"סנחריב","en":"Sennacherib"},"born":null,"died":-681,"active":[-701,-701],"lon":34.85,"lat":31.56,"place":{"he":"לכיש וירושלים","en":"Lachish and Jerusalem"},"stance":"enemy","role":{"he":"מלך אשור, צר על ירושלים","en":"Assyrian king who besieged Jerusalem"},"impact":{"he":"במסעו של 701 לפנה״ס החריב את לכיש וערים רבות ביהודה וצר על ירושלים בימי חזקיהו. ירושלים לא נכבשה – לפי המקרא בזכות נס – והמצור מתועד גם בתבליטי לכיש ובכתובות אשור.","en":"In his 701 BCE campaign he destroyed Lachish and many Judean towns and besieged Jerusalem in Hezekiah's time. Jerusalem was not taken – miraculously, according to the Bible – and the campaign is also documented in the Lachish reliefs and Assyrian inscriptions."},"calendar":{"he":"נזכר בפיוטי ליל הסדר (לפי המסורת מחנהו הוכה בליל פסח)","en":"Recalled in Passover Seder hymns (tradition says his army was struck on Passover night)"},"importance":2},{"id":"nebuchadnezzar-ii","name":{"he":"נבוכדנצר השני","en":"Nebuchadnezzar II"},"born":null,"died":-562,"active":[-597,-586],"lon":35.23,"lat":31.78,"place":{"he":"ירושלים","en":"Jerusalem"},"stance":"enemy","role":{"he":"מלך בבל, מחריב הבית הראשון","en":"Babylonian king, destroyer of the First Temple"},"impact":{"he":"הגלה את המלך יהויכין ואת האליטה של יהודה (597 לפנה״ס), ובשנת 586 לפנה״ס החריב את ירושלים ואת בית המקדש הראשון. גלות בבל הניחה את היסודות לקיום יהודי בתפוצות ולעיצוב היהדות מחוץ לארץ.","en":"He exiled King Jehoiachin and Judah's elite (597 BCE) and in 586 BCE destroyed Jerusalem and the First Temple. The Babylonian exile laid the foundations for Jewish life in the diaspora and for a Judaism shaped outside the land."},"calendar":{"he":"נזכר בעשרה בטבת (תחילת המצור) ובתשעה באב (חורבן הבית)","en":"Recalled on the 10th of Tevet (start of the siege) and Tisha B'Av (destruction of the Temple)"},"importance":3},{"id":"haman","name":{"he":"המן האגגי","en":"Haman the Agagite"},"born":null,"died":null,"active":[-475,-473],"lon":48.25,"lat":32.19,"place":{"he":"שושן הבירה, פרס","en":"Shushan (Susa), Persia"},"stance":"enemy","role":{"he":"שר בחצר אחשוורוש","en":"Vizier of King Ahasuerus"},"impact":{"he":"לפי מגילת אסתר זמם להשמיד את כל היהודים בממלכת פרס והפיל פור לקביעת המועד, אך מזימתו סוכלה בידי אסתר ומרדכי. דמותו הפכה לסמל לשונאי ישראל לדורותיהם; אין לו תיעוד חיצוני למקרא.","en":"According to the Book of Esther he plotted to annihilate all the Jews of the Persian Empire, casting lots (pur) to set the date, but was foiled by Esther and Mordecai. He became the archetype of the enemy of the Jews; he is not attested outside the Bible."},"calendar":{"he":"נזכר בפורים (י״ד באדר) ובקריאת המגילה","en":"Recalled on Purim (14 Adar) and in the reading of the Megillah"},"importance":3,"traditional":true},{"id":"antiochus-iv","name":{"he":"אנטיוכוס הרביעי אפיפנס","en":"Antiochus IV Epiphanes"},"born":-215,"died":-164,"active":[-169,-164],"lon":35.23,"lat":31.78,"place":{"he":"ירושלים ויהודה","en":"Jerusalem and Judea"},"stance":"enemy","role":{"he":"מלך סלווקי, גוזר הגזרות","en":"Seleucid king, issuer of the decrees"},"impact":{"he":"בשנת 167 לפנה״ס אסר על שמירת שבת, ברית מילה ולימוד תורה, וחילל את המקדש בפולחן לזאוס, על רקע מאבק פנימי בין מתייוונים לנאמני המסורת. הגזרות הציתו את מרד החשמונאים, שהוביל לטיהור המקדש ולעצמאות יהודית.","en":"In 167 BCE he banned Sabbath observance, circumcision and Torah study and desecrated the Temple with the worship of Zeus, amid an internal struggle between Hellenizers and traditionalists. The decrees sparked the Maccabean revolt, which led to the Temple's rededication and Jewish independence."},"calendar":{"he":"נזכר בחנוכה (כ״ה בכסלו)","en":"Recalled on Hanukkah (25 Kislev)"},"importance":3},{"id":"pompey","name":{"he":"פומפיוס","en":"Pompey the Great"},"born":-106,"died":-48,"active":[-63,-63],"lon":35.23,"lat":31.78,"place":{"he":"ירושלים","en":"Jerusalem"},"stance":"enemy","role":{"he":"מצביא רומי, כובש ירושלים","en":"Roman general, conqueror of Jerusalem"},"impact":{"he":"ניצל את מלחמת האחים בין הורקנוס השני לאריסטובולוס השני, כבש את ירושלים בשנת 63 לפנה״ס ונכנס לקודש הקודשים. בכך הסתיימה העצמאות החשמונאית ויהודה נעשתה תלויה ברומא.","en":"Exploiting the civil war between Hyrcanus II and Aristobulus II, he captured Jerusalem in 63 BCE and entered the Holy of Holies. This ended Hasmonean independence and made Judea dependent on Rome."},"importance":2},{"id":"vespasian","name":{"he":"אספסיאנוס","en":"Vespasian"},"born":9,"died":79,"active":[66,70],"lon":35.28,"lat":32.84,"place":{"he":"הגליל ויהודה","en":"Galilee and Judea"},"stance":"enemy","role":{"he":"מצביא וקיסר רומי","en":"Roman general and emperor"},"impact":{"he":"פיקד על דיכוי המרד הגדול, כבש את הגליל (כולל יודפת) והתקדם לעבר ירושלים, עד שהוכרז לקיסר בשנת 69; לאחר החורבן הטיל את \"המס היהודי\" (Fiscus Judaicus). לפי מסורת התלמוד נענה לבקשת רבן יוחנן בן זכאי: \"תן לי יבנה וחכמיה\".","en":"He led the suppression of the Great Revolt, conquering Galilee (including Yodfat) and advancing on Jerusalem until he was proclaimed emperor in 69; after the destruction he imposed the 'Jewish tax' (Fiscus Judaicus). Talmudic tradition says he granted Rabban Yohanan ben Zakkai's request: 'Give me Yavneh and its sages.'"},"importance":2},{"id":"titus","name":{"he":"טיטוס","en":"Titus"},"born":39,"died":81,"active":[70,70],"lon":35.23,"lat":31.78,"place":{"he":"ירושלים","en":"Jerusalem"},"stance":"enemy","role":{"he":"מחריב הבית השני","en":"Destroyer of the Second Temple"},"impact":{"he":"בשנת 70 לספירה צר על ירושלים, החריב את העיר ושרף את בית המקדש השני; רבבות נהרגו ונלקחו בשבי. שער טיטוס ברומא, שבו מתוארת המנורה הנישאת בתהלוכת הניצחון, עומד עד היום.","en":"In 70 CE he besieged and destroyed Jerusalem and burned the Second Temple; tens of thousands were killed or enslaved. The Arch of Titus in Rome, showing the Temple menorah carried in triumph, still stands."},"calendar":{"he":"נזכר בי״ז בתמוז (הבקעת החומה) ובתשעה באב (חורבן הבית)","en":"Recalled on the 17th of Tammuz (breach of the walls) and Tisha B'Av (the destruction)"},"importance":3},{"id":"hadrian","name":{"he":"הדריאנוס","en":"Hadrian"},"born":76,"died":138,"active":[130,136],"lon":35.13,"lat":31.73,"place":{"he":"ירושלים וביתר","en":"Jerusalem and Betar"},"stance":"enemy","role":{"he":"קיסר רומי, מדכא מרד בר כוכבא","en":"Roman emperor who crushed Bar Kokhba"},"impact":{"he":"ייסד את איליה קפיטולינה על חורבות ירושלים ודיכא באכזריות את מרד בר כוכבא (132–136), שבסופו נחרבה יהודה ונשמדו יישובים רבים; הפרובינקיה כונתה מעתה \"סוריה פלשתינה\". לפי המסורת גזר על לימוד תורה ומילה, ובימיו הוצאו להורג חכמים ובהם רבי עקיבא.","en":"He founded Aelia Capitolina on the ruins of Jerusalem and brutally crushed the Bar Kokhba revolt (132–136), after which Judea was devastated and the province renamed 'Syria Palaestina'. According to tradition he banned Torah study and circumcision, and sages including Rabbi Akiva were executed in his time."},"calendar":{"he":"נזכר בתשעה באב (נפילת ביתר) ובפיוט \"אלה אזכרה\" על עשרת הרוגי מלכות ביום הכיפורים","en":"Recalled on Tisha B'Av (fall of Betar) and in the Yom Kippur liturgy of the Ten Martyrs ('Eleh Ezkerah')"},"importance":3},{"id":"justinian-i","name":{"he":"יוסטיניאנוס הראשון","en":"Justinian I"},"born":482,"died":565,"active":[527,565],"lon":28.98,"lat":41.01,"place":{"he":"קונסטנטינופול","en":"Constantinople"},"stance":"enemy","role":{"he":"קיסר ביזנטי ומחוקק","en":"Byzantine emperor and lawgiver"},"impact":{"he":"בקודקס החוקים שלו הוחמרו ההגבלות על יהודים בזכויות אזרחיות ובבניית בתי כנסת, ובנובלה 146 (553) התערב בסדרי קריאת התורה ואסר את הדרשה (\"דאוטרוסיס\"). חוקיו השפיעו על מעמד היהודים באירופה הנוצרית במשך מאות שנים.","en":"His law code tightened restrictions on Jews' civil rights and synagogue building, and his Novella 146 (553) intervened in synagogue Torah reading and banned rabbinic exposition ('deuterosis'). His laws shaped the status of Jews in Christian Europe for centuries."},"importance":2},{"id":"emicho-of-leiningen","name":{"he":"אמיכו מלייניגן","en":"Emicho of Leiningen"},"born":null,"died":null,"active":[1096,1096],"lon":8.27,"lat":50,"place":{"he":"מגנצא ושפירא, ארץ הריין","en":"Mainz and Speyer, Rhineland"},"stance":"enemy","role":{"he":"מנהיג צלבנים בגזרות תתנ״ו","en":"Crusader leader of the 1096 massacres"},"impact":{"he":"לאחר קריאתו של האפיפיור אורבנוס השני למסע הצלב הראשון (שלא כללה קריאה לפגוע ביהודים), הוביל להקת צלבנים שטבחה בקהילות שפירא, וורמייזא ומגנצא באביב 1096. רבים מהיהודים בחרו במוות על קידוש השם במקום המרה, ו\"גזרות תתנ״ו\" הפכו לטראומה מכוננת ביהדות אשכנז.","en":"After Pope Urban II called the First Crusade (a call that did not include attacking Jews), he led a crusader band that massacred the communities of Speyer, Worms and Mainz in spring 1096. Many Jews chose martyrdom over forced baptism, and the '1096 Edicts' became a defining trauma of Ashkenazi Jewry."},"calendar":{"he":"נזכר בקינות תשעה באב ובתפילת \"אב הרחמים\" בשבת","en":"Recalled in Tisha B'Av elegies (kinot) and the Sabbath prayer 'Av HaRachamim'"},"importance":2},{"id":"innocent-iii","name":{"he":"האפיפיור אינוקנטיוס השלישי","en":"Pope Innocent III"},"born":1161,"died":1216,"active":[1198,1216],"lon":12.49,"lat":41.89,"place":{"he":"רומא","en":"Rome"},"stance":"enemy","role":{"he":"אפיפיור, מועצת הלטרן הרביעית","en":"Pope of the Fourth Lateran Council"},"impact":{"he":"אמנם חידש את צו ההגנה \"סיקוט יודאיס\", אך מועצת הלטרן הרביעית שכינס (1215) חייבה יהודים בלבוש מבדיל והגבילה את מעמדם הציבורי. ההחלטה שימשה בסיס ל\"אות הקלון\" ולבידוד היהודים באירופה הנוצרית.","en":"Although he reissued the protective bull 'Sicut Judaeis', the Fourth Lateran Council he convened (1215) required Jews to wear distinctive dress and limited their public role. The decree became the basis for the Jewish badge and for segregating Jews in Christian Europe."},"importance":2},{"id":"edward-i","name":{"he":"אדוארד הראשון","en":"Edward I of England"},"born":1239,"died":1307,"active":[1275,1290],"lon":-0.13,"lat":51.51,"place":{"he":"לונדון, אנגליה","en":"London, England"},"stance":"enemy","role":{"he":"מלך אנגליה, מגרש היהודים","en":"King who expelled England's Jews"},"impact":{"he":"אסר על יהודים להלוות בריבית (1275), ובעקבות האשמות בקיצוץ מטבעות הוצאו להורג מאות יהודים. בשנת 1290 גירש את כל יהודי אנגליה – הגירוש הכללי הראשון של יהודים ממדינה באירופה – והם לא שבו עד 1656.","en":"He banned Jewish moneylending (1275), and after coin-clipping accusations hundreds of Jews were executed. In 1290 he expelled all of England's Jews – the first general expulsion of Jews from a European kingdom – and they did not return until 1656."},"importance":2},{"id":"philip-iv","name":{"he":"פיליפ הרביעי (היפה)","en":"Philip IV of France (the Fair)"},"born":1268,"died":1314,"active":[1306,1306],"lon":2.35,"lat":48.86,"place":{"he":"צרפת","en":"France"},"stance":"enemy","role":{"he":"מלך צרפת, מגרש היהודים","en":"King of France who expelled the Jews"},"impact":{"he":"בשנת 1306 עצר את יהודי ממלכתו, החרים את רכושם וגירש אותם, בעיקר כדי למלא את אוצר המלוכה. הגירוש היכה קשות במרכזי הלמדנות של יהדות צרפת, אף שיורשו התיר לחלקם לשוב ב-1315.","en":"In 1306 he arrested the Jews of his kingdom, confiscated their property and expelled them, largely to fill the royal treasury. The expulsion devastated the centers of French Jewish learning, though his successor let some return in 1315."},"importance":2},{"id":"ferdinand-isabella","name":{"he":"פרדיננד ואיזבלה (המלכים הקתולים)","en":"Ferdinand and Isabella (the Catholic Monarchs)"},"born":null,"died":null,"active":[1478,1492],"lon":-3.6,"lat":37.18,"place":{"he":"גרנדה, ספרד","en":"Granada, Spain"},"stance":"enemy","role":{"he":"מלכי ספרד, צו הגירוש","en":"Spanish monarchs, Expulsion Edict"},"impact":{"he":"הקימו את האינקוויזיציה הספרדית (1478) לרדיפת \"נוצרים חדשים\" שנחשדו בשמירת יהדות, ובצו אלהמברה (31 במרץ 1492) הורו לכל היהודים להתנצר או לעזוב. עשרות אלפים גלו (ההערכות שנויות במחלוקת) ורבים אחרים התנצרו; הגירוש סיים כאלף שנות יהדות ספרד ופיזר את יוצאיה באגן הים התיכון ומעבר לו.","en":"They established the Spanish Inquisition (1478) to pursue 'New Christians' suspected of secretly practicing Judaism, and in the Alhambra Decree (31 March 1492) ordered all Jews to convert or leave. Tens of thousands went into exile (estimates are debated) and many others converted; the expulsion ended a millennium of Spanish Jewry and scattered the Sephardim across the Mediterranean and beyond."},"importance":3},{"id":"torquemada","name":{"he":"טומאס דה טורקמדה","en":"Tomás de Torquemada"},"born":1420,"died":1498,"active":[1483,1498],"lon":-4.7,"lat":40.66,"place":{"he":"קסטיליה, ספרד","en":"Castile, Spain"},"stance":"enemy","role":{"he":"האינקוויזיטור הכללי הראשון","en":"First Grand Inquisitor of Spain"},"impact":{"he":"נזיר דומיניקני ומוודה של המלכה איזבלה, שעמד בראש האינקוויזיציה הספרדית; בתקופתו נשפטו אלפי אנוסים ורבים הועלו על המוקד. הוא נחשב לאחד הדוחפים העיקריים לגירוש ספרד, ושמו הפך לסמל לקנאות דתית.","en":"A Dominican friar and confessor to Queen Isabella, he headed the Spanish Inquisition; thousands of conversos were tried and many burned at the stake during his tenure. He is considered a leading force behind the 1492 expulsion, and his name became a byword for religious fanaticism."},"importance":2},{"id":"manuel-i","name":{"he":"מנואל הראשון","en":"Manuel I of Portugal"},"born":1469,"died":1521,"active":[1496,1506],"lon":-9.14,"lat":38.72,"place":{"he":"ליסבון, פורטוגל","en":"Lisbon, Portugal"},"stance":"enemy","role":{"he":"מלך פורטוגל, ההמרה הכפויה","en":"King of Portugal, forced conversion"},"impact":{"he":"כתנאי לנישואיו לבת המלכים הקתולים הורה ב-1496 על גירוש היהודים, אך בפועל מנע את יציאתם והטביל אותם בכפייה ב-1497, ובכלל זה ילדים שנלקחו מהוריהם. כך נוצרה קהילת האנוסים הגדולה של פורטוגל, שרבים מצאצאיה ייסדו לימים קהילות באמסטרדם, בלונדון ובעולם החדש.","en":"As a condition of marrying the Catholic Monarchs' daughter he decreed the expulsion of the Jews in 1496, but then blocked their departure and had them forcibly baptized in 1497, including children taken from their parents. This created Portugal's large converso population, many of whose descendants later founded communities in Amsterdam, London and the New World."},"importance":2},{"id":"paul-iv","name":{"he":"האפיפיור פאולוס הרביעי","en":"Pope Paul IV"},"born":1476,"died":1559,"active":[1555,1559],"lon":12.48,"lat":41.89,"place":{"he":"רומא ומדינת האפיפיור","en":"Rome and the Papal States"},"stance":"enemy","role":{"he":"אפיפיור, מייסד גטו רומא","en":"Pope who created the Rome ghetto"},"impact":{"he":"בבולה \"כיוון שזה אבסורד\" (Cum nimis absurdum, 1555) כלא את יהודי רומא בגטו, חייב אותם בכובע צהוב והגביל את פרנסתם; באנקונה הועלו על המוקד אנוסים פורטוגלים. המודל, שהמונח \"גטו\" לקוח לו מוונציה (1516), התפשט באיטליה ונשמר ברומא עד 1870.","en":"In the bull 'Cum nimis absurdum' (1555) he confined Rome's Jews to a ghetto, forced them to wear a yellow hat and restricted their livelihoods; in Ancona Portuguese conversos were burned at the stake. The model, whose name came from Venice's ghetto (1516), spread across Italy and lasted in Rome until 1870."},"importance":2},{"id":"martin-luther","name":{"he":"מרטין לותר","en":"Martin Luther"},"born":1483,"died":1546,"active":[1523,1546],"lon":12.65,"lat":51.87,"place":{"he":"ויטנברג, גרמניה","en":"Wittenberg, Germany"},"stance":"enemy","role":{"he":"מייסד הרפורמציה הפרוטסטנטית","en":"Founder of the Protestant Reformation"},"impact":{"he":"בחיבורו מ-1523 קרא ליחס הוגן ליהודים בתקווה שיתנצרו, אך משלא התנצרו כתב ב-1543 את \"על היהודים ושקריהם\", שבו קרא לשרוף בתי כנסת ולגרש יהודים. כתביו המאוחרים השפיעו על האנטישמיות הגרמנית ונוצלו בתעמולה הנאצית; כנסיות לותרניות רבות הסתייגו מהם בעשורים האחרונים.","en":"His 1523 pamphlet urged fair treatment of Jews in hope of their conversion, but when they did not convert he wrote 'On the Jews and Their Lies' (1543), calling for synagogues to be burned and Jews expelled. His later writings fed German antisemitism and were exploited by Nazi propaganda; many Lutheran churches have formally repudiated them in recent decades."},"importance":2},{"id":"khmelnytsky","name":{"he":"בוגדאן חמלניצקי","en":"Bohdan Khmelnytsky"},"born":1595,"died":1657,"active":[1648,1657],"lon":28.84,"lat":48.97,"place":{"he":"אוקראינה (נמירוב)","en":"Ukraine (Nemyriv)"},"stance":"enemy","role":{"he":"הטמן קוזאקי, גזרות ת״ח–ת״ט","en":"Cossack hetman, 1648–49 massacres"},"impact":{"he":"הוביל ב-1648 מרד קוזאקי ואיכרי נגד האצולה הפולנית, שבמהלכו נטבחו עשרות אלפי יהודים בגזרות ת״ח–ת״ט (מספר הנספים שנוי במחלוקת). הטבח זעזע את יהדות מזרח אירופה; באוקראינה הוא נחשב גיבור לאומי.","en":"In 1648 he led a Cossack and peasant uprising against the Polish nobility in which tens of thousands of Jews were massacred in the 'Gezerot Tach VeTat' (death tolls are debated). The massacres shook Eastern European Jewry; in Ukraine he is regarded as a national hero."},"calendar":{"he":"נזכר בתענית כ׳ בסיון שקבע ועד ארבע הארצות","en":"Recalled on the fast of 20 Sivan instituted by the Council of Four Lands"},"importance":3},{"id":"nicholas-i","name":{"he":"הצאר ניקולאי הראשון","en":"Tsar Nicholas I"},"born":1796,"died":1855,"active":[1827,1855],"lon":27.56,"lat":53.9,"place":{"he":"תחום המושב, האימפריה הרוסית","en":"Pale of Settlement, Russian Empire"},"stance":"enemy","role":{"he":"צאר רוסיה, גזרת הקנטוניסטים","en":"Russian tsar, cantonist decree"},"impact":{"he":"בשנת 1827 החיל גיוס חובה על יהודים, שבמסגרתו נלקחו נערים – לעיתים ילדים צעירים – לשירות ממושך כ\"קנטוניסטים\" תוך לחץ כבד להתנצר. בימיו הוגבלו היהודים לתחום המושב ובוטל ארגון הקהל (1844), כחלק ממדיניות של כפיית \"רוסיפיקציה\".","en":"In 1827 he imposed military conscription on Jews, under which boys – sometimes young children – were taken as 'cantonists' for long service under heavy pressure to convert. Under him Jews were confined to the Pale of Settlement and the kahal self-government was abolished (1844), as part of a forced Russification policy."},"importance":2},{"id":"alexander-iii","name":{"he":"הצאר אלכסנדר השלישי","en":"Tsar Alexander III"},"born":1845,"died":1894,"active":[1881,1894],"lon":30.52,"lat":50.45,"place":{"he":"קייב ותחום המושב","en":"Kyiv and the Pale of Settlement"},"stance":"enemy","role":{"he":"צאר רוסיה, \"חוקי מאי\"","en":"Russian tsar, the May Laws"},"impact":{"he":"עלייתו לשלטון לוותה בגל הפוגרומים של 1881–1882 (\"סופות בנגב\"), ובעקבותיהם חוקק את \"חוקי מאי\" (1882), הנהיג מכסות ליהודים בהשכלה (1887) וגירש את יהודי מוסקבה (1891). המדיניות דחפה מיליוני יהודים להגר, בעיקר לאמריקה, והאיצה את תנועת חיבת ציון והעלייה הראשונה.","en":"His accession came with the 1881–82 wave of pogroms, after which he enacted the 'May Laws' (1882), introduced quotas on Jews in education (1887) and expelled Moscow's Jews (1891). These policies drove millions of Jews to emigrate, mainly to America, and spurred Hibbat Zion and the First Aliyah."},"importance":2},{"id":"pobedonostsev","name":{"he":"קונסטנטין פובדונוסצב","en":"Konstantin Pobedonostsev"},"born":1827,"died":1907,"active":[1880,1905],"lon":30.32,"lat":59.94,"place":{"he":"סנקט פטרבורג","en":"St. Petersburg"},"stance":"enemy","role":{"he":"יועץ הצארים, ראש הסינוד","en":"Tsarist adviser, head of Holy Synod"},"impact":{"he":"כראש הסינוד הקדוש ויועצם של אלכסנדר השלישי וניקולאי השני היה מאדריכלי המדיניות הריאקציונרית והאנטי-יהודית ברוסיה. מיוחסת לו האמרה כי שליש מהיהודים יתנצרו, שליש יהגרו ושליש ימותו – אף שייחוסה אליו אינו ודאי.","en":"As head of the Holy Synod and adviser to Alexander III and Nicholas II, he was a chief architect of Russia's reactionary, anti-Jewish policies. He is credited with the saying that a third of the Jews would convert, a third emigrate and a third perish – though the attribution is uncertain."},"importance":1},{"id":"adolf-hitler","name":{"he":"אדולף היטלר","en":"Adolf Hitler"},"born":1889,"died":1945,"active":[1933,1945],"lon":13.4,"lat":52.52,"place":{"he":"ברלין, גרמניה","en":"Berlin, Germany"},"stance":"enemy","role":{"he":"מנהיג גרמניה הנאצית","en":"Leader of Nazi Germany"},"impact":{"he":"הפך את האנטישמיות הגזענית למדיניות מדינה: חוקי נירנברג (1935), ליל הבדולח (1938), ולאחר פרוץ מלחמת העולם השנייה – \"הפתרון הסופי\". בשואה נרצחו כשישה מיליון יהודים, כשליש מהעם היהודי.","en":"He turned racial antisemitism into state policy: the Nuremberg Laws (1935), Kristallnacht (1938) and, after the outbreak of World War II, the 'Final Solution'. Some six million Jews, about a third of the Jewish people, were murdered in the Holocaust."},"calendar":{"he":"השואה נזכרת ביום השואה והגבורה (כ״ז בניסן) וביום הקדיש הכללי (עשרה בטבת)","en":"The Holocaust is commemorated on Yom HaShoah (27 Nisan) and on the General Kaddish Day (10 Tevet)"},"importance":3},{"id":"heinrich-himmler","name":{"he":"היינריך הימלר","en":"Heinrich Himmler"},"born":1900,"died":1945,"active":[1933,1945],"lon":13.38,"lat":52.51,"place":{"he":"ברלין","en":"Berlin"},"stance":"enemy","role":{"he":"ראש האס-אס","en":"Reichsführer-SS"},"impact":{"he":"כמפקד האס-אס והמשטרה הגרמנית עמד בראש מנגנון הטרור הנאצי: מחנות הריכוז, האיינזצגרופן ומחנות ההשמדה. הוא היה האחראי הבכיר לביצוע \"הפתרון הסופי\", והתאבד לאחר שנתפס בידי הבריטים ב-1945.","en":"As head of the SS and German police he ran the Nazi terror apparatus: the concentration camps, the Einsatzgruppen and the death camps. He bore chief responsibility for carrying out the 'Final Solution' and killed himself after capture by the British in 1945."},"importance":2},{"id":"reinhard-heydrich","name":{"he":"ריינהרד היידריך","en":"Reinhard Heydrich"},"born":1904,"died":1942,"active":[1938,1942],"lon":13.17,"lat":52.43,"place":{"he":"ועידת ואנזה, ברלין","en":"Wannsee, Berlin"},"stance":"enemy","role":{"he":"מתכנן \"הפתרון הסופי\"","en":"Architect of the Final Solution"},"impact":{"he":"כראש המשרד הראשי לביטחון הרייך הפעיל את האיינזצגרופן שרצחו יהודים בהמוניהם במזרח, וכינס את ועידת ואנזה (20 בינואר 1942) לתיאום \"הפתרון הסופי\". נהרג בהתנקשות בפראג ב-1942, ותוכנית ההשמדה במחנות בלז׳ץ, סוביבור וטרבלינקה נקראה \"מבצע ריינהרד\".","en":"As head of the Reich Security Main Office he directed the Einsatzgruppen that carried out mass shootings of Jews in the East, and chaired the Wannsee Conference (20 January 1942) to coordinate the 'Final Solution'. He was assassinated in Prague in 1942, and the extermination program at Belzec, Sobibor and Treblinka was named 'Operation Reinhard'."},"importance":2},{"id":"adolf-eichmann","name":{"he":"אדולף אייכמן","en":"Adolf Eichmann"},"born":1906,"died":1962,"active":[1938,1945],"lon":19.04,"lat":47.5,"place":{"he":"ברלין ובודפשט","en":"Berlin and Budapest"},"stance":"enemy","role":{"he":"מארגן הגירושים להשמדה","en":"Organizer of the deportations"},"impact":{"he":"ניהל את מחלקת \"העניינים היהודיים\" במנגנון האס-אס ותיאם את שילוח יהודי אירופה למחנות ההשמדה, ובהם כ-437,000 מיהודי הונגריה ב-1944. נלכד בארגנטינה בידי המוסד (1960), נשפט בירושלים והוצא להורג ב-1962; משפטו הביא את עדויות הניצולים לתודעה הציבורית בישראל ובעולם.","en":"He headed the SS office for 'Jewish affairs' and coordinated the deportation of Europe's Jews to the death camps, including some 437,000 Hungarian Jews in 1944. Captured in Argentina by the Mossad (1960), he was tried in Jerusalem and executed in 1962; his trial brought survivors' testimony into public consciousness in Israel and worldwide."},"importance":2},{"id":"philippe-petain","name":{"he":"פיליפ פטן","en":"Philippe Pétain"},"born":1856,"died":1951,"active":[1940,1944],"lon":3.43,"lat":46.13,"place":{"he":"וישי, צרפת","en":"Vichy, France"},"stance":"enemy","role":{"he":"ראש משטר וישי","en":"Head of the Vichy regime"},"impact":{"he":"משטרו חוקק ביוזמתו את \"חוקי היהודים\" (1940–1941), שנישלו יהודים ממקצועות ומרכוש, ושיתף פעולה עם גרמניה במעצרים ובגירושים. כ-76,000 יהודים גורשו מצרפת למחנות ההשמדה; לאחר המלחמה נידון למוות ועונשו הומתק למאסר עולם.","en":"His regime enacted, on its own initiative, the 'Statutes on Jews' (1940–41) that stripped Jews of professions and property, and collaborated with Germany in arrests and deportations. About 76,000 Jews were deported from France to the death camps; after the war he was sentenced to death, commuted to life imprisonment."},"importance":1},{"id":"haj-amin-al-husseini","name":{"he":"חאג' אמין אל-חוסייני","en":"Haj Amin al-Husseini"},"born":1897,"died":1974,"active":[1921,1948],"lon":35.23,"lat":31.78,"place":{"he":"ירושלים","en":"Jerusalem"},"stance":"enemy","role":{"he":"המופתי של ירושלים","en":"Grand Mufti of Jerusalem"},"impact":{"he":"הנהיג את ההתנגדות הערבית לציונות בתקופת המנדט ונקשר להסתה במאורעות תרפ״ט (1929) ובמרד הערבי (1936–1939). במלחמת העולם השנייה שיתף פעולה עם גרמניה הנאצית, נפגש עם היטלר (1941), סייע בגיוס מוסלמים לאס-אס ופעל לסיכול הצלת ילדים יהודים.","en":"He led Arab opposition to Zionism during the Mandate and was linked to incitement in the 1929 riots and the Arab Revolt (1936–39). In World War II he collaborated with Nazi Germany, met Hitler (1941), helped recruit Muslims into the SS and worked to block the rescue of Jewish children."},"importance":2},{"id":"gamal-abdel-nasser","name":{"he":"גמאל עבד אל-נאצר","en":"Gamal Abdel Nasser"},"born":1918,"died":1970,"active":[1952,1970],"lon":31.24,"lat":30.04,"place":{"he":"קהיר, מצרים","en":"Cairo, Egypt"},"stance":"enemy","role":{"he":"נשיא מצרים","en":"President of Egypt"},"impact":{"he":"כמנהיג הפאן-ערביות עמד בראש העימות עם ישראל, וסגירת מצרי טיראן והזרמת כוחות לסיני ב-1967 הובילו למלחמת ששת הימים. לאחר מלחמת סיני (1956) גורשו ונאלצו לעזוב אלפים מיהודי מצרים, ובכך התחסלה כמעט כליל קהילה עתיקה.","en":"As leader of pan-Arabism he headed the confrontation with Israel, and his closure of the Straits of Tiran and buildup in Sinai in 1967 led to the Six-Day War. After the 1956 Suez War thousands of Egyptian Jews were expelled or pressured to leave, effectively ending an ancient community."},"importance":2},{"id":"constantine-the-great","name":{"he":"קונסטנטינוס הגדול","en":"Constantine the Great"},"born":272,"died":337,"active":[313,337],"lon":28.98,"lat":41.01,"place":{"he":"האימפריה הרומית","en":"Roman Empire"},"stance":"mixed","role":{"he":"הקיסר הנוצרי הראשון","en":"First Christian Roman emperor"},"impact":{"he":"היהדות נותרה בימיו דת מותרת ויהודים שמרו על מעמד חוקי, אך הוא אסר על יהודים לגייר ולהחזיק עבדים נוצרים, ונוסחו בימיו ביטויים עוינים כלפיהם. הפיכת הנצרות לדת מועדפת באימפריה פתחה עידן של הגבלות הדרגתיות על היהודים ושל הפיכת ארץ ישראל ל\"ארץ הקודש\" הנוצרית.","en":"Judaism remained a permitted religion under him and Jews kept legal status, but he barred Jews from proselytizing and owning Christian slaves, and his laws used hostile language toward them. Christianity's rise to favored status opened an era of gradual restrictions on Jews and of the Land of Israel becoming the Christian 'Holy Land'."},"importance":2},{"id":"gregory-i","name":{"he":"האפיפיור גרגוריוס הראשון (הגדול)","en":"Pope Gregory I (the Great)"},"born":540,"died":604,"active":[590,604],"lon":12.49,"lat":41.9,"place":{"he":"רומא","en":"Rome"},"stance":"mixed","role":{"he":"אפיפיור, עקרון \"סיקוט יודאיס\"","en":"Pope, 'Sicut Judaeis' principle"},"impact":{"he":"קבע שאין להטביל יהודים בכפייה או להרוס בתי כנסת ושיש לכבד את זכויותיהם המוכרות, ועקרון זה הפך לבולת ההגנה \"סיקוט יודאיס\" (בערך 1120). במקביל אסר בניית בתי כנסת חדשים והחזקת עבדים נוצרים בידי יהודים, ועודד המרה בדרכי שכנוע ותמריצים.","en":"He ruled that Jews must not be forcibly baptized nor their synagogues destroyed, and that their established rights be respected – a principle that became the protective bull 'Sicut Judaeis' (c. 1120). At the same time he forbade new synagogues and Jewish ownership of Christian slaves, and encouraged conversion by persuasion and incentives."},"importance":1},{"id":"umar-ibn-al-khattab","name":{"he":"עומר בן אל-ח'טאב","en":"Umar ibn al-Khattab"},"born":584,"died":644,"active":[637,644],"lon":35.235,"lat":31.778,"place":{"he":"ירושלים","en":"Jerusalem"},"stance":"mixed","role":{"he":"הח'ליף השני, כובש ירושלים","en":"Second caliph, conqueror of Jerusalem"},"impact":{"he":"לאחר הכיבוש המוסלמי של ירושלים (638 לערך) התיר ליהודים לשוב ולהתיישב בעיר אחרי מאות שנות איסור ביזנטי; לפי תעודה מגניזת קהיר הותרו לשם שבעים משפחות מטבריה. \"תנאי עומר\" המיוחסים לו (ככל הנראה נוסחו מאוחר יותר) הגדירו את מעמד הד'ימי – הגנה וחופש פולחן לצד מס ומגבלות מבזות.","en":"After the Muslim conquest of Jerusalem (c. 638) he allowed Jews to resettle in the city after centuries of Byzantine prohibition; a Cairo Geniza document speaks of seventy families from Tiberias. The 'Pact of Umar' attributed to him (probably compiled later) defined dhimmi status – protection and freedom of worship alongside a poll tax and humiliating restrictions."},"importance":2},{"id":"napoleon","name":{"he":"נפוליאון בונפרטה","en":"Napoleon Bonaparte"},"born":1769,"died":1821,"active":[1796,1815],"lon":2.35,"lat":48.86,"place":{"he":"פריז ואירופה","en":"Paris and Europe"},"stance":"mixed","role":{"he":"קיסר צרפת, מפיץ האמנציפציה","en":"French emperor, spreader of emancipation"},"impact":{"he":"צבאותיו הפיצו את שוויון הזכויות ליהודים ופתחו גטאות באיטליה ובגרמניה, והוא כינס את אספת הנכבדים (1806) ואת \"הסנהדרין הגדולה\" (1807) ששילבה את היהודים במדינה המודרנית. מנגד, ב\"צו המביש\" (1808) הגביל לעשור את מסחרם ומגוריהם של יהודים, ודרש מהם להגדיר את עצמם כקבוצה דתית בלבד.","en":"His armies spread equal rights for Jews and opened ghettos in Italy and Germany, and he convened the Assembly of Notables (1806) and the 'Grand Sanhedrin' (1807) to integrate Jews into the modern state. Yet his 'Infamous Decree' (1808) restricted Jewish commerce and residence for a decade, and he required Jews to define themselves purely as a religious group."},"importance":2},{"id":"joseph-stalin","name":{"he":"יוסיף סטלין","en":"Joseph Stalin"},"born":1878,"died":1953,"active":[1936,1953],"lon":37.62,"lat":55.75,"place":{"he":"מוסקבה, ברית המועצות","en":"Moscow, Soviet Union"},"stance":"mixed","role":{"he":"שליט ברית המועצות","en":"Soviet dictator"},"impact":{"he":"הצבא האדום בפיקודו הביס את גרמניה הנאצית ושחרר את אושוויץ, וב-1947–1948 תמכה ברית המועצות בהקמת ישראל, הכירה בה והתירה משלוחי נשק מצ'כוסלובקיה. מנגד דיכא את התרבות והדת היהודית, הורה על רצח שלמה מיכואלס (1948) ועל הוצאתם להורג של סופרים יידיים (1952), ו\"עלילת הרופאים\" (1953) הסתיימה רק עם מותו.","en":"The Red Army under his command defeated Nazi Germany and liberated Auschwitz, and in 1947–48 the USSR backed Israel's creation, recognized it and allowed Czechoslovak arms shipments. Yet he suppressed Jewish culture and religion, ordered the murder of Solomon Mikhoels (1948) and the execution of Yiddish writers (1952), and the 'Doctors' Plot' (1953) ended only with his death."},"importance":2},{"id":"franklin-roosevelt","name":{"he":"פרנקלין דלאנו רוזוולט","en":"Franklin D. Roosevelt"},"born":1882,"died":1945,"active":[1933,1945],"lon":-77.04,"lat":38.9,"place":{"he":"וושינגטון, ארצות הברית","en":"Washington, D.C."},"stance":"mixed","role":{"he":"נשיא ארה״ב במלחמת העולם","en":"U.S. president in World War II"},"impact":{"he":"הוביל את ארצות הברית במלחמה שהביסה את גרמניה הנאצית, והקים בינואר 1944 את \"המועצה לפליטי מלחמה\" שסייעה בהצלת אלפי יהודים. מנגד, ממשלו לא הרחיב את מכסות ההגירה לפליטים יהודים (כמו נוסעי האונייה \"סנט לואיס\" ב-1939) ונמנע מפעולה ישירה להצלה, ומדיניותו שנויה במחלוקת בין היסטוריונים.","en":"He led the United States in the war that defeated Nazi Germany and in January 1944 created the War Refugee Board, which helped rescue thousands of Jews. Yet his administration did not widen immigration quotas for Jewish refugees (such as the 'St. Louis' passengers in 1939) and avoided direct rescue action, and his record remains debated by historians."},"importance":2},{"id":"pius-xii","name":{"he":"האפיפיור פיוס ה-12","en":"Pope Pius XII"},"born":1876,"died":1958,"active":[1939,1945],"lon":12.45,"lat":41.9,"place":{"he":"הוותיקן, רומא","en":"Vatican City, Rome"},"stance":"mixed","role":{"he":"האפיפיור בתקופת השואה","en":"Pope during the Holocaust"},"impact":{"he":"נמנע מגינוי פומבי ומפורש של השמדת היהודים, גם כאשר יהודי רומא נעצרו ושולחו לאושוויץ באוקטובר 1943. מנגד, מוסדות כנסייה ברומא ובמקומות אחרים הסתירו אלפי יהודים; היקף מעורבותו האישית שנוי במחלוקת עזה, וארכיוני הוותיקן לתקופתו נפתחו לחוקרים רק ב-2020.","en":"He refrained from an explicit public condemnation of the extermination of the Jews, even when Rome's Jews were rounded up and sent to Auschwitz in October 1943. Yet church institutions in Rome and elsewhere hid thousands of Jews; the extent of his personal role is fiercely debated, and the Vatican archives for his papacy opened to researchers only in 2020."},"importance":2},{"id":"cyrus-the-great","name":{"he":"כורש הגדול","en":"Cyrus the Great"},"born":-600,"died":-530,"active":[-539,-530],"lon":44.42,"lat":32.54,"place":{"he":"בבל","en":"Babylon"},"stance":"ally","role":{"he":"מלך פרס, מתיר שיבת ציון","en":"Persian king who allowed the Return"},"impact":{"he":"לאחר שכבש את בבל (539 לפנה״ס) התיר לגולי יהודה לשוב לארצם ולבנות מחדש את בית המקדש, בהתאם למדיניותו הכללית כלפי עמים מוגלים. ישעיהו כינה אותו \"משיחו\" של האל, והוא נחשב לאחד הגויים האהודים ביותר במסורת היהודית.","en":"After conquering Babylon (539 BCE) he allowed the exiles of Judah to return home and rebuild the Temple, in line with his general policy toward deported peoples. Isaiah called him God's 'anointed', and he is among the most admired gentiles in Jewish tradition."},"importance":3},{"id":"darius-i","name":{"he":"דריווש הראשון","en":"Darius I"},"born":-550,"died":-486,"active":[-520,-515],"lon":35.235,"lat":31.778,"place":{"he":"ירושלים","en":"Jerusalem"},"stance":"ally","role":{"he":"מלך פרס, השלמת הבית השני","en":"Persian king, Second Temple completed"},"impact":{"he":"לפי ספר עזרא אישר מחדש את הצהרת כורש ומימן מאוצר המלוכה את בניית המקדש, לאחר שזו נעצרה בשל התנגדות שכנים. בית המקדש השני הושלם בשנה השישית למלכותו (515 לפנה״ס בקירוב) בהנהגת זרובבל ויהושע הכהן הגדול.","en":"According to Ezra he reconfirmed Cyrus's decree and funded the Temple's construction from the royal treasury after local opposition had halted it. The Second Temple was completed in his sixth year (c. 515 BCE) under Zerubbabel and the high priest Joshua."},"importance":2},{"id":"artaxerxes-i","name":{"he":"ארתחשסתא הראשון","en":"Artaxerxes I"},"born":null,"died":-424,"active":[-458,-432],"lon":48.25,"lat":32.19,"place":{"he":"שושן, פרס","en":"Susa, Persia"},"stance":"ally","role":{"he":"מלך פרס בימי עזרא ונחמיה","en":"Persian king of Ezra and Nehemiah"},"impact":{"he":"לפי המקרא שיגר את עזרא הסופר לירושלים עם סמכות להנהיג את התורה כחוק (458 לפנה״ס לפי התיארוך המקובל), ומינה את שר המשקים שלו נחמיה לפחה כדי לבנות את חומות העיר (445 לפנה״ס). שליחויות אלה ביססו את הקהילה בירושלים ואת מעמד התורה בחייה.","en":"According to the Bible he sent Ezra the Scribe to Jerusalem with authority to establish the Torah as law (458 BCE by the usual dating), and appointed his cupbearer Nehemiah governor to rebuild the city walls (445 BCE). These missions consolidated the Jerusalem community and the Torah's place in its life."},"importance":2},{"id":"alexander-the-great","name":{"he":"אלכסנדר מוקדון","en":"Alexander the Great"},"born":-356,"died":-323,"active":[-332,-323],"lon":35.22,"lat":31.79,"place":{"he":"ארץ ישראל","en":"Land of Israel"},"stance":"ally","role":{"he":"כובש העולם ההלניסטי","en":"Conqueror of the Hellenistic world"},"impact":{"he":"כבש את ארץ ישראל ב-332 לפנה״ס בלי לפגוע ביהודים; לפי אגדה המובאת אצל יוספוס ובתלמוד השתחווה לכהן הגדול ונמנע מלפגוע במקדש. כיבושיו פתחו את התקופה ההלניסטית, שבה קמה באלכסנדריה הקהילה היהודית הגדולה בתפוצות, ושמו הפך לשם עברי מקובל.","en":"He conquered the Land of Israel in 332 BCE without harming the Jews; a legend in Josephus and the Talmud says he bowed before the high priest and spared the Temple. His conquests opened the Hellenistic age, in which Alexandria became home to the largest diaspora community, and his name became a common Jewish name."},"importance":2},{"id":"julius-caesar","name":{"he":"יוליוס קיסר","en":"Julius Caesar"},"born":-100,"died":-44,"active":[-47,-44],"lon":12.48,"lat":41.89,"place":{"he":"רומא ויהודה","en":"Rome and Judea"},"stance":"ally","role":{"he":"שליט רומא, מעניק זכויות","en":"Roman ruler who granted Jewish rights"},"impact":{"he":"לאחר שהורקנוס השני ואנטיפטרוס סייעו לו במצרים (47 לפנה״ס), העניק ליהודים חופש פולחן, פטור משירות צבאי ואישור לבנות מחדש את חומות ירושלים. זכויות אלה שימשו בסיס למעמדן המוגן של קהילות היהודים באימפריה, ולפי סווטוניוס התאבלו היהודים ברומא ליד מדורת הלוויה שלו.","en":"After Hyrcanus II and Antipater aided him in Egypt (47 BCE), he granted Jews freedom of worship, exemption from military service and permission to rebuild Jerusalem's walls. These rights underpinned the protected status of Jewish communities across the empire, and Suetonius reports that Rome's Jews mourned at his funeral pyre."},"importance":2},{"id":"julian","name":{"he":"יוליאנוס (\"הכופר\")","en":"Julian ('the Apostate')"},"born":331,"died":363,"active":[361,363],"lon":35.236,"lat":31.777,"place":{"he":"ירושלים","en":"Jerusalem"},"stance":"ally","role":{"he":"קיסר רומי, ניסה לבנות את המקדש","en":"Roman emperor who tried to rebuild the Temple"},"impact":{"he":"הקיסר האחרון שאינו נוצרי ביטל מסים מפלים והורה ב-363 לבנות מחדש את בית המקדש בירושלים, בין השאר כדי לערער את טענות הנצרות. העבודות נקטעו בעקבות שרפה (וככל הנראה רעידת אדמה) ומותו במלחמה בפרס, והתקווה נגוזה.","en":"The last non-Christian emperor lifted discriminatory taxes and in 363 ordered the Temple in Jerusalem rebuilt, partly to undermine Christian claims. Work stopped after a fire (probably an earthquake) and his death in the Persian war, and the hope faded."},"importance":3},{"id":"abd-al-rahman-iii","name":{"he":"עבד א-רחמן השלישי","en":"Abd al-Rahman III"},"born":891,"died":961,"active":[929,961],"lon":-4.78,"lat":37.88,"place":{"he":"קורדובה, אל-אנדלוס","en":"Córdoba, al-Andalus"},"stance":"ally","role":{"he":"ח'ליף קורדובה, פטרון","en":"Caliph of Córdoba, patron"},"impact":{"he":"בחצרו כיהן חסדאי אבן שפרוט, רופא ודיפלומט יהודי, שהיה נשיא יהודי אל-אנדלוס ופטרון של משוררים ולומדים. השגשוג והסובלנות היחסית בממלכתו הניחו את היסודות ל\"תור הזהב\" של יהדות ספרד.","en":"His court included Hasdai ibn Shaprut, a Jewish physician and diplomat who led the Jews of al-Andalus and patronized poets and scholars. The prosperity and relative tolerance of his realm laid the foundations for the 'Golden Age' of Spanish Jewry."},"importance":2},{"id":"louis-the-pious","name":{"he":"לואי החסיד","en":"Louis the Pious"},"born":778,"died":840,"active":[814,840],"lon":6.08,"lat":50.78,"place":{"he":"האימפריה הקרולינגית (אאכן)","en":"Carolingian Empire (Aachen)"},"stance":"ally","role":{"he":"קיסר פרנקי, מגן הסוחרים","en":"Frankish emperor, protector of Jews"},"impact":{"he":"בנו ויורשו של קרל הגדול העניק לסוחרים יהודים כתבי חסות, מינה פקיד מיוחד להגנתם והתיר להעביר את יום השוק משבת. הוא עמד מול מסע ההסתה של הבישוף אגוברד מליון, ומדיניותו סייעה לצמיחת הקהילות היהודיות בצרפת ובגרמניה.","en":"Son and successor of Charlemagne, he granted Jewish merchants charters of protection, appointed an official to safeguard them and allowed market day to be moved from the Sabbath. He resisted the anti-Jewish campaign of Bishop Agobard of Lyon, and his policies helped Jewish communities grow in France and Germany."},"importance":1},{"id":"bernard-of-clairvaux","name":{"he":"ברנרד מקלרבו","en":"Bernard of Clairvaux"},"born":1090,"died":1153,"active":[1146,1147],"lon":8.28,"lat":50,"place":{"he":"ארץ הריין","en":"Rhineland"},"stance":"ally","role":{"he":"אב מנזר, מטיף מסע הצלב","en":"Abbot and Crusade preacher"},"impact":{"he":"אף שהטיף למסע הצלב השני והחזיק בעמדות תאולוגיות מסורתיות נגד היהדות, יצא נגד הנזיר רדולף שהסית לטבוח ביהודי הריין והורה שאין להרוג יהודים. הכרוניקן רבי אפרים מבונא ציין אותו לשבח כמי שבלם טבח כמו של 1096.","en":"Though he preached the Second Crusade and held traditional theological views against Judaism, he confronted the monk Radulf, who was inciting massacres of Rhineland Jews, and insisted Jews must not be killed. The chronicler Ephraim of Bonn credited him with preventing a repeat of 1096."},"importance":1},{"id":"boleslaw-the-pious","name":{"he":"בולסלב החסיד","en":"Bolesław the Pious"},"born":null,"died":1279,"active":[1264,1279],"lon":18.09,"lat":51.76,"place":{"he":"קאליש, פולין","en":"Kalisz, Poland"},"stance":"ally","role":{"he":"דוכס, חוקת קאליש","en":"Duke, Statute of Kalisz"},"impact":{"he":"\"חוקת קאליש\" (1264) שהעניק הבטיחה ליהודים הגנה על גופם ורכושם, חופש פולחן ומסחר, שיפוט עצמי ועונש על האשמות שווא בעלילות דם. החוקה הייתה הבסיס המשפטי לקהילה היהודית בפולין, שהפכה במאות הבאות למרכז היהודי הגדול בעולם.","en":"His Statute of Kalisz (1264) guaranteed Jews protection of life and property, freedom of worship and trade, judicial autonomy, and penalties for false blood-libel accusations. It became the legal foundation of Polish Jewry, which grew in later centuries into the world's largest Jewish center."},"importance":2},{"id":"casimir-iii","name":{"he":"קז'ימייז' השלישי הגדול","en":"Casimir III the Great"},"born":1310,"died":1370,"active":[1334,1370],"lon":19.94,"lat":50.06,"place":{"he":"קרקוב, פולין","en":"Kraków, Poland"},"stance":"ally","role":{"he":"מלך פולין","en":"King of Poland"},"impact":{"he":"אשרר והרחיב את זכויות חוקת קאליש לכל ממלכת פולין (1334 ואילך), ובימיו קלטה פולין יהודים שנמלטו מרדיפות במערב, בין השאר אחרי המוות השחור. רובע קז'ימייז' בקרקוב, שנעשה מרכז יהודי חשוב, קרוי על שמו, ואגדה עממית קשרה אותו לאהובה יהודייה בשם אסתרקה.","en":"He confirmed and extended the Kalisz privileges to the whole Kingdom of Poland (from 1334), and under him Poland absorbed Jews fleeing persecution in the West, including after the Black Death. Kraków's Kazimierz district, later a major Jewish center, bears his name, and folk legend linked him to a Jewish beloved named Esterka."},"importance":2},{"id":"bayezid-ii","name":{"he":"הסולטן באיזיד השני","en":"Sultan Bayezid II"},"born":1447,"died":1512,"active":[1492,1512],"lon":28.98,"lat":41.01,"place":{"he":"איסטנבול, האימפריה העות'מאנית","en":"Istanbul, Ottoman Empire"},"stance":"ally","role":{"he":"סולטן עות'מאני, קולט מגורשי ספרד","en":"Ottoman sultan who welcomed Spain's exiles"},"impact":{"he":"קלט באימפריה העות'מאנית רבבות ממגורשי ספרד ופורטוגל, שהקימו קהילות משגשגות באיסטנבול, בשאלוניקי ובערים נוספות. האמרה המפורסמת המיוחסת לו, שפרדיננד \"העני את ארצו והעשיר את ארצי\", מתועדת רק במקורות מאוחרים.","en":"He welcomed tens of thousands of exiles from Spain and Portugal into the Ottoman Empire, where they built flourishing communities in Istanbul, Salonica and other cities. The famous remark attributed to him – that Ferdinand 'impoverished his own country and enriched mine' – appears only in later sources."},"importance":2},{"id":"oliver-cromwell","name":{"he":"אוליבר קרומוול","en":"Oliver Cromwell"},"born":1599,"died":1658,"active":[1655,1658],"lon":-0.14,"lat":51.5,"place":{"he":"לונדון, אנגליה","en":"London, England"},"stance":"ally","role":{"he":"לורד פרוטקטור, החזרת היהודים","en":"Lord Protector, readmission of Jews"},"impact":{"he":"בעקבות עתירתו של מנשה בן ישראל כינס את ועידת וייטהול (1655), ואף שלא התקבלה החלטה רשמית, התיר בפועל ליהודים להתיישב ולהתפלל בגלוי באנגליה (1656). ניעיו היו כלכליים ודתיים כאחד, והמהלך סיים 366 שנות גירוש ופתח את הדרך לקהילה היהודית בבריטניה.","en":"Following Menasseh ben Israel's petition he convened the Whitehall Conference (1655), and although no formal decision was reached he effectively allowed Jews to settle and worship openly in England (1656). His motives were both economic and religious, and the move ended 366 years of exclusion and opened the way for British Jewry."},"importance":2},{"id":"george-washington","name":{"he":"ג'ורג' וושינגטון","en":"George Washington"},"born":1732,"died":1799,"active":[1790,1790],"lon":-71.31,"lat":41.49,"place":{"he":"ניופורט, רוד איילנד","en":"Newport, Rhode Island"},"stance":"ally","role":{"he":"נשיא ארה״ב הראשון","en":"First U.S. president"},"impact":{"he":"במכתבו לקהילה היהודית בניופורט (1790) הבטיח כי ממשלת ארצות הברית \"אינה נותנת אישור לקנאות ואינה מסייעת לרדיפה\". המכתב הפך לסמל להכרה ביהודים כאזרחים שווים ולחופש הדת באמריקה.","en":"In his 1790 letter to the Hebrew Congregation of Newport he affirmed that the U.S. government 'gives to bigotry no sanction, to persecution no assistance'. The letter became a symbol of Jews' recognition as equal citizens and of religious freedom in America."},"importance":2},{"id":"emile-zola","name":{"he":"אמיל זולא","en":"Émile Zola"},"born":1840,"died":1902,"active":[1897,1902],"lon":2.34,"lat":48.87,"place":{"he":"פריז, צרפת","en":"Paris, France"},"stance":"ally","role":{"he":"סופר, מגן דרייפוס","en":"Novelist, defender of Dreyfus"},"impact":{"he":"במאמרו \"אני מאשים!\" (1898) האשים את צמרת הצבא הצרפתי בהפללת הקצין היהודי אלפרד דרייפוס ובטיוח, ונאלץ לברוח לאנגליה לאחר שהורשע בהוצאת דיבה. מאבקו חשף את עומק האנטישמיות בצרפת וסייע לזיכויו של דרייפוס, בתקופה שבה הפרשה חיזקה את הרעיון הציוני.","en":"In his article 'J'accuse…!' (1898) he accused the French army command of framing the Jewish officer Alfred Dreyfus and covering it up, and had to flee to England after being convicted of libel. His campaign exposed the depth of French antisemitism and helped Dreyfus's exoneration, at a time when the affair was strengthening the Zionist idea."},"importance":2},{"id":"arthur-balfour","name":{"he":"ארתור ג'יימס בלפור","en":"Arthur James Balfour"},"born":1848,"died":1930,"active":[1917,1925],"lon":-0.13,"lat":51.5,"place":{"he":"לונדון, בריטניה","en":"London, Britain"},"stance":"ally","role":{"he":"שר החוץ הבריטי, הצהרת בלפור","en":"British Foreign Secretary"},"impact":{"he":"בהצהרת בלפור (2 בנובמבר 1917) הודיעה בריטניה על תמיכתה בהקמת \"בית לאומי לעם היהודי\" בארץ ישראל, והצהרה זו שולבה בכתב המנדט (1922). היא הייתה הכרה בינלאומית ראשונה בשאיפה הציונית, ואילו בעיני ערביי הארץ נתפסה כפגיעה בזכויותיהם.","en":"In the Balfour Declaration (2 November 1917) Britain announced its support for 'a national home for the Jewish people' in Palestine, and the declaration was written into the League of Nations Mandate (1922). It was the first major international endorsement of Zionism, while Palestine's Arabs saw it as a violation of their rights."},"honor":{"he":"המושב בלפוריה ורחובות רבים בישראל נקראו על שמו","en":"The moshav Balfouria and many streets in Israel are named for him"},"importance":3},{"id":"orde-wingate","name":{"he":"אורד וינגייט","en":"Orde Wingate"},"born":1903,"died":1944,"active":[1936,1939],"lon":35.39,"lat":32.56,"place":{"he":"עין חרוד, עמק יזרעאל","en":"Ein Harod, Jezreel Valley"},"stance":"ally","role":{"he":"קצין בריטי, \"היְדיד\"","en":"British officer, 'HaYedid' (the Friend)"},"impact":{"he":"קצין בריטי ונוצרי ציוני שהקים ב-1938 את \"פלוגות הלילה המיוחדות\", ששילבו לוחמי הגנה בפעולות יזומות נגד כנופיות במרד הערבי. בין חניכיו היו יגאל אלון ומשה דיין, ותורת הלחימה שלו השפיעה על הפלמ״ח ועל צה״ל.","en":"A British officer and Christian Zionist, he formed the Special Night Squads in 1938, training Haganah fighters in offensive operations against armed bands during the Arab Revolt. His trainees included Yigal Allon and Moshe Dayan, and his doctrine influenced the Palmach and the IDF."},"honor":{"he":"מכון וינגייט וכפר הנוער ימין אורד נקראו על שמו","en":"The Wingate Institute and the Yemin Orde youth village are named for him"},"importance":2},{"id":"harry-truman","name":{"he":"הארי טרומן","en":"Harry S. Truman"},"born":1884,"died":1972,"active":[1945,1953],"lon":-77.04,"lat":38.9,"place":{"he":"וושינגטון, ארצות הברית","en":"Washington, D.C."},"stance":"ally","role":{"he":"נשיא ארה״ב, הכרה בישראל","en":"U.S. president who recognized Israel"},"impact":{"he":"תמך בכניסת 100,000 עקורים יהודים לארץ ישראל ובתוכנית החלוקה של האו״ם (1947), ובניגוד לעמדת משרד החוץ שלו הכיר בישראל דקות ספורות אחרי הכרזת העצמאות ב-14 במאי 1948. ההכרה האמריקנית העניקה למדינה הצעירה לגיטימציה בינלאומית חיונית.","en":"He backed the admission of 100,000 Jewish displaced persons to Palestine and the UN Partition Plan (1947), and against his State Department's advice recognized Israel minutes after its declaration of independence on 14 May 1948. American recognition gave the young state vital international legitimacy."},"honor":{"he":"המושב כפר טרומן ומכון טרומן באוניברסיטה העברית נקראו על שמו","en":"The moshav Kfar Truman and the Truman Institute at the Hebrew University are named for him"},"importance":3},{"id":"raoul-wallenberg","name":{"he":"ראול ולנברג","en":"Raoul Wallenberg"},"born":1912,"died":null,"active":[1944,1945],"lon":19.04,"lat":47.5,"place":{"he":"בודפשט, הונגריה","en":"Budapest, Hungary"},"stance":"ally","role":{"he":"דיפלומט שוודי, מציל","en":"Swedish diplomat and rescuer"},"impact":{"he":"ביולי 1944 הגיע לבודפשט, הנפיק \"דרכוני חסות\" שוודיים והקים בתים מוגנים, ויחד עם דיפלומטים נוספים הציל עשרות אלפי יהודים. בינואר 1945 נעצר בידי הסובייטים ונעלם; גורלו המדויק לא התברר עד היום.","en":"Arriving in Budapest in July 1944, he issued Swedish protective passes and set up safe houses, and together with other diplomats saved tens of thousands of Jews. In January 1945 he was arrested by the Soviets and disappeared; his exact fate remains unknown."},"honor":{"he":"חסיד אומות העולם (יד ושם, 1963); אזרח כבוד של ישראל","en":"Righteous Among the Nations (Yad Vashem, 1963); honorary citizen of Israel"},"importance":3},{"id":"chiune-sugihara","name":{"he":"צ'יאונה סוגיהארה","en":"Chiune Sugihara"},"born":1900,"died":1986,"active":[1940,1940],"lon":23.9,"lat":54.9,"place":{"he":"קובנה, ליטא","en":"Kaunas, Lithuania"},"stance":"ally","role":{"he":"קונסול יפני, מציל","en":"Japanese consul and rescuer"},"impact":{"he":"בקיץ 1940, בניגוד להוראות משרד החוץ היפני, הנפיק בקובנה כ-2,000 אשרות מעבר ליפן לפליטים יהודים, רבים מהן לבני משפחות שלמות. אלפי יהודים, ובהם תלמידי ישיבת מיר, הגיעו דרך סיביר ליפן ולשנגחאי וניצלו.","en":"In summer 1940, defying Japan's Foreign Ministry, he issued about 2,000 transit visas to Japan for Jewish refugees in Kaunas, many covering whole families. Thousands of Jews, including the students of the Mir Yeshiva, reached Japan and Shanghai via Siberia and survived."},"honor":{"he":"חסיד אומות העולם (יד ושם, 1984)","en":"Righteous Among the Nations (Yad Vashem, 1984)"},"importance":2},{"id":"oskar-schindler","name":{"he":"אוסקר שינדלר","en":"Oskar Schindler"},"born":1908,"died":1974,"active":[1939,1945],"lon":19.94,"lat":50.05,"place":{"he":"קרקוב, פולין","en":"Kraków, Poland"},"stance":"ally","role":{"he":"תעשיין גרמני, מציל","en":"German industrialist and rescuer"},"impact":{"he":"חבר המפלגה הנאצית שהפעיל מפעל בקרקוב, ובאמצעות שוחד, תושייה וסיכון אישי הגן על כ-1,200 עובדים יהודים והעבירם ב-1944 למפעל בברינליץ שבחבל הסודטים. סיפורו, שהונצח בסרט \"רשימת שינדלר\", הפך לסמל להצלה בשואה; הוא קבור בהר ציון בירושלים.","en":"A Nazi Party member who ran a factory in Kraków, he used bribery, ingenuity and personal risk to protect about 1,200 Jewish workers and in 1944 moved them to a factory at Brünnlitz in the Sudetenland. His story, told in the film 'Schindler's List', became a symbol of Holocaust rescue; he is buried on Mount Zion in Jerusalem."},"honor":{"he":"חסיד אומות העולם (יד ושם, 1993, יחד עם רעייתו אמילי)","en":"Righteous Among the Nations (Yad Vashem, 1993, with his wife Emilie)"},"importance":3},{"id":"irena-sendler","name":{"he":"אירנה סנדלר","en":"Irena Sendler"},"born":1910,"died":2008,"active":[1940,1945],"lon":21.01,"lat":52.23,"place":{"he":"ורשה, פולין","en":"Warsaw, Poland"},"stance":"ally","role":{"he":"עובדת סוציאלית פולנייה, מצילה","en":"Polish social worker and rescuer"},"impact":{"he":"כראש מחלקת הילדים של ארגון \"ז'גוטה\" הוציאה עם שותפיה מגטו ורשה ילדים יהודים והסתירה אותם במשפחות ובמוסדות, ורשמה את שמותיהם האמיתיים כדי שיוכלו לשוב לזהותם. לפי ההערכות ניצלו כך כ-2,500 ילדים; היא נעצרה ועונתה בידי הגסטפו ב-1943.","en":"As head of the children's section of the Żegota underground, she and her network smuggled Jewish children out of the Warsaw Ghetto and hid them with families and institutions, recording their real names so they could reclaim their identities. By estimates some 2,500 children were saved; she was arrested and tortured by the Gestapo in 1943."},"honor":{"he":"חסידת אומות העולם (יד ושם, 1965)","en":"Righteous Among the Nations (Yad Vashem, 1965)"},"importance":2},{"id":"aristides-de-sousa-mendes","name":{"he":"אריסטידס דה סוזה מנדס","en":"Aristides de Sousa Mendes"},"born":1885,"died":1954,"active":[1940,1940],"lon":-0.58,"lat":44.84,"place":{"he":"בורדו, צרפת","en":"Bordeaux, France"},"stance":"ally","role":{"he":"קונסול פורטוגלי, מציל","en":"Portuguese consul and rescuer"},"impact":{"he":"ביוני 1940, בזמן קריסת צרפת, הפר את הוראות ממשלת סלזאר והנפיק אלפי אשרות כניסה לפורטוגל לפליטים, ובהם יהודים רבים. הוא פוטר ממשרתו ומת בעוני, ושמו טוהר בפורטוגל רק בשנת 1988.","en":"In June 1940, as France collapsed, he defied the Salazar government's orders and issued thousands of visas to Portugal for refugees, many of them Jews. He was dismissed from service and died in poverty; Portugal rehabilitated his name only in 1988."},"honor":{"he":"חסיד אומות העולם (יד ושם, 1966)","en":"Righteous Among the Nations (Yad Vashem, 1966)"},"importance":2},{"id":"christian-x","name":{"he":"כריסטיאן העשירי, מלך דנמרק","en":"King Christian X of Denmark"},"born":1870,"died":1947,"active":[1940,1945],"lon":12.57,"lat":55.68,"place":{"he":"קופנהגן, דנמרק","en":"Copenhagen, Denmark"},"stance":"ally","role":{"he":"מלך דנמרק בכיבוש","en":"King of Denmark under occupation"},"impact":{"he":"המלך היה סמל להתנגדות הדנית ולסולידריות עם האזרחים היהודים, אף שהסיפור כי ענד טלאי צהוב הוא אגדה. באוקטובר 1943, לאחר אזהרה מוקדמת, הבריחו דנים רבים כ-7,200 יהודים בסירות לשוודיה, ורוב כ-470 היהודים שגורשו לטרזיינשטט שרדו בזכות לחץ דני.","en":"The king was a symbol of Danish resistance and of solidarity with Jewish citizens, though the story that he wore a yellow star is a legend. In October 1943, after an advance warning, ordinary Danes ferried about 7,200 Jews by boat to Sweden, and most of the roughly 470 deported to Theresienstadt survived thanks to Danish pressure."},"honor":{"he":"המחתרת הדנית ביקשה להיות מוכרת ביד ושם כקבוצה ולא כיחידים","en":"The Danish resistance asked Yad Vashem to honor it collectively rather than individually"},"importance":2},{"id":"paul-gruninger","name":{"he":"פאול גרונינגר","en":"Paul Grüninger"},"born":1891,"died":1972,"active":[1938,1939],"lon":9.38,"lat":47.42,"place":{"he":"סנקט גאלן, שווייץ","en":"St. Gallen, Switzerland"},"stance":"ally","role":{"he":"מפקד משטרה שווייצרי, מציל","en":"Swiss police commander and rescuer"},"impact":{"he":"לאחר שווייץ סגרה את גבולה בפני פליטים יהודים מאוסטריה (1938), זייף תאריכי כניסה ואפשר למאות ואולי אלפי פליטים להישאר באופן חוקי. הוא פוטר, הורשע ומת בעוני; בית משפט שווייצרי טיהר את שמו רק ב-1995.","en":"After Switzerland closed its border to Jewish refugees from Austria (1938), he backdated entry papers, letting hundreds and perhaps thousands of refugees stay legally. He was dismissed, convicted and died in poverty; a Swiss court cleared his name only in 1995."},"honor":{"he":"חסיד אומות העולם (יד ושם, 1971)","en":"Righteous Among the Nations (Yad Vashem, 1971)"},"importance":1},{"id":"jan-karski","name":{"he":"יאן קרסקי","en":"Jan Karski"},"born":1914,"died":2000,"active":[1942,1943],"lon":21,"lat":52.24,"place":{"he":"ורשה, לונדון ווושינגטון","en":"Warsaw, London and Washington"},"stance":"ally","role":{"he":"שליח המחתרת הפולנית","en":"Polish underground courier"},"impact":{"he":"ב-1942 הוברח לגטו ורשה ולמחנה מעבר כדי לראות במו עיניו את השמדת היהודים, ומסר עדות על כך למנהיגי בעלות הברית, ובהם הנשיא רוזוולט (1943). עדותו לא הובילה לפעולת הצלה משמעותית, והוא הפך לסמל לאזהרה שלא נשמעה.","en":"In 1942 he was smuggled into the Warsaw Ghetto and a transit camp to witness the extermination of the Jews firsthand, and reported it to Allied leaders, including President Roosevelt (1943). His testimony led to no significant rescue action, and he became a symbol of the warning that went unheeded."},"honor":{"he":"חסיד אומות העולם (יד ושם, 1982); אזרח כבוד של ישראל (1994)","en":"Righteous Among the Nations (Yad Vashem, 1982); honorary citizen of Israel (1994)"},"importance":2},{"id":"dimitar-peshev","name":{"he":"דימיטר פשב","en":"Dimitar Peshev"},"born":1894,"died":1973,"active":[1943,1943],"lon":23.32,"lat":42.7,"place":{"he":"סופיה, בולגריה","en":"Sofia, Bulgaria"},"stance":"ally","role":{"he":"סגן יו״ר הפרלמנט הבולגרי","en":"Deputy Speaker of Bulgaria's parliament"},"impact":{"he":"במרץ 1943 נודע לו על תוכנית לגרש את יהודי בולגריה, והוא הוביל מכתב מחאה של עשרות חברי פרלמנט שסייע, יחד עם מחאת הכנסייה והציבור, לעצירת הגירוש מבולגריה עצמה. כ-48,000 יהודים ניצלו, אך השלטונות הבולגריים גירשו להשמדה למעלה מ-11,000 יהודים מתרקיה וממקדוניה שבשליטתם.","en":"In March 1943 he learned of a plan to deport Bulgaria's Jews and led a protest letter by dozens of MPs that, together with church and public protest, helped halt deportations from Bulgaria proper. About 48,000 Jews were saved, but Bulgarian authorities deported more than 11,000 Jews from occupied Thrace and Macedonia to their deaths."},"honor":{"he":"חסיד אומות העולם (יד ושם, 1973)","en":"Righteous Among the Nations (Yad Vashem, 1973)"},"importance":2},{"id":"mohammed-v","name":{"he":"מוחמד החמישי, סולטן מרוקו","en":"Mohammed V of Morocco"},"born":1909,"died":1961,"active":[1940,1961],"lon":-6.84,"lat":34.02,"place":{"he":"רבאט, מרוקו","en":"Rabat, Morocco"},"stance":"ally","role":{"he":"סולטן ומלך מרוקו","en":"Sultan and King of Morocco"},"impact":{"he":"תחת החסות הצרפתית נחתמו בשמו חוקי וישי נגד היהודים, אך לפי מסורת יהודי מרוקו הביע סולידריות עמם ופעל לריכוך יישומם, ויהודי מרוקו לא גורשו למחנות. היקף תפקידו שנוי במחלוקת בין היסטוריונים, אך הוא נותר דמות נערצת בקרב יהודי מרוקו וצאצאיהם.","en":"Under the French protectorate Vichy's anti-Jewish laws were issued in his name, but Moroccan Jewish tradition holds that he expressed solidarity with Jews and sought to soften their application, and Moroccan Jews were not deported. Historians debate the extent of his role, but he remains revered among Moroccan Jews and their descendants."},"importance":1},{"id":"andre-trocme","name":{"he":"אנדרה טרוקמה","en":"André Trocmé"},"born":1901,"died":1971,"active":[1940,1944],"lon":4.3,"lat":45.06,"place":{"he":"לה שאמבון-סור-ליניון, צרפת","en":"Le Chambon-sur-Lignon, France"},"stance":"ally","role":{"he":"כומר פרוטסטנטי, מציל","en":"Protestant pastor and rescuer"},"impact":{"he":"הכומר של הכפר לה שאמבון-סור-ליניון הוביל, עם רעייתו מגדה וקהילתו, רשת הצלה שהסתירה אלפי יהודים, רובם ילדים, בבתים, בחוות ובפנימיות. הכפר והסביבה הפכו לדוגמה נדירה להצלה קהילתית שלמה בתקופת השואה.","en":"Pastor of the village of Le Chambon-sur-Lignon, he, his wife Magda and his congregation led a rescue network that hid thousands of Jews, mostly children, in homes, farms and boarding schools. The village and its region became a rare example of rescue by an entire community during the Holocaust."},"honor":{"he":"חסיד אומות העולם (יד ושם); הכפר הוכר כקהילה (1990)","en":"Righteous Among the Nations (Yad Vashem); the village was honored collectively (1990)"},"importance":2},{"id":"jezebel","name":{"he":"איזבל","en":"Jezebel"},"born":null,"died":-843,"active":[-873,-853],"lon":35.19,"lat":32.28,"place":{"he":"שומרון, ממלכת ישראל","en":"Samaria, Kingdom of Israel"},"stance":"enemy","role":{"he":"מלכת ישראל","en":"Queen of Israel"},"impact":{"he":"נסיכה צורית שנישאה לאחאב מלך ישראל, הנהיגה את פולחן הבעל ורדפה את נביאי ה׳, עד שעמד מולה אליהו הנביא. שמה הפך לשם נרדף לרשע.","en":"A Phoenician princess married to King Ahab of Israel, who promoted Baal worship and persecuted the prophets of God, until Elijah stood against her. Her name became a byword for wickedness."},"importance":2}]
+[
+ {
+  "id": "pharaoh-exodus",
+  "name": {
+   "he": "פרעה של יציאת מצרים",
+   "en": "Pharaoh of the Exodus"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   -1280,
+   -1250
+  ],
+  "lon": 31.5,
+  "lat": 30.8,
+  "place": {
+   "he": "מצרים (ארץ גושן)",
+   "en": "Egypt (Land of Goshen)"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך מצרים המשעבד",
+   "en": "Oppressor king of Egypt"
+  },
+  "impact": {
+   "he": "לפי ספר שמות שיעבד את בני ישראל וגזר להשליך את בניהם ליאור, עד שיצאו ממצרים בהנהגת משה. זהותו ההיסטורית אינה ידועה (יש המזהים אותו עם רעמסס השני), אך סיפור השעבוד והגאולה הפך ליסוד בזהות היהודית.",
+   "en": "According to Exodus he enslaved the Israelites and ordered their newborn sons drowned in the Nile, until they left Egypt under Moses. His historical identity is unknown (some link him to Ramesses II), but the story of bondage and redemption became a cornerstone of Jewish identity."
+  },
+  "calendar": {
+   "he": "נזכר בפסח ובהגדה של פסח",
+   "en": "Recalled at Passover and in the Haggadah"
+  },
+  "importance": 3,
+  "traditional": true
+ },
+ {
+  "id": "sargon-ii",
+  "name": {
+   "he": "סרגון השני",
+   "en": "Sargon II"
+  },
+  "born": null,
+  "died": -705,
+  "active": [
+   -722,
+   -720
+  ],
+  "lon": 35.19,
+  "lat": 32.28,
+  "place": {
+   "he": "שומרון",
+   "en": "Samaria"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך אשור, כובש שומרון",
+   "en": "Assyrian king, conqueror of Samaria"
+  },
+  "impact": {
+   "he": "השלים את כיבוש שומרון, בירת ממלכת ישראל, שבו פתח קודמו שלמנאסר החמישי, והגלה עשרות אלפים מתושביה. חורבן ממלכת ישראל הוליד את מסורת \"עשרת השבטים האבודים\" והותיר את יהודה כמרכז העם.",
+   "en": "He completed the conquest of Samaria, capital of the Kingdom of Israel, begun by his predecessor Shalmaneser V, and deported tens of thousands of its inhabitants. The fall of Israel gave rise to the tradition of the 'Ten Lost Tribes' and left Judah as the people's center."
+  },
+  "importance": 2
+ },
+ {
+  "id": "sennacherib",
+  "name": {
+   "he": "סנחריב",
+   "en": "Sennacherib"
+  },
+  "born": null,
+  "died": -681,
+  "active": [
+   -701,
+   -701
+  ],
+  "lon": 34.85,
+  "lat": 31.56,
+  "place": {
+   "he": "לכיש וירושלים",
+   "en": "Lachish and Jerusalem"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך אשור, צר על ירושלים",
+   "en": "Assyrian king who besieged Jerusalem"
+  },
+  "impact": {
+   "he": "במסעו של 701 לפנה״ס החריב את לכיש וערים רבות ביהודה וצר על ירושלים בימי חזקיהו. ירושלים לא נכבשה – לפי המקרא בזכות נס – והמצור מתועד גם בתבליטי לכיש ובכתובות אשור.",
+   "en": "In his 701 BCE campaign he destroyed Lachish and many Judean towns and besieged Jerusalem in Hezekiah's time. Jerusalem was not taken – miraculously, according to the Bible – and the campaign is also documented in the Lachish reliefs and Assyrian inscriptions."
+  },
+  "calendar": {
+   "he": "נזכר בפיוטי ליל הסדר (לפי המסורת מחנהו הוכה בליל פסח)",
+   "en": "Recalled in Passover Seder hymns (tradition says his army was struck on Passover night)"
+  },
+  "importance": 2
+ },
+ {
+  "id": "nebuchadnezzar-ii",
+  "name": {
+   "he": "נבוכדנצר השני",
+   "en": "Nebuchadnezzar II"
+  },
+  "born": null,
+  "died": -562,
+  "active": [
+   -597,
+   -586
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך בבל, מחריב הבית הראשון",
+   "en": "Babylonian king, destroyer of the First Temple"
+  },
+  "impact": {
+   "he": "הגלה את המלך יהויכין ואת האליטה של יהודה (597 לפנה״ס), ובשנת 586 לפנה״ס החריב את ירושלים ואת בית המקדש הראשון. גלות בבל הניחה את היסודות לקיום יהודי בתפוצות ולעיצוב היהדות מחוץ לארץ.",
+   "en": "He exiled King Jehoiachin and Judah's elite (597 BCE) and in 586 BCE destroyed Jerusalem and the First Temple. The Babylonian exile laid the foundations for Jewish life in the diaspora and for a Judaism shaped outside the land."
+  },
+  "calendar": {
+   "he": "נזכר בעשרה בטבת (תחילת המצור) ובתשעה באב (חורבן הבית)",
+   "en": "Recalled on the 10th of Tevet (start of the siege) and Tisha B'Av (destruction of the Temple)"
+  },
+  "importance": 3
+ },
+ {
+  "id": "haman",
+  "name": {
+   "he": "המן האגגי",
+   "en": "Haman the Agagite"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   -475,
+   -473
+  ],
+  "lon": 48.25,
+  "lat": 32.19,
+  "place": {
+   "he": "שושן הבירה, פרס",
+   "en": "Shushan (Susa), Persia"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "שר בחצר אחשוורוש",
+   "en": "Vizier of King Ahasuerus"
+  },
+  "impact": {
+   "he": "לפי מגילת אסתר זמם להשמיד את כל היהודים בממלכת פרס והפיל פור לקביעת המועד, אך מזימתו סוכלה בידי אסתר ומרדכי. דמותו הפכה לסמל לשונאי ישראל לדורותיהם; אין לו תיעוד חיצוני למקרא.",
+   "en": "According to the Book of Esther he plotted to annihilate all the Jews of the Persian Empire, casting lots (pur) to set the date, but was foiled by Esther and Mordecai. He became the archetype of the enemy of the Jews; he is not attested outside the Bible."
+  },
+  "calendar": {
+   "he": "נזכר בפורים (י״ד באדר) ובקריאת המגילה",
+   "en": "Recalled on Purim (14 Adar) and in the reading of the Megillah"
+  },
+  "importance": 3,
+  "traditional": true
+ },
+ {
+  "id": "antiochus-iv",
+  "name": {
+   "he": "אנטיוכוס הרביעי אפיפנס",
+   "en": "Antiochus IV Epiphanes"
+  },
+  "born": -215,
+  "died": -164,
+  "active": [
+   -169,
+   -164
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים ויהודה",
+   "en": "Jerusalem and Judea"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך סלווקי, גוזר הגזרות",
+   "en": "Seleucid king, issuer of the decrees"
+  },
+  "impact": {
+   "he": "בשנת 167 לפנה״ס אסר על שמירת שבת, ברית מילה ולימוד תורה, וחילל את המקדש בפולחן לזאוס, על רקע מאבק פנימי בין מתייוונים לנאמני המסורת. הגזרות הציתו את מרד החשמונאים, שהוביל לטיהור המקדש ולעצמאות יהודית.",
+   "en": "In 167 BCE he banned Sabbath observance, circumcision and Torah study and desecrated the Temple with the worship of Zeus, amid an internal struggle between Hellenizers and traditionalists. The decrees sparked the Maccabean revolt, which led to the Temple's rededication and Jewish independence."
+  },
+  "calendar": {
+   "he": "נזכר בחנוכה (כ״ה בכסלו)",
+   "en": "Recalled on Hanukkah (25 Kislev)"
+  },
+  "importance": 3
+ },
+ {
+  "id": "pompey",
+  "name": {
+   "he": "פומפיוס",
+   "en": "Pompey the Great"
+  },
+  "born": -106,
+  "died": -48,
+  "active": [
+   -63,
+   -63
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מצביא רומי, כובש ירושלים",
+   "en": "Roman general, conqueror of Jerusalem"
+  },
+  "impact": {
+   "he": "ניצל את מלחמת האחים בין הורקנוס השני לאריסטובולוס השני, כבש את ירושלים בשנת 63 לפנה״ס ונכנס לקודש הקודשים. בכך הסתיימה העצמאות החשמונאית ויהודה נעשתה תלויה ברומא.",
+   "en": "Exploiting the civil war between Hyrcanus II and Aristobulus II, he captured Jerusalem in 63 BCE and entered the Holy of Holies. This ended Hasmonean independence and made Judea dependent on Rome."
+  },
+  "importance": 2
+ },
+ {
+  "id": "vespasian",
+  "name": {
+   "he": "אספסיאנוס",
+   "en": "Vespasian"
+  },
+  "born": 9,
+  "died": 79,
+  "active": [
+   66,
+   70
+  ],
+  "lon": 35.28,
+  "lat": 32.84,
+  "place": {
+   "he": "הגליל ויהודה",
+   "en": "Galilee and Judea"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מצביא וקיסר רומי",
+   "en": "Roman general and emperor"
+  },
+  "impact": {
+   "he": "פיקד על דיכוי המרד הגדול, כבש את הגליל (כולל יודפת) והתקדם לעבר ירושלים, עד שהוכרז לקיסר בשנת 69; לאחר החורבן הטיל את \"המס היהודי\" (Fiscus Judaicus). לפי מסורת התלמוד נענה לבקשת רבן יוחנן בן זכאי: \"תן לי יבנה וחכמיה\".",
+   "en": "He led the suppression of the Great Revolt, conquering Galilee (including Yodfat) and advancing on Jerusalem until he was proclaimed emperor in 69; after the destruction he imposed the 'Jewish tax' (Fiscus Judaicus). Talmudic tradition says he granted Rabban Yohanan ben Zakkai's request: 'Give me Yavneh and its sages.'"
+  },
+  "importance": 2
+ },
+ {
+  "id": "titus",
+  "name": {
+   "he": "טיטוס",
+   "en": "Titus"
+  },
+  "born": 39,
+  "died": 81,
+  "active": [
+   70,
+   70
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מחריב הבית השני",
+   "en": "Destroyer of the Second Temple"
+  },
+  "impact": {
+   "he": "בשנת 70 לספירה צר על ירושלים, החריב את העיר ושרף את בית המקדש השני; רבבות נהרגו ונלקחו בשבי. שער טיטוס ברומא, שבו מתוארת המנורה הנישאת בתהלוכת הניצחון, עומד עד היום.",
+   "en": "In 70 CE he besieged and destroyed Jerusalem and burned the Second Temple; tens of thousands were killed or enslaved. The Arch of Titus in Rome, showing the Temple menorah carried in triumph, still stands."
+  },
+  "calendar": {
+   "he": "נזכר בי״ז בתמוז (הבקעת החומה) ובתשעה באב (חורבן הבית)",
+   "en": "Recalled on the 17th of Tammuz (breach of the walls) and Tisha B'Av (the destruction)"
+  },
+  "importance": 3
+ },
+ {
+  "id": "hadrian",
+  "name": {
+   "he": "הדריאנוס",
+   "en": "Hadrian"
+  },
+  "born": 76,
+  "died": 138,
+  "active": [
+   130,
+   136
+  ],
+  "lon": 35.13,
+  "lat": 31.73,
+  "place": {
+   "he": "ירושלים וביתר",
+   "en": "Jerusalem and Betar"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "קיסר רומי, מדכא מרד בר כוכבא",
+   "en": "Roman emperor who crushed Bar Kokhba"
+  },
+  "impact": {
+   "he": "ייסד את איליה קפיטולינה על חורבות ירושלים ודיכא באכזריות את מרד בר כוכבא (132–136), שבסופו נחרבה יהודה ונשמדו יישובים רבים; הפרובינקיה כונתה מעתה \"סוריה פלשתינה\". לפי המסורת גזר על לימוד תורה ומילה, ובימיו הוצאו להורג חכמים ובהם רבי עקיבא.",
+   "en": "He founded Aelia Capitolina on the ruins of Jerusalem and brutally crushed the Bar Kokhba revolt (132–136), after which Judea was devastated and the province renamed 'Syria Palaestina'. According to tradition he banned Torah study and circumcision, and sages including Rabbi Akiva were executed in his time."
+  },
+  "calendar": {
+   "he": "נזכר בתשעה באב (נפילת ביתר) ובפיוט \"אלה אזכרה\" על עשרת הרוגי מלכות ביום הכיפורים",
+   "en": "Recalled on Tisha B'Av (fall of Betar) and in the Yom Kippur liturgy of the Ten Martyrs ('Eleh Ezkerah')"
+  },
+  "importance": 3
+ },
+ {
+  "id": "justinian-i",
+  "name": {
+   "he": "יוסטיניאנוס הראשון",
+   "en": "Justinian I"
+  },
+  "born": 482,
+  "died": 565,
+  "active": [
+   527,
+   565
+  ],
+  "lon": 28.98,
+  "lat": 41.01,
+  "place": {
+   "he": "קונסטנטינופול",
+   "en": "Constantinople"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "קיסר ביזנטי ומחוקק",
+   "en": "Byzantine emperor and lawgiver"
+  },
+  "impact": {
+   "he": "בקודקס החוקים שלו הוחמרו ההגבלות על יהודים בזכויות אזרחיות ובבניית בתי כנסת, ובנובלה 146 (553) התערב בסדרי קריאת התורה ואסר את הדרשה (\"דאוטרוסיס\"). חוקיו השפיעו על מעמד היהודים באירופה הנוצרית במשך מאות שנים.",
+   "en": "His law code tightened restrictions on Jews' civil rights and synagogue building, and his Novella 146 (553) intervened in synagogue Torah reading and banned rabbinic exposition ('deuterosis'). His laws shaped the status of Jews in Christian Europe for centuries."
+  },
+  "importance": 2
+ },
+ {
+  "id": "emicho-of-leiningen",
+  "name": {
+   "he": "אמיכו מליינינגן",
+   "en": "Emicho of Leiningen"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   1096,
+   1096
+  ],
+  "lon": 8.27,
+  "lat": 50,
+  "place": {
+   "he": "מגנצא ושפירא, ארץ הריין",
+   "en": "Mainz and Speyer, Rhineland"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מנהיג צלבנים בגזרות תתנ״ו",
+   "en": "Crusader leader of the 1096 massacres"
+  },
+  "impact": {
+   "he": "לאחר קריאתו של האפיפיור אורבנוס השני למסע הצלב הראשון (שלא כללה קריאה לפגוע ביהודים), הוביל להקת צלבנים שטבחה בקהילות שפירא, וורמייזא ומגנצא באביב 1096. רבים מהיהודים בחרו במוות על קידוש השם במקום המרה, ו\"גזרות תתנ״ו\" הפכו לטראומה מכוננת ביהדות אשכנז.",
+   "en": "After Pope Urban II called the First Crusade (a call that did not include attacking Jews), he led a crusader band that massacred the communities of Speyer, Worms and Mainz in spring 1096. Many Jews chose martyrdom over forced baptism, and the '1096 Edicts' became a defining trauma of Ashkenazi Jewry."
+  },
+  "calendar": {
+   "he": "נזכר בקינות תשעה באב ובתפילת \"אב הרחמים\" בשבת",
+   "en": "Recalled in Tisha B'Av elegies (kinot) and the Sabbath prayer 'Av HaRachamim'"
+  },
+  "importance": 2
+ },
+ {
+  "id": "innocent-iii",
+  "name": {
+   "he": "האפיפיור אינוקנטיוס השלישי",
+   "en": "Pope Innocent III"
+  },
+  "born": 1161,
+  "died": 1216,
+  "active": [
+   1198,
+   1216
+  ],
+  "lon": 12.49,
+  "lat": 41.89,
+  "place": {
+   "he": "רומא",
+   "en": "Rome"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "אפיפיור, מועצת הלטרן הרביעית",
+   "en": "Pope of the Fourth Lateran Council"
+  },
+  "impact": {
+   "he": "אמנם חידש את צו ההגנה \"סיקוט יודאיס\", אך מועצת הלטרן הרביעית שכינס (1215) חייבה יהודים בלבוש מבדיל והגבילה את מעמדם הציבורי. ההחלטה שימשה בסיס ל\"אות הקלון\" ולבידוד היהודים באירופה הנוצרית.",
+   "en": "Although he reissued the protective bull 'Sicut Judaeis', the Fourth Lateran Council he convened (1215) required Jews to wear distinctive dress and limited their public role. The decree became the basis for the Jewish badge and for segregating Jews in Christian Europe."
+  },
+  "importance": 2
+ },
+ {
+  "id": "edward-i",
+  "name": {
+   "he": "אדוארד הראשון",
+   "en": "Edward I of England"
+  },
+  "born": 1239,
+  "died": 1307,
+  "active": [
+   1275,
+   1290
+  ],
+  "lon": -0.13,
+  "lat": 51.51,
+  "place": {
+   "he": "לונדון, אנגליה",
+   "en": "London, England"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך אנגליה, מגרש היהודים",
+   "en": "King who expelled England's Jews"
+  },
+  "impact": {
+   "he": "אסר על יהודים להלוות בריבית (1275), ובעקבות האשמות בקיצוץ מטבעות הוצאו להורג מאות יהודים. בשנת 1290 גירש את כל יהודי אנגליה – הגירוש הכללי הראשון של יהודים ממדינה באירופה – והם לא שבו עד 1656.",
+   "en": "He banned Jewish moneylending (1275), and after coin-clipping accusations hundreds of Jews were executed. In 1290 he expelled all of England's Jews – the first general expulsion of Jews from a European kingdom – and they did not return until 1656."
+  },
+  "importance": 2
+ },
+ {
+  "id": "philip-iv",
+  "name": {
+   "he": "פיליפ הרביעי (היפה)",
+   "en": "Philip IV of France (the Fair)"
+  },
+  "born": 1268,
+  "died": 1314,
+  "active": [
+   1306,
+   1306
+  ],
+  "lon": 2.35,
+  "lat": 48.86,
+  "place": {
+   "he": "צרפת",
+   "en": "France"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך צרפת, מגרש היהודים",
+   "en": "King of France who expelled the Jews"
+  },
+  "impact": {
+   "he": "בשנת 1306 עצר את יהודי ממלכתו, החרים את רכושם וגירש אותם, בעיקר כדי למלא את אוצר המלוכה. הגירוש היכה קשות במרכזי הלמדנות של יהדות צרפת, אף שיורשו התיר לחלקם לשוב ב-1315.",
+   "en": "In 1306 he arrested the Jews of his kingdom, confiscated their property and expelled them, largely to fill the royal treasury. The expulsion devastated the centers of French Jewish learning, though his successor let some return in 1315."
+  },
+  "importance": 2
+ },
+ {
+  "id": "ferdinand-isabella",
+  "name": {
+   "he": "פרדיננד ואיזבלה (המלכים הקתולים)",
+   "en": "Ferdinand and Isabella (the Catholic Monarchs)"
+  },
+  "born": null,
+  "died": null,
+  "active": [
+   1478,
+   1492
+  ],
+  "lon": -3.6,
+  "lat": 37.18,
+  "place": {
+   "he": "גרנדה, ספרד",
+   "en": "Granada, Spain"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלכי ספרד, צו הגירוש",
+   "en": "Spanish monarchs, Expulsion Edict"
+  },
+  "impact": {
+   "he": "הקימו את האינקוויזיציה הספרדית (1478) לרדיפת \"נוצרים חדשים\" שנחשדו בשמירת יהדות, ובצו אלהמברה (31 במרץ 1492) הורו לכל היהודים להתנצר או לעזוב. עשרות אלפים גלו (ההערכות שנויות במחלוקת) ורבים אחרים התנצרו; הגירוש סיים כאלף שנות יהדות ספרד ופיזר את יוצאיה באגן הים התיכון ומעבר לו.",
+   "en": "They established the Spanish Inquisition (1478) to pursue 'New Christians' suspected of secretly practicing Judaism, and in the Alhambra Decree (31 March 1492) ordered all Jews to convert or leave. Tens of thousands went into exile (estimates are debated) and many others converted; the expulsion ended a millennium of Spanish Jewry and scattered the Sephardim across the Mediterranean and beyond."
+  },
+  "importance": 3
+ },
+ {
+  "id": "torquemada",
+  "name": {
+   "he": "טומאס דה טורקמדה",
+   "en": "Tomás de Torquemada"
+  },
+  "born": 1420,
+  "died": 1498,
+  "active": [
+   1483,
+   1498
+  ],
+  "lon": -4.7,
+  "lat": 40.66,
+  "place": {
+   "he": "קסטיליה, ספרד",
+   "en": "Castile, Spain"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "האינקוויזיטור הכללי הראשון",
+   "en": "First Grand Inquisitor of Spain"
+  },
+  "impact": {
+   "he": "נזיר דומיניקני ומוודה של המלכה איזבלה, שעמד בראש האינקוויזיציה הספרדית; בתקופתו נשפטו אלפי אנוסים ורבים הועלו על המוקד. הוא נחשב לאחד הדוחפים העיקריים לגירוש ספרד, ושמו הפך לסמל לקנאות דתית.",
+   "en": "A Dominican friar and confessor to Queen Isabella, he headed the Spanish Inquisition; thousands of conversos were tried and many burned at the stake during his tenure. He is considered a leading force behind the 1492 expulsion, and his name became a byword for religious fanaticism."
+  },
+  "importance": 2
+ },
+ {
+  "id": "manuel-i",
+  "name": {
+   "he": "מנואל הראשון",
+   "en": "Manuel I of Portugal"
+  },
+  "born": 1469,
+  "died": 1521,
+  "active": [
+   1496,
+   1506
+  ],
+  "lon": -9.14,
+  "lat": 38.72,
+  "place": {
+   "he": "ליסבון, פורטוגל",
+   "en": "Lisbon, Portugal"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלך פורטוגל, ההמרה הכפויה",
+   "en": "King of Portugal, forced conversion"
+  },
+  "impact": {
+   "he": "כתנאי לנישואיו לבת המלכים הקתולים הורה ב-1496 על גירוש היהודים, אך בפועל מנע את יציאתם והטביל אותם בכפייה ב-1497, ובכלל זה ילדים שנלקחו מהוריהם. כך נוצרה קהילת האנוסים הגדולה של פורטוגל, שרבים מצאצאיה ייסדו לימים קהילות באמסטרדם, בלונדון ובעולם החדש.",
+   "en": "As a condition of marrying the Catholic Monarchs' daughter he decreed the expulsion of the Jews in 1496, but then blocked their departure and had them forcibly baptized in 1497, including children taken from their parents. This created Portugal's large converso population, many of whose descendants later founded communities in Amsterdam, London and the New World."
+  },
+  "importance": 2
+ },
+ {
+  "id": "paul-iv",
+  "name": {
+   "he": "האפיפיור פאולוס הרביעי",
+   "en": "Pope Paul IV"
+  },
+  "born": 1476,
+  "died": 1559,
+  "active": [
+   1555,
+   1559
+  ],
+  "lon": 12.48,
+  "lat": 41.89,
+  "place": {
+   "he": "רומא ומדינת האפיפיור",
+   "en": "Rome and the Papal States"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "אפיפיור, מייסד גטו רומא",
+   "en": "Pope who created the Rome ghetto"
+  },
+  "impact": {
+   "he": "בבולה \"כיוון שזה אבסורד\" (Cum nimis absurdum, 1555) כלא את יהודי רומא בגטו, חייב אותם בכובע צהוב והגביל את פרנסתם; באנקונה הועלו על המוקד אנוסים פורטוגלים. המודל, שהמונח \"גטו\" לקוח לו מוונציה (1516), התפשט באיטליה ונשמר ברומא עד 1870.",
+   "en": "In the bull 'Cum nimis absurdum' (1555) he confined Rome's Jews to a ghetto, forced them to wear a yellow hat and restricted their livelihoods; in Ancona Portuguese conversos were burned at the stake. The model, whose name came from Venice's ghetto (1516), spread across Italy and lasted in Rome until 1870."
+  },
+  "importance": 2
+ },
+ {
+  "id": "martin-luther",
+  "name": {
+   "he": "מרטין לותר",
+   "en": "Martin Luther"
+  },
+  "born": 1483,
+  "died": 1546,
+  "active": [
+   1523,
+   1546
+  ],
+  "lon": 12.65,
+  "lat": 51.87,
+  "place": {
+   "he": "ויטנברג, גרמניה",
+   "en": "Wittenberg, Germany"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מייסד הרפורמציה הפרוטסטנטית",
+   "en": "Founder of the Protestant Reformation"
+  },
+  "impact": {
+   "he": "בחיבורו מ-1523 קרא ליחס הוגן ליהודים בתקווה שיתנצרו, אך משלא התנצרו כתב ב-1543 את \"על היהודים ושקריהם\", שבו קרא לשרוף בתי כנסת ולגרש יהודים. כתביו המאוחרים השפיעו על האנטישמיות הגרמנית ונוצלו בתעמולה הנאצית; כנסיות לותרניות רבות הסתייגו מהם בעשורים האחרונים.",
+   "en": "His 1523 pamphlet urged fair treatment of Jews in hope of their conversion, but when they did not convert he wrote 'On the Jews and Their Lies' (1543), calling for synagogues to be burned and Jews expelled. His later writings fed German antisemitism and were exploited by Nazi propaganda; many Lutheran churches have formally repudiated them in recent decades."
+  },
+  "importance": 2
+ },
+ {
+  "id": "khmelnytsky",
+  "name": {
+   "he": "בוגדאן חמלניצקי",
+   "en": "Bohdan Khmelnytsky"
+  },
+  "born": 1595,
+  "died": 1657,
+  "active": [
+   1648,
+   1657
+  ],
+  "lon": 28.84,
+  "lat": 48.97,
+  "place": {
+   "he": "אוקראינה (נמירוב)",
+   "en": "Ukraine (Nemyriv)"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "הטמן קוזאקי, גזרות ת״ח–ת״ט",
+   "en": "Cossack hetman, 1648–49 massacres"
+  },
+  "impact": {
+   "he": "הוביל ב-1648 מרד קוזאקי ואיכרי נגד האצולה הפולנית, שבמהלכו נטבחו עשרות אלפי יהודים בגזרות ת״ח–ת״ט (מספר הנספים שנוי במחלוקת). הטבח זעזע את יהדות מזרח אירופה; באוקראינה הוא נחשב גיבור לאומי.",
+   "en": "In 1648 he led a Cossack and peasant uprising against the Polish nobility in which tens of thousands of Jews were massacred in the 'Gezerot Tach VeTat' (death tolls are debated). The massacres shook Eastern European Jewry; in Ukraine he is regarded as a national hero."
+  },
+  "calendar": {
+   "he": "נזכר בתענית כ׳ בסיון שקבע ועד ארבע הארצות",
+   "en": "Recalled on the fast of 20 Sivan instituted by the Council of Four Lands"
+  },
+  "importance": 3
+ },
+ {
+  "id": "nicholas-i",
+  "name": {
+   "he": "הצאר ניקולאי הראשון",
+   "en": "Tsar Nicholas I"
+  },
+  "born": 1796,
+  "died": 1855,
+  "active": [
+   1827,
+   1855
+  ],
+  "lon": 27.56,
+  "lat": 53.9,
+  "place": {
+   "he": "תחום המושב, האימפריה הרוסית",
+   "en": "Pale of Settlement, Russian Empire"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "צאר רוסיה, גזרת הקנטוניסטים",
+   "en": "Russian tsar, cantonist decree"
+  },
+  "impact": {
+   "he": "בשנת 1827 החיל גיוס חובה על יהודים, שבמסגרתו נלקחו נערים – לעיתים ילדים צעירים – לשירות ממושך כ\"קנטוניסטים\" תוך לחץ כבד להתנצר. בימיו הוגבלו היהודים לתחום המושב ובוטל ארגון הקהל (1844), כחלק ממדיניות של כפיית \"רוסיפיקציה\".",
+   "en": "In 1827 he imposed military conscription on Jews, under which boys – sometimes young children – were taken as 'cantonists' for long service under heavy pressure to convert. Under him Jews were confined to the Pale of Settlement and the kahal self-government was abolished (1844), as part of a forced Russification policy."
+  },
+  "importance": 2
+ },
+ {
+  "id": "alexander-iii",
+  "name": {
+   "he": "הצאר אלכסנדר השלישי",
+   "en": "Tsar Alexander III"
+  },
+  "born": 1845,
+  "died": 1894,
+  "active": [
+   1881,
+   1894
+  ],
+  "lon": 30.52,
+  "lat": 50.45,
+  "place": {
+   "he": "קייב ותחום המושב",
+   "en": "Kyiv and the Pale of Settlement"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "צאר רוסיה, \"חוקי מאי\"",
+   "en": "Russian tsar, the May Laws"
+  },
+  "impact": {
+   "he": "עלייתו לשלטון לוותה בגל הפוגרומים של 1881–1882 (\"סופות בנגב\"), ובעקבותיהם חוקק את \"חוקי מאי\" (1882), הנהיג מכסות ליהודים בהשכלה (1887) וגירש את יהודי מוסקבה (1891). המדיניות דחפה מיליוני יהודים להגר, בעיקר לאמריקה, והאיצה את תנועת חיבת ציון והעלייה הראשונה.",
+   "en": "His accession came with the 1881–82 wave of pogroms, after which he enacted the 'May Laws' (1882), introduced quotas on Jews in education (1887) and expelled Moscow's Jews (1891). These policies drove millions of Jews to emigrate, mainly to America, and spurred Hibbat Zion and the First Aliyah."
+  },
+  "importance": 2
+ },
+ {
+  "id": "pobedonostsev",
+  "name": {
+   "he": "קונסטנטין פובדונוסצב",
+   "en": "Konstantin Pobedonostsev"
+  },
+  "born": 1827,
+  "died": 1907,
+  "active": [
+   1880,
+   1905
+  ],
+  "lon": 30.32,
+  "lat": 59.94,
+  "place": {
+   "he": "סנקט פטרבורג",
+   "en": "St. Petersburg"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "יועץ הצארים, ראש הסינוד",
+   "en": "Tsarist adviser, head of Holy Synod"
+  },
+  "impact": {
+   "he": "כראש הסינוד הקדוש ויועצם של אלכסנדר השלישי וניקולאי השני היה מאדריכלי המדיניות הריאקציונרית והאנטי-יהודית ברוסיה. מיוחסת לו האמרה כי שליש מהיהודים יתנצרו, שליש יהגרו ושליש ימותו – אף שייחוסה אליו אינו ודאי.",
+   "en": "As head of the Holy Synod and adviser to Alexander III and Nicholas II, he was a chief architect of Russia's reactionary, anti-Jewish policies. He is credited with the saying that a third of the Jews would convert, a third emigrate and a third perish – though the attribution is uncertain."
+  },
+  "importance": 1
+ },
+ {
+  "id": "adolf-hitler",
+  "name": {
+   "he": "אדולף היטלר",
+   "en": "Adolf Hitler"
+  },
+  "born": 1889,
+  "died": 1945,
+  "active": [
+   1933,
+   1945
+  ],
+  "lon": 13.4,
+  "lat": 52.52,
+  "place": {
+   "he": "ברלין, גרמניה",
+   "en": "Berlin, Germany"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מנהיג גרמניה הנאצית",
+   "en": "Leader of Nazi Germany"
+  },
+  "impact": {
+   "he": "הפך את האנטישמיות הגזענית למדיניות מדינה: חוקי נירנברג (1935), ליל הבדולח (1938), ולאחר פרוץ מלחמת העולם השנייה – \"הפתרון הסופי\". בשואה נרצחו כשישה מיליון יהודים, כשליש מהעם היהודי.",
+   "en": "He turned racial antisemitism into state policy: the Nuremberg Laws (1935), Kristallnacht (1938) and, after the outbreak of World War II, the 'Final Solution'. Some six million Jews, about a third of the Jewish people, were murdered in the Holocaust."
+  },
+  "calendar": {
+   "he": "השואה נזכרת ביום השואה והגבורה (כ״ז בניסן) וביום הקדיש הכללי (עשרה בטבת)",
+   "en": "The Holocaust is commemorated on Yom HaShoah (27 Nisan) and on the General Kaddish Day (10 Tevet)"
+  },
+  "importance": 3
+ },
+ {
+  "id": "heinrich-himmler",
+  "name": {
+   "he": "היינריך הימלר",
+   "en": "Heinrich Himmler"
+  },
+  "born": 1900,
+  "died": 1945,
+  "active": [
+   1933,
+   1945
+  ],
+  "lon": 13.38,
+  "lat": 52.51,
+  "place": {
+   "he": "ברלין",
+   "en": "Berlin"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "ראש האס-אס",
+   "en": "Reichsführer-SS"
+  },
+  "impact": {
+   "he": "כמפקד האס-אס והמשטרה הגרמנית עמד בראש מנגנון הטרור הנאצי: מחנות הריכוז, האיינזצגרופן ומחנות ההשמדה. הוא היה האחראי הבכיר לביצוע \"הפתרון הסופי\", והתאבד לאחר שנתפס בידי הבריטים ב-1945.",
+   "en": "As head of the SS and German police he ran the Nazi terror apparatus: the concentration camps, the Einsatzgruppen and the death camps. He bore chief responsibility for carrying out the 'Final Solution' and killed himself after capture by the British in 1945."
+  },
+  "importance": 2
+ },
+ {
+  "id": "reinhard-heydrich",
+  "name": {
+   "he": "ריינהרד היידריך",
+   "en": "Reinhard Heydrich"
+  },
+  "born": 1904,
+  "died": 1942,
+  "active": [
+   1938,
+   1942
+  ],
+  "lon": 13.17,
+  "lat": 52.43,
+  "place": {
+   "he": "ועידת ואנזה, ברלין",
+   "en": "Wannsee, Berlin"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מתכנן \"הפתרון הסופי\"",
+   "en": "Architect of the Final Solution"
+  },
+  "impact": {
+   "he": "כראש המשרד הראשי לביטחון הרייך הפעיל את האיינזצגרופן שרצחו יהודים בהמוניהם במזרח, וכינס את ועידת ואנזה (20 בינואר 1942) לתיאום \"הפתרון הסופי\". נהרג בהתנקשות בפראג ב-1942, ותוכנית ההשמדה במחנות בלז׳ץ, סוביבור וטרבלינקה נקראה \"מבצע ריינהרד\".",
+   "en": "As head of the Reich Security Main Office he directed the Einsatzgruppen that carried out mass shootings of Jews in the East, and chaired the Wannsee Conference (20 January 1942) to coordinate the 'Final Solution'. He was assassinated in Prague in 1942, and the extermination program at Belzec, Sobibor and Treblinka was named 'Operation Reinhard'."
+  },
+  "importance": 2
+ },
+ {
+  "id": "adolf-eichmann",
+  "name": {
+   "he": "אדולף אייכמן",
+   "en": "Adolf Eichmann"
+  },
+  "born": 1906,
+  "died": 1962,
+  "active": [
+   1938,
+   1945
+  ],
+  "lon": 19.04,
+  "lat": 47.5,
+  "place": {
+   "he": "ברלין ובודפשט",
+   "en": "Berlin and Budapest"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מארגן הגירושים להשמדה",
+   "en": "Organizer of the deportations"
+  },
+  "impact": {
+   "he": "ניהל את מחלקת \"העניינים היהודיים\" במנגנון האס-אס ותיאם את שילוח יהודי אירופה למחנות ההשמדה, ובהם כ-437,000 מיהודי הונגריה ב-1944. נלכד בארגנטינה בידי המוסד (1960), נשפט בירושלים והוצא להורג ב-1962; משפטו הביא את עדויות הניצולים לתודעה הציבורית בישראל ובעולם.",
+   "en": "He headed the SS office for 'Jewish affairs' and coordinated the deportation of Europe's Jews to the death camps, including some 437,000 Hungarian Jews in 1944. Captured in Argentina by the Mossad (1960), he was tried in Jerusalem and executed in 1962; his trial brought survivors' testimony into public consciousness in Israel and worldwide."
+  },
+  "importance": 2
+ },
+ {
+  "id": "philippe-petain",
+  "name": {
+   "he": "פיליפ פטן",
+   "en": "Philippe Pétain"
+  },
+  "born": 1856,
+  "died": 1951,
+  "active": [
+   1940,
+   1944
+  ],
+  "lon": 3.43,
+  "lat": 46.13,
+  "place": {
+   "he": "וישי, צרפת",
+   "en": "Vichy, France"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "ראש משטר וישי",
+   "en": "Head of the Vichy regime"
+  },
+  "impact": {
+   "he": "משטרו חוקק ביוזמתו את \"חוקי היהודים\" (1940–1941), שנישלו יהודים ממקצועות ומרכוש, ושיתף פעולה עם גרמניה במעצרים ובגירושים. כ-76,000 יהודים גורשו מצרפת למחנות ההשמדה; לאחר המלחמה נידון למוות ועונשו הומתק למאסר עולם.",
+   "en": "His regime enacted, on its own initiative, the 'Statutes on Jews' (1940–41) that stripped Jews of professions and property, and collaborated with Germany in arrests and deportations. About 76,000 Jews were deported from France to the death camps; after the war he was sentenced to death, commuted to life imprisonment."
+  },
+  "importance": 1
+ },
+ {
+  "id": "haj-amin-al-husseini",
+  "name": {
+   "he": "חאג' אמין אל-חוסייני",
+   "en": "Haj Amin al-Husseini"
+  },
+  "born": 1897,
+  "died": 1974,
+  "active": [
+   1921,
+   1948
+  ],
+  "lon": 35.23,
+  "lat": 31.78,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "המופתי של ירושלים",
+   "en": "Grand Mufti of Jerusalem"
+  },
+  "impact": {
+   "he": "הנהיג את ההתנגדות הערבית לציונות בתקופת המנדט ונקשר להסתה במאורעות תרפ״ט (1929) ובמרד הערבי (1936–1939). במלחמת העולם השנייה שיתף פעולה עם גרמניה הנאצית, נפגש עם היטלר (1941), סייע בגיוס מוסלמים לאס-אס ופעל לסיכול הצלת ילדים יהודים.",
+   "en": "He led Arab opposition to Zionism during the Mandate and was linked to incitement in the 1929 riots and the Arab Revolt (1936–39). In World War II he collaborated with Nazi Germany, met Hitler (1941), helped recruit Muslims into the SS and worked to block the rescue of Jewish children."
+  },
+  "importance": 2
+ },
+ {
+  "id": "gamal-abdel-nasser",
+  "name": {
+   "he": "גמאל עבד אל-נאצר",
+   "en": "Gamal Abdel Nasser"
+  },
+  "born": 1918,
+  "died": 1970,
+  "active": [
+   1952,
+   1970
+  ],
+  "lon": 31.24,
+  "lat": 30.04,
+  "place": {
+   "he": "קהיר, מצרים",
+   "en": "Cairo, Egypt"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "נשיא מצרים",
+   "en": "President of Egypt"
+  },
+  "impact": {
+   "he": "כמנהיג הפאן-ערביות עמד בראש העימות עם ישראל, וסגירת מצרי טיראן והזרמת כוחות לסיני ב-1967 הובילו למלחמת ששת הימים. לאחר מלחמת סיני (1956) גורשו ונאלצו לעזוב אלפים מיהודי מצרים, ובכך התחסלה כמעט כליל קהילה עתיקה.",
+   "en": "As leader of pan-Arabism he headed the confrontation with Israel, and his closure of the Straits of Tiran and buildup in Sinai in 1967 led to the Six-Day War. After the 1956 Suez War thousands of Egyptian Jews were expelled or pressured to leave, effectively ending an ancient community."
+  },
+  "importance": 2
+ },
+ {
+  "id": "constantine-the-great",
+  "name": {
+   "he": "קונסטנטינוס הגדול",
+   "en": "Constantine the Great"
+  },
+  "born": 272,
+  "died": 337,
+  "active": [
+   313,
+   337
+  ],
+  "lon": 28.98,
+  "lat": 41.01,
+  "place": {
+   "he": "האימפריה הרומית",
+   "en": "Roman Empire"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "הקיסר הנוצרי הראשון",
+   "en": "First Christian Roman emperor"
+  },
+  "impact": {
+   "he": "היהדות נותרה בימיו דת מותרת ויהודים שמרו על מעמד חוקי, אך הוא אסר על יהודים לגייר ולהחזיק עבדים נוצרים, ונוסחו בימיו ביטויים עוינים כלפיהם. הפיכת הנצרות לדת מועדפת באימפריה פתחה עידן של הגבלות הדרגתיות על היהודים ושל הפיכת ארץ ישראל ל\"ארץ הקודש\" הנוצרית.",
+   "en": "Judaism remained a permitted religion under him and Jews kept legal status, but he barred Jews from proselytizing and owning Christian slaves, and his laws used hostile language toward them. Christianity's rise to favored status opened an era of gradual restrictions on Jews and of the Land of Israel becoming the Christian 'Holy Land'."
+  },
+  "importance": 2
+ },
+ {
+  "id": "gregory-i",
+  "name": {
+   "he": "האפיפיור גרגוריוס הראשון (הגדול)",
+   "en": "Pope Gregory I (the Great)"
+  },
+  "born": 540,
+  "died": 604,
+  "active": [
+   590,
+   604
+  ],
+  "lon": 12.49,
+  "lat": 41.9,
+  "place": {
+   "he": "רומא",
+   "en": "Rome"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "אפיפיור, עקרון \"סיקוט יודאיס\"",
+   "en": "Pope, 'Sicut Judaeis' principle"
+  },
+  "impact": {
+   "he": "קבע שאין להטביל יהודים בכפייה או להרוס בתי כנסת ושיש לכבד את זכויותיהם המוכרות, ועקרון זה הפך לבולת ההגנה \"סיקוט יודאיס\" (בערך 1120). במקביל אסר בניית בתי כנסת חדשים והחזקת עבדים נוצרים בידי יהודים, ועודד המרה בדרכי שכנוע ותמריצים.",
+   "en": "He ruled that Jews must not be forcibly baptized nor their synagogues destroyed, and that their established rights be respected – a principle that became the protective bull 'Sicut Judaeis' (c. 1120). At the same time he forbade new synagogues and Jewish ownership of Christian slaves, and encouraged conversion by persuasion and incentives."
+  },
+  "importance": 1
+ },
+ {
+  "id": "umar-ibn-al-khattab",
+  "name": {
+   "he": "עומר בן אל-ח'טאב",
+   "en": "Umar ibn al-Khattab"
+  },
+  "born": 584,
+  "died": 644,
+  "active": [
+   637,
+   644
+  ],
+  "lon": 35.235,
+  "lat": 31.778,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "הח'ליף השני, כובש ירושלים",
+   "en": "Second caliph, conqueror of Jerusalem"
+  },
+  "impact": {
+   "he": "לאחר הכיבוש המוסלמי של ירושלים (638 לערך) התיר ליהודים לשוב ולהתיישב בעיר אחרי מאות שנות איסור ביזנטי; לפי תעודה מגניזת קהיר הותרו לשם שבעים משפחות מטבריה. \"תנאי עומר\" המיוחסים לו (ככל הנראה נוסחו מאוחר יותר) הגדירו את מעמד הד'ימי – הגנה וחופש פולחן לצד מס ומגבלות מבזות.",
+   "en": "After the Muslim conquest of Jerusalem (c. 638) he allowed Jews to resettle in the city after centuries of Byzantine prohibition; a Cairo Geniza document speaks of seventy families from Tiberias. The 'Pact of Umar' attributed to him (probably compiled later) defined dhimmi status – protection and freedom of worship alongside a poll tax and humiliating restrictions."
+  },
+  "importance": 2
+ },
+ {
+  "id": "napoleon",
+  "name": {
+   "he": "נפוליאון בונפרטה",
+   "en": "Napoleon Bonaparte"
+  },
+  "born": 1769,
+  "died": 1821,
+  "active": [
+   1796,
+   1815
+  ],
+  "lon": 2.35,
+  "lat": 48.86,
+  "place": {
+   "he": "פריז ואירופה",
+   "en": "Paris and Europe"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "קיסר צרפת, מפיץ האמנציפציה",
+   "en": "French emperor, spreader of emancipation"
+  },
+  "impact": {
+   "he": "צבאותיו הפיצו את שוויון הזכויות ליהודים ופתחו גטאות באיטליה ובגרמניה, והוא כינס את אספת הנכבדים (1806) ואת \"הסנהדרין הגדולה\" (1807) ששילבה את היהודים במדינה המודרנית. מנגד, ב\"צו המביש\" (1808) הגביל לעשור את מסחרם ומגוריהם של יהודים, ודרש מהם להגדיר את עצמם כקבוצה דתית בלבד.",
+   "en": "His armies spread equal rights for Jews and opened ghettos in Italy and Germany, and he convened the Assembly of Notables (1806) and the 'Grand Sanhedrin' (1807) to integrate Jews into the modern state. Yet his 'Infamous Decree' (1808) restricted Jewish commerce and residence for a decade, and he required Jews to define themselves purely as a religious group."
+  },
+  "importance": 2
+ },
+ {
+  "id": "joseph-stalin",
+  "name": {
+   "he": "יוסיף סטלין",
+   "en": "Joseph Stalin"
+  },
+  "born": 1878,
+  "died": 1953,
+  "active": [
+   1924,
+   1953
+  ],
+  "lon": 37.62,
+  "lat": 55.75,
+  "place": {
+   "he": "מוסקבה, ברית המועצות",
+   "en": "Moscow, Soviet Union"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "שליט ברית המועצות",
+   "en": "Soviet dictator"
+  },
+  "impact": {
+   "he": "הצבא האדום בפיקודו הביס את גרמניה הנאצית ושחרר את אושוויץ, וב-1947–1948 תמכה ברית המועצות בהקמת ישראל, הכירה בה והתירה משלוחי נשק מצ'כוסלובקיה. מנגד דיכא את התרבות והדת היהודית, הורה על רצח שלמה מיכואלס (1948) ועל הוצאתם להורג של סופרים יידיים (1952), ו\"עלילת הרופאים\" (1953) הסתיימה רק עם מותו.",
+   "en": "The Red Army under his command defeated Nazi Germany and liberated Auschwitz, and in 1947–48 the USSR backed Israel's creation, recognized it and allowed Czechoslovak arms shipments. Yet he suppressed Jewish culture and religion, ordered the murder of Solomon Mikhoels (1948) and the execution of Yiddish writers (1952), and the 'Doctors' Plot' (1953) ended only with his death."
+  },
+  "importance": 2
+ },
+ {
+  "id": "franklin-roosevelt",
+  "name": {
+   "he": "פרנקלין דלאנו רוזוולט",
+   "en": "Franklin D. Roosevelt"
+  },
+  "born": 1882,
+  "died": 1945,
+  "active": [
+   1933,
+   1945
+  ],
+  "lon": -77.04,
+  "lat": 38.9,
+  "place": {
+   "he": "וושינגטון, ארצות הברית",
+   "en": "Washington, D.C."
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "נשיא ארה״ב במלחמת העולם",
+   "en": "U.S. president in World War II"
+  },
+  "impact": {
+   "he": "הוביל את ארצות הברית במלחמה שהביסה את גרמניה הנאצית, והקים בינואר 1944 את \"המועצה לפליטי מלחמה\" שסייעה בהצלת אלפי יהודים. מנגד, ממשלו לא הרחיב את מכסות ההגירה לפליטים יהודים (כמו נוסעי האונייה \"סנט לואיס\" ב-1939) ונמנע מפעולה ישירה להצלה, ומדיניותו שנויה במחלוקת בין היסטוריונים.",
+   "en": "He led the United States in the war that defeated Nazi Germany and in January 1944 created the War Refugee Board, which helped rescue thousands of Jews. Yet his administration did not widen immigration quotas for Jewish refugees (such as the 'St. Louis' passengers in 1939) and avoided direct rescue action, and his record remains debated by historians."
+  },
+  "importance": 2
+ },
+ {
+  "id": "pius-xii",
+  "name": {
+   "he": "האפיפיור פיוס ה-12",
+   "en": "Pope Pius XII"
+  },
+  "born": 1876,
+  "died": 1958,
+  "active": [
+   1939,
+   1945
+  ],
+  "lon": 12.45,
+  "lat": 41.9,
+  "place": {
+   "he": "הוותיקן, רומא",
+   "en": "Vatican City, Rome"
+  },
+  "stance": "mixed",
+  "role": {
+   "he": "האפיפיור בתקופת השואה",
+   "en": "Pope during the Holocaust"
+  },
+  "impact": {
+   "he": "נמנע מגינוי פומבי ומפורש של השמדת היהודים, גם כאשר יהודי רומא נעצרו ושולחו לאושוויץ באוקטובר 1943. מנגד, מוסדות כנסייה ברומא ובמקומות אחרים הסתירו אלפי יהודים; היקף מעורבותו האישית שנוי במחלוקת עזה, וארכיוני הוותיקן לתקופתו נפתחו לחוקרים רק ב-2020.",
+   "en": "He refrained from an explicit public condemnation of the extermination of the Jews, even when Rome's Jews were rounded up and sent to Auschwitz in October 1943. Yet church institutions in Rome and elsewhere hid thousands of Jews; the extent of his personal role is fiercely debated, and the Vatican archives for his papacy opened to researchers only in 2020."
+  },
+  "importance": 2
+ },
+ {
+  "id": "cyrus-the-great",
+  "name": {
+   "he": "כורש הגדול",
+   "en": "Cyrus the Great"
+  },
+  "born": -600,
+  "died": -530,
+  "active": [
+   -539,
+   -530
+  ],
+  "lon": 44.42,
+  "lat": 32.54,
+  "place": {
+   "he": "בבל",
+   "en": "Babylon"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מלך פרס, מתיר שיבת ציון",
+   "en": "Persian king who allowed the Return"
+  },
+  "impact": {
+   "he": "לאחר שכבש את בבל (539 לפנה״ס) התיר לגולי יהודה לשוב לארצם ולבנות מחדש את בית המקדש, בהתאם למדיניותו הכללית כלפי עמים מוגלים. ישעיהו כינה אותו \"משיחו\" של האל, והוא נחשב לאחד הגויים האהודים ביותר במסורת היהודית.",
+   "en": "After conquering Babylon (539 BCE) he allowed the exiles of Judah to return home and rebuild the Temple, in line with his general policy toward deported peoples. Isaiah called him God's 'anointed', and he is among the most admired gentiles in Jewish tradition."
+  },
+  "importance": 3
+ },
+ {
+  "id": "darius-i",
+  "name": {
+   "he": "דריווש הראשון",
+   "en": "Darius I"
+  },
+  "born": -550,
+  "died": -486,
+  "active": [
+   -520,
+   -515
+  ],
+  "lon": 35.235,
+  "lat": 31.778,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מלך פרס, השלמת הבית השני",
+   "en": "Persian king, Second Temple completed"
+  },
+  "impact": {
+   "he": "לפי ספר עזרא אישר מחדש את הצהרת כורש ומימן מאוצר המלוכה את בניית המקדש, לאחר שזו נעצרה בשל התנגדות שכנים. בית המקדש השני הושלם בשנה השישית למלכותו (515 לפנה״ס בקירוב) בהנהגת זרובבל ויהושע הכהן הגדול.",
+   "en": "According to Ezra he reconfirmed Cyrus's decree and funded the Temple's construction from the royal treasury after local opposition had halted it. The Second Temple was completed in his sixth year (c. 515 BCE) under Zerubbabel and the high priest Joshua."
+  },
+  "importance": 2
+ },
+ {
+  "id": "artaxerxes-i",
+  "name": {
+   "he": "ארתחשסתא הראשון",
+   "en": "Artaxerxes I"
+  },
+  "born": null,
+  "died": -424,
+  "active": [
+   -458,
+   -432
+  ],
+  "lon": 48.25,
+  "lat": 32.19,
+  "place": {
+   "he": "שושן, פרס",
+   "en": "Susa, Persia"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מלך פרס בימי עזרא ונחמיה",
+   "en": "Persian king of Ezra and Nehemiah"
+  },
+  "impact": {
+   "he": "לפי המקרא שיגר את עזרא הסופר לירושלים עם סמכות להנהיג את התורה כחוק (458 לפנה״ס לפי התיארוך המקובל), ומינה את שר המשקים שלו נחמיה לפחה כדי לבנות את חומות העיר (445 לפנה״ס). שליחויות אלה ביססו את הקהילה בירושלים ואת מעמד התורה בחייה.",
+   "en": "According to the Bible he sent Ezra the Scribe to Jerusalem with authority to establish the Torah as law (458 BCE by the usual dating), and appointed his cupbearer Nehemiah governor to rebuild the city walls (445 BCE). These missions consolidated the Jerusalem community and the Torah's place in its life."
+  },
+  "importance": 2
+ },
+ {
+  "id": "alexander-the-great",
+  "name": {
+   "he": "אלכסנדר מוקדון",
+   "en": "Alexander the Great"
+  },
+  "born": -356,
+  "died": -323,
+  "active": [
+   -332,
+   -323
+  ],
+  "lon": 35.22,
+  "lat": 31.79,
+  "place": {
+   "he": "ארץ ישראל",
+   "en": "Land of Israel"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "כובש העולם ההלניסטי",
+   "en": "Conqueror of the Hellenistic world"
+  },
+  "impact": {
+   "he": "כבש את ארץ ישראל ב-332 לפנה״ס בלי לפגוע ביהודים; לפי אגדה המובאת אצל יוספוס ובתלמוד השתחווה לכהן הגדול ונמנע מלפגוע במקדש. כיבושיו פתחו את התקופה ההלניסטית, שבה קמה באלכסנדריה הקהילה היהודית הגדולה בתפוצות, ושמו הפך לשם עברי מקובל.",
+   "en": "He conquered the Land of Israel in 332 BCE without harming the Jews; a legend in Josephus and the Talmud says he bowed before the high priest and spared the Temple. His conquests opened the Hellenistic age, in which Alexandria became home to the largest diaspora community, and his name became a common Jewish name."
+  },
+  "importance": 2
+ },
+ {
+  "id": "julius-caesar",
+  "name": {
+   "he": "יוליוס קיסר",
+   "en": "Julius Caesar"
+  },
+  "born": -100,
+  "died": -44,
+  "active": [
+   -47,
+   -44
+  ],
+  "lon": 12.48,
+  "lat": 41.89,
+  "place": {
+   "he": "רומא ויהודה",
+   "en": "Rome and Judea"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "שליט רומא, מעניק זכויות",
+   "en": "Roman ruler who granted Jewish rights"
+  },
+  "impact": {
+   "he": "לאחר שהורקנוס השני ואנטיפטרוס סייעו לו במצרים (47 לפנה״ס), העניק ליהודים חופש פולחן, פטור משירות צבאי ואישור לבנות מחדש את חומות ירושלים. זכויות אלה שימשו בסיס למעמדן המוגן של קהילות היהודים באימפריה, ולפי סווטוניוס התאבלו היהודים ברומא ליד מדורת הלוויה שלו.",
+   "en": "After Hyrcanus II and Antipater aided him in Egypt (47 BCE), he granted Jews freedom of worship, exemption from military service and permission to rebuild Jerusalem's walls. These rights underpinned the protected status of Jewish communities across the empire, and Suetonius reports that Rome's Jews mourned at his funeral pyre."
+  },
+  "importance": 2
+ },
+ {
+  "id": "julian",
+  "name": {
+   "he": "יוליאנוס (\"הכופר\")",
+   "en": "Julian ('the Apostate')"
+  },
+  "born": 331,
+  "died": 363,
+  "active": [
+   361,
+   363
+  ],
+  "lon": 35.236,
+  "lat": 31.777,
+  "place": {
+   "he": "ירושלים",
+   "en": "Jerusalem"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "קיסר רומי, ניסה לבנות את המקדש",
+   "en": "Roman emperor who tried to rebuild the Temple"
+  },
+  "impact": {
+   "he": "הקיסר האחרון שאינו נוצרי ביטל מסים מפלים והורה ב-363 לבנות מחדש את בית המקדש בירושלים, בין השאר כדי לערער את טענות הנצרות. העבודות נקטעו בעקבות שרפה (וככל הנראה רעידת אדמה) ומותו במלחמה בפרס, והתקווה נגוזה.",
+   "en": "The last non-Christian emperor lifted discriminatory taxes and in 363 ordered the Temple in Jerusalem rebuilt, partly to undermine Christian claims. Work stopped after a fire (probably an earthquake) and his death in the Persian war, and the hope faded."
+  },
+  "importance": 3
+ },
+ {
+  "id": "abd-al-rahman-iii",
+  "name": {
+   "he": "עבד א-רחמן השלישי",
+   "en": "Abd al-Rahman III"
+  },
+  "born": 891,
+  "died": 961,
+  "active": [
+   929,
+   961
+  ],
+  "lon": -4.78,
+  "lat": 37.88,
+  "place": {
+   "he": "קורדובה, אל-אנדלוס",
+   "en": "Córdoba, al-Andalus"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "ח'ליף קורדובה, פטרון",
+   "en": "Caliph of Córdoba, patron"
+  },
+  "impact": {
+   "he": "בחצרו כיהן חסדאי אבן שפרוט, רופא ודיפלומט יהודי, שהיה נשיא יהודי אל-אנדלוס ופטרון של משוררים ולומדים. השגשוג והסובלנות היחסית בממלכתו הניחו את היסודות ל\"תור הזהב\" של יהדות ספרד.",
+   "en": "His court included Hasdai ibn Shaprut, a Jewish physician and diplomat who led the Jews of al-Andalus and patronized poets and scholars. The prosperity and relative tolerance of his realm laid the foundations for the 'Golden Age' of Spanish Jewry."
+  },
+  "importance": 2
+ },
+ {
+  "id": "louis-the-pious",
+  "name": {
+   "he": "לואי החסיד",
+   "en": "Louis the Pious"
+  },
+  "born": 778,
+  "died": 840,
+  "active": [
+   814,
+   840
+  ],
+  "lon": 6.08,
+  "lat": 50.78,
+  "place": {
+   "he": "האימפריה הקרולינגית (אאכן)",
+   "en": "Carolingian Empire (Aachen)"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "קיסר פרנקי, מגן הסוחרים",
+   "en": "Frankish emperor, protector of Jews"
+  },
+  "impact": {
+   "he": "בנו ויורשו של קרל הגדול העניק לסוחרים יהודים כתבי חסות, מינה פקיד מיוחד להגנתם והתיר להעביר את יום השוק משבת. הוא עמד מול מסע ההסתה של הבישוף אגוברד מליון, ומדיניותו סייעה לצמיחת הקהילות היהודיות בצרפת ובגרמניה.",
+   "en": "Son and successor of Charlemagne, he granted Jewish merchants charters of protection, appointed an official to safeguard them and allowed market day to be moved from the Sabbath. He resisted the anti-Jewish campaign of Bishop Agobard of Lyon, and his policies helped Jewish communities grow in France and Germany."
+  },
+  "importance": 1
+ },
+ {
+  "id": "bernard-of-clairvaux",
+  "name": {
+   "he": "ברנרד מקלרבו",
+   "en": "Bernard of Clairvaux"
+  },
+  "born": 1090,
+  "died": 1153,
+  "active": [
+   1146,
+   1147
+  ],
+  "lon": 8.28,
+  "lat": 50,
+  "place": {
+   "he": "ארץ הריין",
+   "en": "Rhineland"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "אב מנזר, מטיף מסע הצלב",
+   "en": "Abbot and Crusade preacher"
+  },
+  "impact": {
+   "he": "אף שהטיף למסע הצלב השני והחזיק בעמדות תאולוגיות מסורתיות נגד היהדות, יצא נגד הנזיר רדולף שהסית לטבוח ביהודי הריין והורה שאין להרוג יהודים. הכרוניקן רבי אפרים מבונא ציין אותו לשבח כמי שבלם טבח כמו של 1096.",
+   "en": "Though he preached the Second Crusade and held traditional theological views against Judaism, he confronted the monk Radulf, who was inciting massacres of Rhineland Jews, and insisted Jews must not be killed. The chronicler Ephraim of Bonn credited him with preventing a repeat of 1096."
+  },
+  "importance": 1
+ },
+ {
+  "id": "boleslaw-the-pious",
+  "name": {
+   "he": "בולסלב החסיד",
+   "en": "Bolesław the Pious"
+  },
+  "born": null,
+  "died": 1279,
+  "active": [
+   1264,
+   1279
+  ],
+  "lon": 18.09,
+  "lat": 51.76,
+  "place": {
+   "he": "קאליש, פולין",
+   "en": "Kalisz, Poland"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "דוכס, חוקת קאליש",
+   "en": "Duke, Statute of Kalisz"
+  },
+  "impact": {
+   "he": "\"חוקת קאליש\" (1264) שהעניק הבטיחה ליהודים הגנה על גופם ורכושם, חופש פולחן ומסחר, שיפוט עצמי ועונש על האשמות שווא בעלילות דם. החוקה הייתה הבסיס המשפטי לקהילה היהודית בפולין, שהפכה במאות הבאות למרכז היהודי הגדול בעולם.",
+   "en": "His Statute of Kalisz (1264) guaranteed Jews protection of life and property, freedom of worship and trade, judicial autonomy, and penalties for false blood-libel accusations. It became the legal foundation of Polish Jewry, which grew in later centuries into the world's largest Jewish center."
+  },
+  "importance": 2
+ },
+ {
+  "id": "casimir-iii",
+  "name": {
+   "he": "קז'ימייז' השלישי הגדול",
+   "en": "Casimir III the Great"
+  },
+  "born": 1310,
+  "died": 1370,
+  "active": [
+   1334,
+   1370
+  ],
+  "lon": 19.94,
+  "lat": 50.06,
+  "place": {
+   "he": "קרקוב, פולין",
+   "en": "Kraków, Poland"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מלך פולין",
+   "en": "King of Poland"
+  },
+  "impact": {
+   "he": "אשרר והרחיב את זכויות חוקת קאליש לכל ממלכת פולין (1334 ואילך), ובימיו קלטה פולין יהודים שנמלטו מרדיפות במערב, בין השאר אחרי המוות השחור. רובע קז'ימייז' בקרקוב, שנעשה מרכז יהודי חשוב, קרוי על שמו, ואגדה עממית קשרה אותו לאהובה יהודייה בשם אסתרקה.",
+   "en": "He confirmed and extended the Kalisz privileges to the whole Kingdom of Poland (from 1334), and under him Poland absorbed Jews fleeing persecution in the West, including after the Black Death. Kraków's Kazimierz district, later a major Jewish center, bears his name, and folk legend linked him to a Jewish beloved named Esterka."
+  },
+  "importance": 2
+ },
+ {
+  "id": "bayezid-ii",
+  "name": {
+   "he": "הסולטן באיזיד השני",
+   "en": "Sultan Bayezid II"
+  },
+  "born": 1447,
+  "died": 1512,
+  "active": [
+   1492,
+   1512
+  ],
+  "lon": 28.98,
+  "lat": 41.01,
+  "place": {
+   "he": "איסטנבול, האימפריה העות'מאנית",
+   "en": "Istanbul, Ottoman Empire"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "סולטן עות'מאני, קולט מגורשי ספרד",
+   "en": "Ottoman sultan who welcomed Spain's exiles"
+  },
+  "impact": {
+   "he": "קלט באימפריה העות'מאנית רבבות ממגורשי ספרד ופורטוגל, שהקימו קהילות משגשגות באיסטנבול, בשאלוניקי ובערים נוספות. האמרה המפורסמת המיוחסת לו, שפרדיננד \"העני את ארצו והעשיר את ארצי\", מתועדת רק במקורות מאוחרים.",
+   "en": "He welcomed tens of thousands of exiles from Spain and Portugal into the Ottoman Empire, where they built flourishing communities in Istanbul, Salonica and other cities. The famous remark attributed to him – that Ferdinand 'impoverished his own country and enriched mine' – appears only in later sources."
+  },
+  "importance": 2
+ },
+ {
+  "id": "oliver-cromwell",
+  "name": {
+   "he": "אוליבר קרומוול",
+   "en": "Oliver Cromwell"
+  },
+  "born": 1599,
+  "died": 1658,
+  "active": [
+   1655,
+   1658
+  ],
+  "lon": -0.14,
+  "lat": 51.5,
+  "place": {
+   "he": "לונדון, אנגליה",
+   "en": "London, England"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "לורד פרוטקטור, החזרת היהודים",
+   "en": "Lord Protector, readmission of Jews"
+  },
+  "impact": {
+   "he": "בעקבות עתירתו של מנשה בן ישראל כינס את ועידת וייטהול (1655), ואף שלא התקבלה החלטה רשמית, התיר בפועל ליהודים להתיישב ולהתפלל בגלוי באנגליה (1656). ניעיו היו כלכליים ודתיים כאחד, והמהלך סיים 366 שנות גירוש ופתח את הדרך לקהילה היהודית בבריטניה.",
+   "en": "Following Menasseh ben Israel's petition he convened the Whitehall Conference (1655), and although no formal decision was reached he effectively allowed Jews to settle and worship openly in England (1656). His motives were both economic and religious, and the move ended 366 years of exclusion and opened the way for British Jewry."
+  },
+  "importance": 2
+ },
+ {
+  "id": "george-washington",
+  "name": {
+   "he": "ג'ורג' וושינגטון",
+   "en": "George Washington"
+  },
+  "born": 1732,
+  "died": 1799,
+  "active": [
+   1790,
+   1790
+  ],
+  "lon": -71.31,
+  "lat": 41.49,
+  "place": {
+   "he": "ניופורט, רוד איילנד",
+   "en": "Newport, Rhode Island"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "נשיא ארה״ב הראשון",
+   "en": "First U.S. president"
+  },
+  "impact": {
+   "he": "במכתבו לקהילה היהודית בניופורט (1790) הבטיח כי ממשלת ארצות הברית \"אינה נותנת אישור לקנאות ואינה מסייעת לרדיפה\". המכתב הפך לסמל להכרה ביהודים כאזרחים שווים ולחופש הדת באמריקה.",
+   "en": "In his 1790 letter to the Hebrew Congregation of Newport he affirmed that the U.S. government 'gives to bigotry no sanction, to persecution no assistance'. The letter became a symbol of Jews' recognition as equal citizens and of religious freedom in America."
+  },
+  "importance": 2
+ },
+ {
+  "id": "emile-zola",
+  "name": {
+   "he": "אמיל זולא",
+   "en": "Émile Zola"
+  },
+  "born": 1840,
+  "died": 1902,
+  "active": [
+   1897,
+   1902
+  ],
+  "lon": 2.34,
+  "lat": 48.87,
+  "place": {
+   "he": "פריז, צרפת",
+   "en": "Paris, France"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "סופר, מגן דרייפוס",
+   "en": "Novelist, defender of Dreyfus"
+  },
+  "impact": {
+   "he": "במאמרו \"אני מאשים!\" (1898) האשים את צמרת הצבא הצרפתי בהפללת הקצין היהודי אלפרד דרייפוס ובטיוח, ונאלץ לברוח לאנגליה לאחר שהורשע בהוצאת דיבה. מאבקו חשף את עומק האנטישמיות בצרפת וסייע לזיכויו של דרייפוס, בתקופה שבה הפרשה חיזקה את הרעיון הציוני.",
+   "en": "In his article 'J'accuse…!' (1898) he accused the French army command of framing the Jewish officer Alfred Dreyfus and covering it up, and had to flee to England after being convicted of libel. His campaign exposed the depth of French antisemitism and helped Dreyfus's exoneration, at a time when the affair was strengthening the Zionist idea."
+  },
+  "importance": 2
+ },
+ {
+  "id": "arthur-balfour",
+  "name": {
+   "he": "ארתור ג'יימס בלפור",
+   "en": "Arthur James Balfour"
+  },
+  "born": 1848,
+  "died": 1930,
+  "active": [
+   1917,
+   1925
+  ],
+  "lon": -0.13,
+  "lat": 51.5,
+  "place": {
+   "he": "לונדון, בריטניה",
+   "en": "London, Britain"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "שר החוץ הבריטי, הצהרת בלפור",
+   "en": "British Foreign Secretary"
+  },
+  "impact": {
+   "he": "בהצהרת בלפור (2 בנובמבר 1917) הודיעה בריטניה על תמיכתה בהקמת \"בית לאומי לעם היהודי\" בארץ ישראל, והצהרה זו שולבה בכתב המנדט (1922). היא הייתה הכרה בינלאומית ראשונה בשאיפה הציונית, ואילו בעיני ערביי הארץ נתפסה כפגיעה בזכויותיהם.",
+   "en": "In the Balfour Declaration (2 November 1917) Britain announced its support for 'a national home for the Jewish people' in Palestine, and the declaration was written into the League of Nations Mandate (1922). It was the first major international endorsement of Zionism, while Palestine's Arabs saw it as a violation of their rights."
+  },
+  "honor": {
+   "he": "המושב בלפוריה ורחובות רבים בישראל נקראו על שמו",
+   "en": "The moshav Balfouria and many streets in Israel are named for him"
+  },
+  "importance": 3
+ },
+ {
+  "id": "orde-wingate",
+  "name": {
+   "he": "אורד וינגייט",
+   "en": "Orde Wingate"
+  },
+  "born": 1903,
+  "died": 1944,
+  "active": [
+   1936,
+   1939
+  ],
+  "lon": 35.39,
+  "lat": 32.56,
+  "place": {
+   "he": "עין חרוד, עמק יזרעאל",
+   "en": "Ein Harod, Jezreel Valley"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "קצין בריטי, \"היְדיד\"",
+   "en": "British officer, 'HaYedid' (the Friend)"
+  },
+  "impact": {
+   "he": "קצין בריטי ונוצרי ציוני שהקים ב-1938 את \"פלוגות הלילה המיוחדות\", ששילבו לוחמי הגנה בפעולות יזומות נגד כנופיות במרד הערבי. בין חניכיו היו יגאל אלון ומשה דיין, ותורת הלחימה שלו השפיעה על הפלמ״ח ועל צה״ל.",
+   "en": "A British officer and Christian Zionist, he formed the Special Night Squads in 1938, training Haganah fighters in offensive operations against armed bands during the Arab Revolt. His trainees included Yigal Allon and Moshe Dayan, and his doctrine influenced the Palmach and the IDF."
+  },
+  "honor": {
+   "he": "מכון וינגייט וכפר הנוער ימין אורד נקראו על שמו",
+   "en": "The Wingate Institute and the Yemin Orde youth village are named for him"
+  },
+  "importance": 2
+ },
+ {
+  "id": "harry-truman",
+  "name": {
+   "he": "הארי טרומן",
+   "en": "Harry S. Truman"
+  },
+  "born": 1884,
+  "died": 1972,
+  "active": [
+   1945,
+   1953
+  ],
+  "lon": -77.04,
+  "lat": 38.9,
+  "place": {
+   "he": "וושינגטון, ארצות הברית",
+   "en": "Washington, D.C."
+  },
+  "stance": "ally",
+  "role": {
+   "he": "נשיא ארה״ב, הכרה בישראל",
+   "en": "U.S. president who recognized Israel"
+  },
+  "impact": {
+   "he": "תמך בכניסת 100,000 עקורים יהודים לארץ ישראל ובתוכנית החלוקה של האו״ם (1947), ובניגוד לעמדת משרד החוץ שלו הכיר בישראל דקות ספורות אחרי הכרזת העצמאות ב-14 במאי 1948. ההכרה האמריקנית העניקה למדינה הצעירה לגיטימציה בינלאומית חיונית.",
+   "en": "He backed the admission of 100,000 Jewish displaced persons to Palestine and the UN Partition Plan (1947), and against his State Department's advice recognized Israel minutes after its declaration of independence on 14 May 1948. American recognition gave the young state vital international legitimacy."
+  },
+  "honor": {
+   "he": "המושב כפר טרומן ומכון טרומן באוניברסיטה העברית נקראו על שמו",
+   "en": "The moshav Kfar Truman and the Truman Institute at the Hebrew University are named for him"
+  },
+  "importance": 3
+ },
+ {
+  "id": "raoul-wallenberg",
+  "name": {
+   "he": "ראול ולנברג",
+   "en": "Raoul Wallenberg"
+  },
+  "born": 1912,
+  "died": null,
+  "active": [
+   1944,
+   1945
+  ],
+  "lon": 19.04,
+  "lat": 47.5,
+  "place": {
+   "he": "בודפשט, הונגריה",
+   "en": "Budapest, Hungary"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "דיפלומט שוודי, מציל",
+   "en": "Swedish diplomat and rescuer"
+  },
+  "impact": {
+   "he": "ביולי 1944 הגיע לבודפשט, הנפיק \"דרכוני חסות\" שוודיים והקים בתים מוגנים, ויחד עם דיפלומטים נוספים הציל עשרות אלפי יהודים. בינואר 1945 נעצר בידי הסובייטים ונעלם; גורלו המדויק לא התברר עד היום.",
+   "en": "Arriving in Budapest in July 1944, he issued Swedish protective passes and set up safe houses, and together with other diplomats saved tens of thousands of Jews. In January 1945 he was arrested by the Soviets and disappeared; his exact fate remains unknown."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם, 1963); אזרח כבוד של ישראל",
+   "en": "Righteous Among the Nations (Yad Vashem, 1963); honorary citizen of Israel"
+  },
+  "importance": 3
+ },
+ {
+  "id": "chiune-sugihara",
+  "name": {
+   "he": "צ'יאונה סוגיהארה",
+   "en": "Chiune Sugihara"
+  },
+  "born": 1900,
+  "died": 1986,
+  "active": [
+   1940,
+   1940
+  ],
+  "lon": 23.9,
+  "lat": 54.9,
+  "place": {
+   "he": "קובנה, ליטא",
+   "en": "Kaunas, Lithuania"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "קונסול יפני, מציל",
+   "en": "Japanese consul and rescuer"
+  },
+  "impact": {
+   "he": "בקיץ 1940, בניגוד להוראות משרד החוץ היפני, הנפיק בקובנה כ-2,000 אשרות מעבר ליפן לפליטים יהודים, רבים מהן לבני משפחות שלמות. אלפי יהודים, ובהם תלמידי ישיבת מיר, הגיעו דרך סיביר ליפן ולשנגחאי וניצלו.",
+   "en": "In summer 1940, defying Japan's Foreign Ministry, he issued about 2,000 transit visas to Japan for Jewish refugees in Kaunas, many covering whole families. Thousands of Jews, including the students of the Mir Yeshiva, reached Japan and Shanghai via Siberia and survived."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם, 1984)",
+   "en": "Righteous Among the Nations (Yad Vashem, 1984)"
+  },
+  "importance": 2
+ },
+ {
+  "id": "oskar-schindler",
+  "name": {
+   "he": "אוסקר שינדלר",
+   "en": "Oskar Schindler"
+  },
+  "born": 1908,
+  "died": 1974,
+  "active": [
+   1939,
+   1945
+  ],
+  "lon": 19.94,
+  "lat": 50.05,
+  "place": {
+   "he": "קרקוב, פולין",
+   "en": "Kraków, Poland"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "תעשיין גרמני, מציל",
+   "en": "German industrialist and rescuer"
+  },
+  "impact": {
+   "he": "חבר המפלגה הנאצית שהפעיל מפעל בקרקוב, ובאמצעות שוחד, תושייה וסיכון אישי הגן על כ-1,200 עובדים יהודים והעבירם ב-1944 למפעל בברינליץ שבחבל הסודטים. סיפורו, שהונצח בסרט \"רשימת שינדלר\", הפך לסמל להצלה בשואה; הוא קבור בהר ציון בירושלים.",
+   "en": "A Nazi Party member who ran a factory in Kraków, he used bribery, ingenuity and personal risk to protect about 1,200 Jewish workers and in 1944 moved them to a factory at Brünnlitz in the Sudetenland. His story, told in the film 'Schindler's List', became a symbol of Holocaust rescue; he is buried on Mount Zion in Jerusalem."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם, 1993, יחד עם רעייתו אמילי)",
+   "en": "Righteous Among the Nations (Yad Vashem, 1993, with his wife Emilie)"
+  },
+  "importance": 3
+ },
+ {
+  "id": "irena-sendler",
+  "name": {
+   "he": "אירנה סנדלר",
+   "en": "Irena Sendler"
+  },
+  "born": 1910,
+  "died": 2008,
+  "active": [
+   1940,
+   1945
+  ],
+  "lon": 21.01,
+  "lat": 52.23,
+  "place": {
+   "he": "ורשה, פולין",
+   "en": "Warsaw, Poland"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "עובדת סוציאלית פולנייה, מצילה",
+   "en": "Polish social worker and rescuer"
+  },
+  "impact": {
+   "he": "כראש מחלקת הילדים של ארגון \"ז'גוטה\" הוציאה עם שותפיה מגטו ורשה ילדים יהודים והסתירה אותם במשפחות ובמוסדות, ורשמה את שמותיהם האמיתיים כדי שיוכלו לשוב לזהותם. לפי ההערכות ניצלו כך כ-2,500 ילדים; היא נעצרה ועונתה בידי הגסטפו ב-1943.",
+   "en": "As head of the children's section of the Żegota underground, she and her network smuggled Jewish children out of the Warsaw Ghetto and hid them with families and institutions, recording their real names so they could reclaim their identities. By estimates some 2,500 children were saved; she was arrested and tortured by the Gestapo in 1943."
+  },
+  "honor": {
+   "he": "חסידת אומות העולם (יד ושם, 1965)",
+   "en": "Righteous Among the Nations (Yad Vashem, 1965)"
+  },
+  "importance": 2
+ },
+ {
+  "id": "aristides-de-sousa-mendes",
+  "name": {
+   "he": "אריסטידס דה סוזה מנדס",
+   "en": "Aristides de Sousa Mendes"
+  },
+  "born": 1885,
+  "died": 1954,
+  "active": [
+   1940,
+   1940
+  ],
+  "lon": -0.58,
+  "lat": 44.84,
+  "place": {
+   "he": "בורדו, צרפת",
+   "en": "Bordeaux, France"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "קונסול פורטוגלי, מציל",
+   "en": "Portuguese consul and rescuer"
+  },
+  "impact": {
+   "he": "ביוני 1940, בזמן קריסת צרפת, הפר את הוראות ממשלת סלזאר והנפיק אלפי אשרות כניסה לפורטוגל לפליטים, ובהם יהודים רבים. הוא פוטר ממשרתו ומת בעוני, ושמו טוהר בפורטוגל רק בשנת 1988.",
+   "en": "In June 1940, as France collapsed, he defied the Salazar government's orders and issued thousands of visas to Portugal for refugees, many of them Jews. He was dismissed from service and died in poverty; Portugal rehabilitated his name only in 1988."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם, 1966)",
+   "en": "Righteous Among the Nations (Yad Vashem, 1966)"
+  },
+  "importance": 2
+ },
+ {
+  "id": "christian-x",
+  "name": {
+   "he": "כריסטיאן העשירי, מלך דנמרק",
+   "en": "King Christian X of Denmark"
+  },
+  "born": 1870,
+  "died": 1947,
+  "active": [
+   1940,
+   1945
+  ],
+  "lon": 12.57,
+  "lat": 55.68,
+  "place": {
+   "he": "קופנהגן, דנמרק",
+   "en": "Copenhagen, Denmark"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מלך דנמרק בכיבוש",
+   "en": "King of Denmark under occupation"
+  },
+  "impact": {
+   "he": "המלך היה סמל להתנגדות הדנית ולסולידריות עם האזרחים היהודים, אף שהסיפור כי ענד טלאי צהוב הוא אגדה. באוקטובר 1943, לאחר אזהרה מוקדמת, הבריחו דנים רבים כ-7,200 יהודים בסירות לשוודיה, ורוב כ-470 היהודים שגורשו לטרזיינשטט שרדו בזכות לחץ דני.",
+   "en": "The king was a symbol of Danish resistance and of solidarity with Jewish citizens, though the story that he wore a yellow star is a legend. In October 1943, after an advance warning, ordinary Danes ferried about 7,200 Jews by boat to Sweden, and most of the roughly 470 deported to Theresienstadt survived thanks to Danish pressure."
+  },
+  "honor": {
+   "he": "המחתרת הדנית ביקשה להיות מוכרת ביד ושם כקבוצה ולא כיחידים",
+   "en": "The Danish resistance asked Yad Vashem to honor it collectively rather than individually"
+  },
+  "importance": 2
+ },
+ {
+  "id": "paul-gruninger",
+  "name": {
+   "he": "פאול גרונינגר",
+   "en": "Paul Grüninger"
+  },
+  "born": 1891,
+  "died": 1972,
+  "active": [
+   1938,
+   1939
+  ],
+  "lon": 9.38,
+  "lat": 47.42,
+  "place": {
+   "he": "סנקט גאלן, שווייץ",
+   "en": "St. Gallen, Switzerland"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "מפקד משטרה שווייצרי, מציל",
+   "en": "Swiss police commander and rescuer"
+  },
+  "impact": {
+   "he": "לאחר שווייץ סגרה את גבולה בפני פליטים יהודים מאוסטריה (1938), זייף תאריכי כניסה ואפשר למאות ואולי אלפי פליטים להישאר באופן חוקי. הוא פוטר, הורשע ומת בעוני; בית משפט שווייצרי טיהר את שמו רק ב-1995.",
+   "en": "After Switzerland closed its border to Jewish refugees from Austria (1938), he backdated entry papers, letting hundreds and perhaps thousands of refugees stay legally. He was dismissed, convicted and died in poverty; a Swiss court cleared his name only in 1995."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם, 1971)",
+   "en": "Righteous Among the Nations (Yad Vashem, 1971)"
+  },
+  "importance": 1
+ },
+ {
+  "id": "jan-karski",
+  "name": {
+   "he": "יאן קרסקי",
+   "en": "Jan Karski"
+  },
+  "born": 1914,
+  "died": 2000,
+  "active": [
+   1942,
+   1943
+  ],
+  "lon": 21,
+  "lat": 52.24,
+  "place": {
+   "he": "ורשה, לונדון ווושינגטון",
+   "en": "Warsaw, London and Washington"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "שליח המחתרת הפולנית",
+   "en": "Polish underground courier"
+  },
+  "impact": {
+   "he": "ב-1942 הוברח לגטו ורשה ולמחנה מעבר כדי לראות במו עיניו את השמדת היהודים, ומסר עדות על כך למנהיגי בעלות הברית, ובהם הנשיא רוזוולט (1943). עדותו לא הובילה לפעולת הצלה משמעותית, והוא הפך לסמל לאזהרה שלא נשמעה.",
+   "en": "In 1942 he was smuggled into the Warsaw Ghetto and a transit camp to witness the extermination of the Jews firsthand, and reported it to Allied leaders, including President Roosevelt (1943). His testimony led to no significant rescue action, and he became a symbol of the warning that went unheeded."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם, 1982); אזרח כבוד של ישראל (1994)",
+   "en": "Righteous Among the Nations (Yad Vashem, 1982); honorary citizen of Israel (1994)"
+  },
+  "importance": 2
+ },
+ {
+  "id": "dimitar-peshev",
+  "name": {
+   "he": "דימיטר פשב",
+   "en": "Dimitar Peshev"
+  },
+  "born": 1894,
+  "died": 1973,
+  "active": [
+   1943,
+   1943
+  ],
+  "lon": 23.32,
+  "lat": 42.7,
+  "place": {
+   "he": "סופיה, בולגריה",
+   "en": "Sofia, Bulgaria"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "סגן יו״ר הפרלמנט הבולגרי",
+   "en": "Deputy Speaker of Bulgaria's parliament"
+  },
+  "impact": {
+   "he": "במרץ 1943 נודע לו על תוכנית לגרש את יהודי בולגריה, והוא הוביל מכתב מחאה של עשרות חברי פרלמנט שסייע, יחד עם מחאת הכנסייה והציבור, לעצירת הגירוש מבולגריה עצמה. כ-48,000 יהודים ניצלו, אך השלטונות הבולגריים גירשו להשמדה למעלה מ-11,000 יהודים מתרקיה וממקדוניה שבשליטתם.",
+   "en": "In March 1943 he learned of a plan to deport Bulgaria's Jews and led a protest letter by dozens of MPs that, together with church and public protest, helped halt deportations from Bulgaria proper. About 48,000 Jews were saved, but Bulgarian authorities deported more than 11,000 Jews from occupied Thrace and Macedonia to their deaths."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם, 1973)",
+   "en": "Righteous Among the Nations (Yad Vashem, 1973)"
+  },
+  "importance": 2
+ },
+ {
+  "id": "mohammed-v",
+  "name": {
+   "he": "מוחמד החמישי, סולטן מרוקו",
+   "en": "Mohammed V of Morocco"
+  },
+  "born": 1909,
+  "died": 1961,
+  "active": [
+   1940,
+   1961
+  ],
+  "lon": -6.84,
+  "lat": 34.02,
+  "place": {
+   "he": "רבאט, מרוקו",
+   "en": "Rabat, Morocco"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "סולטן ומלך מרוקו",
+   "en": "Sultan and King of Morocco"
+  },
+  "impact": {
+   "he": "תחת החסות הצרפתית נחתמו בשמו חוקי וישי נגד היהודים, אך לפי מסורת יהודי מרוקו הביע סולידריות עמם ופעל לריכוך יישומם, ויהודי מרוקו לא גורשו למחנות. היקף תפקידו שנוי במחלוקת בין היסטוריונים, אך הוא נותר דמות נערצת בקרב יהודי מרוקו וצאצאיהם.",
+   "en": "Under the French protectorate Vichy's anti-Jewish laws were issued in his name, but Moroccan Jewish tradition holds that he expressed solidarity with Jews and sought to soften their application, and Moroccan Jews were not deported. Historians debate the extent of his role, but he remains revered among Moroccan Jews and their descendants."
+  },
+  "importance": 1
+ },
+ {
+  "id": "andre-trocme",
+  "name": {
+   "he": "אנדרה טרוקמה",
+   "en": "André Trocmé"
+  },
+  "born": 1901,
+  "died": 1971,
+  "active": [
+   1940,
+   1944
+  ],
+  "lon": 4.3,
+  "lat": 45.06,
+  "place": {
+   "he": "לה שאמבון-סור-ליניון, צרפת",
+   "en": "Le Chambon-sur-Lignon, France"
+  },
+  "stance": "ally",
+  "role": {
+   "he": "כומר פרוטסטנטי, מציל",
+   "en": "Protestant pastor and rescuer"
+  },
+  "impact": {
+   "he": "הכומר של הכפר לה שאמבון-סור-ליניון הוביל, עם רעייתו מגדה וקהילתו, רשת הצלה שהסתירה אלפי יהודים, רובם ילדים, בבתים, בחוות ובפנימיות. הכפר והסביבה הפכו לדוגמה נדירה להצלה קהילתית שלמה בתקופת השואה.",
+   "en": "Pastor of the village of Le Chambon-sur-Lignon, he, his wife Magda and his congregation led a rescue network that hid thousands of Jews, mostly children, in homes, farms and boarding schools. The village and its region became a rare example of rescue by an entire community during the Holocaust."
+  },
+  "honor": {
+   "he": "חסיד אומות העולם (יד ושם); הכפר הוכר כקהילה (1990)",
+   "en": "Righteous Among the Nations (Yad Vashem); the village was honored collectively (1990)"
+  },
+  "importance": 2
+ },
+ {
+  "id": "jezebel",
+  "name": {
+   "he": "איזבל",
+   "en": "Jezebel"
+  },
+  "born": null,
+  "died": -843,
+  "active": [
+   -873,
+   -853
+  ],
+  "lon": 35.19,
+  "lat": 32.28,
+  "place": {
+   "he": "שומרון, ממלכת ישראל",
+   "en": "Samaria, Kingdom of Israel"
+  },
+  "stance": "enemy",
+  "role": {
+   "he": "מלכת ישראל",
+   "en": "Queen of Israel"
+  },
+  "impact": {
+   "he": "נסיכה צורית שנישאה לאחאב מלך ישראל, הנהיגה את פולחן הבעל ורדפה את נביאי ה׳, עד שעמד מולה אליהו הנביא. שמה הפך לשם נרדף לרשע.",
+   "en": "A Phoenician princess married to King Ahab of Israel, who promoted Baal worship and persecuted the prophets of God, until Elijah stood against her. Her name became a byword for wickedness."
+  },
+  "importance": 2
+ }
+]

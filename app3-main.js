@@ -199,6 +199,10 @@ $('c-all').onclick=openChapters;
 $('c-sheet').onclick=()=>setSheet($('panel').dataset.open!=='true');
 function setSheet(o){$('panel').dataset.open=o;$('main').classList.toggle('sheet-open',!!o&&phone());$('c-sheet').setAttribute('aria-expanded',o);$('c-sheet').innerHTML=o?'<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>':'<svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg>';$('c-sheet').setAttribute('aria-label',o?L().close2:L().open)}
 
+/* Hebrew calendar: month names + notable dates that "collect" historical events */
+const HMONTH={tishrei:['תשרי','Tishrei'],cheshvan:['חשוון','Cheshvan'],kislev:['כסלו','Kislev'],tevet:['טבת','Tevet'],shevat:['שבט','Shevat'],adar:['אדר','Adar'],nisan:['ניסן','Nisan'],iyar:['אייר','Iyar'],sivan:['סיוון','Sivan'],tammuz:['תמוז','Tammuz'],av:['אב','Av'],elul:['אלול','Elul']};
+const HOLIDAY={'av-9':['תשעה באב',"Tisha B'Av"],'kislev-25':['חנוכה','Hanukkah'],'sivan-6':['שבועות','Shavuot'],'nisan-15':['פסח','Passover'],'tishrei-10':['יום הכיפורים','Yom Kippur'],'tishrei-22':['שמחת תורה','Simchat Torah'],'iyar-5':['יום העצמאות','Independence Day'],'iyar-28':['יום ירושלים','Jerusalem Day'],'cheshvan-12':['יום הזיכרון לרבין','Rabin Memorial Day']};
+function hebDateStr(hd){return (lang==='he'?gem(hd[0])+' ב'+HMONTH[hd[1]][0]:hd[0]+' '+HMONTH[hd[1]][1])}
 /* detail lives inside the panel */
 function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.hidden=false;p.dir=rtl()?'rtl':'ltr';if(phone())setSheet(true);
  const bar=el('div','bar');const bk=el('button','back');bk.innerHTML=(rtl()?ICON.next:ICON.prev);bk.appendChild(document.createTextNode(L().back+tx(eras[curEra].name)));bk.onclick=closeDetail;bar.appendChild(bk);p.appendChild(bar);
@@ -211,8 +215,12 @@ function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.h
  else when=(it.born!=null||it.died!=null)?fmtRange(it.born,it.died):fmtRange(sp[0],sp[1]);
  tags.appendChild(el('span','tag',when));if(it.place)tags.appendChild(el('span','tag',tx(it.place)));
  if(lang==='he'&&it.kind==='event'){const am=amYear(it.year);if(am)tags.appendChild(el('span','tag',gem(am)))}
+ if(it.kind==='event'&&it.hd){const hol=HOLIDAY[it.hd[1]+'-'+it.hd[0]];tags.appendChild(el('span','tag hdate',hebDateStr(it.hd)+((hol&&!it.calendar)?' · '+hol[lang==='he'?0:1]:'')))}
  s.appendChild(tags);
  const main=it.bio||it.impact||it.desc||it.note;if(main)s.appendChild(el('p',null,tx(main)));
+ if(it.kind==='event'&&it.hd){const same=D.events.filter(e=>e.hd&&e.hd[0]===it.hd[0]&&e.hd[1]===it.hd[1]&&e!==it);
+  if(same.length){const box=el('div','samedate');box.appendChild(el('h3',null,(lang==='he'?'גם ב־'+hebDateStr(it.hd)+':':'Also on '+hebDateStr(it.hd)+':')));
+   const ul=el('ul','samelist');same.sort((a,b)=>a.year-b.year).forEach(e=>{const li=el('li');const btn=el('button','samebtn');btn.textContent=tx(e.title)+' · '+fmtYfull(e.year);btn.onclick=()=>select(e);li.appendChild(btn);ul.appendChild(li)});box.appendChild(ul);s.appendChild(box)}}
  if(it.calendar){const c=el('div','cal');c.innerHTML='<svg viewBox="0 0 24 24"><path d="'+G.calendar[1]+'"/></svg>';const d=el('div');d.append(el('b',null,L().calendar),document.createTextNode(tx(it.calendar)));c.appendChild(d);s.appendChild(c)}
  const dl=el('dl','facts');const add=(k,v)=>{if(!v)return;dl.append(el('dt',null,k),el('dd',null,v))};
  if(it.role)add(L().role,tx(it.role));

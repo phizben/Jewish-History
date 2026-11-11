@@ -89,7 +89,11 @@
    "he": "פסח",
    "en": "Passover"
   },
-  "traditional": true
+  "traditional": true,
+  "hd": [
+   15,
+   "nisan"
+  ]
  },
  {
   "id": "sinai",
@@ -114,7 +118,11 @@
    "he": "שבועות",
    "en": "Shavuot"
   },
-  "traditional": true
+  "traditional": true,
+  "hd": [
+   6,
+   "sivan"
+  ]
  },
  {
   "id": "conquest-joshua",
@@ -385,7 +393,11 @@
   "calendar": {
    "he": "תשעה באב",
    "en": "Tisha B'Av"
-  }
+  },
+  "hd": [
+   9,
+   "av"
+  ]
  },
  {
   "id": "babylonian-exile",
@@ -619,7 +631,11 @@
   "calendar": {
    "he": "חנוכה",
    "en": "Hanukkah"
-  }
+  },
+  "hd": [
+   25,
+   "kislev"
+  ]
  },
  {
   "id": "qumran",
@@ -825,7 +841,11 @@
   "calendar": {
    "he": "תשעה באב",
    "en": "Tisha B'Av"
-  }
+  },
+  "hd": [
+   9,
+   "av"
+  ]
  },
  {
   "id": "masada",
@@ -891,7 +911,11 @@
   "calendar": {
    "he": "תשעה באב",
    "en": "Tisha B'Av"
-  }
+  },
+  "hd": [
+   9,
+   "av"
+  ]
  },
  {
   "id": "aelia-capitolina",
@@ -1717,7 +1741,11 @@
   "calendar": {
    "he": "תשעה באב",
    "en": "Tisha B'Av"
-  }
+  },
+  "hd": [
+   9,
+   "av"
+  ]
  },
  {
   "id": "ottoman-refuge",
@@ -2999,7 +3027,11 @@
   "calendar": {
    "he": "יום השואה והגבורה",
    "en": "Yom HaShoah"
-  }
+  },
+  "hd": [
+   15,
+   "nisan"
+  ]
  },
  {
   "id": "denmark-rescue",
@@ -3127,7 +3159,11 @@
   "calendar": {
    "he": "יום העצמאות",
    "en": "Yom Ha'atzmaut"
-  }
+  },
+  "hd": [
+   5,
+   "iyar"
+  ]
  },
  {
   "id": "war-of-independence",
@@ -3343,7 +3379,11 @@
   "calendar": {
    "he": "יום ירושלים",
    "en": "Jerusalem Day"
-  }
+  },
+  "hd": [
+   28,
+   "iyar"
+  ]
  },
  {
   "id": "soviet-jewry",
@@ -3404,7 +3444,11 @@
    "en": "Suez Canal & Golan Heights"
   },
   "type": "war",
-  "importance": 3
+  "importance": 3,
+  "hd": [
+   10,
+   "tishrei"
+  ]
  },
  {
   "id": "entebbe",
@@ -3595,7 +3639,11 @@
   "calendar": {
    "he": "יום הזיכרון ליצחק רבין",
    "en": "Rabin Memorial Day"
-  }
+  },
+  "hd": [
+   12,
+   "cheshvan"
+  ]
  },
  {
   "id": "second-intifada",
@@ -3696,7 +3744,11 @@
    "en": "Be'eri & the Gaza border"
   },
   "type": "catastrophe",
-  "importance": 3
+  "importance": 3,
+  "hd": [
+   22,
+   "tishrei"
+  ]
  },
  {
   "id": "swords-of-iron",

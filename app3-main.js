@@ -62,7 +62,7 @@ function drawBorders(force){const s=snapFor(year);
  // overlay region labels (context) yield to event/selected labels (content) sitting in the same spot
  const strong=[];if(selected&&selected.lon!=null){const sp=proj([selected.lon,selected.lat]);if(sp)strong.push(sp)}
  NOW.events.forEach(e=>{if(majorNow(e)){const sp=proj([e.lon,e.lat]);if(sp)strong.push(sp)}});
- gOvl.selectAll('g').data(ov,o=>o.en).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
+ gOvl.selectAll('g').data(ov,o=>o.en+'|'+o.start).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
   .each(function(o){const g=d3.select(this);let poly;if(o.geo){poly=o.geo}else{poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};}
    g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')).attr('d',gpath(poly));
    const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);const hide=c&&strong.some(mp=>Math.abs(c[0]-mp[0])*k<92&&Math.abs(c[1]-mp[1])*k<26);
@@ -269,7 +269,7 @@ function renderTimeline(){
  // two rows: events, figures. Thin overlapping marks by importance; label only majors that have room.
  // one lane: draw EVERY point (never drop a dot); only labels are de-cluttered.
  const row=(items,cy,cls,labelOf)=>{const pts=items.map(it=>({it,x:X(it._y)})).sort((a,b)=>a.x-b.x);
-  const gap=11;for(let i=1;i<pts.length;i++){if(pts[i].x-pts[i-1].x<gap)pts[i].x=pts[i-1].x+gap;}
+  const gap=fit?0:11;for(let i=1;i<pts.length;i++){if(pts[i].x-pts[i-1].x<gap)pts[i].x=pts[i-1].x+gap;}
   const g0=tl.append('g');pts.forEach(({it,x})=>{const g=g0.append('g').attr('class','bead '+cls(it)+(it===selected?' sel':''));onBead(g,it);g.append('circle').attr('class','m').attr('cx',x).attr('cy',cy).attr('r',it.kind==='event'?5.5:5)})};
  const Eh=lang==='he'?'צוררים':'Persecutors',Ah=lang==='he'?'ידידים':'Allies',Jh=lang==='he'?'יהודים':'Jews';
  const setY=p=>{const s=span(p);p._y=s[0]==null?null:(s[0]+(s[1]??s[0]))/2};
@@ -305,7 +305,7 @@ function scrollToYear(y,smooth){if(fit){sc.scrollLeft=0;setYear(y);return}
  ignoreScroll=true;clearTimeout(isClrT);const sm=smooth&&!reduceMotion();sc.scrollTo({left:x,behavior:sm?'smooth':'auto'});setYear(y);
  // hold the guard until the (possibly long) animation actually stops, so the settle doesn't reset year to center
  isClrT=setTimeout(()=>{ignoreScroll=false},sm?1800:80)}
-sc.addEventListener('scroll',()=>{placeHead();if(fit)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}setYear(Yof(sc.scrollLeft+sc.clientWidth/2));updSpan();dismissHint()},{passive:true});
+sc.addEventListener('scroll',()=>{placeHead();if(fit||playing)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}setYear(Yof(sc.scrollLeft+sc.clientWidth/2));updSpan();dismissHint()},{passive:true});
 sc.addEventListener('wheel',e=>{if(full)return;if(e.ctrlKey||e.metaKey){e.preventDefault();zoomBy(Math.exp(-e.deltaY*0.01));return}const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;if(!d)return;e.preventDefault();nudge((rtl()?-1:1)*d*(fit?.4:1))},{passive:false});
 (()=>{let down=null,dragX=0,edgeRAF=0;const yAt=cx=>Yof(cx-sc.getBoundingClientRect().left+sc.scrollLeft);
  // auto-scroll the view when the dragged needle reaches an edge, so you can scrub the cursor across all of time

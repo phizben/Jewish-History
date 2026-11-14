@@ -498,7 +498,7 @@ function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';
  const re=el('button','btn',he?'הצג מדריך פתיחה':'Show the intro guide');re.style.marginTop='6px';re.onclick=()=>{closeOverlay('help');showIntro(true)};b.appendChild(re);
  b.appendChild(el('h3',null,he?'פידבק':'Feedback'));
  b.appendChild(el('p',null,he?'מצאתם טעות? רוצים להציע דמות או שיפור? נשמח לשמוע.':'Found an error? Want to suggest a figure or improvement? We would love to hear.'));
- const fb=el('a','btn pri',he?'שלחו הערה או דווחו על טעות':'Send feedback or report an error');fb.href='https://docs.google.com/forms/d/e/1FAIpQLSdW5lwurUx2n-7PvcGBlj7ADTMzTyOBHJBKAFscri87aR3PrA/viewform';fb.target='_blank';fb.rel='noopener noreferrer';fb.style.marginTop='6px';fb.style.display='inline-block';b.appendChild(fb);
+ const fb=el('a','btn pri',he?'שלחו הערה או דווחו על טעות':'Send feedback or report an error');fb.href='https://docs.google.com/forms/d/1Rvxd1OOhBkag_fWu3pUV80R67Bazkpj5B8HNTL5MMV0/viewform';fb.target='_blank';fb.rel='noopener noreferrer';fb.style.marginTop='6px';fb.style.display='inline-block';b.appendChild(fb);
  openOverlay('help')}
 $('helpbtn').onclick=openHelp;
 $('fullbtn').onclick=()=>setFull(!full);

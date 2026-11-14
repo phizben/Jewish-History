@@ -64,10 +64,10 @@ function drawBorders(force){const s=snapFor(year);
  NOW.events.forEach(e=>{if(majorNow(e)){const sp=proj([e.lon,e.lat]);if(sp)strong.push(sp)}});
  gOvl.selectAll('g').data(ov,o=>o.en+'|'+o.start).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
   .each(function(o){const g=d3.select(this);let poly;if(o.geo){poly=o.geo}else{poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};}
-   g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')+(o.region==='diaspora'?' dia':'')).attr('d',gpath(poly))
+   g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')+(o.region==='diaspora'?' dia':'')+(o.region==='control'?' ctl':'')).attr('d',gpath(poly))
      .style('cursor',o.ev?'pointer':null).on('click',o.ev?function(e){e.stopPropagation();const it=D.events.find(x=>x.id===o.ev);if(it)select(it)}:null);
    const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);const hide=c&&strong.some(mp=>Math.abs(c[0]-mp[0])*k<92&&Math.abs(c[1]-mp[1])*k<26);
-   g.select('text').classed('inf',o.kind==='influence').classed('dia',o.region==='diaspora').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(hide?'':tx(o))});
+   g.select('text').classed('inf',o.kind==='influence').classed('dia',o.region==='diaspora').classed('ctl',o.region==='control').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(hide?'':tx(o))});
  rescale()}
 function placeLabels(){if(lastSnap==null)return;const fs=polyCache.get(lastSnap)||[];const fsz=11.5/k;
  const named=fs.filter(f=>f.cls!=='pn'&&polyName(f.n));
@@ -225,7 +225,7 @@ function hebDateStr(hd){return (lang==='he'?gem(hd[0])+' ב'+HMONTH[hd[1]][0]:hd
 function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.hidden=false;p.dir=rtl()?'rtl':'ltr';if(phone())setSheet(true);
  const bar=el('div','bar');const bk=el('button','back');bk.innerHTML=(rtl()?ICON.next:ICON.prev);bk.appendChild(document.createTextNode(L().back+tx(eras[curEra].name)));bk.onclick=closeDetail;bar.appendChild(bk);p.appendChild(bar);
  const s=el('div','scroll');const kindKey=it.kind==='gent'?it.stance:it.kind;const col=colorOf(it);
- const kl={comm:L().kComm,person:L().kPerson,event:L().kEvent,ally:L().kAlly,enemy:L().kEnemy,mixed:L().kMixed}[kindKey]+(it.kind==='event'?' · '+L().types[it.type]:'');
+ const kl=(it.convert?(lang==='he'?'יהודי שהמיר את דתו':'A Jew who left Judaism'):{comm:L().kComm,person:L().kPerson,event:L().kEvent,ally:L().kAlly,enemy:L().kEnemy,mixed:L().kMixed}[kindKey])+(it.kind==='event'?' · '+L().types[it.type]:'');
  const kd=el('div','kind');const i=el('i');i.style.background=col;kd.append(i,el('span',null,kl));kd.style.color=col;s.append(kd,el('h2',null,tx(it.name||it.title)));
  const tags=el('div','tags');const sp=span(it);let when;
  if(it.kind==='event')when=it.endYear>it.year?fmtRange(it.year,it.endYear):fmtYfull(it.year);
@@ -357,7 +357,7 @@ $('tz-in').onclick=()=>setTlZoom(tlZoom*1.6);$('tz-out').onclick=()=>setTlZoom(t
  sc.addEventListener('touchstart',e=>{if(e.touches.length===2){d0=dist(e.touches);z0=tlZoom}},{passive:true});
  sc.addEventListener('touchmove',e=>{if(e.touches.length===2&&d0){e.preventDefault();zPending=1;zoomBy(z0*dist(e.touches)/d0/tlZoom)}},{passive:false});
  sc.addEventListener('touchend',e=>{if(e.touches.length<2)d0=0},{passive:true})})();
-function buildLegend(){const l=$('legend');l.innerHTML='';[['ring',null,L().lgEv],['',`var(--brand)`,L().lgJ],['','#eef2f7',lang==='he'?'ממיר/ה דת':'Left Judaism'],['','var(--ally)',L().lgA],['','var(--enemy)',L().lgE],['heat','var(--gold)',L().lgCen],['',`var(--brand)`,lang==='he'?'ריבונות בארץ ישראל':'Sovereignty in the Land'],['','#e6a53c',lang==='he'?'שלטון יהודי מחוץ לארץ':'Jewish rule abroad']].forEach(([c,col,t])=>{const s=el('span');const i=el('i',c);if(col)i.style.background=col;s.append(i,document.createTextNode(t));l.appendChild(s)})}
+function buildLegend(){const l=$('legend');l.innerHTML='';[['ring',null,L().lgEv],['',`var(--brand)`,L().lgJ],['','#eef2f7',lang==='he'?'ממיר/ה דת':'Left Judaism'],['','var(--ally)',L().lgA],['','var(--enemy)',L().lgE],['heat','var(--gold)',L().lgCen],['',`var(--brand)`,lang==='he'?'ריבונות בארץ ישראל':'Sovereignty in the Land'],['','#e6a53c',lang==='he'?'שלטון יהודי מחוץ לארץ':'Jewish rule abroad'],['','#f2c200',lang==='he'?'שליטה צבאית זמנית':'Temporary military control']].forEach(([c,col,t])=>{const s=el('span');const i=el('i',c);if(col)i.style.background=col;s.append(i,document.createTextNode(t));l.appendChild(s)})}
 let markersOn=store.get('markers3',true);
 function applyMarkers(){if(typeof gPts!=='undefined'&&gPts)gPts.style('display',markersOn?null:'none')}
 function renderLayersMenu(){const m=$('layersmenu');if(!m)return;m.innerHTML='';m.dir=rtl()?'rtl':'ltr';

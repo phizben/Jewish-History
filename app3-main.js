@@ -493,6 +493,7 @@ function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';
  link('historical-basemaps (A. Ourednik)','https://github.com/aourednik/historical-basemaps',he?'גבולות היסטוריים, GPL-3.0':'historical borders, GPL-3.0');
  link('Natural Earth / world-atlas','https://github.com/topojson/world-atlas',he?'קווי חוף':'coastlines');
  link('עודידע · Odyeda','https://www.odyeda.com/he/',he?'ציר זמן, דמוגרפיה, ריבונות':'timeline, demography, sovereignty');
+ src.appendChild(el('li',null,he?'האטלס ההיסטורי של עם ישראל — אלי בר-נביא (עורך), משכל / ידיעות אחרונות, 1993 · מקור לישויות, לאירועים ולהקשר ההיסטורי':'A Historical Atlas of the Jewish People — ed. Eli Barnavi, Miskal / Yedioth Ahronoth, 1993 · source for entities, events and historical context'));
  (D.demography.sources||[]).forEach(s=>{if(s.url&&!/odyeda/.test(s.url))link(tx(s),s.url)});b.appendChild(src);
  b.appendChild(el('p',null,he?'מספרי האוכלוסייה, בעיקר לפני 1800, הם הערכות גסות. תאריכי התקופה המקראית משוערים או מסורתיים. הגבולות מקורבים.':'Population figures, especially before 1800, are rough estimates. Biblical dates are approximate or traditional. Borders are approximate.'));
  const re=el('button','btn',he?'הצג מדריך פתיחה':'Show the intro guide');re.style.marginTop='6px';re.onclick=()=>{closeOverlay('help');showIntro(true)};b.appendChild(re);

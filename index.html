@@ -217,7 +217,11 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 #app.full{grid-template-rows:auto minmax(0,1fr)}
 #app.full .dock{display:flex;flex-direction:column;min-height:0}
 #app.full .tlwrap{flex:1;height:auto;min-height:0}
-#app.full .tlscroll{overflow-y:auto}
+#app.full .tlscroll{overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+#app.full .tlscroll::-webkit-scrollbar{width:11px;height:11px}
+#app.full .tlscroll::-webkit-scrollbar-thumb{background:var(--border);border-radius:6px;border:2px solid var(--bg)}
+#app.full .tlscroll::-webkit-scrollbar-thumb:hover{background:var(--label)}
+#app.full .tlscroll::-webkit-scrollbar-track{background:transparent}
 #app.full .legend{display:none}
 .tzoom{display:inline-flex;align-items:center;gap:2px}
 .tzoom button{height:32px;border-radius:8px;display:grid;place-items:center;color:var(--ink-2);font-size:13px;font-weight:600}

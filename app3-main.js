@@ -111,7 +111,7 @@ function drawPoints(){
  const items=[];GROUPS.forEach(g=>{if(layers[g])NOW[g].forEach(it=>items.push(it))});
  const order={comm:0,person:1,gent:1,event:2};items.sort((a,b)=>order[a.kind]-order[b.kind]);
  const sel=gPts.selectAll('g.mk').data(items,d=>d.key);sel.exit().remove();
- const en=sel.enter().append('g').attr('class',d=>'mk '+d.kind+(d.kind==='gent'?' '+d.stance:'')+(d.kind==='event'?' t-'+evTone(d.type):''))
+ const en=sel.enter().append('g').attr('class',d=>'mk '+d.kind+(d.kind==='gent'?' '+d.stance:'')+(d.kind==='event'?' t-'+evTone(d.type):'')+(d.convert?' convert':''))
   .on('click',(e,d)=>{e.stopPropagation();select(d)})
   .on('pointerenter',(e,d)=>{setHover(d);showTip(e,tx(d.name||d.title),tipSub(d))}).on('pointermove',moveTip).on('pointerleave',()=>{setHover(null);hideTip()});
  en.each(function(d){const g=d3.select(this);g.append('circle').attr('class','ring');g.append('circle').attr('class','m');const p=g.append('g').attr('class','pill');p.append('rect');p.append('text')});
@@ -311,7 +311,7 @@ function renderTimeline(){
   secs.push([L().lgEv,y]);y=sectionFull(ev0.filter(p=>p._y!=null),y,e=>'event t-'+evTone(e.type),e=>tx(e.title));y+=6;
   secs.push([Eh,y]);y=sectionFull(en0.filter(p=>p._y!=null),y,p=>p.stance,p=>tx(p.name));y+=6;
   secs.push([Ah,y]);y=sectionFull(al0.filter(p=>p._y!=null),y,p=>p.stance,p=>tx(p.name));y+=6;
-  secs.push([Jh,y]);y=sectionFull(jew0.filter(p=>p._y!=null),y,p=>'person',p=>tx(p.name));
+  secs.push([Jh,y]);y=sectionFull(jew0.filter(p=>p._y!=null),y,p=>'person'+(p.convert?' convert':''),p=>tx(p.name));
   const H=Math.max((sc.clientHeight||400),y+6);tl.attr('height',H);gG.selectAll('line').attr('y2',H);
   positionRowTags(secs);
  }else{
@@ -319,7 +319,7 @@ function renderTimeline(){
   row(ev0.filter(e=>e.importance>=impMin),yE+eh+18,e=>'event t-'+evTone(e.type),e=>tx(e.title));
   row(en0.filter(p=>p._y!=null&&p.importance>=impMin),yE+eh+44,p=>p.stance,p=>tx(p.name));
   row(al0.filter(p=>p._y!=null&&p.importance>=impMin),yE+eh+70,p=>p.stance,p=>tx(p.name));
-  row(jew0.filter(p=>p._y!=null&&p.importance>=impMin),yE+eh+96,p=>'person',p=>tx(p.name));
+  row(jew0.filter(p=>p._y!=null&&p.importance>=impMin),yE+eh+96,p=>'person'+(p.convert?' convert':''),p=>tx(p.name));
   positionRowTags([[L().lgEv,yE+eh+18],[Eh,yE+eh+44],[Ah,yE+eh+70],[Jh,yE+eh+96]]);
  }
  placeHead();updZoomUI();scrollToYear(year,false)}
@@ -357,7 +357,7 @@ $('tz-in').onclick=()=>setTlZoom(tlZoom*1.6);$('tz-out').onclick=()=>setTlZoom(t
  sc.addEventListener('touchstart',e=>{if(e.touches.length===2){d0=dist(e.touches);z0=tlZoom}},{passive:true});
  sc.addEventListener('touchmove',e=>{if(e.touches.length===2&&d0){e.preventDefault();zPending=1;zoomBy(z0*dist(e.touches)/d0/tlZoom)}},{passive:false});
  sc.addEventListener('touchend',e=>{if(e.touches.length<2)d0=0},{passive:true})})();
-function buildLegend(){const l=$('legend');l.innerHTML='';[['ring',null,L().lgEv],['',`var(--brand)`,L().lgJ],['','var(--ally)',L().lgA],['','var(--enemy)',L().lgE],['heat','var(--gold)',L().lgCen],['',`var(--brand)`,lang==='he'?'ריבונות בארץ ישראל':'Sovereignty in the Land'],['','#e6a53c',lang==='he'?'שלטון יהודי מחוץ לארץ':'Jewish rule abroad']].forEach(([c,col,t])=>{const s=el('span');const i=el('i',c);if(col)i.style.background=col;s.append(i,document.createTextNode(t));l.appendChild(s)})}
+function buildLegend(){const l=$('legend');l.innerHTML='';[['ring',null,L().lgEv],['',`var(--brand)`,L().lgJ],['','#eef2f7',lang==='he'?'ממיר/ה דת':'Left Judaism'],['','var(--ally)',L().lgA],['','var(--enemy)',L().lgE],['heat','var(--gold)',L().lgCen],['',`var(--brand)`,lang==='he'?'ריבונות בארץ ישראל':'Sovereignty in the Land'],['','#e6a53c',lang==='he'?'שלטון יהודי מחוץ לארץ':'Jewish rule abroad']].forEach(([c,col,t])=>{const s=el('span');const i=el('i',c);if(col)i.style.background=col;s.append(i,document.createTextNode(t));l.appendChild(s)})}
 let markersOn=store.get('markers3',true);
 function applyMarkers(){if(typeof gPts!=='undefined'&&gPts)gPts.style('display',markersOn?null:'none')}
 function renderLayersMenu(){const m=$('layersmenu');if(!m)return;m.innerHTML='';m.dir=rtl()?'rtl':'ltr';
@@ -484,7 +484,7 @@ function openHelp(){const b=$('helpbox');b.innerHTML='';b.dir=rtl()?'rtl':'ltr';
  const sh=el('div','sh');sh.append(el('h2',null,L().title));const x=el('button','ibtn','✕');x.setAttribute('data-close','');x.setAttribute('aria-label',L().close);sh.appendChild(x);b.appendChild(sh);
  b.appendChild(el('p',null,he?'שלושה חלקים: ציר הזמן למטה קובע את השנה, הרשימה בצד אומרת מה קורה בה, והמפה מראה איפה. ציר הזמן לא אחיד: תקופות סוערות מקבלות יותר מקום.':'Three parts: the timeline at the bottom sets the year, the side list says what is happening, and the map shows where. Time is uneven on purpose: turbulent eras get more room.'));
  b.appendChild(el('h3',null,he?'איך נבחרו הדמויות':'How the figures were chosen'));
- b.appendChild(el('p',null,he?'דמות נכללת אם היא נקודת-ציון בהיסטוריה היהודית שתיזכר גם בעוד דורות — לא לפי תהילה רגעית ("מבחן אלף השנה"). "דמות יהודית" = מי שיהדותו קשורה למשמעותו ההיסטורית או לגורל העם (ולכן, למשל, שפינוזה וישו נכללים ומרקס לא). לא-יהודים נכללים כ"ידידים", "צוררים" או "דמויות מורכבות" לפי יחסם לעם, והשתדלנו לאזן בין התקופות ולהימנע מהטיה לטובת ההווה.':'A figure is included if they are a landmark in Jewish history likely to be remembered for generations — not for momentary fame (a "thousand-year test"). A "Jewish figure" means someone whose Jewishness is bound up with their historical meaning or with the fate of the people (so, for example, Spinoza and Jesus are included but Marx is not). Non-Jews appear as "allies", "persecutors" or "mixed legacies" by their relationship to the people, and we tried to balance the eras and avoid a bias toward the present.'));
+ b.appendChild(el('p',null,he?'דמות נכללת אם היא נקודת-ציון בהיסטוריה היהודית שתיזכר גם בעוד דורות — לא לפי תהילה רגעית ("מבחן אלף השנה"). "דמות יהודית" = מי שיהדותו קשורה למשמעותו ההיסטורית או לגורל העם (ולכן, למשל, שפינוזה נכלל). דמויות שהמירו את דתן — כגון ישו, פאולוס, מרקס, שבתי צבי ויעקב פרנק — מופיעות בקטגוריה נפרדת (״ממירי דת״, בלבן). לא-יהודים נכללים כ"ידידים", "צוררים" או "דמויות מורכבות" לפי יחסם לעם, והשתדלנו לאזן בין התקופות ולהימנע מהטיה לטובת ההווה.':'A figure is included if they are a landmark in Jewish history likely to be remembered for generations — not for momentary fame (a "thousand-year test"). A "Jewish figure" means someone whose Jewishness is bound up with their historical meaning or with the fate of the people (so, for example, Spinoza is included). Figures who left Judaism — such as Jesus, Paul, Marx, Shabbetai Zvi and Jacob Frank — appear in a separate category (Left Judaism, in white). Non-Jews appear as "allies", "persecutors" or "mixed legacies" by their relationship to the people, and we tried to balance the eras and avoid a bias toward the present.'));
  b.appendChild(el('h3',null,he?'צבעי התקופות':'Era colors'));
  b.appendChild(el('p',null,he?'הפסים הצבעוניים בציר הזמן מסמנים את תקופות ההיסטוריה היהודית (חלוקה היסטורית — חלקה לפי דורות ההלכה, והעידן המודרני לפי אבני-דרך לאומיות):':'The colored bands on the timeline mark the eras of Jewish history (a historical division — partly by the generations of halakhic authorities, and the modern era by national milestones):'));
  const eg=el('div','erakey');

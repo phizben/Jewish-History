@@ -253,6 +253,7 @@ function timelinePlay(){
  b.appendChild(el('div','g-tlq',it.kind==='event'?L().tlPrompt:L().tlPromptLife));
  const B=buildBand();b.appendChild(B.wrap);
  const read=el('div','g-read');const eraLbl=el('span','g-readera');const yrLbl=el('span','g-readyr');read.append(eraLbl,yrLbl);b.appendChild(read);
+ const steprow=el('div','g-steprow');b.appendChild(steprow);
  const hint=el('div','g-tlhint',L().tlDrag);b.appendChild(hint);
  const act=el('button','g-next',L().tlConfirm);act.disabled=true;b.appendChild(act);
 
@@ -267,9 +268,14 @@ function timelinePlay(){
  const up=()=>{drag=false};
  B.track.addEventListener('pointerdown',dn);B.track.addEventListener('pointermove',mv);
  addEventListener('pointerup',up);B.track.addEventListener('pointercancel',up);
+ // fine-tune: scroll wheel over the band + stepper buttons (operate on the year value directly)
+ function setYearVal(y){const cy=Math.max(MINY,Math.min(MAXY,Math.round(y)));gf=(cy-MINY)/SPAN;B.guess.style.insetInlineStart=(gf*100)+'%';yrLbl.textContent=fmtYfull(cy);eraLbl.textContent=tx(eraOf(cy).name);if(!placed){placed=true;act.disabled=false;hint.style.display='none';B.guess.classList.add('on')}}
+ const nudge=d=>{if(confirmed)return;setYearVal(yearOf(gf)+d)};
+ [[-100,'−100'],[-10,'−10'],[-1,'−1'],[1,'+1'],[10,'+10'],[100,'+100']].forEach(([d,lbl])=>{const bt=el('button','g-step',lbl);bt.type='button';bt.onclick=()=>nudge(d);steprow.appendChild(bt)});
+ B.wrap.addEventListener('wheel',e=>{if(confirmed)return;e.preventDefault();const st=e.deltaMode===1?1:Math.max(1,Math.round(Math.abs(e.deltaY)/40));nudge(e.deltaY<0?st:-st)},{passive:false});
 
  act.onclick=()=>{
-  if(!placed||confirmed)return;confirmed=true;drag=false;
+  if(!placed||confirmed)return;confirmed=true;drag=false;steprow.style.display='none';
   const guessY=yearOf(gf),realY=it.y,gap=Math.abs(guessY-realY);
   const pts=Math.round(100*Math.exp(-gap/180));GS.score+=pts;GS.marks.push(pts>=50);
   B.real.style.insetInlineStart=(B.sc.inset(realY)*100)+'%';B.real.style.display='';

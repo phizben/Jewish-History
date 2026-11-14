@@ -276,7 +276,7 @@ function sectionFull(items,startY,cls,labelOf){const R=rtl();const {out,rows}=pa
   gg.append('text').attr('class','blab'+(it.importance>=3?' major':'')).attr('x',R?x-9:x+9).attr('y',cy+4).attr('text-anchor',R?'end':'start').text(labelOf(it))});
  return startY+rows*22+12}
 function renderTimeline(){
- const vw=sc.clientWidth||800;layoutScale(vw);fit=total<=vw-39;PAD=fit?Math.round((vw-total)/2):Math.round(vw/2);sc.classList.toggle('fit',fit);
+ const vw=sc.clientWidth||800;layoutScale(vw);fit=total<=vw-39;PAD=fit?Math.round((vw-total)/2):40;sc.classList.toggle('fit',fit);
  const W=fit?vw:total+PAD*2;tl.attr('width',W).attr('height',full?156:176);tl.selectAll('*').remove();ensureGlow(tl);
  const R=rtl();const gG=tl.append('g').attr('class','grid');
  // ticks
@@ -357,7 +357,7 @@ function buildLegend(){const l=$('legend');l.innerHTML='';[['ring',null,L().lgEv
 let markersOn=store.get('markers3',true);
 function applyMarkers(){if(typeof gPts!=='undefined'&&gPts)gPts.style('display',markersOn?null:'none')}
 function renderLayersMenu(){const m=$('layersmenu');if(!m)return;m.innerHTML='';m.dir=rtl()?'rtl':'ltr';
- const row=(label,color,on,fn)=>{const btn=el('button');btn.setAttribute('aria-pressed',on);const d=el('span','dot');d.style.background=color;const t=el('span',null,label);t.style.flex='1';const sw=el('span','sw');btn.append(d,t,sw);btn.onclick=()=>{fn();renderLayersMenu()};return btn};
+ const row=(label,color,on,fn)=>{const btn=el('button');btn.setAttribute('aria-pressed',on);const d=el('span','dot');d.style.background=color;const t=el('span',null,label);t.style.flex='1';const sw=el('span','sw');btn.append(d,t,sw);btn.onclick=e=>{e.stopPropagation();fn();renderLayersMenu()};return btn};
  m.append(
   row(L().lgCen,'var(--gold)',heatOn,()=>{heatOn=!heatOn;store.set('heat3',heatOn);drawCenters();drawEdge()}),
   row(L().lgMarkers,'var(--brand)',markersOn,()=>{markersOn=!markersOn;store.set('markers3',markersOn);applyMarkers();drawCenters()})

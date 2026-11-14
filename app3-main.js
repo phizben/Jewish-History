@@ -64,7 +64,8 @@ function drawBorders(force){const s=snapFor(year);
  NOW.events.forEach(e=>{if(majorNow(e)){const sp=proj([e.lon,e.lat]);if(sp)strong.push(sp)}});
  gOvl.selectAll('g').data(ov,o=>o.en+'|'+o.start).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
   .each(function(o){const g=d3.select(this);let poly;if(o.geo){poly=o.geo}else{poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};}
-   g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')+(o.region==='diaspora'?' dia':'')).attr('d',gpath(poly));
+   g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')+(o.region==='diaspora'?' dia':'')).attr('d',gpath(poly))
+     .style('cursor',o.ev?'pointer':null).on('click',o.ev?function(e){e.stopPropagation();const it=D.events.find(x=>x.id===o.ev);if(it)select(it)}:null);
    const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);const hide=c&&strong.some(mp=>Math.abs(c[0]-mp[0])*k<92&&Math.abs(c[1]-mp[1])*k<26);
    g.select('text').classed('inf',o.kind==='influence').classed('dia',o.region==='diaspora').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(hide?'':tx(o))});
  rescale()}
@@ -577,7 +578,8 @@ $('langbtn').onclick=()=>{lang=lang==='he'?'en':'he';store.set('lang',lang);appl
  showIntro();
  addEventListener('hashchange',()=>{const i=eras.findIndex(e=>e.id===location.hash.slice(1));if(i>=0&&i!==curEra)goEra(i)});
  let lastWH='';try{new ResizeObserver(()=>{const r=$('mapwrap').getBoundingClientRect();const wh=Math.round(r.width)+'x'+Math.round(r.height);if(wh===lastWH||r.width<50)return;lastWH=wh;
-  const t=d3.zoomTransform(svg.node());const c=proj.invert(t.invert([mw/2,mh/2]));sizeMap();if(c){const pp=proj(c);svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(t.k).translate(-pp[0],-pp[1]))}}).observe($('mapwrap'))}catch(_){}
+  const t=d3.zoomTransform(svg.node());const c=proj.invert(t.invert([mw/2,mh/2]));sizeMap();
+  if(c&&isFinite(c[0])&&isFinite(c[1])){const pp=proj(c);if(pp&&isFinite(pp[0])&&isFinite(pp[1])&&isFinite(t.k))svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(t.k).translate(-pp[0],-pp[1]))}}).observe($('mapwrap'))}catch(_){}
  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{renderTimeline()},150)});
 })();
 })();

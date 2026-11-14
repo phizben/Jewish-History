@@ -1,7 +1,7 @@
 const fs=require('fs');const R=f=>JSON.parse(fs.readFileSync('data/'+f));
 const g=R('gentiles.json').concat(R('gentiles_extra.json'));
 const sheet=['pharaoh-exodus','amalek','ruth','shishak','hazael','sennacherib','taharqa','nebuchadnezzar-ii','haman','cyrus-the-great','antiochus-iv','pompey','vespasian','titus','hadrian','theodosius-i','constantine-the-great','theodosius-ii','shapur-i','justinian-i','muhammad','umar-ibn-al-khattab','bulan','charlemagne','al-hakim','emicho-of-leiningen','innocent-iii','boleslaw-the-pious','edward-i','philip-iv','casimir-iii','ferdinand-isabella','bayezid-ii','joao-iii','martin-luther','suleiman','william-the-silent','khmelnytsky','oliver-cromwell','al-mahdi-ahmad','catherine-the-great','napoleon','franz-joseph','alexander-iii','arthur-balfour','symon-petliura','winston-churchill','malcolm-macdonald','adolf-hitler','joseph-stalin','haj-amin-al-husseini','harry-truman','gamal-abdel-nasser','bourges-maunoury','richard-nixon','anwar-sadat','ruhollah-khomeini','mikhail-gorbachev','donald-trump'];
-const over={napoleon:'ally','joseph-stalin':'enemy','constantine-the-great':'enemy','anwar-sadat':'mixed','richard-nixon':'mixed','alexander-the-great':'mixed'};
+const over={napoleon:'ally','joseph-stalin':'enemy','constantine-the-great':'enemy','anwar-sadat':'mixed','richard-nixon':'mixed'};
 const keepGentiles=new Set(['abd-al-rahman-iii','alexander-the-great']);
 const ids=new Set(g.map(x=>x.id));sheet.filter(s=>!ids.has(s)).forEach(s=>console.log('missing sheet id',s));
 g.forEach(x=>{if(sheet.includes(x.id))x.sheet=1;if(over[x.id])x.stance=over[x.id];});

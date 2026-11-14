@@ -907,11 +907,28 @@ let rsq=0;function rescale(){if(rsq)return;rsq=requestAnimationFrame(()=>{rsq=0;
  gHL.selectAll('text.heatlabel').attr('font-size',(12.5/k)+'px').style('stroke-width',(3/k)+'px')})}
 function setHover(d){if(hovered===d)return;hovered=d;gPts.selectAll('g.mk').classed('hl',x=>x===d);gPts.selectAll('g.mk').filter(x=>x===d).raise();
  document.querySelectorAll('#list .item').forEach(b=>b.classList.toggle('hl',!!d&&b.dataset.k===d.key));tl.selectAll('.bead').classed('hl',function(){return !!d&&this.dataset.k===d.key})}
-function centerOn(lon,lat){const p=proj([lon,lat]);if(!p)return;const t=d3.zoomTransform(svg.node());const kk=Math.max(t.k,3);
- camAnim=true;svg.transition('cam').duration(reduceMotion()?0:700).call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
+function mapViewCenter(){ // center of the map NOT hidden by the overlay panel (bottom sheet on phone; side column on desktop doesn't overlap)
+ let cx=mw/2,cy=mh/2;
+ try{const mr=$('mapwrap').getBoundingClientRect(),pr=$('panel').getBoundingClientRect();
+  const ox0=Math.max(mr.left,pr.left),ox1=Math.min(mr.right,pr.right),oy0=Math.max(mr.top,pr.top),oy1=Math.min(mr.bottom,pr.bottom);
+  if(ox1-ox0>1&&oy1-oy0>1&&mr.width>0&&mr.height>0){ // panel actually overlaps the map
+   const covW=(ox1-ox0)/mr.width,covH=(oy1-oy0)/mr.height;
+   if(covW>=0.9&&covH<0.98){ // full-width band (top/bottom sheet): shrink vertical extent
+    const topFree=pr.top-mr.top,botFree=mr.bottom-pr.bottom;
+    cy=topFree>=botFree?Math.max(24,topFree)/2:mh-Math.max(24,botFree)/2;
+   }else if(covH>=0.9&&covW<0.98){ // full-height band (side overlay): shrink horizontal extent
+    const leftFree=pr.left-mr.left,rightFree=mr.right-pr.right;
+    cx=leftFree>=rightFree?Math.max(24,leftFree)/2:mw-Math.max(24,rightFree)/2;
+   }
+  }
+ }catch(_){}
+ return [cx,cy];
+}
+function centerOn(lon,lat){const p=proj([lon,lat]);if(!p)return;const t=d3.zoomTransform(svg.node());const kk=Math.max(t.k,3);const[cx,cy]=mapViewCenter();
+ camAnim=true;svg.transition('cam').duration(reduceMotion()?0:700).call(zoom.transform,d3.zoomIdentity.translate(cx,cy).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
 function camZoom(z){return Math.max(1,Math.min(60,(z||3)*(phone()?0.85:1)))}
-function flyToView(v,dur){if(!v)return;const p=proj([v.lon,v.lat]);if(!p)return;const kk=camZoom(v.zoom);
- camAnim=true;svg.transition('cam').duration(reduceMotion()?0:(dur==null?900:dur)).call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
+function flyToView(v,dur){if(!v)return;const p=proj([v.lon,v.lat]);if(!p)return;const kk=camZoom(v.zoom);const[cx,cy]=mapViewCenter();
+ camAnim=true;svg.transition('cam').duration(reduceMotion()?0:(dur==null?900:dur)).call(zoom.transform,d3.zoomIdentity.translate(cx,cy).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
 function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.innerHTML=on?ICON.follow:ICON.followOff;b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on)flyToView((eras[curEra]||{}).view)}
 $('mfollow').onclick=()=>setFollow(!follow);
 $('zin').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1.6)};
@@ -1005,7 +1022,7 @@ function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.h
  if(it.works&&it.works.length){s.appendChild(el('h3',null,L().works));const ul=el('ul','works');it.works.forEach(w=>ul.appendChild(el('li',null,tx(w))));s.appendChild(ul)}
  if(it.kind==='comm'&&it.pop&&it.pop.length>1){s.appendChild(el('h3',null,L().popHist));s.appendChild(spark(it))}
  const ac=el('div','acts2');const g1=el('button','btn pri',L().goTime);g1.onclick=()=>scrollToYear(anchorYear(it),true);
- const g2=el('button','btn',L().showMap);g2.onclick=()=>{centerOn(it.lon,it.lat);if(phone())setSheet(false)};ac.append(g1,g2);s.appendChild(ac);
+ const g2=el('button','btn',L().showMap);g2.onclick=()=>{if(phone()){setSheet(false);setTimeout(()=>centerOn(it.lon,it.lat),reduceMotion()?0:300)}else centerOn(it.lon,it.lat)};ac.append(g1,g2);s.appendChild(ac);
  p.appendChild(s);bk.focus({preventScroll:true});
  drawBorders();drawPoints();markSel()}
 function markSel(){tl.selectAll('.bead').classed('sel',function(){return !!selected&&this.dataset.k===selected.key})}

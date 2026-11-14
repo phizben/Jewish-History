@@ -58,7 +58,7 @@ function polyName(n){if(lang==='he')return PN[n]||null;return n.replace(/\s*\((G
 function drawBorders(force){const s=snapFor(year);
  if(s!==lastSnap||force){lastSnap=s;const fs=snapFeatures(s);
   gPoly.selectAll('path').data(fs,f=>f.n).join('path').attr('class',f=>'poly '+f.cls).attr('d',f=>f.d);placeLabels()}
- const ov=D.extras.overlays.filter(o=>year>=o.start&&year<=o.end);
+ const ov=D.extras.overlays.filter(o=>year>=o.start&&year<o.end);
  // overlay region labels (context) yield to event/selected labels (content) sitting in the same spot
  const strong=[];if(selected&&selected.lon!=null){const sp=proj([selected.lon,selected.lat]);if(sp)strong.push(sp)}
  NOW.events.forEach(e=>{if(majorNow(e)){const sp=proj([e.lon,e.lat]);if(sp)strong.push(sp)}});

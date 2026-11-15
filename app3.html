@@ -253,8 +253,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .datediv line{stroke:#b07a2a;stroke-width:1.6;stroke-dasharray:6 5;opacity:.75;pointer-events:stroke;cursor:help}
 .datediv-lab{font-size:10.5px;font-weight:700;fill:#a06a1f;letter-spacing:.2px;paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;cursor:help}
 .blab.major{font-weight:600;fill:var(--ink)}
-.rowtags{position:absolute;top:0;inset-inline-start:0;height:0;z-index:3;pointer-events:none}
-.rowtags div{position:absolute;inset-inline-start:4px;font-size:12.5px;font-weight:700;color:var(--ink-2);background:color-mix(in srgb,var(--paper) 86%,transparent);padding:2px 9px;border-radius:999px;white-space:nowrap;line-height:1.45}
+.rowtags{position:absolute;top:0;inset-inline-start:0;height:0;z-index:6;pointer-events:none}
+.rowtags div{position:absolute;inset-inline-start:4px;font-size:12.5px;font-weight:700;color:var(--ink-2);background:var(--paper);box-shadow:0 0 0 3px var(--paper);padding:2px 9px;border-radius:999px;white-space:nowrap;line-height:1.45}
 .playhead{position:absolute;top:0;bottom:0;width:0;pointer-events:none;z-index:4}
 .playhead::after{content:"";position:absolute;top:22px;bottom:0;left:-1px;width:2px;background:var(--gold)}
 .playhead .knob{position:absolute;top:2px;left:50%;transform:translateX(-50%);background:var(--gold);color:#2B1C02;font-weight:700;font-size:12px;padding:1px 9px;border-radius:999px;white-space:nowrap;font-variant-numeric:tabular-nums}

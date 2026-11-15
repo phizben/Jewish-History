@@ -1114,13 +1114,12 @@ function renderTimeline(){
   row(jew0.filter(p=>p._y!=null&&p.importance>=impMin),yE+eh+96,p=>'person'+(p.convert?' convert':''),p=>tx(p.name));
   positionRowTags([[L().lgEv,yE+eh+18],[Eh,yE+eh+44],[Ah,yE+eh+70],[Jh,yE+eh+96]]);
  }
- // dating divider: tradition-only (earlier) vs externally-corroborated dating (from David's era, ~-1010)
- {const dy=-1010,dx=X(dy),Hh=+tl.attr('height'),yc=Math.min(Hh-14,Math.max(96,Hh*0.5));
+ // dating divider: tradition-only (earlier) vs dating corroborated by sources outside the Tanakh (from David's era, ~-1010). Line sits below the era/subject bands so it doesn't cut through them; label in the clear gap.
+ {const dy=-1010,dx=X(dy),Hh=+tl.attr('height'),ytop=yE+eh;
   const gd=tl.append('g').attr('class','datediv');
-  const ln=gd.append('line').attr('x1',dx).attr('x2',dx).attr('y1',yE).attr('y2',Hh);
-  const lx=R?dx+12:dx-12;
-  const lab=gd.append('text').attr('class','datediv-lab').attr('x',lx).attr('y',yc).attr('transform','rotate(-90 '+lx+' '+yc+')').attr('text-anchor','middle').text(lang==='he'?'ראשית התיארוך החיצוני':'External dating begins');
-  const tip=lang==='he'?'לפני קו זה — תיארוך לפי המסורת בלבד. מכאן ואילך (מימי דוד המלך) התיארוך נתמך גם במקורות חיצוניים (כתובת תל דן, מקורות אשוריים ומצריים).':"Before this line, dates rest on tradition alone. From here (King David's era) dating is also backed by external sources (the Tel Dan stele, Assyrian and Egyptian records).";
+  const ln=gd.append('line').attr('x1',dx).attr('x2',dx).attr('y1',ytop).attr('y2',Hh);
+  const lab=gd.append('text').attr('class','datediv-lab').attr('x',dx+84).attr('y',ytop+10).attr('text-anchor','middle').text(lang==='he'?'ראשית תיארוך חיצוני לתנ״ך':'Extra-biblical dating begins');
+  const tip=lang==='he'?'לפני קו זה — תיארוך לפי המסורת בלבד. מכאן ואילך (מימי דוד המלך) יש תיארוך היסטורי הנתמך במקורות חיצוניים לתנ״ך (כתובת תל דן, מקורות אשוריים ומצריים).':"Before this line, dates rest on tradition alone. From here (King David's era) dating is supported by sources outside the Bible (the Tel Dan stele, Assyrian and Egyptian records).";
   ln.append('title').text(tip);lab.append('title').text(tip);}
  placeHead();updZoomUI();scrollToYear(year,false)}
 function setFull(o){full=o;$('app').classList.toggle('full',o);const b=$('fullbtn');if(b){b.setAttribute('aria-pressed',o);b.querySelector('span').textContent=o?L().fullOff:L().full}

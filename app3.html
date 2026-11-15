@@ -321,6 +321,17 @@ kbd{font-family:var(--f-ui);font-size:12.5px;font-weight:600;min-width:26px;text
   .panel:not([data-open="true"]) .chap .no{display:none}
   .panel:not([data-open="true"]) .chap .row{position:absolute;inset-inline-end:8px;top:12px}
   .panel:not([data-open="true"]) .chap h2{padding-inline-end:110px}
+  /* collapsed sheet: when an item is selected, peek shows its name (not the back bar); tap to expand */
+  .panel:not([data-open="true"]) .detail .bar{display:none}
+  .panel:not([data-open="true"]) .detail .scroll{padding:12px 14px 0;overflow:hidden}
+  .panel:not([data-open="true"]) .detail .scroll>*{display:none}
+  .panel:not([data-open="true"]) .detail .scroll>.kind,.panel:not([data-open="true"]) .detail .scroll>h2{display:block}
+  .panel:not([data-open="true"]) .detail .scroll>h2{font-size:18px;margin:2px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-inline-end:48px}
+  .panel:not([data-open="true"]) .detail{cursor:pointer}
+  /* keep the open/close toggle floating above the detail overlay; hide chapter-nav while a detail is shown */
+  .panel.has-detail .chap .row{position:absolute;inset-inline-end:8px;top:10px;z-index:7}
+  .panel.has-detail .chap .row .nbtn:not(.sheetbtn){display:none}
+  .panel.has-detail .detail .bar{padding-inline-end:46px}
   .legend,.tzspan{display:none}
   .fullbtn span{display:none}
   .fullbtn{padding:0 10px}

@@ -216,6 +216,7 @@ $('c-prev').onclick=()=>goEra(Math.max(0,curEra-1));$('c-next').onclick=()=>goEr
 $('c-more').onclick=()=>{const c=$('chap');const m=c.dataset.more!=='true';c.dataset.more=m;$('c-more').textContent=m?(lang==='he'?'פחות':'Less'):(lang==='he'?'קרא עוד':'Read more')};
 $('c-all').onclick=openChapters;
 $('c-sheet').onclick=()=>setSheet($('panel').dataset.open!=='true');
+$('detail').addEventListener('click',e=>{if(phone()&&$('panel').dataset.open!=='true'&&!e.target.closest('button,a')){setSheet(true)}});
 function setSheet(o){$('panel').dataset.open=o;$('main').classList.toggle('sheet-open',!!o&&phone());$('c-sheet').setAttribute('aria-expanded',o);$('c-sheet').innerHTML=o?'<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>':'<svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg>';$('c-sheet').setAttribute('aria-label',o?L().close2:L().open)}
 
 /* Hebrew calendar: month names + notable dates that "collect" historical events */
@@ -223,7 +224,7 @@ const HMONTH={tishrei:['תשרי','Tishrei'],cheshvan:['חשוון','Cheshvan'],
 const HOLIDAY={'av-9':['תשעה באב',"Tisha B'Av"],'kislev-25':['חנוכה','Hanukkah'],'sivan-6':['שבועות','Shavuot'],'nisan-15':['פסח','Passover'],'tishrei-10':['יום הכיפורים','Yom Kippur'],'tishrei-22':['שמחת תורה','Simchat Torah'],'iyar-5':['יום העצמאות','Independence Day'],'iyar-28':['יום ירושלים','Jerusalem Day'],'cheshvan-12':['יום הזיכרון לרבין','Rabin Memorial Day']};
 function hebDateStr(hd){return (lang==='he'?gem(hd[0])+' ב'+HMONTH[hd[1]][0]:hd[0]+' '+HMONTH[hd[1]][1])}
 /* detail lives inside the panel */
-function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.hidden=false;p.dir=rtl()?'rtl':'ltr';if(phone())setSheet(true);
+function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.hidden=false;p.dir=rtl()?'rtl':'ltr';$('panel').classList.add('has-detail');
  const bar=el('div','bar');const bk=el('button','back');bk.innerHTML=(rtl()?ICON.next:ICON.prev);bk.appendChild(document.createTextNode(L().back+tx(eras[curEra].name)));bk.onclick=closeDetail;bar.appendChild(bk);p.appendChild(bar);
  const s=el('div','scroll');const kindKey=it.kind==='gent'?it.stance:it.kind;const col=colorOf(it);
  const kl=(it.convert?(lang==='he'?'יהודי שהמיר את דתו':'A Jew who left Judaism'):{comm:L().kComm,person:L().kPerson,event:L().kEvent,ally:L().kAlly,enemy:L().kEnemy,mixed:L().kMixed}[kindKey])+(it.kind==='event'?' · '+L().types[it.type]:'');
@@ -254,7 +255,7 @@ function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.h
  p.appendChild(s);bk.focus({preventScroll:true});
  drawBorders();drawPoints();markSel()}
 function markSel(){tl.selectAll('.bead').classed('sel',function(){return !!selected&&this.dataset.k===selected.key})}
-function closeDetail(){selected=null;$('detail').hidden=true;drawBorders();drawPoints();markSel()}
+function closeDetail(){selected=null;$('detail').hidden=true;$('panel').classList.remove('has-detail');drawBorders();drawPoints();markSel()}
 function spark(c){const w=320,h=76;const ns='http://www.w3.org/2000/svg';const s=document.createElementNS(ns,'svg');s.setAttribute('viewBox',`0 0 ${w} ${h}`);s.setAttribute('class','spark');s.style.width='100%';
  const pts=c.pop;const x=d3.scaleLinear().domain(d3.extent(pts,d=>d[0])).range(rtl()?[w-30,30]:[30,w-30]);const y=d3.scaleLinear().domain([0,d3.max(pts,d=>d[1])]).range([h-18,10]);
  const p=document.createElementNS(ns,'path');p.setAttribute('d',d3.area().x(d=>x(d[0])).y0(h-18).y1(d=>y(d[1])).curve(d3.curveMonotoneX)(pts));s.appendChild(p);

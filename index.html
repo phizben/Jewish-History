@@ -186,6 +186,9 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 /* ---------- timeline ---------- */
 .dock{background:var(--paper);border-top:1px solid var(--hair);padding-bottom:env(safe-area-inset-bottom,0px)}
 .dbar{display:flex;align-items:center;gap:10px;padding-block:6px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+/* Freeze the shell (top bar, panel side, dock controls) to LTR so nothing moves on language switch; Hebrew text inside still reads RTL */
+.top,.main,.dbar{direction:ltr}
+[dir="rtl"] .panel,[dir="rtl"] .legend{direction:rtl}
 .play{width:38px;height:38px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;flex:none}
 .play svg{width:16px;height:16px;fill:currentColor}
 [dir="rtl"] .play .tri{transform:scaleX(-1);transform-origin:center}
@@ -263,6 +266,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .bead.convert .m{fill:#eef2f7}
 .bead:hover .m,.bead.sel .m,.bead.hl .m{stroke:var(--ink);stroke-width:2.6}
 .blab{font-size:12px;font-weight:500;fill:var(--ink-2);pointer-events:none;paint-order:stroke;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round}
+.datediv line{stroke:#b07a2a;stroke-width:1.6;stroke-dasharray:6 5;opacity:.75;pointer-events:stroke;cursor:help}
+.datediv-lab{font-size:10.5px;font-weight:700;fill:#a06a1f;letter-spacing:.2px;paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;cursor:help}
 .blab.major{font-weight:600;fill:var(--ink)}
 .rowtags{position:absolute;top:0;inset-inline-start:0;height:0;z-index:3;pointer-events:none}
 .rowtags div{position:absolute;inset-inline-start:4px;font-size:12.5px;font-weight:700;color:var(--ink-2);background:color-mix(in srgb,var(--paper) 86%,transparent);padding:2px 9px;border-radius:999px;white-space:nowrap;line-height:1.45}
@@ -930,6 +935,7 @@ function centerOn(lon,lat){const p=proj([lon,lat]);if(!p)return;const t=d3.zoomT
 function camZoom(z){return Math.max(1,Math.min(60,(z||3)*(phone()?0.85:1)))}
 function flyToView(v,dur){if(!v)return;const p=proj([v.lon,v.lat]);if(!p)return;const kk=camZoom(v.zoom);const[cx,cy]=mapViewCenter();
  camAnim=true;svg.transition('cam').duration(reduceMotion()?0:(dur==null?900:dur)).call(zoom.transform,d3.zoomIdentity.translate(cx,cy).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
+let followT=0;function flyFollow(v){clearTimeout(followT);followT=setTimeout(()=>{if(follow)flyToView(v)},reduceMotion()?0:240)}
 function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.innerHTML=on?ICON.follow:ICON.followOff;b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on)flyToView((eras[curEra]||{}).view)}
 $('mfollow').onclick=()=>setFollow(!follow);
 $('zin').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1.6)};
@@ -1096,6 +1102,14 @@ function renderTimeline(){
   row(jew0.filter(p=>p._y!=null&&p.importance>=impMin),yE+eh+96,p=>'person'+(p.convert?' convert':''),p=>tx(p.name));
   positionRowTags([[L().lgEv,yE+eh+18],[Eh,yE+eh+44],[Ah,yE+eh+70],[Jh,yE+eh+96]]);
  }
+ // dating divider: tradition-only (earlier) vs externally-corroborated dating (from David's era, ~-1010)
+ {const dy=-1010,dx=X(dy),Hh=+tl.attr('height'),yc=Math.min(Hh-14,Math.max(96,Hh*0.5));
+  const gd=tl.append('g').attr('class','datediv');
+  const ln=gd.append('line').attr('x1',dx).attr('x2',dx).attr('y1',yE).attr('y2',Hh);
+  const lx=R?dx+12:dx-12;
+  const lab=gd.append('text').attr('class','datediv-lab').attr('x',lx).attr('y',yc).attr('transform','rotate(-90 '+lx+' '+yc+')').attr('text-anchor','middle').text(lang==='he'?'ראשית התיארוך החיצוני':'External dating begins');
+  const tip=lang==='he'?'לפני קו זה — תיארוך לפי המסורת בלבד. מכאן ואילך (מימי דוד המלך) התיארוך נתמך גם במקורות חיצוניים (כתובת תל דן, מקורות אשוריים ומצריים).':"Before this line, dates rest on tradition alone. From here (King David's era) dating is also backed by external sources (the Tel Dan stele, Assyrian and Egyptian records).";
+  ln.append('title').text(tip);lab.append('title').text(tip);}
  placeHead();updZoomUI();scrollToYear(year,false)}
 function setFull(o){full=o;$('app').classList.toggle('full',o);const b=$('fullbtn');if(b){b.setAttribute('aria-pressed',o);b.querySelector('span').textContent=o?L().fullOff:L().full}
  requestAnimationFrame(()=>{if(!o)sizeMap();renderTimeline()})}
@@ -1105,11 +1119,11 @@ function keepHeadVisible(){if(fit)return;const vw=sc.clientWidth,m=Math.min(80,v
 function nudge(px){setYear(Yof(X(year)+px));keepHeadVisible()}
 let ignoreScroll=false,isClrT=0;
 function scrollToYear(y,smooth){if(fit){sc.scrollLeft=0;setYear(y);return}
- const x=Math.max(0,Math.min(sc.scrollWidth-sc.clientWidth,X(y)-sc.clientWidth/2));
+ const mx=sc.scrollWidth-sc.clientWidth;const x=Math.max(0,Math.min(mx,total>0?((X(y)-PAD)/total)*mx:0));
  ignoreScroll=true;clearTimeout(isClrT);const sm=smooth&&!reduceMotion();sc.scrollTo({left:x,behavior:sm?'smooth':'auto'});setYear(y);
  // hold the guard until the (possibly long) animation actually stops, so the settle doesn't reset year to center
  isClrT=setTimeout(()=>{ignoreScroll=false},sm?1800:80)}
-sc.addEventListener('scroll',()=>{placeHead();if(fit||playing)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}setYear(Yof(sc.scrollLeft+sc.clientWidth/2));updSpan();dismissHint()},{passive:true});
+sc.addEventListener('scroll',()=>{placeHead();if(fit||playing)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}const mx=sc.scrollWidth-sc.clientWidth;const f=mx>0?sc.scrollLeft/mx:0;setYear(Yof(PAD+f*total));updSpan();dismissHint()},{passive:true});
 sc.addEventListener('wheel',e=>{if(full)return;if(e.ctrlKey||e.metaKey){e.preventDefault();zoomBy(Math.exp(-e.deltaY*0.01));return}const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;if(!d)return;e.preventDefault();nudge((rtl()?-1:1)*d*(fit?.4:1))},{passive:false});
 (()=>{let down=null,dragX=0,edgeRAF=0;const yAt=cx=>Yof(cx-sc.getBoundingClientRect().left+sc.scrollLeft);
  // auto-scroll the view when the dragged needle reaches an edge, so you can scrub the cursor across all of time
@@ -1216,7 +1230,7 @@ function setYear(y){year=Math.max(MINY,Math.min(MAXY,y));const ry=Math.round(yea
  $('pop').innerHTML='';const b=el('b',null,fmtPop(interp(D.demography.world,year)));$('pop').append(document.createTextNode(' · '),b,document.createTextNode(' '+L().pop));
  $('knob').textContent=ry<0?Math.abs(ry)+(lang==='he'?' לפנה״ס':' BCE'):ry+(lang==='he'?' לספירה':' CE');
  placeHead();sc.setAttribute('aria-valuenow',ry);sc.setAttribute('aria-valuetext',fmtYfull(ry));
- const ei=eraAt(year);if(ei!==curEra){curEra=ei;renderChapter();if(follow)flyToView(eras[ei].view)}
+ const ei=eraAt(year);if(ei!==curEra){curEra=ei;renderChapter();if(follow)flyFollow(eras[ei].view)}
  NOW=nowItems();drawBorders();drawCenters();drawPoints();drawEdge();
  if(!listQ)listQ=setTimeout(()=>{listQ=0;renderList();renderCtx()},playing?250:60)}
 function goEra(i){const e=eras[i];scrollToYear(e.start+Math.min(3,(segs[i].b-e.start)*0.05),true)}

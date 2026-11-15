@@ -170,6 +170,9 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 /* ---------- timeline ---------- */
 .dock{background:var(--paper);border-top:1px solid var(--hair);padding-bottom:env(safe-area-inset-bottom,0px)}
 .dbar{display:flex;align-items:center;gap:10px;padding-block:6px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+/* Freeze the shell (top bar, panel side, dock controls) to LTR so nothing moves on language switch; Hebrew text inside still reads RTL */
+.top,.main,.dbar{direction:ltr}
+[dir="rtl"] .panel,[dir="rtl"] .legend{direction:rtl}
 .play{width:38px;height:38px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;flex:none}
 .play svg{width:16px;height:16px;fill:currentColor}
 [dir="rtl"] .play .tri{transform:scaleX(-1);transform-origin:center}
@@ -247,6 +250,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .bead.convert .m{fill:#eef2f7}
 .bead:hover .m,.bead.sel .m,.bead.hl .m{stroke:var(--ink);stroke-width:2.6}
 .blab{font-size:12px;font-weight:500;fill:var(--ink-2);pointer-events:none;paint-order:stroke;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round}
+.datediv line{stroke:#b07a2a;stroke-width:1.6;stroke-dasharray:6 5;opacity:.75;pointer-events:stroke;cursor:help}
+.datediv-lab{font-size:10.5px;font-weight:700;fill:#a06a1f;letter-spacing:.2px;paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;cursor:help}
 .blab.major{font-weight:600;fill:var(--ink)}
 .rowtags{position:absolute;top:0;inset-inline-start:0;height:0;z-index:3;pointer-events:none}
 .rowtags div{position:absolute;inset-inline-start:4px;font-size:12.5px;font-weight:700;color:var(--ink-2);background:color-mix(in srgb,var(--paper) 86%,transparent);padding:2px 9px;border-radius:999px;white-space:nowrap;line-height:1.45}

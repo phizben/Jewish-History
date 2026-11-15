@@ -191,7 +191,7 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 [dir="rtl"] .panel,[dir="rtl"] .legend{direction:rtl}
 .play{width:38px;height:38px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;flex:none}
 .play svg{width:16px;height:16px;fill:currentColor}
-[dir="rtl"] .play .tri{transform:scaleX(-1);transform-origin:center}
+/* timeline frozen LTR: play always advances rightward, so the triangle always points right */
 .fullbtn{display:inline-flex;align-items:center;gap:6px;height:34px;border-radius:999px;background:var(--paper-2);padding:0 13px;font-size:13px;font-weight:600;color:var(--ink-2);white-space:nowrap}
 .fullbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 .fullbtn:hover{color:var(--ink)}
@@ -770,8 +770,8 @@ function layoutScale(vw){tlZoom=Math.max(zMin(vw),Math.min(ZMAX,tlZoom));const t
 function segOf(y){for(const s of segs){if(y<s.b)return s}return segs[segs.length-1]}
 function xRaw(y){y=Math.max(MINY,Math.min(MAXY,y));const s=segOf(y);return s.x0+(y-s.a)/(s.b-s.a)*s.px}
 function yRaw(x){x=Math.max(0,Math.min(total,x));for(const s of segs){if(x<=s.x1)return s.a+(x-s.x0)/s.px*(s.b-s.a)}return MAXY}
-const X=y=>PAD+(rtl()?total-xRaw(y):xRaw(y));
-const Yof=px=>{const x=px-PAD;return yRaw(rtl()?total-x:x)};
+const X=y=>PAD+xRaw(y); // timeline frozen LTR (ancient left, modern right) in both languages
+const Yof=px=>yRaw(px-PAD);
 function eraAt(y){for(let i=eras.length-1;i>=0;i--)if(y>=eras[i].start)return i;return 0}
 const yearsPerPx=y=>{const s=segOf(y);return (s.b-s.a)/s.px};
 
@@ -1047,7 +1047,7 @@ function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.h
 function markSel(){tl.selectAll('.bead').classed('sel',function(){return !!selected&&this.dataset.k===selected.key})}
 function closeDetail(){selected=null;$('detail').hidden=true;$('panel').classList.remove('has-detail');drawBorders();drawPoints();markSel()}
 function spark(c){const w=320,h=76;const ns='http://www.w3.org/2000/svg';const s=document.createElementNS(ns,'svg');s.setAttribute('viewBox',`0 0 ${w} ${h}`);s.setAttribute('class','spark');s.style.width='100%';
- const pts=c.pop;const x=d3.scaleLinear().domain(d3.extent(pts,d=>d[0])).range(rtl()?[w-30,30]:[30,w-30]);const y=d3.scaleLinear().domain([0,d3.max(pts,d=>d[1])]).range([h-18,10]);
+ const pts=c.pop;const x=d3.scaleLinear().domain(d3.extent(pts,d=>d[0])).range([30,w-30]);const y=d3.scaleLinear().domain([0,d3.max(pts,d=>d[1])]).range([h-18,10]);
  const p=document.createElementNS(ns,'path');p.setAttribute('d',d3.area().x(d=>x(d[0])).y0(h-18).y1(d=>y(d[1])).curve(d3.curveMonotoneX)(pts));s.appendChild(p);
  const lab=(t,xx,yy)=>{const e=document.createElementNS(ns,'text');e.textContent=t;e.setAttribute('x',xx);e.setAttribute('y',yy);e.setAttribute('text-anchor','middle');s.appendChild(e)};
  lab(fmtY(pts[0][0]),x(pts[0][0]),h-4);lab(fmtY(pts[pts.length-1][0]),x(pts[pts.length-1][0]),h-4);
@@ -1056,13 +1056,13 @@ function spark(c){const w=320,h=76;const ns='http://www.w3.org/2000/svg';const s
 /* ---------- timeline ---------- */
 const sc=$('tlscroll'),tl=d3.select('#tl');
 function onBead(g,it){g.attr('data-k',it.key).on('click',e=>{e.stopPropagation();select(it)}).on('pointerenter',ev=>{setHover(it);showTip(ev,tx(it.name||it.title),it.kind==='event'?fmtYfull(it.year):tx(it.role)+' · '+fmtRange(span(it)[0],span(it)[1]))}).on('pointermove',moveTip).on('pointerleave',()=>{setHover(null);hideTip()})}
-function positionRowTags(rows){let c=$('rowtags');if(!c){c=document.createElement('div');c.id='rowtags';c.className='rowtags';$('tlwrap').appendChild(c)}c.innerHTML='';c.dir=rtl()?'rtl':'ltr';
+function positionRowTags(rows){let c=$('rowtags');if(!c){c=document.createElement('div');c.id='rowtags';c.className='rowtags';$('tlwrap').appendChild(c)}c.innerHTML='';c.dir='ltr';
  rows.forEach(([t,y])=>{const d=document.createElement('div');d.textContent=t;d.style.top=(y-9)+'px';c.appendChild(d)})}
-function packRows(items,labelOf){const R=rtl();const rows=[];const out=[];
+function packRows(items,labelOf){const R=false;const rows=[];const out=[];
  items.slice().sort((a,b)=>a._y-b._y||b.importance-a.importance).forEach(it=>{const x=X(it._y);const w=tw(labelOf(it),12,it.importance>=3?600:500)+16;
   const lo=R?x-6-w:x-6,hi=R?x+6:x+6+w;let r=0;for(;r<60;r++){const row=rows[r]||(rows[r]=[]);if(!row.some(([p,q])=>lo<q+6&&hi>p-6)){row.push([lo,hi]);break}}it._row=r;out.push(it)});
  return {out,rows:Math.max(1,rows.length)}}
-function sectionFull(items,startY,cls,labelOf){const R=rtl();const {out,rows}=packRows(items,labelOf);const g=tl.append('g');
+function sectionFull(items,startY,cls,labelOf){const R=false;const {out,rows}=packRows(items,labelOf);const g=tl.append('g');
  out.forEach(it=>{const x=X(it._y);const cy=startY+it._row*22+10;const gg=g.append('g').attr('class','bead '+cls(it)+(it===selected?' sel':''));onBead(gg,it);
   gg.append('circle').attr('class','m').attr('cx',x).attr('cy',cy).attr('r',it.kind==='event'?5.5:5);
   gg.append('text').attr('class','blab'+(it.importance>=3?' major':'')).attr('x',R?x-9:x+9).attr('y',cy+4).attr('text-anchor',R?'end':'start').text(labelOf(it))});
@@ -1070,7 +1070,7 @@ function sectionFull(items,startY,cls,labelOf){const R=rtl();const {out,rows}=pa
 function renderTimeline(){
  const vw=sc.clientWidth||800;layoutScale(vw);fit=total<=vw-39;PAD=fit?Math.round((vw-total)/2):40;sc.classList.toggle('fit',fit);
  const W=fit?vw:total+PAD*2;tl.attr('width',W).attr('height',full?156:176);tl.selectAll('*').remove();ensureGlow(tl);
- const R=rtl();const gG=tl.append('g').attr('class','grid');
+ const R=false;const gG=tl.append('g').attr('class','grid');
  // ticks
  const yT=16,yE=24,eh=28;const steps=[1,2,5,10,20,25,50,100,200,250,500,1000];let last=-1e9;const gT=tl.append('g');
  const ceLbl=lang==='he'?' לספירה':' CE';segs.forEach(s=>{const ppy=s.px/(s.b-s.a);const need=s.a<0?(lang==='he'?92:72):(s.b<1000?(lang==='he'?84:62):58);const st=steps.find(v=>v*ppy>=need)||1000;
@@ -1136,7 +1136,7 @@ function scrollToYear(y,smooth){if(fit){sc.scrollLeft=0;setYear(y);return}
  // hold the guard until the (possibly long) animation actually stops, so the settle doesn't reset year to center
  isClrT=setTimeout(()=>{ignoreScroll=false},sm?1800:80)}
 sc.addEventListener('scroll',()=>{placeHead();if(fit||playing)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}const mx=sc.scrollWidth-sc.clientWidth;const f=mx>0?sc.scrollLeft/mx:0;setYear(Yof(PAD+f*total));updSpan();dismissHint()},{passive:true});
-sc.addEventListener('wheel',e=>{if(full)return;if(e.ctrlKey||e.metaKey){e.preventDefault();zoomBy(Math.exp(-e.deltaY*0.01));return}const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;if(!d)return;e.preventDefault();nudge((rtl()?-1:1)*d*(fit?.4:1))},{passive:false});
+sc.addEventListener('wheel',e=>{if(full)return;if(e.ctrlKey||e.metaKey){e.preventDefault();zoomBy(Math.exp(-e.deltaY*0.01));return}const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;if(!d)return;e.preventDefault();nudge(d*(fit?.4:1))},{passive:false});
 (()=>{let down=null,dragX=0,edgeRAF=0;const yAt=cx=>Yof(cx-sc.getBoundingClientRect().left+sc.scrollLeft);
  // auto-scroll the view when the dragged needle reaches an edge, so you can scrub the cursor across all of time
  function edgeScroll(){if(edgeRAF)return;const step=()=>{edgeRAF=0;if(!down||!down.moved||fit)return;const vw=sc.clientWidth,hx=X(year)-sc.scrollLeft,m=44,max=sc.scrollWidth-vw;let d=0;if(hx>vw-m&&sc.scrollLeft<max)d=Math.min(max-sc.scrollLeft,12);else if(hx<m&&sc.scrollLeft>0)d=-Math.min(sc.scrollLeft,12);if(d){ignoreScroll=true;sc.scrollLeft+=d;setYear(yAt(dragX));edgeRAF=requestAnimationFrame(step)}};edgeRAF=requestAnimationFrame(step)}
@@ -1174,7 +1174,7 @@ function syncLayers(){const b=$('layersbtn');if(b){b.title=L().lgLayers;b.setAtt
 
 /* play */
 let playing=false,lastT=0;
-function tick(t){if(!playing)return;if(lastT){const dt=Math.min(60,t-lastT);nudge((rtl()?-1:1)*dt*(fit?0.02:0.08));if(year>=MAXY-0.5)togglePlay(false)}lastT=t;requestAnimationFrame(tick)}
+function tick(t){if(!playing)return;if(lastT){const dt=Math.min(60,t-lastT);nudge(dt*(fit?0.02:0.08));if(year>=MAXY-0.5)togglePlay(false)}lastT=t;requestAnimationFrame(tick)}
 function togglePlay(on){playing=on==null?!playing:on;lastT=0;$('playicon').setAttribute('d',playing?'M7 5h3.5v14H7zM13.5 5H17v14h-3.5z':'M8 5v14l11-7z');$('play').setAttribute('aria-label',playing?L().pause:L().play);if(playing){dismissHint();if(year>=MAXY-1)scrollToYear(MINY,false);requestAnimationFrame(tick)}}
 $('play').onclick=()=>togglePlay();
 

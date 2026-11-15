@@ -83,8 +83,8 @@ function layoutScale(vw){tlZoom=Math.max(zMin(vw),Math.min(ZMAX,tlZoom));const t
 function segOf(y){for(const s of segs){if(y<s.b)return s}return segs[segs.length-1]}
 function xRaw(y){y=Math.max(MINY,Math.min(MAXY,y));const s=segOf(y);return s.x0+(y-s.a)/(s.b-s.a)*s.px}
 function yRaw(x){x=Math.max(0,Math.min(total,x));for(const s of segs){if(x<=s.x1)return s.a+(x-s.x0)/s.px*(s.b-s.a)}return MAXY}
-const X=y=>PAD+(rtl()?total-xRaw(y):xRaw(y));
-const Yof=px=>{const x=px-PAD;return yRaw(rtl()?total-x:x)};
+const X=y=>PAD+xRaw(y); // timeline frozen LTR (ancient left, modern right) in both languages
+const Yof=px=>yRaw(px-PAD);
 function eraAt(y){for(let i=eras.length-1;i>=0;i--)if(y>=eras[i].start)return i;return 0}
 const yearsPerPx=y=>{const s=segOf(y);return (s.b-s.a)/s.px};
 

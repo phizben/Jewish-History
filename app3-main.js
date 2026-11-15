@@ -156,8 +156,16 @@ function centerOn(lon,lat){const p=proj([lon,lat]);if(!p)return;const t=d3.zoomT
 function camZoom(z){return Math.max(1,Math.min(60,(z||3)*(phone()?0.85:1)))}
 function flyToView(v,dur){if(!v)return;const p=proj([v.lon,v.lat]);if(!p)return;const kk=camZoom(v.zoom);const[cx,cy]=mapViewCenter();
  camAnim=true;svg.transition('cam').duration(reduceMotion()?0:(dur==null?900:dur)).call(zoom.transform,d3.zoomIdentity.translate(cx,cy).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
-let followT=0;function flyFollow(v){clearTimeout(followT);followT=setTimeout(()=>{if(follow)flyToView(v)},reduceMotion()?0:240)}
-function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.innerHTML=on?ICON.follow:ICON.followOff;b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on)flyToView((eras[curEra]||{}).view)}
+// A few camera presets so each era snaps to one of them; adjacent eras sharing a preset don't move the map at all, and the map only shifts between these intentional framings.
+const MAPPRESETS=[
+ {lon:36.5,lat:32,zoom:4.0}, // Levant — Land of Israel & Near East
+ {lon:13,lat:46,zoom:3.0},   // Europe
+ {lon:29,lat:33,zoom:2.0}    // Wide — the Jewish world
+];
+function snapView(v){if(!v)return v;let best=MAPPRESETS[0],bd=1e9;for(const p of MAPPRESETS){const dz=((v.zoom||3)-p.zoom)*3;const d=(v.lon-p.lon)**2+(v.lat-p.lat)**2+dz*dz;if(d<bd){bd=d;best=p}}return best}
+let followT=0,camPreset=null;
+function flyFollow(v){const p=snapView(v);if(p===camPreset)return;camPreset=p;clearTimeout(followT);followT=setTimeout(()=>{if(follow)flyToView(p)},reduceMotion()?0:240)}
+function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.innerHTML=on?ICON.follow:ICON.followOff;b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on){camPreset=snapView((eras[curEra]||{}).view);flyToView(camPreset)}}
 $('mfollow').onclick=()=>setFollow(!follow);
 $('zin').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1.6)};
 $('zout').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1/1.6)};
@@ -587,7 +595,7 @@ $('langbtn').onclick=()=>{lang=lang==='he'?'en':'he';store.set('lang',lang);appl
  const h=location.hash.slice(1);const ei=eras.findIndex(e=>e.id===h);
  year=ei>=0?eras[ei].start+Math.min(3,(segs[ei].b-eras[ei].start)*0.05):1492;
  $('app').classList.toggle('full',full);sizeMap();applyLang();
- const bv=(eras[eraAt(year)]||{}).view;const bp=proj(bv?[bv.lon,bv.lat]:[24,38]);const bk=bv?camZoom(bv.zoom):(phone()?2.2:3);svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(bk).translate(-bp[0],-bp[1]));
+ const bv=snapView((eras[eraAt(year)]||{}).view);camPreset=bv;const bp=proj(bv?[bv.lon,bv.lat]:[24,38]);const bk=bv?camZoom(bv.zoom):(phone()?2.2:3);svg.call(zoom.transform,d3.zoomIdentity.translate(mw/2,mh/2).scale(bk).translate(-bp[0],-bp[1]));
  setFollow(follow);
  showIntro();
  addEventListener('hashchange',()=>{const i=eras.findIndex(e=>e.id===location.hash.slice(1));if(i>=0&&i!==curEra)goEra(i)});

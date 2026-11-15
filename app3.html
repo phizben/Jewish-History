@@ -136,10 +136,12 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .ovl{fill:var(--brand);fill-opacity:.18;stroke:var(--brand);stroke-width:2;vector-effect:non-scaling-stroke;stroke-dasharray:5 4}
 .ovl.inf{fill-opacity:.06;stroke-width:1.5;stroke-dasharray:2 4}
 .ovl.dia{fill:#e6a53c;stroke:#e6a53c}
+.ovl.ctl{fill:#f2c200;fill-opacity:.14;stroke:#e8b500;stroke-width:2.5;stroke-dasharray:7 4}
 .plabel{fill:var(--label);font-family:var(--f-ui);font-weight:500;text-anchor:middle;pointer-events:none}
 .olabel{fill:var(--brand);font-family:var(--f-display);text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:var(--land);stroke-linejoin:round}
 .olabel.inf{font-family:var(--f-ui);font-weight:600;opacity:.85}
 .olabel.dia{fill:#e6a53c}
+.olabel.ctl{fill:#b98f00}
 .mk{cursor:pointer}
 .mk .m{stroke:var(--paper);stroke-width:1.8}
 .mk.comm .m{fill:var(--gold);fill-opacity:.85;stroke-width:1.2}
@@ -168,9 +170,12 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 /* ---------- timeline ---------- */
 .dock{background:var(--paper);border-top:1px solid var(--hair);padding-bottom:env(safe-area-inset-bottom,0px)}
 .dbar{display:flex;align-items:center;gap:10px;padding-block:6px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+/* Freeze the shell (top bar, panel side, dock controls) to LTR so nothing moves on language switch; Hebrew text inside still reads RTL */
+.top,.main,.dbar{direction:ltr}
+[dir="rtl"] .panel,[dir="rtl"] .legend{direction:rtl}
 .play{width:38px;height:38px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;flex:none}
 .play svg{width:16px;height:16px;fill:currentColor}
-[dir="rtl"] .play .tri{transform:scaleX(-1);transform-origin:center}
+/* timeline frozen LTR: play always advances rightward, so the triangle always points right */
 .fullbtn{display:inline-flex;align-items:center;gap:6px;height:34px;border-radius:999px;background:var(--paper-2);padding:0 13px;font-size:13px;font-weight:600;color:var(--ink-2);white-space:nowrap}
 .fullbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 .fullbtn:hover{color:var(--ink)}
@@ -245,6 +250,8 @@ button{font:inherit;color:inherit;cursor:pointer;background:none;border:0}
 .bead.convert .m{fill:#eef2f7}
 .bead:hover .m,.bead.sel .m,.bead.hl .m{stroke:var(--ink);stroke-width:2.6}
 .blab{font-size:12px;font-weight:500;fill:var(--ink-2);pointer-events:none;paint-order:stroke;stroke:var(--paper);stroke-width:4px;stroke-linejoin:round}
+.datediv line{stroke:#b07a2a;stroke-width:1.6;stroke-dasharray:6 5;opacity:.75;pointer-events:stroke;cursor:help}
+.datediv-lab{font-size:10.5px;font-weight:700;fill:#a06a1f;letter-spacing:.2px;paint-order:stroke;stroke:var(--paper);stroke-width:3.5px;stroke-linejoin:round;cursor:help}
 .blab.major{font-weight:600;fill:var(--ink)}
 .rowtags{position:absolute;top:0;inset-inline-start:0;height:0;z-index:3;pointer-events:none}
 .rowtags div{position:absolute;inset-inline-start:4px;font-size:12.5px;font-weight:700;color:var(--ink-2);background:color-mix(in srgb,var(--paper) 86%,transparent);padding:2px 9px;border-radius:999px;white-space:nowrap;line-height:1.45}
@@ -314,6 +321,17 @@ kbd{font-family:var(--f-ui);font-size:12.5px;font-weight:600;min-width:26px;text
   .panel:not([data-open="true"]) .chap .no{display:none}
   .panel:not([data-open="true"]) .chap .row{position:absolute;inset-inline-end:8px;top:12px}
   .panel:not([data-open="true"]) .chap h2{padding-inline-end:110px}
+  /* collapsed sheet: when an item is selected, peek shows its name (not the back bar); tap to expand */
+  .panel:not([data-open="true"]) .detail .bar{display:none}
+  .panel:not([data-open="true"]) .detail .scroll{padding:12px 14px 0;overflow:hidden}
+  .panel:not([data-open="true"]) .detail .scroll>*{display:none}
+  .panel:not([data-open="true"]) .detail .scroll>.kind,.panel:not([data-open="true"]) .detail .scroll>h2{display:block}
+  .panel:not([data-open="true"]) .detail .scroll>h2{font-size:18px;margin:2px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding-inline-end:48px}
+  .panel:not([data-open="true"]) .detail{cursor:pointer}
+  /* keep the open/close toggle floating above the detail overlay; hide chapter-nav while a detail is shown */
+  .panel.has-detail .chap .row{position:absolute;inset-inline-end:8px;top:10px;z-index:7}
+  .panel.has-detail .chap .row .nbtn:not(.sheetbtn){display:none}
+  .panel.has-detail .detail .bar{padding-inline-end:46px}
   .legend,.tzspan{display:none}
   .fullbtn span{display:none}
   .fullbtn{padding:0 10px}

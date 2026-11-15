@@ -64,10 +64,10 @@ function drawBorders(force){const s=snapFor(year);
  NOW.events.forEach(e=>{if(majorNow(e)){const sp=proj([e.lon,e.lat]);if(sp)strong.push(sp)}});
  gOvl.selectAll('g').data(ov,o=>o.en+'|'+o.start).join(en=>{const g=en.append('g');g.append('path');g.append('text').attr('class','olabel');return g})
   .each(function(o){const g=d3.select(this);let poly;if(o.geo){poly=o.geo}else{poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]])]};if(d3.geoArea(poly)>2*Math.PI)poly={type:'Polygon',coordinates:[o.poly.concat([o.poly[0]]).reverse()]};}
-   g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')+(o.region==='diaspora'?' dia':'')).attr('d',gpath(poly))
+   g.select('path').attr('class','ovl'+(o.kind==='influence'?' inf':'')+(o.region==='diaspora'?' dia':'')+(o.region==='control'?' ctl':'')).attr('d',gpath(poly))
      .style('cursor',o.ev?'pointer':null).on('click',o.ev?function(e){e.stopPropagation();const it=D.events.find(x=>x.id===o.ev);if(it)select(it)}:null);
    const c=o.kind==='influence'?proj([37.4,34.6]):gpath.centroid(poly);const hide=c&&strong.some(mp=>Math.abs(c[0]-mp[0])*k<92&&Math.abs(c[1]-mp[1])*k<26);
-   g.select('text').classed('inf',o.kind==='influence').classed('dia',o.region==='diaspora').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(hide?'':tx(o))});
+   g.select('text').classed('inf',o.kind==='influence').classed('dia',o.region==='diaspora').classed('ctl',o.region==='control').attr('x',c[0]).attr('y',c[1]).attr('font-size',14/k).style('stroke-width',(3.5/k)+'px').text(hide?'':tx(o))});
  rescale()}
 function placeLabels(){if(lastSnap==null)return;const fs=polyCache.get(lastSnap)||[];const fsz=11.5/k;
  const named=fs.filter(f=>f.cls!=='pn'&&polyName(f.n));
@@ -156,6 +156,7 @@ function centerOn(lon,lat){const p=proj([lon,lat]);if(!p)return;const t=d3.zoomT
 function camZoom(z){return Math.max(1,Math.min(60,(z||3)*(phone()?0.85:1)))}
 function flyToView(v,dur){if(!v)return;const p=proj([v.lon,v.lat]);if(!p)return;const kk=camZoom(v.zoom);const[cx,cy]=mapViewCenter();
  camAnim=true;svg.transition('cam').duration(reduceMotion()?0:(dur==null?900:dur)).call(zoom.transform,d3.zoomIdentity.translate(cx,cy).scale(kk).translate(-p[0],-p[1])).on('end.cam interrupt.cam',()=>{camAnim=false})}
+let followT=0;function flyFollow(v){clearTimeout(followT);followT=setTimeout(()=>{if(follow)flyToView(v)},reduceMotion()?0:240)}
 function setFollow(on){follow=on;const b=$('mfollow');if(b){b.setAttribute('aria-pressed',on?'true':'false');b.innerHTML=on?ICON.follow:ICON.followOff;b.title=lang==='he'?(on?'עוקב אחרי מרכז העם — לחצו לניתוק':'מצלמה חופשית — לחצו כדי לעקוב'):(on?'Following the center — tap to detach':'Free camera — tap to follow')}if(on)flyToView((eras[curEra]||{}).view)}
 $('mfollow').onclick=()=>setFollow(!follow);
 $('zin').onclick=()=>{setFollow(false);svg.transition().duration(250).call(zoom.scaleBy,1.6)};
@@ -215,6 +216,7 @@ $('c-prev').onclick=()=>goEra(Math.max(0,curEra-1));$('c-next').onclick=()=>goEr
 $('c-more').onclick=()=>{const c=$('chap');const m=c.dataset.more!=='true';c.dataset.more=m;$('c-more').textContent=m?(lang==='he'?'פחות':'Less'):(lang==='he'?'קרא עוד':'Read more')};
 $('c-all').onclick=openChapters;
 $('c-sheet').onclick=()=>setSheet($('panel').dataset.open!=='true');
+$('detail').addEventListener('click',e=>{if(phone()&&$('panel').dataset.open!=='true'&&!e.target.closest('button,a')){setSheet(true)}});
 function setSheet(o){$('panel').dataset.open=o;$('main').classList.toggle('sheet-open',!!o&&phone());$('c-sheet').setAttribute('aria-expanded',o);$('c-sheet').innerHTML=o?'<svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>':'<svg viewBox="0 0 24 24"><path d="M6 15l6-6 6 6"/></svg>';$('c-sheet').setAttribute('aria-label',o?L().close2:L().open)}
 
 /* Hebrew calendar: month names + notable dates that "collect" historical events */
@@ -222,10 +224,10 @@ const HMONTH={tishrei:['תשרי','Tishrei'],cheshvan:['חשוון','Cheshvan'],
 const HOLIDAY={'av-9':['תשעה באב',"Tisha B'Av"],'kislev-25':['חנוכה','Hanukkah'],'sivan-6':['שבועות','Shavuot'],'nisan-15':['פסח','Passover'],'tishrei-10':['יום הכיפורים','Yom Kippur'],'tishrei-22':['שמחת תורה','Simchat Torah'],'iyar-5':['יום העצמאות','Independence Day'],'iyar-28':['יום ירושלים','Jerusalem Day'],'cheshvan-12':['יום הזיכרון לרבין','Rabin Memorial Day']};
 function hebDateStr(hd){return (lang==='he'?gem(hd[0])+' ב'+HMONTH[hd[1]][0]:hd[0]+' '+HMONTH[hd[1]][1])}
 /* detail lives inside the panel */
-function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.hidden=false;p.dir=rtl()?'rtl':'ltr';if(phone())setSheet(true);
+function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.hidden=false;p.dir=rtl()?'rtl':'ltr';$('panel').classList.add('has-detail');
  const bar=el('div','bar');const bk=el('button','back');bk.innerHTML=(rtl()?ICON.next:ICON.prev);bk.appendChild(document.createTextNode(L().back+tx(eras[curEra].name)));bk.onclick=closeDetail;bar.appendChild(bk);p.appendChild(bar);
  const s=el('div','scroll');const kindKey=it.kind==='gent'?it.stance:it.kind;const col=colorOf(it);
- const kl={comm:L().kComm,person:L().kPerson,event:L().kEvent,ally:L().kAlly,enemy:L().kEnemy,mixed:L().kMixed}[kindKey]+(it.kind==='event'?' · '+L().types[it.type]:'');
+ const kl=(it.convert?(lang==='he'?'יהודי שהמיר את דתו':'A Jew who left Judaism'):{comm:L().kComm,person:L().kPerson,event:L().kEvent,ally:L().kAlly,enemy:L().kEnemy,mixed:L().kMixed}[kindKey])+(it.kind==='event'?' · '+L().types[it.type]:'');
  const kd=el('div','kind');const i=el('i');i.style.background=col;kd.append(i,el('span',null,kl));kd.style.color=col;s.append(kd,el('h2',null,tx(it.name||it.title)));
  const tags=el('div','tags');const sp=span(it);let when;
  if(it.kind==='event')when=it.endYear>it.year?fmtRange(it.year,it.endYear):fmtYfull(it.year);
@@ -253,9 +255,9 @@ function select(it){selected=it;hideTip();const p=$('detail');p.innerHTML='';p.h
  p.appendChild(s);bk.focus({preventScroll:true});
  drawBorders();drawPoints();markSel()}
 function markSel(){tl.selectAll('.bead').classed('sel',function(){return !!selected&&this.dataset.k===selected.key})}
-function closeDetail(){selected=null;$('detail').hidden=true;drawBorders();drawPoints();markSel()}
+function closeDetail(){selected=null;$('detail').hidden=true;$('panel').classList.remove('has-detail');drawBorders();drawPoints();markSel()}
 function spark(c){const w=320,h=76;const ns='http://www.w3.org/2000/svg';const s=document.createElementNS(ns,'svg');s.setAttribute('viewBox',`0 0 ${w} ${h}`);s.setAttribute('class','spark');s.style.width='100%';
- const pts=c.pop;const x=d3.scaleLinear().domain(d3.extent(pts,d=>d[0])).range(rtl()?[w-30,30]:[30,w-30]);const y=d3.scaleLinear().domain([0,d3.max(pts,d=>d[1])]).range([h-18,10]);
+ const pts=c.pop;const x=d3.scaleLinear().domain(d3.extent(pts,d=>d[0])).range([30,w-30]);const y=d3.scaleLinear().domain([0,d3.max(pts,d=>d[1])]).range([h-18,10]);
  const p=document.createElementNS(ns,'path');p.setAttribute('d',d3.area().x(d=>x(d[0])).y0(h-18).y1(d=>y(d[1])).curve(d3.curveMonotoneX)(pts));s.appendChild(p);
  const lab=(t,xx,yy)=>{const e=document.createElementNS(ns,'text');e.textContent=t;e.setAttribute('x',xx);e.setAttribute('y',yy);e.setAttribute('text-anchor','middle');s.appendChild(e)};
  lab(fmtY(pts[0][0]),x(pts[0][0]),h-4);lab(fmtY(pts[pts.length-1][0]),x(pts[pts.length-1][0]),h-4);
@@ -264,13 +266,13 @@ function spark(c){const w=320,h=76;const ns='http://www.w3.org/2000/svg';const s
 /* ---------- timeline ---------- */
 const sc=$('tlscroll'),tl=d3.select('#tl');
 function onBead(g,it){g.attr('data-k',it.key).on('click',e=>{e.stopPropagation();select(it)}).on('pointerenter',ev=>{setHover(it);showTip(ev,tx(it.name||it.title),it.kind==='event'?fmtYfull(it.year):tx(it.role)+' · '+fmtRange(span(it)[0],span(it)[1]))}).on('pointermove',moveTip).on('pointerleave',()=>{setHover(null);hideTip()})}
-function positionRowTags(rows){let c=$('rowtags');if(!c){c=document.createElement('div');c.id='rowtags';c.className='rowtags';$('tlwrap').appendChild(c)}c.innerHTML='';c.dir=rtl()?'rtl':'ltr';
+function positionRowTags(rows){let c=$('rowtags');if(!c){c=document.createElement('div');c.id='rowtags';c.className='rowtags';$('tlwrap').appendChild(c)}c.innerHTML='';c.dir='ltr';
  rows.forEach(([t,y])=>{const d=document.createElement('div');d.textContent=t;d.style.top=(y-9)+'px';c.appendChild(d)})}
-function packRows(items,labelOf){const R=rtl();const rows=[];const out=[];
+function packRows(items,labelOf){const R=false;const rows=[];const out=[];
  items.slice().sort((a,b)=>a._y-b._y||b.importance-a.importance).forEach(it=>{const x=X(it._y);const w=tw(labelOf(it),12,it.importance>=3?600:500)+16;
   const lo=R?x-6-w:x-6,hi=R?x+6:x+6+w;let r=0;for(;r<60;r++){const row=rows[r]||(rows[r]=[]);if(!row.some(([p,q])=>lo<q+6&&hi>p-6)){row.push([lo,hi]);break}}it._row=r;out.push(it)});
  return {out,rows:Math.max(1,rows.length)}}
-function sectionFull(items,startY,cls,labelOf){const R=rtl();const {out,rows}=packRows(items,labelOf);const g=tl.append('g');
+function sectionFull(items,startY,cls,labelOf){const R=false;const {out,rows}=packRows(items,labelOf);const g=tl.append('g');
  out.forEach(it=>{const x=X(it._y);const cy=startY+it._row*22+10;const gg=g.append('g').attr('class','bead '+cls(it)+(it===selected?' sel':''));onBead(gg,it);
   gg.append('circle').attr('class','m').attr('cx',x).attr('cy',cy).attr('r',it.kind==='event'?5.5:5);
   gg.append('text').attr('class','blab'+(it.importance>=3?' major':'')).attr('x',R?x-9:x+9).attr('y',cy+4).attr('text-anchor',R?'end':'start').text(labelOf(it))});
@@ -278,7 +280,7 @@ function sectionFull(items,startY,cls,labelOf){const R=rtl();const {out,rows}=pa
 function renderTimeline(){
  const vw=sc.clientWidth||800;layoutScale(vw);fit=total<=vw-39;PAD=fit?Math.round((vw-total)/2):40;sc.classList.toggle('fit',fit);
  const W=fit?vw:total+PAD*2;tl.attr('width',W).attr('height',full?156:176);tl.selectAll('*').remove();ensureGlow(tl);
- const R=rtl();const gG=tl.append('g').attr('class','grid');
+ const R=false;const gG=tl.append('g').attr('class','grid');
  // ticks
  const yT=16,yE=24,eh=28;const steps=[1,2,5,10,20,25,50,100,200,250,500,1000];let last=-1e9;const gT=tl.append('g');
  const ceLbl=lang==='he'?' לספירה':' CE';segs.forEach(s=>{const ppy=s.px/(s.b-s.a);const need=s.a<0?(lang==='he'?92:72):(s.b<1000?(lang==='he'?84:62):58);const st=steps.find(v=>v*ppy>=need)||1000;
@@ -322,6 +324,14 @@ function renderTimeline(){
   row(jew0.filter(p=>p._y!=null&&p.importance>=impMin),yE+eh+96,p=>'person'+(p.convert?' convert':''),p=>tx(p.name));
   positionRowTags([[L().lgEv,yE+eh+18],[Eh,yE+eh+44],[Ah,yE+eh+70],[Jh,yE+eh+96]]);
  }
+ // dating divider: tradition-only (earlier) vs externally-corroborated dating (from David's era, ~-1010)
+ {const dy=-1010,dx=X(dy),Hh=+tl.attr('height'),yc=Math.min(Hh-14,Math.max(96,Hh*0.5));
+  const gd=tl.append('g').attr('class','datediv');
+  const ln=gd.append('line').attr('x1',dx).attr('x2',dx).attr('y1',yE).attr('y2',Hh);
+  const lx=R?dx+12:dx-12;
+  const lab=gd.append('text').attr('class','datediv-lab').attr('x',lx).attr('y',yc).attr('transform','rotate(-90 '+lx+' '+yc+')').attr('text-anchor','middle').text(lang==='he'?'ראשית התיארוך החיצוני':'External dating begins');
+  const tip=lang==='he'?'לפני קו זה — תיארוך לפי המסורת בלבד. מכאן ואילך (מימי דוד המלך) התיארוך נתמך גם במקורות חיצוניים (כתובת תל דן, מקורות אשוריים ומצריים).':"Before this line, dates rest on tradition alone. From here (King David's era) dating is also backed by external sources (the Tel Dan stele, Assyrian and Egyptian records).";
+  ln.append('title').text(tip);lab.append('title').text(tip);}
  placeHead();updZoomUI();scrollToYear(year,false)}
 function setFull(o){full=o;$('app').classList.toggle('full',o);const b=$('fullbtn');if(b){b.setAttribute('aria-pressed',o);b.querySelector('span').textContent=o?L().fullOff:L().full}
  requestAnimationFrame(()=>{if(!o)sizeMap();renderTimeline()})}
@@ -331,12 +341,12 @@ function keepHeadVisible(){if(fit)return;const vw=sc.clientWidth,m=Math.min(80,v
 function nudge(px){setYear(Yof(X(year)+px));keepHeadVisible()}
 let ignoreScroll=false,isClrT=0;
 function scrollToYear(y,smooth){if(fit){sc.scrollLeft=0;setYear(y);return}
- const x=Math.max(0,Math.min(sc.scrollWidth-sc.clientWidth,X(y)-sc.clientWidth/2));
+ const mx=sc.scrollWidth-sc.clientWidth;const x=Math.max(0,Math.min(mx,total>0?((X(y)-PAD)/total)*mx:0));
  ignoreScroll=true;clearTimeout(isClrT);const sm=smooth&&!reduceMotion();sc.scrollTo({left:x,behavior:sm?'smooth':'auto'});setYear(y);
  // hold the guard until the (possibly long) animation actually stops, so the settle doesn't reset year to center
  isClrT=setTimeout(()=>{ignoreScroll=false},sm?1800:80)}
-sc.addEventListener('scroll',()=>{placeHead();if(fit||playing)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}setYear(Yof(sc.scrollLeft+sc.clientWidth/2));updSpan();dismissHint()},{passive:true});
-sc.addEventListener('wheel',e=>{if(full)return;if(e.ctrlKey||e.metaKey){e.preventDefault();zoomBy(Math.exp(-e.deltaY*0.01));return}const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;if(!d)return;e.preventDefault();nudge((rtl()?-1:1)*d*(fit?.4:1))},{passive:false});
+sc.addEventListener('scroll',()=>{placeHead();if(fit||playing)return;if(ignoreScroll){clearTimeout(isClrT);isClrT=setTimeout(()=>{ignoreScroll=false},140);return}const mx=sc.scrollWidth-sc.clientWidth;const f=mx>0?sc.scrollLeft/mx:0;setYear(Yof(PAD+f*total));updSpan();dismissHint()},{passive:true});
+sc.addEventListener('wheel',e=>{if(full)return;if(e.ctrlKey||e.metaKey){e.preventDefault();zoomBy(Math.exp(-e.deltaY*0.01));return}const d=Math.abs(e.deltaY)>Math.abs(e.deltaX)?e.deltaY:e.deltaX;if(!d)return;e.preventDefault();nudge(d*(fit?.4:1))},{passive:false});
 (()=>{let down=null,dragX=0,edgeRAF=0;const yAt=cx=>Yof(cx-sc.getBoundingClientRect().left+sc.scrollLeft);
  // auto-scroll the view when the dragged needle reaches an edge, so you can scrub the cursor across all of time
  function edgeScroll(){if(edgeRAF)return;const step=()=>{edgeRAF=0;if(!down||!down.moved||fit)return;const vw=sc.clientWidth,hx=X(year)-sc.scrollLeft,m=44,max=sc.scrollWidth-vw;let d=0;if(hx>vw-m&&sc.scrollLeft<max)d=Math.min(max-sc.scrollLeft,12);else if(hx<m&&sc.scrollLeft>0)d=-Math.min(sc.scrollLeft,12);if(d){ignoreScroll=true;sc.scrollLeft+=d;setYear(yAt(dragX));edgeRAF=requestAnimationFrame(step)}};edgeRAF=requestAnimationFrame(step)}
@@ -357,7 +367,7 @@ $('tz-in').onclick=()=>setTlZoom(tlZoom*1.6);$('tz-out').onclick=()=>setTlZoom(t
  sc.addEventListener('touchstart',e=>{if(e.touches.length===2){d0=dist(e.touches);z0=tlZoom}},{passive:true});
  sc.addEventListener('touchmove',e=>{if(e.touches.length===2&&d0){e.preventDefault();zPending=1;zoomBy(z0*dist(e.touches)/d0/tlZoom)}},{passive:false});
  sc.addEventListener('touchend',e=>{if(e.touches.length<2)d0=0},{passive:true})})();
-function buildLegend(){const l=$('legend');l.innerHTML='';[['ring',null,L().lgEv],['',`var(--brand)`,L().lgJ],['','#eef2f7',lang==='he'?'ממיר/ה דת':'Left Judaism'],['','var(--ally)',L().lgA],['','var(--enemy)',L().lgE],['heat','var(--gold)',L().lgCen],['',`var(--brand)`,lang==='he'?'ריבונות בארץ ישראל':'Sovereignty in the Land'],['','#e6a53c',lang==='he'?'שלטון יהודי מחוץ לארץ':'Jewish rule abroad']].forEach(([c,col,t])=>{const s=el('span');const i=el('i',c);if(col)i.style.background=col;s.append(i,document.createTextNode(t));l.appendChild(s)})}
+function buildLegend(){const l=$('legend');l.innerHTML='';[['ring',null,L().lgEv],['',`var(--brand)`,L().lgJ],['','#eef2f7',lang==='he'?'ממיר/ה דת':'Left Judaism'],['','var(--ally)',L().lgA],['','var(--enemy)',L().lgE],['heat','var(--gold)',L().lgCen],['',`var(--brand)`,lang==='he'?'ריבונות בארץ ישראל':'Sovereignty in the Land'],['','#e6a53c',lang==='he'?'שלטון יהודי מחוץ לארץ':'Jewish rule abroad'],['','#f2c200',lang==='he'?'שליטה צבאית זמנית':'Temporary military control']].forEach(([c,col,t])=>{const s=el('span');const i=el('i',c);if(col)i.style.background=col;s.append(i,document.createTextNode(t));l.appendChild(s)})}
 let markersOn=store.get('markers3',true);
 function applyMarkers(){if(typeof gPts!=='undefined'&&gPts)gPts.style('display',markersOn?null:'none')}
 function renderLayersMenu(){const m=$('layersmenu');if(!m)return;m.innerHTML='';m.dir=rtl()?'rtl':'ltr';
@@ -374,7 +384,7 @@ function syncLayers(){const b=$('layersbtn');if(b){b.title=L().lgLayers;b.setAtt
 
 /* play */
 let playing=false,lastT=0;
-function tick(t){if(!playing)return;if(lastT){const dt=Math.min(60,t-lastT);nudge((rtl()?-1:1)*dt*(fit?0.02:0.08));if(year>=MAXY-0.5)togglePlay(false)}lastT=t;requestAnimationFrame(tick)}
+function tick(t){if(!playing)return;if(lastT){const dt=Math.min(60,t-lastT);nudge(dt*(fit?0.02:0.08));if(year>=MAXY-0.5)togglePlay(false)}lastT=t;requestAnimationFrame(tick)}
 function togglePlay(on){playing=on==null?!playing:on;lastT=0;$('playicon').setAttribute('d',playing?'M7 5h3.5v14H7zM13.5 5H17v14h-3.5z':'M8 5v14l11-7z');$('play').setAttribute('aria-label',playing?L().pause:L().play);if(playing){dismissHint();if(year>=MAXY-1)scrollToYear(MINY,false);requestAnimationFrame(tick)}}
 $('play').onclick=()=>togglePlay();
 
@@ -442,7 +452,7 @@ function setYear(y){year=Math.max(MINY,Math.min(MAXY,y));const ry=Math.round(yea
  $('pop').innerHTML='';const b=el('b',null,fmtPop(interp(D.demography.world,year)));$('pop').append(document.createTextNode(' · '),b,document.createTextNode(' '+L().pop));
  $('knob').textContent=ry<0?Math.abs(ry)+(lang==='he'?' לפנה״ס':' BCE'):ry+(lang==='he'?' לספירה':' CE');
  placeHead();sc.setAttribute('aria-valuenow',ry);sc.setAttribute('aria-valuetext',fmtYfull(ry));
- const ei=eraAt(year);if(ei!==curEra){curEra=ei;renderChapter();if(follow)flyToView(eras[ei].view)}
+ const ei=eraAt(year);if(ei!==curEra){curEra=ei;renderChapter();if(follow)flyFollow(eras[ei].view)}
  NOW=nowItems();drawBorders();drawCenters();drawPoints();drawEdge();
  if(!listQ)listQ=setTimeout(()=>{listQ=0;renderList();renderCtx()},playing?250:60)}
 function goEra(i){const e=eras[i];scrollToYear(e.start+Math.min(3,(segs[i].b-e.start)*0.05),true)}

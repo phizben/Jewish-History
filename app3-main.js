@@ -413,11 +413,12 @@ function drawCenters(){
  const ik=1/k;
  // current marker positions — region labels yield to figure/event markers (content beats context)
  const mpts=[];if(markersOn!==false)GROUPS.forEach(g=>{if(layers[g])NOW[g].forEach(it=>{const p=proj([it.lon,it.lat]);if(p)mpts.push(p)})});
- const cand=rows.filter(r=>r.v>=1.3&&!r.c.nolab).sort((a,b)=>b.v-a.v);
- const kept=[],minX=104,minY=30;
+ const sorted=rows.filter(r=>!r.c.nolab).sort((a,b)=>b.v-a.v);const cand=sorted.filter((r,i)=>i<4||r.v>=1.3); // the 4 largest always, plus any other significant center
+ const kept=[],minX=86,minY=26;
  for(const r of cand){let ok=true;
   for(const q of kept){if(Math.abs(r.p[0]-q.p[0])*k<minX&&Math.abs(r.p[1]-q.p[1])*k<minY){ok=false;break}}
-  if(ok&&r.v<2)for(const m of mpts){if(Math.abs(r.p[0]-m[0])*k<80&&Math.abs(r.p[1]-m[1])*k<22){ok=false;break}}
+  // always keep the 4 largest centers; only suppress smaller ones (beyond the top 4) when they sit under a figure/event marker
+  if(ok&&r.v<2&&kept.length>=4)for(const m of mpts){if(Math.abs(r.p[0]-m[0])*k<80&&Math.abs(r.p[1]-m[1])*k<22){ok=false;break}}
   if(ok)kept.push(r);if(kept.length>=7)break}
  gHL.selectAll('text').data(kept,r=>r.c.id).join('text').attr('class','heatlabel')
   .attr('x',r=>r.p[0]).attr('y',r=>r.p[1]).attr('font-size',(12.5*ik)+'px')
